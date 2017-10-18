@@ -6,10 +6,10 @@ Drupal.behaviors.basic = {
 
                 if (scroll > 0) {
                     $("#navbar").addClass('minimized');
-                    $('#block-sitename div').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
                     $("#navbar").removeClass("minimized");
-                    $('#block-sitename div').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
                 }
             });
             /*$('#navbar').on( "mouseover", function () {

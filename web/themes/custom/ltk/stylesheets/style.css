@@ -9849,6 +9849,6 @@ h1, h2, h3, h4, h5 {
 
 /* line 39, ../scss/style.scss */
 .views-row {
-  height: 100vh;
-  width: 98vw;
+  /*height: 100vh;
+  width: 98vw;*/
 }
