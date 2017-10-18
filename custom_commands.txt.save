@@ -10,8 +10,5 @@ uuid: 3be5efa3-fa26-4d6d-996d-cf6bcb7088fa
 drush pml --type=module
 drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_accordion paragraphs_tabs ltk
 
-
- drush sql-dump --result-file=../ltk18-10.sql - выгрузили базу
- drush cex --destination=../config/custom-config - выгрузили конфигурацию
-
-
+drush ces - кидает всю конфигурацию в папку /files/ Что-то там
+drush drush sql-dump

@@ -1,0 +1,41 @@
+uuid: 8db5e293-f9c3-4e8e-99e7-fe858e5751c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page_paragraph.field_front_page_paragraph
+    - node.type.front_page_paragraph
+  module:
+    - paragraphs
+id: node.front_page_paragraph.default
+targetEntityType: node
+bundle: front_page_paragraph
+mode: default
+content:
+  field_front_page_paragraph:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

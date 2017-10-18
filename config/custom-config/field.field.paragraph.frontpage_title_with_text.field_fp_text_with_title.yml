@@ -1,0 +1,21 @@
+uuid: c3f1c334-a66d-4448-966c-0b3a8b534299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fp_text_with_title
+    - paragraphs.paragraphs_type.frontpage_title_with_text
+  module:
+    - text_with_title
+id: paragraph.frontpage_title_with_text.field_fp_text_with_title
+field_name: field_fp_text_with_title
+entity_type: paragraph
+bundle: frontpage_title_with_text
+label: fp_text_with_title
+description: 'Custom FP_text_with_title par type, out of Custom/Text with title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_with_title_field

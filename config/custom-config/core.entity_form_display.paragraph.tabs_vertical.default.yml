@@ -1,0 +1,26 @@
+uuid: 8bbf220a-782e-41b5-b0b7-cf6b70f44497
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_vertical.field_tabs_vertical_item
+    - paragraphs.paragraphs_type.tabs_vertical
+  module:
+    - text_with_title
+_core:
+  default_config_hash: 5JMp6hy97AcRI4_JLQCxPUamtH4SrepigWqU1JThKrE
+id: paragraph.tabs_vertical.default
+targetEntityType: paragraph
+bundle: tabs_vertical
+mode: default
+content:
+  field_tabs_vertical_item:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: text_with_title_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

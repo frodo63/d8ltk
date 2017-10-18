@@ -1,0 +1,25 @@
+uuid: 73bd4748-b4d9-425b-97b7-1f1e15395cb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_slide_interval
+    - paragraphs.paragraphs_type.bp_carousel
+  module:
+    - options
+_core:
+  default_config_hash: ThN_y2wi4u_frFb6QvG4V-dixMHNol1xMbD1s_6vqRw
+id: paragraph.bp_carousel.bp_slide_interval
+field_name: bp_slide_interval
+entity_type: paragraph
+bundle: bp_carousel
+label: 'Slide Interval'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
