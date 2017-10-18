@@ -1,0 +1,25 @@
+uuid: 0682da1d-d17f-449f-beb3-102b1aa5b41f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:14186ab4-610a-410b-967e-8aa8144279df'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: adres
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:14186ab4-610a-410b-967e-8aa8144279df'
+settings:
+  id: 'block_content:14186ab4-610a-410b-967e-8aa8144279df'
+  label: адрес
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

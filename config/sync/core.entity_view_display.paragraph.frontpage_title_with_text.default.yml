@@ -1,0 +1,22 @@
+uuid: ff1d2a75-5d66-4eb2-8799-b82bd7da3faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontpage_title_with_text.field_fp_text_with_title
+    - paragraphs.paragraphs_type.frontpage_title_with_text
+  module:
+    - text_with_title
+id: paragraph.frontpage_title_with_text.default
+targetEntityType: paragraph
+bundle: frontpage_title_with_text
+mode: default
+content:
+  field_fp_text_with_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_with_title_formatter
+    region: content
+hidden: {  }

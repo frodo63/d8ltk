@@ -1,0 +1,25 @@
+uuid: c46eddd4-8d71-46c9-9320-f82b0b22b904
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08778bc7-49b2-4db2-bf91-68df9da0b7d7'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: vremaraboty
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:08778bc7-49b2-4db2-bf91-68df9da0b7d7'
+settings:
+  id: 'block_content:08778bc7-49b2-4db2-bf91-68df9da0b7d7'
+  label: 'время работы'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

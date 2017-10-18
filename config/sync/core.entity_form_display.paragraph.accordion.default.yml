@@ -1,0 +1,26 @@
+uuid: 16c855d2-605e-4c3f-8ba4-e8ab126596eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_accordion_item
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text_with_title
+_core:
+  default_config_hash: YsUKJUTjJFk4x1tObXtl0L5-SQwRLUa3DHj9O7iOiC8
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_accordion_item:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: text_with_title_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

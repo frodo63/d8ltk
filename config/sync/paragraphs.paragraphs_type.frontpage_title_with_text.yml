@@ -1,0 +1,9 @@
+uuid: 062d826d-14ef-420f-80bc-c29f6eac33ae
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_title_with_text
+label: 'Frontpage title with text'
+icon_uuid: null
+description: 'Custom title with text'
+behavior_plugins: {  }
