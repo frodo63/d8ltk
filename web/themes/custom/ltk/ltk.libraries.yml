@@ -2,6 +2,8 @@ global-styling:
   css:
     theme:
       stylesheets/style.css: {}
+    base:
+      '//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700': { external: true }
 
 bootstrap-scripts:
   js:
@@ -17,3 +19,14 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+custom-scripts:
+  dependencies:
+        - core/jquery
+  js:
+    custom-javascript/headhide.js: {}
+
+
+
+
+

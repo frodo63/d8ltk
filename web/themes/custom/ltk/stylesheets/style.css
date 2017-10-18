@@ -9599,3 +9599,256 @@ p:last-child,
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
+
+/* line 1, ../scss/component/_header.scss */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: #FBBA00;
+  border: none;
+  min-height: 2vw;
+}
+@media screen and (min-width: 1200px) {
+  /* line 1, ../scss/component/_header.scss */
+  .navbar {
+    height: 13vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 1, ../scss/component/_header.scss */
+  .navbar {
+    height: 13vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/component/_header.scss */
+  .navbar {
+    height: 13vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1, ../scss/component/_header.scss */
+  .navbar {
+    height: 13vw;
+  }
+}
+/* line 23, ../scss/component/_header.scss */
+.navbar.minimized {
+  height: 2vw;
+  /*line-height: 7vw;*/
+}
+/* line 26, ../scss/component/_header.scss */
+.navbar.minimized .logo {
+  top: -0.9vh;
+  left: 1vw;
+}
+/* line 29, ../scss/component/_header.scss */
+.navbar.minimized .logo img {
+  height: 2vw;
+}
+/* line 33, ../scss/component/_header.scss */
+.navbar.minimized #block-telephones {
+  top: 0.25vw;
+  right: 16vw;
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+/* line 38, ../scss/component/_header.scss */
+.navbar.minimized #block-telephones p.h {
+  display: none;
+}
+/* line 42, ../scss/component/_header.scss */
+.navbar.minimized #block-elpocta {
+  top: 0.2vw;
+  left: 87vw;
+  line-height: 1.5vw;
+  font-size: 1vw;
+  font-weight: 400;
+}
+/* line 49, ../scss/component/_header.scss */
+.navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
+  display: none;
+}
+/* line 52, ../scss/component/_header.scss */
+.navbar.minimized #block-sitename {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  top: 0;
+  left: 5vw;
+}
+/* line 58, ../scss/component/_header.scss */
+.navbar.minimized #block-ltk-main-menu {
+  line-height: 2vw;
+}
+/* line 60, ../scss/component/_header.scss */
+.navbar.minimized #block-ltk-main-menu li {
+  vertical-align: text-top;
+}
+
+/* line 69, ../scss/component/_header.scss */
+#block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty, #block-telephones, #block-elpocta, .logo {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  color: #17460F;
+}
+
+/* line 76, ../scss/component/_header.scss */
+#block-adres img, #block-vremaraboty img, #block-elpocta img {
+  height: 1vw;
+}
+
+/* line 81, ../scss/component/_header.scss */
+.logo {
+  top: 2vw;
+  left: 1vw;
+}
+/* line 84, ../scss/component/_header.scss */
+.logo img {
+  height: 7.5vw;
+}
+
+/* line 87, ../scss/component/_header.scss */
+#block-ltk-main-menu {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+/* line 93, ../scss/component/_header.scss */
+#block-ltk-main-menu ul.navbar-nav {
+  text-align: center;
+  float: none !important;
+}
+/* line 97, ../scss/component/_header.scss */
+#block-ltk-main-menu li {
+  float: none !important;
+  display: inline-block !important;
+  vertical-align: bottom;
+}
+/* line 101, ../scss/component/_header.scss */
+#block-ltk-main-menu li a {
+  padding-bottom: 0.5vw;
+  color: #17460F;
+}
+
+/* line 108, ../scss/component/_header.scss */
+#block-uppertext {
+  top: 0;
+  left: 0;
+  font-weight: 200;
+  font-size: 0.9vw;
+  width: 100vw;
+  text-align: center;
+}
+
+/* line 117, ../scss/component/_header.scss */
+#block-sitename {
+  top: 2vw;
+  left: 10vw;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+
+/* line 126, ../scss/component/_header.scss */
+#block-siteslogan {
+  top: 6.5vw;
+  left: 10vw;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+/* line 133, ../scss/component/_header.scss */
+#block-vremaraboty {
+  top: 3.5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+/* line 140, ../scss/component/_header.scss */
+#block-adres {
+  top: 5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+/* line 147, ../scss/component/_header.scss */
+#block-elpocta {
+  top: 6.5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+/* line 154, ../scss/component/_header.scss */
+#block-telephones {
+  top: 2vw;
+  right: 2vw;
+  text-align: right;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+}
+
+/* line 163, ../scss/component/_header.scss */
+#block-ltk-search {
+  position: absolute;
+  width: 23vw;
+  top: 10vw;
+  right: 2vw;
+}
+/* line 169, ../scss/component/_header.scss */
+#block-ltk-search .form-search {
+  border: 1px solid white;
+}
+/* line 172, ../scss/component/_header.scss */
+#block-ltk-search #edit-keys {
+  height: 2vw;
+}
+/* line 176, ../scss/component/_header.scss */
+#block-ltk-search .btn-primary {
+  color: #fff;
+  height: 2vw;
+  background-color: #FBBA00;
+  border: 1px solid white;
+  font-size: 0.5vw;
+  padding: 0 0.5vw 0 0.5vw;
+}
+/* line 184, ../scss/component/_header.scss */
+#block-ltk-search .glyphicon-search {
+  line-height: 2vw;
+  font-size: 1vw;
+}
+
+/* line 26, ../scss/style.scss */
+body {
+  background: #FFFFFF;
+  color: #17460F;
+  margin-top: 20vh;
+}
+/* line 29, ../scss/style.scss */
+body a {
+  color: #17460F;
+}
+/* line 31, ../scss/style.scss */
+body a:hover {
+  color: #FFFFFF;
+}
+
+/* line 35, ../scss/style.scss */
+h1, h2, h3, h4, h5 {
+  color: #000000;
+}
+
+/* line 39, ../scss/style.scss */
+.views-row {
+  height: 100vh;
+  width: 98vw;
+}

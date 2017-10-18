@@ -22,3 +22,5 @@ regions:
 libraries:
   - 'ltk/global-styling'
   - 'ltk/bootstrap-scripts'
+  - 'ltk/custom-scripts'
+
