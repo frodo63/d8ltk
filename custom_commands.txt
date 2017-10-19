@@ -13,6 +13,10 @@ drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_a
 
  drush sql-dump --result-file=../ltk18-10.sql - выгрузили базу
  drush cex --destination=../config/custom-config - выгрузили конфигурацию
+ 
+ git add .
+ git commit -m "smth"
+ git push origin master
 
 
 git pull --rebase origin master 	- пулим удаленный и ставим свои изменения на самый верх
