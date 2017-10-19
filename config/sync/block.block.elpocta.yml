@@ -1,0 +1,25 @@
+uuid: b6961591-3204-42d7-a95d-98d6a5ea822b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e08800e2-b5bd-480b-96fb-1661f813b604'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: elpocta
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:e08800e2-b5bd-480b-96fb-1661f813b604'
+settings:
+  id: 'block_content:e08800e2-b5bd-480b-96fb-1661f813b604'
+  label: элпочта
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

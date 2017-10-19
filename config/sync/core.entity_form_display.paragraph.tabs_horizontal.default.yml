@@ -1,0 +1,26 @@
+uuid: 1faa6c77-b392-4d93-8470-46604dff8332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_horizontal.field_tabs_horizontal_item
+    - paragraphs.paragraphs_type.tabs_horizontal
+  module:
+    - text_with_title
+_core:
+  default_config_hash: xuFZvyebRXPalj7Ima1UzHfXi9UPK8BeqqSpKapvtFY
+id: paragraph.tabs_horizontal.default
+targetEntityType: paragraph
+bundle: tabs_horizontal
+mode: default
+content:
+  field_tabs_horizontal_item:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: text_with_title_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
