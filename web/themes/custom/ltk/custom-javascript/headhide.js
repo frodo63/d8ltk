@@ -12,18 +12,18 @@ Drupal.behaviors.basic = {
                     $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
                 }
             });
-            /*$('#navbar').on( "mouseover", function () {
+            $('#navbar').off("mouseenter.navbar").on( "mouseenter.navbar", function () {
                 if ($('#navbar').hasClass("minimized")){
                     $('#navbar').removeClass("minimized");
                   $('#block-sitename div').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
                 }
             } );
-          $('#navbar').on( "mouseout", function () {
+          $('#navbar').off("mouseleave.navbar").on("mouseleave.navbar", function () {
             if ($(window).scrollTop() > 0){
               $('#navbar').addClass("minimized");
               $('#block-sitename div').html('<p>ЛУБРИТЭК</p>');
             }
-          } );*/
+          } );
 
         })(jQuery);
     }

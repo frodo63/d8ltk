@@ -15,3 +15,6 @@ drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_a
  drush cex --destination=../config/custom-config - выгрузили конфигурацию
 
 
+git pull --rebase origin master 	- пулим удаленный и ставим свои изменения на самый верх
+
+git rebase --abort    			- If you get to this point and realize and you have no idea what’s going on, don’t panic. Just execute the following command and you’ll be right back to where you started before you ran [git pull --rebase](/tutorials/syncing/git-pull):

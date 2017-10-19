@@ -9,16 +9,29 @@
   min-height: 2vw;
   @media #{$wide}{
     height: 13vw;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
   }
   @media #{$normal}{
     height: 13vw;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
   }
   @media #{$tablet}{
     height: 13vw;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
   }
   @media #{$mobile}{
     height: 13vw;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
   }
+
 
   &.minimized {
     height: 2vw;
@@ -70,6 +83,10 @@
   position: absolute;
   font-family: 'Oswald',sans-serif ;
   color: $green;
+  /*Добавил транзишн анимацию ко всем детям навбара*/
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #block-adres, #block-vremaraboty, #block-elpocta {
