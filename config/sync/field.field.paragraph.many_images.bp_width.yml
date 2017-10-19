@@ -1,0 +1,21 @@
+uuid: 3a63eed3-be2e-49cc-923e-224f5d9beb29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_width
+    - paragraphs.paragraphs_type.many_images
+  module:
+    - options
+id: paragraph.many_images.bp_width
+field_name: bp_width
+entity_type: paragraph
+bundle: many_images
+label: Width
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -8,25 +8,25 @@
   border: none;
   min-height: 2vw;
   @media #{$wide}{
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
   }
   @media #{$normal}{
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
   }
   @media #{$tablet}{
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
   }
   @media #{$mobile}{
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -46,7 +46,7 @@
     #block-telephones {
       top: 0.25vw;
       right: 16vw;
-      font-size: 1vw;
+      font-size: 1.5vw;
       line-height: 1.5vw;
       p.h {
         display: none;
@@ -96,7 +96,7 @@
 }
 
 .logo {
-  top: 2vw;
+  top: 1.5vw;
   left: 1vw;
   img {height: 7.5vw;}
 }
@@ -148,28 +148,28 @@
 }
 
 #block-vremaraboty {
-  top: 3.5vw;
+  top: 2.5vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
 }
 
 #block-adres {
-  top: 5vw;
+  top: 4vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
 }
 
 #block-elpocta {
-  top: 6.5vw;
+  top: 5.5vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
 }
 
 #block-telephones {
-  top: 2vw;
+  top: 1vw;
   right: 2vw;
   text-align: right;
   font-weight: 400;
@@ -180,8 +180,12 @@
 #block-ltk-search {
   position: absolute;
   width: 23vw;
-  top: 10vw;
+  top: 9vw;
   right: 2vw;
+  #search-block-form {
+    bottom: -1.6vw;
+    position: absolute;
+  }
 
   .form-search{
     border:1px solid white;

@@ -7,6 +7,8 @@
 // Base-theme overrides.
 @import 'overrides';
 
+
+
 $green: #17460F;
 $yellow: #FBBA00;
 $black: #000000;
@@ -20,6 +22,7 @@ $wide:            "screen and (min-width: #{$screen-lg-min})";
 @import 'pages/pages';
 @import 'blocks/blocks';
 @import 'component/header';
+@import 'component/frontpage_paragraphs';
 
 
 

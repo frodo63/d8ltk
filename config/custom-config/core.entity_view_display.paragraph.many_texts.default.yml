@@ -1,0 +1,39 @@
+uuid: 9a62f39b-41f9-4a09-9479-ae222071f761
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.many_texts.bp_background
+    - field.field.paragraph.many_texts.bp_width
+    - field.field.paragraph.many_texts.field_many_texts
+    - paragraphs.paragraphs_type.many_texts
+  module:
+    - options
+    - text
+id: paragraph.many_texts.default
+targetEntityType: paragraph
+bundle: many_texts
+mode: default
+content:
+  bp_background:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  bp_width:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_many_texts:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

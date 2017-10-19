@@ -1,0 +1,23 @@
+uuid: 3515fe9d-869c-4c76-b42a-c5adf1dea9e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_horizontal_item
+    - paragraphs.paragraphs_type.tabs_horizontal
+  module:
+    - text_with_title
+_core:
+  default_config_hash: 1ifOMVfwZ9sudQcM5arL26lPbTgWF36FQqEh1G-O_-4
+id: paragraph.tabs_horizontal.field_tabs_horizontal_item
+field_name: field_tabs_horizontal_item
+entity_type: paragraph
+bundle: tabs_horizontal
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_with_title_field

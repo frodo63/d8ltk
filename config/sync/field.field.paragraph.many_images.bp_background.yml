@@ -1,0 +1,21 @@
+uuid: 511b17a8-312e-4e8d-a95a-f88314f3ff94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_background
+    - paragraphs.paragraphs_type.many_images
+  module:
+    - options
+id: paragraph.many_images.bp_background
+field_name: bp_background
+entity_type: paragraph
+bundle: many_images
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

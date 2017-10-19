@@ -22,6 +22,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.frontpage_title_with_text
+    - paragraphs.paragraphs_type.many_images
+    - paragraphs.paragraphs_type.many_texts
     - paragraphs.paragraphs_type.tabs_horizontal
     - paragraphs.paragraphs_type.tabs_vertical
   module:
@@ -60,6 +62,8 @@ settings:
       tabs_horizontal: tabs_horizontal
       frontpage_title_with_text: frontpage_title_with_text
       tabs_vertical: tabs_vertical
+      many_images: many_images
+      many_texts: many_texts
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -118,4 +122,10 @@ settings:
       tabs_vertical:
         enabled: true
         weight: 36
+      many_images:
+        enabled: true
+        weight: 39
+      many_texts:
+        enabled: true
+        weight: 40
 field_type: entity_reference_revisions

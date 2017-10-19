@@ -1,0 +1,41 @@
+uuid: 40b0b54c-6a22-4f40-a729-a38696871cb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.many_images.bp_background
+    - field.field.paragraph.many_images.bp_width
+    - field.field.paragraph.many_images.field_many_images
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.many_images
+  module:
+    - image
+id: paragraph.many_images.default
+targetEntityType: paragraph
+bundle: many_images
+mode: default
+content:
+  bp_background:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  bp_width:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_many_images:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

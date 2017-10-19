@@ -1,0 +1,22 @@
+uuid: 0ead47b1-6ef5-445a-a968-1cb8afa27a22
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ltk
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ltk_local_tasks
+theme: ltk
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -9614,7 +9614,7 @@ p:last-child,
 @media screen and (min-width: 1200px) {
   /* line 1, ../scss/component/_header.scss */
   .navbar {
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -9623,7 +9623,7 @@ p:last-child,
 @media screen and (min-width: 992px) {
   /* line 1, ../scss/component/_header.scss */
   .navbar {
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -9632,7 +9632,7 @@ p:last-child,
 @media screen and (min-width: 768px) {
   /* line 1, ../scss/component/_header.scss */
   .navbar {
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -9641,7 +9641,7 @@ p:last-child,
 @media screen and (max-width: 767px) {
   /* line 1, ../scss/component/_header.scss */
   .navbar {
-    height: 13vw;
+    height: 10vw;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -9665,7 +9665,7 @@ p:last-child,
 .navbar.minimized #block-telephones {
   top: 0.25vw;
   right: 16vw;
-  font-size: 1vw;
+  font-size: 1.5vw;
   line-height: 1.5vw;
 }
 /* line 51, ../scss/component/_header.scss */
@@ -9718,7 +9718,7 @@ p:last-child,
 
 /* line 98, ../scss/component/_header.scss */
 .logo {
-  top: 2vw;
+  top: 1.5vw;
   left: 1vw;
 }
 /* line 101, ../scss/component/_header.scss */
@@ -9781,7 +9781,7 @@ p:last-child,
 
 /* line 150, ../scss/component/_header.scss */
 #block-vremaraboty {
-  top: 3.5vw;
+  top: 2.5vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
@@ -9789,7 +9789,7 @@ p:last-child,
 
 /* line 157, ../scss/component/_header.scss */
 #block-adres {
-  top: 5vw;
+  top: 4vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
@@ -9797,7 +9797,7 @@ p:last-child,
 
 /* line 164, ../scss/component/_header.scss */
 #block-elpocta {
-  top: 6.5vw;
+  top: 5.5vw;
   left: 75vw;
   font-weight: 300;
   font-size: 1vw;
@@ -9805,7 +9805,7 @@ p:last-child,
 
 /* line 171, ../scss/component/_header.scss */
 #block-telephones {
-  top: 2vw;
+  top: 1vw;
   right: 2vw;
   text-align: right;
   font-weight: 400;
@@ -9817,18 +9817,23 @@ p:last-child,
 #block-ltk-search {
   position: absolute;
   width: 23vw;
-  top: 10vw;
+  top: 9vw;
   right: 2vw;
 }
-/* line 186, ../scss/component/_header.scss */
+/* line 185, ../scss/component/_header.scss */
+#block-ltk-search #search-block-form {
+  bottom: -1.6vw;
+  position: absolute;
+}
+/* line 190, ../scss/component/_header.scss */
 #block-ltk-search .form-search {
   border: 1px solid white;
 }
-/* line 189, ../scss/component/_header.scss */
+/* line 193, ../scss/component/_header.scss */
 #block-ltk-search #edit-keys {
   height: 2vw;
 }
-/* line 193, ../scss/component/_header.scss */
+/* line 197, ../scss/component/_header.scss */
 #block-ltk-search .btn-primary {
   color: #fff;
   height: 2vw;
@@ -9837,33 +9842,39 @@ p:last-child,
   font-size: 0.5vw;
   padding: 0 0.5vw 0 0.5vw;
 }
-/* line 201, ../scss/component/_header.scss */
+/* line 205, ../scss/component/_header.scss */
 #block-ltk-search .glyphicon-search {
   line-height: 2vw;
   font-size: 1vw;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 1, ../scss/component/_frontpage_paragraphs.scss */
+article.front-page-paragraph div.content > div {
+  height: 100vh;
+  width: 98vw;
+}
+
+/* line 29, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
   margin-top: 20vh;
 }
-/* line 29, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 31, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 body a:hover {
   color: #FFFFFF;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 .views-row {
   /*height: 100vh;
   width: 98vw;*/
