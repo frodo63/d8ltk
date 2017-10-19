@@ -1,0 +1,14 @@
+1.
+composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction
+
+2.
+composer require drupal/bootstrap drupal/entity_reference_revisions drupal/paragraphs drupal/bootstrap_paragraphs drupal/paragraphs_accordion drupal/paragraphs_tabs
+
+uuid: 3be5efa3-fa26-4d6d-996d-cf6bcb7088fa
+
+
+drush pml --type=module
+drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_accordion paragraphs_tabs ltk
+
+drush ces - кидает всю конфигурацию в папку /files/ Что-то там
+drush drush sql-dump

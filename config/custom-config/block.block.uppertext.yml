@@ -1,0 +1,25 @@
+uuid: 22f6ba75-a2c2-4047-aced-ac3acb85fb02
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:92147044-1535-483d-8755-1516bf4f6133'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: uppertext
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:92147044-1535-483d-8755-1516bf4f6133'
+settings:
+  id: 'block_content:92147044-1535-483d-8755-1516bf4f6133'
+  label: uppertext
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

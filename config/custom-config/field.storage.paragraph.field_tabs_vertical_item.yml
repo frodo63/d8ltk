@@ -1,0 +1,21 @@
+uuid: 6953a155-ca34-4bbb-9af5-e9f59a680096
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text_with_title
+_core:
+  default_config_hash: iL-6oGS5gVHRV4bkLjbn8mzSxBLXzkRZd0dO-FZGitY
+id: paragraph.field_tabs_vertical_item
+field_name: field_tabs_vertical_item
+entity_type: paragraph
+type: text_with_title_field
+settings: {  }
+module: text_with_title
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

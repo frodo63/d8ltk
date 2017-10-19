@@ -1,0 +1,20 @@
+uuid: eec1af0b-3a15-42f0-b412-6c2aa25dcb9a
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ltk
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: ltk_local_actions
+theme: ltk
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

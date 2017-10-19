@@ -1,0 +1,25 @@
+uuid: cf9a1da6-7ebb-4bf2-82ec-ff50a48c0d74
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:64c75563-c61e-4afd-b51e-4cb7966821dc'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: telephones
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:64c75563-c61e-4afd-b51e-4cb7966821dc'
+settings:
+  id: 'block_content:64c75563-c61e-4afd-b51e-4cb7966821dc'
+  label: telephones
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 372761be-69a2-48f5-b53e-9c91d67b64be
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ltk
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: ltk_messages
+theme: ltk
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

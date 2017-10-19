@@ -1,0 +1,188 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: $yellow;
+  border: none;
+  min-height: 2vw;
+  @media #{$wide}{
+    height: 13vw;
+  }
+  @media #{$normal}{
+    height: 13vw;
+  }
+  @media #{$tablet}{
+    height: 13vw;
+  }
+  @media #{$mobile}{
+    height: 13vw;
+  }
+
+  &.minimized {
+    height: 2vw;
+    /*line-height: 7vw;*/
+    .logo {
+      top: -0.9vh;
+      left: 1vw;
+      img {
+        height: 2vw;
+      }
+    }
+    #block-telephones {
+      top: 0.25vw;
+      right: 16vw;
+      font-size: 1vw;
+      line-height: 1.5vw;
+      p.h {
+        display: none;
+      }
+    }
+    #block-elpocta {
+      top: 0.2vw;
+      left: 87vw;
+      line-height: 1.5vw;
+      font-size: 1vw;
+      font-weight: 400;
+    }
+    #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
+      display: none;
+    }
+    #block-sitename {
+      font-size: 1.5vw;
+      line-height: 2vw;
+      top: 0;
+      left: 5vw;
+    }
+    #block-ltk-main-menu {
+      line-height: 2vw;
+      li {
+        vertical-align: text-top;
+      }
+    }
+  }
+}
+
+
+
+#block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty, #block-telephones, #block-elpocta, .logo {
+  position: absolute;
+  font-family: 'Oswald',sans-serif ;
+  color: $green;
+}
+
+#block-adres, #block-vremaraboty, #block-elpocta {
+  img {
+    height: 1vw;
+  }
+}
+
+.logo {
+  top: 2vw;
+  left: 1vw;
+  img {height: 7.5vw;}
+}
+
+#block-ltk-main-menu {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  font-weight: 300;
+  font-size: 1.5vw;
+  ul.navbar-nav {
+    text-align:center;
+    float: none !important;
+  }
+  li {
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: bottom;
+    a {
+      padding-bottom: 0.5vw;
+      color: $green;
+    }
+  }
+}
+
+#block-uppertext {
+  top: 0;
+  left: 0;
+  font-weight: 200;
+  font-size: 0.9vw;
+  width: 100vw;
+  text-align: center;
+}
+
+#block-sitename {
+  top: 2vw;
+  left: 10vw;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+
+#block-siteslogan {
+  top: 6.5vw;
+  left: 10vw;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+#block-vremaraboty {
+  top: 3.5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+#block-adres {
+  top: 5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+#block-elpocta {
+  top: 6.5vw;
+  left: 75vw;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+#block-telephones {
+  top: 2vw;
+  right: 2vw;
+  text-align: right;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+}
+
+#block-ltk-search {
+  position: absolute;
+  width: 23vw;
+  top: 10vw;
+  right: 2vw;
+
+  .form-search{
+    border:1px solid white;
+  }
+  #edit-keys {
+    height: 2vw;
+  }
+
+  .btn-primary {
+    color: #fff;
+    height: 2vw;
+    background-color: $yellow;
+    border:1px solid white;
+    font-size: 0.5vw;
+    padding: 0 0.5vw 0 0.5vw;
+  }
+  .glyphicon-search {
+    line-height: 2vw;
+    font-size: 1vw;
+  }
+}

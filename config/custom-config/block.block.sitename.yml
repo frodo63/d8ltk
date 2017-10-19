@@ -1,0 +1,25 @@
+uuid: 7cdfd998-0a76-49d7-b45c-cf04183fbb9b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:38686750-aa71-467e-bc8c-ddebc59c9259'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: sitename
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:38686750-aa71-467e-bc8c-ddebc59c9259'
+settings:
+  id: 'block_content:38686750-aa71-467e-bc8c-ddebc59c9259'
+  label: sitename
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

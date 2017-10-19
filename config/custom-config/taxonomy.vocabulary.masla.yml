@@ -1,0 +1,9 @@
+uuid: 1c3a7d8d-0db1-46a8-b5f6-a588cba6ca76
+langcode: en
+status: true
+dependencies: {  }
+name: Масла
+vid: masla
+description: 'Всякие масла'
+hierarchy: 0
+weight: 0

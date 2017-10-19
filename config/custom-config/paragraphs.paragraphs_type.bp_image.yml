@@ -1,0 +1,11 @@
+uuid: 9026d74f-4842-42d2-8b9f-7b19027b1cd3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Tx54VzzCAn8dLv59wjsdRKDuJmYhZCNkjpiJDOlpQuU
+id: bp_image
+label: Image
+icon_uuid: null
+description: null
+behavior_plugins: {  }
