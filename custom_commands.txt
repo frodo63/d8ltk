@@ -29,6 +29,7 @@ wrapper classes:
 
 accordion			acc_wr_class
 accordion section		acc_section_wr_class
+column wrapper			col_wrapper_wr_class
 columns equal			col_eq_wr_class
 columns 2 unequal		col_2_uneq_wr_class
 columns 3 unequal		col_3_uneq_wr_class

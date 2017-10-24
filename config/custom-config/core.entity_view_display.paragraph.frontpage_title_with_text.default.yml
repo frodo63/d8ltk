@@ -20,12 +20,5 @@ content:
     third_party_settings: {  }
     type: text_with_title_formatter
     region: content
-  field_fp_twt_wr_class:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-hidden: {  }
+hidden:
+  field_fp_twt_wr_class: true
