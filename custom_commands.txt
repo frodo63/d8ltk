@@ -22,3 +22,16 @@ drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_a
 git pull --rebase origin master 	- пулим удаленный и ставим свои изменения на самый верх
 
 git rebase --abort    			- If you get to this point and realize and you have no idea what’s going on, don’t panic. Just execute the following command and you’ll be right back to where you started before you ran [git pull --rebase](/tutorials/syncing/git-pull):
+
+
+
+wrapper classes:
+
+accordion			acc_wr_class
+accordion section		acc_section_wr_class
+columns equal			col_eq_wr_class
+columns 2 unequal		col_2_uneq_wr_class
+columns 3 unequal		col_3_uneq_wr_class
+frontpage title witl text	fp_twt_wr_class	
+simple				simple_wr_class	
+image				image_wr_class

@@ -1,0 +1,7 @@
+uuid: a67a4cca-47b1-45e1-bccb-cfbe9ee9b516
+langcode: en
+status: true
+dependencies: {  }
+id: wr_column_wrapper
+label: wr_column_wrapper
+classes: wrap-col-wrapper

@@ -1,0 +1,7 @@
+uuid: e29431ca-3e30-4739-b582-3edead3d02c0
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_par_3
+label: frontpage_par_3
+classes: fp-3

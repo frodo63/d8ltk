@@ -1,0 +1,23 @@
+uuid: 461bd1f6-5160-4eef-a4b2-bbeac89a433c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_acc_section_wr_class
+    - paragraphs.paragraphs_type.bp_accordion_section
+id: paragraph.bp_accordion_section.field_acc_section_wr_class
+field_name: field_acc_section_wr_class
+entity_type: paragraph
+bundle: bp_accordion_section
+label: acc_section_wr_class
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

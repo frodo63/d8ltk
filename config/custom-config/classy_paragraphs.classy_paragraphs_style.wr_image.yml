@@ -1,0 +1,7 @@
+uuid: 81fb32b2-1361-40a7-b598-12ea4b699a45
+langcode: en
+status: true
+dependencies: {  }
+id: wr_image
+label: wr_image
+classes: wrap-image

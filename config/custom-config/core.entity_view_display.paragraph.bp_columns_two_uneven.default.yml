@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.bp_columns_two_uneven.bp_column_content_2
     - field.field.paragraph.bp_columns_two_uneven.bp_column_style_2
     - field.field.paragraph.bp_columns_two_uneven.bp_width
+    - field.field.paragraph.bp_columns_two_uneven.field_col_2_uneq_wr_class
     - paragraphs.paragraphs_type.bp_columns_two_uneven
   module:
     - entity_reference_revisions
@@ -47,6 +48,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_key
+    region: content
+  field_col_2_uneq_wr_class:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden:
   created: true

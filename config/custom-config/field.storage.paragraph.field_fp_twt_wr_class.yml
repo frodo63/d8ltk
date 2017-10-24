@@ -1,0 +1,20 @@
+uuid: 049ceb7e-dd9a-4440-8f51-78bea16cb57b
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.field_fp_twt_wr_class
+field_name: field_fp_twt_wr_class
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

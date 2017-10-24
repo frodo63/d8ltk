@@ -21,4 +21,4 @@
 /.idea/
 
 #Картинки
-/web/sites/default/files/inline-images
+#/web/sites/default/files/inline-images

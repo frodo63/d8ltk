@@ -5,6 +5,7 @@ module:
   bootstrap_paragraphs: 0
   breakpoint: 0
   ckeditor: 0
+  classy_paragraphs: 0
   color: 0
   comment: 0
   config: 0

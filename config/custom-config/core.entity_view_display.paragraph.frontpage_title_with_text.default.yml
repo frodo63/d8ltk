@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.frontpage_title_with_text.field_fp_text_with_title
+    - field.field.paragraph.frontpage_title_with_text.field_fp_twt_wr_class
     - paragraphs.paragraphs_type.frontpage_title_with_text
   module:
     - text_with_title
@@ -18,5 +19,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_with_title_formatter
+    region: content
+  field_fp_twt_wr_class:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden: {  }

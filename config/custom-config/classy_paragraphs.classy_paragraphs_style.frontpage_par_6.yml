@@ -1,0 +1,7 @@
+uuid: fa359f61-5dea-479f-a4bf-764e9385699b
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_par_6
+label: frontpage_par_6
+classes: fp-6

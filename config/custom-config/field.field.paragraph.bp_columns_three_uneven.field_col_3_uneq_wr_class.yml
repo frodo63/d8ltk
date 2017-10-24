@@ -1,0 +1,23 @@
+uuid: f59c7b25-9074-4027-a9f9-c626afe4d0f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_col_3_uneq_wr_class
+    - paragraphs.paragraphs_type.bp_columns_three_uneven
+id: paragraph.bp_columns_three_uneven.field_col_3_uneq_wr_class
+field_name: field_col_3_uneq_wr_class
+entity_type: paragraph
+bundle: bp_columns_three_uneven
+label: col_3_uneq_wr_class
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

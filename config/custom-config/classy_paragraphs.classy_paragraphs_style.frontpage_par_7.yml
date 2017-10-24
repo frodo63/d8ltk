@@ -1,0 +1,7 @@
+uuid: 4827afef-170c-41e8-ad0d-cc046728e813
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_par_7
+label: frontpage_par_7
+classes: fp-7

@@ -1,0 +1,7 @@
+uuid: 2fc6e1de-b97a-425d-a5bb-9c1152124d86
+langcode: en
+status: true
+dependencies: {  }
+id: wr_columns_equal
+label: wr_columns_equal
+classes: wrap-col-equal

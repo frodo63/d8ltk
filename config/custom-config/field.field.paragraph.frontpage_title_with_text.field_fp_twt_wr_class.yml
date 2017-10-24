@@ -1,0 +1,23 @@
+uuid: c3ec475f-3391-4208-97ba-c79064a1e415
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fp_twt_wr_class
+    - paragraphs.paragraphs_type.frontpage_title_with_text
+id: paragraph.frontpage_title_with_text.field_fp_twt_wr_class
+field_name: field_fp_twt_wr_class
+entity_type: paragraph
+bundle: frontpage_title_with_text
+label: fp_twt_wr_class
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

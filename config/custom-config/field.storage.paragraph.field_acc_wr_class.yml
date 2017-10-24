@@ -1,0 +1,20 @@
+uuid: 4de77223-cb3b-4032-b37c-5500b6af8dd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+id: paragraph.field_acc_wr_class
+field_name: field_acc_wr_class
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
