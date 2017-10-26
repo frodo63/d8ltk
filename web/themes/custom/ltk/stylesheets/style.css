@@ -9823,65 +9823,83 @@ p:last-child,
 @media screen and (min-width: 1200px) {
   /* line 2, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
-    height: 98vh;
-    width: 95vw;
+    border: 1px solid black;
+    height: 94vh;
+    width: 94vw;
     font-family: 'Oswald', sans-serif;
+    color: #000000;
   }
-  /* line 7, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 9, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1 .fp_twt_title, .fp-2 .fp_twt_title, .fp-3 .fp_twt_title, .fp-4 .fp_twt_title, .fp-5 .fp_twt_title, .fp-6 .fp_twt_title {
     font-size: 3vw;
     line-height: 3vw;
     font-weight: 400;
   }
-  /* line 13, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 15, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1 .fp_twt_text p, .fp-2 .fp_twt_text p, .fp-3 .fp_twt_text p, .fp-4 .fp_twt_text p, .fp-5 .fp_twt_text p, .fp-6 .fp_twt_text p {
     font-size: 1.5vw;
     line-height: 1.5vw;
     font-weight: 200;
   }
-  /* line 19, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 21, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1 .fp_simple_text, .fp-2 .fp_simple_text, .fp-3 .fp_simple_text, .fp-4 .fp_simple_text, .fp-5 .fp_simple_text, .fp-6 .fp_simple_text {
     font-size: 1.5vw;
     line-height: 1.5vw;
   }
 
-  /* line 26, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 27, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 {
+    height: 84vh;
+  }
+  /* line 29, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1 h1.fp_twt_title {
     font-size: 3vw;
     line-height: 3vw;
     font-weight: 400;
   }
-  /* line 33, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 36, ../scss/component/_frontpage_paragraphs.scss */
   .fp-1 .fp_twt_text p {
     font-size: 1.5vw;
     line-height: 1.5vw;
     font-weight: 200;
   }
 
-  /* line 42, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 45, ../scss/component/_frontpage_paragraphs.scss */
   .fp-2 h1.fp_twt_title {
     font-size: 3vw;
     line-height: 3vw;
     font-weight: 400;
   }
-  /* line 49, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 52, ../scss/component/_frontpage_paragraphs.scss */
   .fp-2 .fp_twt_text p {
     font-size: 1.5vw;
     line-height: 1.5vw;
     font-weight: 200;
   }
 
-  /* line 58, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 61, ../scss/component/_frontpage_paragraphs.scss */
   .fp-3 .fp_simple_text {
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 2vw;
+    line-height: 2vw;
   }
 
-  /* line 65, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 68, ../scss/component/_frontpage_paragraphs.scss */
   .fp-4 h1.fp_twt_title {
     font-size: 2vw;
     line-height: 2vw;
     font-weight: 400;
+  }
+  /* line 73, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-4 .paragraph--type--bp-columns__6col {
+    height: 90vh;
+    margin-top: 1vw;
+    background: #FBBA00;
+    border: 1vw solid #FFFFFF;
+  }
+
+  /* line 84, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-5 .card-header {
+    height: 10vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -9897,7 +9915,7 @@ p:last-child,
 body {
   background: #FFFFFF;
   color: #17460F;
-  margin-top: 20vh;
+  margin-top: 12vh;
 }
 /* line 32, ../scss/style.scss */
 body a {

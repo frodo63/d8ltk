@@ -1,8 +1,10 @@
 @media #{$wide}{
   .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
-    height: 98vh;
-    width: 95vw;
+    border: 1px solid black;
+    height: 94vh;
+    width: 94vw;
     font-family: 'Oswald', sans-serif;
+    color: $black;
 
     .fp_twt_title {
       font-size: 3vw;
@@ -23,6 +25,7 @@
   }
   //Paragrahp 1
   .fp-1 {
+    height: 84vh;
     h1.fp_twt_title {
       font-size: 3vw;
       line-height: 3vw;
@@ -56,8 +59,8 @@
   //Paragrahp 3
   .fp-3 {
     .fp_simple_text {
-      font-size: 1.5vw;
-      line-height: 1.5vw;
+      font-size: 2vw;
+      line-height: 2vw;
     }
   }
   //Paragrahp 4
@@ -67,16 +70,28 @@
       line-height: 2vw;
       font-weight: 400;
     }
+    .paragraph--type--bp-columns__6col {
+      height: 90vh;
+      margin-top: 1vw;
+      background: $yellow;
+      border: 1vw solid $white;
+
+
+    }
   }
   //Paragrahp 5
   .fp-5 {
-
+    .card-header {
+      height: 10vh;
+    }
   }
   //Paragrahp 6
   .fp-6 {
 
   }
 }
+
+
 @media #{$normal}{
   height: 10vw;
 }
