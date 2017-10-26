@@ -9820,24 +9820,68 @@ p:last-child,
   left: 5vw;
 }
 
-/* line 1, ../scss/component/_frontpage_paragraphs.scss */
-article.front-page-paragraph div.content > div {
-  height: 100vh;
-  width: 98vw;
-}
-
 @media screen and (min-width: 1200px) {
-  /* line 8, ../scss/component/_frontpage_paragraphs.scss */
-  .frontpage_paragraph .fp_twt_title {
-    font-size: 5vw;
-    line-height: 5vw;
+  /* line 2, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
+    height: 98vh;
+    width: 95vw;
+    font-family: 'Oswald', sans-serif;
+  }
+  /* line 7, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 .fp_twt_title, .fp-2 .fp_twt_title, .fp-3 .fp_twt_title, .fp-4 .fp_twt_title, .fp-5 .fp_twt_title, .fp-6 .fp_twt_title {
+    font-size: 3vw;
+    line-height: 3vw;
     font-weight: 400;
   }
-  /* line 15, ../scss/component/_frontpage_paragraphs.scss */
-  .frontpage_paragraph .fp_twt_text p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+  /* line 13, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 .fp_twt_text p, .fp-2 .fp_twt_text p, .fp-3 .fp_twt_text p, .fp-4 .fp_twt_text p, .fp-5 .fp_twt_text p, .fp-6 .fp_twt_text p {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     font-weight: 200;
+  }
+  /* line 19, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 .fp_simple_text, .fp-2 .fp_simple_text, .fp-3 .fp_simple_text, .fp-4 .fp_simple_text, .fp-5 .fp_simple_text, .fp-6 .fp_simple_text {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+  }
+
+  /* line 26, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 h1.fp_twt_title {
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 400;
+  }
+  /* line 33, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-1 .fp_twt_text p {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    font-weight: 200;
+  }
+
+  /* line 42, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-2 h1.fp_twt_title {
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 400;
+  }
+  /* line 49, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-2 .fp_twt_text p {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    font-weight: 200;
+  }
+
+  /* line 58, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-3 .fp_simple_text {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+  }
+
+  /* line 65, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-4 h1.fp_twt_title {
+    font-size: 2vw;
+    line-height: 2vw;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 992px) {

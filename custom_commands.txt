@@ -1,3 +1,4 @@
+
 1.
 composer create-project drupal-composer/drupal-project:8.x-dev . --stability dev --no-interaction
 
@@ -36,3 +37,18 @@ columns 3 unequal		col_3_uneq_wr_class
 frontpage title witl text	fp_twt_wr_class	
 simple				simple_wr_class	
 image				image_wr_class
+
+
+Twig template hierarchy
+
+html.html.twig
+	page--front.html.twig
+		region.html.twig
+			block.html.twig
+				container.html.twig
+					views-view.html.twig
+						views-view-unfirmatted.html.twig
+							node.html.twig
+								field--entity-reference-revisions.html.twig
+									paragraph--default.html.twig
+										field-paragraph--bp-column-content.html.twig
