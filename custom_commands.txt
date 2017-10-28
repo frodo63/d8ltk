@@ -52,3 +52,21 @@ html.html.twig
 								field--entity-reference-revisions.html.twig
 									paragraph--default.html.twig
 										field-paragraph--bp-column-content.html.twig
+
+
+Template name suggestion: 
+
+NODE:
+node--nodeid--viewmode.html.twig			nodeid
+node--nodeid.html.twig					nodeid
+node--type--viewmode.html.twig				content-type
+node--type.html.twig					content-type
+node--viewmode.html.twig				viewmode
+node.html.twig						all of them
+
+FIELDS:
+field--node--field-name--content-type.html.twig		a field in a node of a content type
+field--node--content-type.html.twig			field in all nodes of a content-type
+field--node--field-name.html.twig			field-namein a node
+field--field-type.html.twig				field-type
+field.html.twig						al of them
