@@ -1,107 +1,53 @@
 @media #{$wide}{
   .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
-/*    border: 1px solid black;*/
-    height: 55vw;
+    border: 1px solid black;
     font-family: 'Oswald', sans-serif;
     color: $black;
     text-align: center;
-
-    .fp_twt_title {
-      font-size: 3vw;
-      line-height: 3vw;
-      font-weight: 400;
-    }
-    .fp_twt_text {
-      p{
-        font-size: 1.5vw;
-        line-height: 1.5vw;
-        font-weight: 200;
-      }
-    }
-    .fp_simple_text {
-      font-size: 1.5vw;
-      line-height: 1.5vw;
-    }
-  }
-  //Paragrahp 1
-  .fp-1 {
-    height: 52vw;
-    .paragraph__column {
-      background: $yellow;
-      height: 30vw;
-      top: 11vw;
-    }
-
-    h1.fp_twt_title {
-      font-size: 3vw;
-      line-height: 3vw;
-      font-weight: 400;
-    }
-
-    .fp_twt_text {
-      p{
-        font-size: 1.5vw;
-        line-height: 1.5vw;
-        font-weight: 200;
-      }
-    }
-  }
-  //Paragrahp 2
-  .fp-2 {
-    background: lightpink;
-
-    h1.fp_twt_title {
-      font-size: 3vw;
-      line-height: 3vw;
-      font-weight: 400;
-    }
-    .fp_twt_text {
-      p{
-        font-size: 1.5vw;
-        line-height: 1.5vw;
-        font-weight: 200;
-      }
-    }
   }
 
-  //Paragrahp 3
-  .fp-3 {
-    background: orange;
-    .fp_simple_text {
-      font-size: 2vw;
-      line-height: 2vw;
+  //Paragraph 1
+  .fp-1.twt {
+    /*min-height:50vw;*/
+  }
+  .fp-1.twt > .paragraph__column {
+    height: 50vw;
+    .fp_twt_title{
+      top:10vw;
+      position: absolute;
+    }
+    .fp_twt_text{
+      top:30vw;
+      position: absolute;
     }
   }
-  //Paragrahp 4
-  .fp-4 {
-    background: white;
-    h1.fp_twt_title {
-      font-size: 2vw;
-      line-height: 2vw;
-      font-weight: 400;
-    }
-    .paragraph--type--bp-columns__6col {
-      height: 50vw;
-      margin-top: 1vw;
-      background: $yellow;
-      border: 1vw solid $white;
-
-
-    }
+  //Paragraph 2
+  .fp-2.twt {
+    min-height:50vw;
   }
-  //Paragrahp 5
-  .fp-5 {
-    background: orangered;
-    .card-header {
-      height: 10vh;
-    }
+  .fp-2.simple {
+    min-height:5vw;
   }
-  //Paragrahp 6
-  .fp-6 {
-    background: cyan;
+  //Paragraph 3
+  .fp-3.simple {
+    min-height:50vw;
+  }
+  //Paragraph 4
+  .fp-4.twt {
+    height:50vw;
+  }
+  //Paragraph 5
+  div.fp-5 {
+    min-height:50vw;
+  }
+  //Paragraph 6
+  .fp-6.simple {
+    min-height:5vw;
+  }
+  .fp-6.twt {
+    min-height:45vw;
   }
 }
-
 
 @media #{$normal}{
   height: 10vw;
