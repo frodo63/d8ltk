@@ -128,7 +128,9 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
-      <section{{ content_attributes.addClass(content_classes) }}>
+        {#Сверху задаются условия придания отдельных классов в зависимости наличия или отсутствия  отдельных элементов страницы.
+        Мы просто придаем строгие классы, внизу строчка закомменчена#}
+      <section {{ content_attributes.addClass(content_classes) }}>
 
         {# Highlighted #}
         {% if page.highlighted %}

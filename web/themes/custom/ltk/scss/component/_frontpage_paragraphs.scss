@@ -1,6 +1,18 @@
-@media #{$wide}{
+@media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
+  .content>div:nth-child(even){
+    background: lightgrey;
+  }
+  .content>div:nth-child(odd){
+    background: $white;
+  }
+
+  //Убираем BOotstrap паддинги боковые
+  .col-sm-12, .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
-    border: 1px solid black;
     font-family: 'Oswald', sans-serif;
     color: $black;
     text-align: center;
@@ -8,54 +20,110 @@
 
   //Paragraph 1
   .fp-1.twt {
-    /*min-height:50vw;*/
+    color: $black;
   }
   .fp-1.twt > .paragraph__column {
-    height: 50vw;
+    height: 48vw;
     .fp_twt_title{
-      top:10vw;
+      top: 10vw;
       position: absolute;
+      width: 100%;
+      font-size: 4vw;
     }
     .fp_twt_text{
-      top:30vw;
+      top: 30vw;
       position: absolute;
+      width: 100%;
+      font-size: 2vw;
     }
   }
   //Paragraph 2
   .fp-2.twt {
-    min-height:50vw;
+    .fp_twt_title {
+      font-size: 3vw;
+    }
+    .fp_twt_text {
+      font-size: 1.5vw;
+    }
+    .paragraph__column {
+      height: 55vw;
+      top: 7vw;
+    }
   }
   .fp-2.simple {
     min-height:5vw;
+    font-size: 2vw;
   }
   //Paragraph 3
   .fp-3.simple {
-    min-height:50vw;
+    min-height:55vw;
+    .fp_simple_text {
+      font-size: 3.5vw;
+    }
+    .paragraph__column {
+      top: 10vw;
+    }
+  }
+  .fp-3.simple > .paragraph__column {
+    height:55vw;
   }
   //Paragraph 4
   .fp-4.twt {
-    height:50vw;
+    height:55vw;
+    .paragraph__column {
+      top: 12vw;
+      font-size: 1.7vw;
+    }
+  }
+  .fp-4.simple > .paragraph__column {
+    height:55vw;
   }
   //Paragraph 5
   div.fp-5 {
-    min-height:50vw;
+    min-height:55vw;
+    .card-header {
+      height: 11vw;
+    }
+  }
+  .fp-5 > .paragraph__column {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    a{
+      font-size: 2vw;
+      &:hover{
+        color: $green;
+      }
+    }
   }
   //Paragraph 6
-  .fp-6.simple {
-    min-height:5vw;
+  .fp-6.twt > .paragraph__column {
+    min-height:55vw;
   }
-  .fp-6.twt {
-    min-height:45vw;
+
+
+}
+
+@media #{$wide}{
+  header.navbar {
+    background: blue;
+  }
+}
+@media #{$normal}{
+  header.navbar {
+  background: green;
+  }
+}
+@media #{$tablet}{
+  header.navbar {
+  background: red;
+  }
+}
+@media #{$mobile}{
+  header.navbar {
+  background: yellow;
   }
 }
 
-@media #{$normal}{
-  height: 10vw;
-}
-@media #{$tablet}{
-  height: 10vw;
-}
-@media #{$mobile}{
-  height: 10vw;
-}
 

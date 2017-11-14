@@ -14,15 +14,16 @@ $yellow: #FBBA00;
 $black: #000000;
 $white: #FFFFFF;
 
-$mobile:          "screen and (max-width: #{$screen-xs-max})";
-$tablet:          "screen and (min-width: #{$screen-sm-min})";
-$normal:          "screen and (min-width: #{$screen-md-min})";
-$wide:            "screen and (min-width: #{$screen-lg-min})";
+$mobile: "screen and (max-width: #{$screen-xs-max})";   /*0     -   767*/
+$tablet: "screen and (min-width: #{$screen-sm-min})";   /*768   -   991*/
+$normal: "screen and (min-width: #{$screen-md-min})";   /*992   -   1199*/
+$wide: "screen and (min-width: #{$screen-lg-min})";     /*1200  -   extra large*/
 
 @import 'pages/pages';
 @import 'blocks/blocks';
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
+
 
 
 
@@ -33,7 +34,7 @@ body {
     color: $green;
     &:hover {color: $white;}
   }
-  margin-top: 16vh;
+  margin-top: 10vw;
 }
 h1, h2, h3, h4, h5 {
   color: $black;
