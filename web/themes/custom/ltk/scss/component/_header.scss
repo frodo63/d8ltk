@@ -1,4 +1,5 @@
 .navbar {
+  height: 10vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -181,25 +182,19 @@
     }
   }
 
-  @media #{$wide}{
-    height: 10vw;
-  }
-  @media #{$normal}{
-    height: 30vw;
-  }
-  @media #{$tablet}{
-    height: 50vw;
-  }
+
   @media #{$mobile}{
-    height: 90vw;
+    height: 178vw;
 
     #block-ltk-main-menu, #block-sitename .logo {display: block}
-    #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-telephones, block-elpocta {display: none}
+    #block-adres, #block-vremaraboty, #block-elpocta {img {display: none}}
 
     .logo {
-      top: -1vw;
-      left: -2vw;
-      img {height: 15vw;}
+      top: 1vw;
+      left: 1vw;
+      padding: 0;
+      margin: 0;
+      img {height: 20vw;}
     }
 
     #block-ltk-main-menu {
@@ -223,39 +218,106 @@
     }
 
     #block-sitename {
-      top: 1vw;
-      left: 31vw;
+      top: 5vw;
+      left: 0vw;
       font-weight: 400;
-      font-size: 10vw;
+      font-size: 13vw;
       line-height: 10vw;
-      text-transform: uppercase;
+      width: 100vw;
+      text-align: center;
     }
 
+    #block-ltk-search {}
+
     #block-elpocta {
-      top: 5.5vw;
-      left: 75vw;
+      top: 130vw;
+      left: 0vw;
+      width: 100vw;
       font-size: 10vw;
       line-height: 10vw;
+      text-align: center;
       a:visited, a:hover, a:active {
         color: $green;
       }
     }
 
     #block-telephones {
-      top: 10vw;
-      right: 2vw;
-      text-align: right;
+      top: 90vw;
+      left: 0vw;
+      width: 100vw;
       font-size: 10vw;
       line-height: 10vw;
+      text-align: center;
     }
 
+    #block-siteslogan {
+      top: 23vw;
+      left: 0vw;
+      font-weight: 400;
+      font-size: 6.5vw;
+      line-height: 6vw;
+      text-align: center;
+      width: 100vw;
+    }
+
+    #block-adres {
+      top: 150vw;
+      left: 0vw;
+      width: 100vw;
+      font-size: 8vw;
+      line-height: 10vw;
+      text-align: center;
+    }
+
+    #block-vremaraboty {
+      top: 160vw;
+      left: 0vw;
+      width: 100vw;
+      font-size: 8vw;
+      line-height: 10vw;
+      text-align: center;
+    }
+
+    #block-uppertext {
+      top: 40vw;
+      left: 0;
+      font-weight: 300;
+      font-size: 6vw;
+      width: 100vw;
+      text-align: center;
+    }
+
+    button.navbar-toggle {
+      top: 2vw;
+      right: 2vw;
+      span.icon-bar {
+        width: 10vw;
+        height: 1.2vw;
+        border-radius: 0.5vw;
+        margin: 2vw;
+      }
+    }
+
+    #block-ltk-main-menu .menu.nav.navbar-nav {
+      top: 30vw;
+      position: absolute;
+      li {
+        width: 100vw;
+        background: $white;
+        &:hover{
+          background: $yellow;
+          color: $green;
+        }
+        a{margin: 1vw; font-size: 10vw; line-height: 10vw}
+      }
+    }
+
+
     &.minimized {
-      height: 90vw;
+      height: 50vw;
       font-weight: 400;
       font-size: 10vw;
       line-height: 10vw;
-
-      /*line-height: 7vw;*/
       .logo {
         top: 1vw;
         left: 1vw;
@@ -275,7 +337,17 @@
       }
     }
   }
+  @media #{$tablet}{
+    height: 25vw;
+  }
+  @media #{$normal}{
+    height: 25vw;
+  }
+  @media #{$wide}{
+    height: 25vw;
+  }
 }
+
 
 
 

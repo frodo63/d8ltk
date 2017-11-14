@@ -14,17 +14,36 @@ $yellow: #FBBA00;
 $black: #000000;
 $white: #FFFFFF;
 
-$mobile: "screen and (max-width: #{$screen-xs-max})";   /*0     -   767*/
-$tablet: "screen and (min-width: #{$screen-sm-min})";   /*768   -   991*/
-$normal: "screen and (min-width: #{$screen-md-min})";   /*992   -   1199*/
-$wide: "screen and (min-width: #{$screen-lg-min})";     /*1200  -   extra large*/
+//Manual Breakpoints
+$mobile: "screen and (min-width: 0px) and (max-width: 767px)";        /*0     -   767*/
+$tablet: "screen and (min-width: 768px) and (max-width: 991px)";      /*768   -   991*/
+$normal: "screen and (min-width: 992px) and (max-width: 1199px)";     /*992   -   1199*/
+$wide: "screen and (min-width: 1200px)";                              /*1200  -   extra large*/
 
 @import 'pages/pages';
 @import 'blocks/blocks';
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
 
-
+/*BREAKPOINT DETECTION SYSTEM*/
+/*jquery detects the visible element and sees the breakpoint*/
+@media #{$mobile}{
+  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-mobile {display: block}
+}
+@media #{$tablet}{
+  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-tablet {display: block}
+}
+@media #{$normal}{
+  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-normal {display: block}
+}
+@media #{$wide}{
+  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-wide {display: block}
+}
+/*BREAKPOINT DETECTION SYSTEM END*/
 
 
 body {

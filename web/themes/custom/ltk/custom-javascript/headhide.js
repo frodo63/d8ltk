@@ -6,12 +6,35 @@ Drupal.behaviors.basic = {
 
                 if (scroll > 0) {
                     $("#navbar").addClass('minimized');
-                    $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
                     $("#navbar").removeClass("minimized");
-                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 }
             });
+
+            if ($('.device-mobile').is(":visible")) {
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+            } else if ($('.device-tablet').is(":visible")) {
+                $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
+            } else if ($('.device-normal').is(":visible")) {
+                $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК"</p>');
+            } else {
+                $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК" WIDE</p>');
+            }
+
+            $(window).off('resize').on('resize', function () {
+                if ($('.device-mobile').is(":visible")) {
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                } else if ($('.device-tablet').is(":visible")) {
+                    $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
+                } else if ($('.device-normal').is(":visible")) {
+                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК"</p>');
+                } else {
+                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК" WIDE</p>');
+                }
+            });
+
              /*$('#navbar').off("mouseenter.navbar").on( "mouseenter.navbar", function () {
                  if ($('#navbar').hasClass("minimized")){
                      $('#navbar').removeClass("minimized");

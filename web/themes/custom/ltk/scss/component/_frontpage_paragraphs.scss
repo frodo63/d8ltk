@@ -101,29 +101,8 @@
   .fp-6.twt > .paragraph__column {
     min-height:55vw;
   }
-
-
 }
 
-@media #{$wide}{
-  header.navbar {
-    background: blue;
-  }
-}
-@media #{$normal}{
-  header.navbar {
-  background: green;
-  }
-}
-@media #{$tablet}{
-  header.navbar {
-  background: red;
-  }
-}
-@media #{$mobile}{
-  header.navbar {
-  background: yellow;
-  }
-}
+
 
 
