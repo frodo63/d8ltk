@@ -15,7 +15,7 @@
   #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
   #block-telephones, #block-elpocta, .logo {
     position: absolute;
-    font-family: 'Oswald',sans-serif ;
+    font-family: 'Oswald', sans-serif;
     color: $green;
   }
 
@@ -29,6 +29,7 @@
     top: 0;
     left: 1vw;
     img {height: 7.5vw;}
+    z-index: 1000;
   }
 
   #block-ltk-main-menu {
@@ -184,122 +185,186 @@
 
 
   @media #{$mobile}{
-    height: 178vw;
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-telephones, #block-elpocta, .logo {
+      position: absolute;
+      font-family: 'Oswald', sans-serif;
+      color: $green;
+    }
 
-    #block-ltk-main-menu, #block-sitename .logo {display: block}
+    height: 100vh;
+
     #block-adres, #block-vremaraboty, #block-elpocta {img {display: none}}
 
     .logo {
-      top: 1vw;
-      left: 1vw;
+      top: 1vh;
+      left: 1vmax;
       padding: 0;
       margin: 0;
-      img {height: 20vw;}
-    }
-
-    #block-ltk-main-menu {
-      top: 0.25vw;
-      left: 0;
-      width: 100vw;
-      font-size: 10vw;
-      line-height: 10vw;
-      ul.navbar-nav {
-        text-align:center;
-        float: none !important;
-      }
-      li {
-        float: none !important;
-        display: inline-block !important;
-        a {
-          padding: 0 0.5vw;
-          color: $green;
-        }
-      }
+      img {height:10vmax;width:10vmax}
     }
 
     #block-sitename {
-      top: 5vw;
-      left: 0vw;
+      top: 1vh;
+      left: 0;
       font-weight: 400;
-      font-size: 13vw;
-      line-height: 10vw;
+      font-size: 8vmax;
+      line-height: 8vmax;
       width: 100vw;
       text-align: center;
     }
 
-    #block-ltk-search {}
+    .navbar #block-ltk-search {
+      position: relative;
+      width: 100vw;
+      top: 10vh;
+      height: 12vh;
+      #search-block-form {
+        /*bottom: -1.6vw;
+        position: absolute;*/
+        .form-item {
+          margin-bottom: 0;
+        }
+      }
+      #edit-keys{
+        height: 12vh;
+      }
+      .input-group {
+        position: absolute;
+        display: block;
+      }
+
+
+    }
 
     #block-elpocta {
-      top: 130vw;
-      left: 0vw;
+      top: 45vh;
+      left: 0vmax;
       width: 100vw;
-      font-size: 10vw;
-      line-height: 10vw;
+      font-size: 6vmax;
+      line-height: 6vmax;
       text-align: center;
       a:visited, a:hover, a:active {
         color: $green;
       }
-    }
-
-    #block-telephones {
-      top: 90vw;
-      left: 0vw;
-      width: 100vw;
-      font-size: 10vw;
-      line-height: 10vw;
-      text-align: center;
-    }
-
-    #block-siteslogan {
-      top: 23vw;
-      left: 0vw;
-      font-weight: 400;
-      font-size: 6.5vw;
-      line-height: 6vw;
-      text-align: center;
-      width: 100vw;
-    }
-
-    #block-adres {
-      top: 150vw;
-      left: 0vw;
-      width: 100vw;
-      font-size: 8vw;
-      line-height: 10vw;
-      text-align: center;
-    }
-
-    #block-vremaraboty {
-      top: 160vw;
-      left: 0vw;
-      width: 100vw;
-      font-size: 8vw;
-      line-height: 10vw;
-      text-align: center;
-    }
-
-    #block-uppertext {
-      top: 40vw;
-      left: 0;
-      font-weight: 300;
-      font-size: 6vw;
-      width: 100vw;
-      text-align: center;
-    }
-
-    button.navbar-toggle {
-      top: 2vw;
-      right: 2vw;
-      span.icon-bar {
-        width: 10vw;
-        height: 1.2vw;
-        border-radius: 0.5vw;
-        margin: 2vw;
+      @media (orientation: landscape) {
+        top: 40vh;
       }
     }
 
-    #block-ltk-main-menu .menu.nav.navbar-nav {
-      top: 30vw;
+    #block-telephones {
+      @media (orientation:portrait) {
+        top: 18vh;
+        left: 0vw;
+        width: 100vw;
+        p{
+          font-size: 6vmax;
+          line-height: 6vmax;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      @media (orientation:landscape) {
+        top: 28vh;
+        text-align: center;
+        font-size: 5vmax;
+        line-height: 4vmax;
+        width: 100vw;
+        p{
+          width: 40vw;
+          float: left;
+        }
+        .h{
+          width: 30vw;
+        }
+      }
+    }
+
+    #block-siteslogan {
+      @media (orientation:portrait) {
+        top: 12vh;
+        left: 0vw;
+        font-weight: 400;
+        font-size: 3.5vmax;
+        line-height: 4vmax;
+        text-align: center;
+        width: 100vw;
+      }
+      @media (orientation:landscape) {
+        top: 14vh;
+        left: 0vw;
+        font-weight: 400;
+        font-size: 3.5vmax;
+        line-height: 4vmax;
+        text-align: center;
+        width: 100vw;
+      }
+    }
+
+    #block-adres {
+      top: 58vh;
+      left: 0vw;
+      width: 100vw;
+      font-size: 5vmax;
+      line-height: 5vmax;
+      text-align: center;
+      @media (orientation: landscape) {
+        top: 54vh;
+      }
+    }
+
+    #block-vremaraboty {
+      top: 64vh;
+      left: 0vw;
+      width: 100vw;
+      font-size: 5vmax;
+      line-height: 5vmax;
+      text-align: center;
+      @media (orientation: landscape) {
+        top: 64vh;
+      }
+    }
+
+    #block-uppertext {
+      top: 74vh;
+      left: 0;
+      width: 100vw;
+      height: 24vmax;
+      p {
+        line-height: 3.5vmax;
+        font-size: 3.5vmax;
+        font-weight: 100;
+        text-align: center;
+      }
+      @media (orientation: landscape) {
+        top: 74vh;
+        p {
+          line-height: 4vmax;
+          font-size: 4vmax;
+        }
+      }
+    }
+
+    button.navbar-toggle {
+      top: 1vh;
+      right: 1vmax;
+      margin: 0;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      span.icon-bar {
+        width: 30px;
+        height: 4px;
+        border-radius: 0.5vw;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    #block-ltk-main-menu {
+      top: 24vh;
       position: absolute;
       li {
         width: 100vw;
@@ -308,7 +373,7 @@
           background: $yellow;
           color: $green;
         }
-        a{margin: 1vw; font-size: 10vw; line-height: 10vw}
+        a{margin: 0; font-size: 12vw; line-height: 12vmax}
       }
     }
 
@@ -347,7 +412,3 @@
     height: 25vw;
   }
 }
-
-
-
-
