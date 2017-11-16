@@ -1,10 +1,10 @@
 .navbar {
+  z-index: 100;
   height: 10vw;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 100;
   background: $yellow;
   border: none;
   min-height: 2vw;
@@ -12,230 +12,87 @@
   -moz-transition: height 0.2s;
   transition: height 0.2s;
 
-  #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
-  #block-telephones, #block-elpocta, .logo {
-    position: absolute;
-    font-family: 'Oswald', sans-serif;
-    color: $green;
+  .btn-primary {
+    background-color: $yellow;
+    border-color: $yellow;
+    font-size: 5vh;
   }
-
-  #block-adres, #block-vremaraboty, #block-elpocta {
-    img {
-      height: 1vw;
-    }
-  }
-
-  .logo {
-    top: 0;
-    left: 1vw;
-    img {height: 7.5vw;}
-    z-index: 1000;
-  }
-
-  #block-ltk-main-menu {
-    top: 0.25vw;
-    left: 0;
-    width: 100vw;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-    ul.navbar-nav {
-      text-align:center;
-      float: none !important;
-    }
-    li {
-      float: none !important;
-      display: inline-block !important;
-      a {
-        padding: 0 0.5vw;
-        color: $green;
-      }
-    }
-  }
-
-  #block-uppertext {
-    bottom: 0;
-    left: 0;
-    font-weight: 200;
-    font-size: 0.9vw;
-    width: 100vw;
-    text-align: left;
-  }
-
-  #block-sitename {
-    top: 2.5vw;
-    left: 10vw;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-    text-transform: uppercase;
-  }
-
-  #block-siteslogan {
-    top: 6.5vw;
-    left: 10vw;
-    font-weight: 400;
-    font-size: 1vw;
-    line-height: 1vw;
-  }
-
-  #block-vremaraboty {
-    top: 2.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
-  }
-
-  #block-adres {
-    top: 4vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
-  }
-
-  #block-elpocta {
-    top: 5.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
-    a:visited, a:hover, a:active {
-      color: $green;
-    }
-  }
-
-  #block-telephones {
-    top: 1vw;
-    right: 2vw;
-    text-align: right;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-  }
-
-  #block-ltk-search {
-    position: absolute;
-    width: 23vw;
-    top: 9vw;
-    right: 2vw;
-    #search-block-form {
-      bottom: -1.6vw;
-      position: absolute;
-    }
-
-    .form-search{
-      border:1px solid white;
-    }
-    #edit-keys {
-      height: 2vw;
-    }
-
-    .btn-primary {
-      color: #fff;
-      height: 2vw;
-      background-color: $yellow;
-      border:1px solid white;
-      font-size: 0.5vw;
-      padding: 0 0.5vw 0 0.5vw;
-    }
-    .glyphicon-search {
-      line-height: 2vw;
-      font-size: 1vw;
-    }
-  }
-
-
-  &.minimized {
-    height: 2vw;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-
-    /*line-height: 7vw;*/
-    .logo {
-      top: -0.9vh;
-      left: 1vw;
-      img {
-        height: 2vw;
-      }
-    }
-    #block-telephones {
-      top: 0.1vw;
-      p.h {
-        display: none;
-      }
-    }
-    #block-elpocta {
-      top: 0.1vw;
-      left: 74vw;
-      font-weight: 400;
-      font-size: 1.5vw;
-      line-height: 1.5vw;
-      img {
-        display: none;
-      }
-    }
-    #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
-      display: none;
-    }
-    #block-sitename {
-      top: 0.25vw;
-      left: 5vw;
-    }
-    #block-ltk-main-menu {
-    }
-  }
-
 
   @media #{$mobile}{
+    height: 100vh;
+
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
 
-    height: 100vh;
-
-    #block-adres, #block-vremaraboty, #block-elpocta {img {display: none}}
+    #block-adres, #block-vremaraboty, #block-elpocta {
+      img { display: none }
+    }
 
     .logo {
       top: 1vh;
       left: 1vmax;
       padding: 0;
       margin: 0;
-      img {height:10vmax;width:10vmax}
+      img { height: 10vmax; width: 10vmax }
     }
 
     #block-sitename {
-      top: 1vh;
       left: 0;
       font-weight: 400;
       font-size: 8vmax;
       line-height: 8vmax;
       width: 100vw;
       text-align: center;
+      @media (orientation: portrait) {
+        top: 1vh;
+      }
+      @media (orientation: landscape) {
+        top: 3.5vh;
+      }
     }
 
-    .navbar #block-ltk-search {
-      position: relative;
-      width: 100vw;
-      top: 10vh;
-      height: 12vh;
-      #search-block-form {
-        /*bottom: -1.6vw;
-        position: absolute;*/
-        .form-item {
-          margin-bottom: 0;
-        }
-      }
-      #edit-keys{
-        height: 12vh;
-      }
-      .input-group {
+    #block-ltk-search {
         position: absolute;
-        display: block;
+        width: 100vw;
+        top: 12vh;
+        height: 12vh;
+        #search-block-form {
+          .form-item {
+            margin-bottom: 0;
+          }
+        }
+        input.form-search {
+          height: 12vh;
+          border-radius: 0;
+          border: none;
+        }
+        .input-group {
+          position: absolute;
+          display: block;
+          width: 100vw;
+          .btn-primary {
+            top: 0.5vh;
+            right: 0.5vw;
+            position: absolute;
+            width: 12vh;
+            height: 11vh;
+            border-radius: 1vh;
+            z-index: 100;
+            @media (orientation: landscape) {
+              right: 0.5vw;
+              width: 20vh;
+            }
+          }
+        }
+      @media (orientation: landscape) {
+        top: 17vh;
       }
-
-
-    }
+      }
 
     #block-elpocta {
       top: 45vh;
@@ -253,35 +110,35 @@
     }
 
     #block-telephones {
-      @media (orientation:portrait) {
+      @media (orientation: portrait) {
         top: 18vh;
         left: 0vw;
         width: 100vw;
-        p{
+        p {
           font-size: 6vmax;
           line-height: 6vmax;
           font-weight: 400;
           text-align: center;
         }
       }
-      @media (orientation:landscape) {
+      @media (orientation: landscape) {
         top: 28vh;
         text-align: center;
         font-size: 5vmax;
         line-height: 4vmax;
         width: 100vw;
-        p{
+        p {
           width: 40vw;
           float: left;
         }
-        .h{
+        .h {
           width: 30vw;
         }
       }
     }
 
     #block-siteslogan {
-      @media (orientation:portrait) {
+      @media (orientation: portrait) {
         top: 12vh;
         left: 0vw;
         font-weight: 400;
@@ -290,8 +147,8 @@
         text-align: center;
         width: 100vw;
       }
-      @media (orientation:landscape) {
-        top: 14vh;
+      @media (orientation: landscape) {
+        top: 16vh;
         left: 0vw;
         font-weight: 400;
         font-size: 3.5vmax;
@@ -346,59 +203,91 @@
     }
 
     button.navbar-toggle {
-      top: 1vh;
-      right: 1vmax;
+      @media (orientation: portrait) {
+        top: 0.5vh;
+        right: 0.5vh;
+        margin: 0;
+        position: absolute;
+        height: 11vh;
+        width: 12vh;
+        span.icon-bar {
+          width: 8vh;
+          height: 3px;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      @media (orientation: landscape) {
+        right: 0.5vw;
+        width: 20vh;
+      top: 3.5vh;
+      right: 0.5vh;
       margin: 0;
       position: absolute;
-      height: 50px;
-      width: 50px;
+      height: 11vh;
+      width: 20vh;
       span.icon-bar {
-        width: 30px;
-        height: 4px;
-        border-radius: 0.5vw;
-        margin-top: 4px;
-        margin-bottom: 4px;
+        width: 14vh;
+        height: 2px;
+        margin-top: 0.3vh;
+        margin-bottom: 1.2vh;
         margin-left: 0;
         margin-right: 0;
+      }
       }
     }
 
     #block-ltk-main-menu {
       top: 24vh;
-      position: absolute;
-      li {
-        width: 100vw;
-        background: $white;
-        &:hover{
-          background: $yellow;
-          color: $green;
-        }
-        a{margin: 0; font-size: 12vw; line-height: 12vmax}
+      @media (orientation: landscape) {
+        top: 28vh;
       }
+      position: absolute;
+      ul.navbar-nav {
+        margin: 0;
+        li {
+          width: 100vw;
+          background: $white;
+          &:hover {
+            background: $yellow;
+            color: $green;
+          }
+          a {
+            margin: 0;
+            padding: 0;
+            font-size: 12vw;
+            line-height: 12.71vh;
+            text-align: center;
+            @media (orientation: landscape){
+              font-size: 6vw;
+              line-height: 12.1vh;
+            }
+          }
+        }
+      }
+
     }
 
-
     &.minimized {
-      height: 50vw;
-      font-weight: 400;
-      font-size: 10vw;
-      line-height: 10vw;
-      .logo {
-        top: 1vw;
-        left: 1vw;
-        img {
-          height: 20vw;
-        }
+      @media (orientation: portrait){
+        height: 12vh;
       }
 
-      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search, #block-elpocta, #block-telephones {
+      @media (orientation: landscape){
+        height: 18vh;
+      }
+
+      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty,
+      #block-elpocta, #block-telephones {
         display: none;
       }
-      #block-sitename {
-        top: 25vw;
-        left: 0vw;
-      }
+
       #block-ltk-main-menu {
+        @media (orientation: landscape){
+
+        }
       }
     }
   }
@@ -409,6 +298,176 @@
     height: 25vw;
   }
   @media #{$wide}{
-    height: 25vw;
+    height: 10vw;
+    min-height: 2vw;
+
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-telephones, #block-elpocta, .logo {
+      position: absolute;
+      font-family: 'Oswald', sans-serif;
+      color: $green;
+    }
+
+    #block-adres, #block-vremaraboty, #block-elpocta {
+      img {
+        height: 1vw;
+      }
+    }
+
+    .logo {
+      top: 0;
+      left: 1vw;
+      img { height: 7.5vw; }
+    }
+
+    #block-ltk-main-menu {
+      top: 0.25vw;
+      left: 0;
+      width: 100vw;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+      ul.navbar-nav {
+        text-align: center;
+        float: none !important;
+      }
+      li {
+        float: none !important;
+        display: inline-block !important;
+        a {
+          padding: 0 0.5vw;
+          color: $green;
+        }
+      }
+    }
+
+    #block-uppertext {
+      bottom: 0;
+      left: 0;
+      font-weight: 200;
+      font-size: 0.9vw;
+      width: 100vw;
+      text-align: left;
+    }
+
+    #block-sitename {
+      top: 2.5vw;
+      left: 10vw;
+      font-weight: 400;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+      text-transform: uppercase;
+    }
+
+    #block-siteslogan {
+      top: 6.5vw;
+      left: 10vw;
+      font-weight: 400;
+      font-size: 1vw;
+      line-height: 1vw;
+    }
+
+    #block-vremaraboty {
+      top: 2.5vw;
+      left: 75vw;
+      font-size: 1vw;
+      line-height: 1vw;
+    }
+
+    #block-adres {
+      top: 4vw;
+      left: 75vw;
+      font-size: 1vw;
+      line-height: 1vw;
+    }
+
+    #block-elpocta {
+      top: 5.5vw;
+      left: 75vw;
+      font-size: 1vw;
+      line-height: 1vw;
+      a:visited, a:hover, a:active {
+        color: $green;
+      }
+    }
+
+    #block-telephones {
+      top: 1vw;
+      right: 2vw;
+      text-align: right;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+    }
+
+    #block-ltk-search {
+      position: absolute;
+      width: 23vw;
+      top: 9vw;
+      right: 2vw;
+      #search-block-form {
+        bottom: -1.6vw;
+        position: absolute;
+      }
+
+      .form-search {
+        border: 1px solid white;
+      }
+      #edit-keys {
+        height: 2vw;
+      }
+
+      .btn-primary {
+        color: #fff;
+        height: 2vw;
+        background-color: $yellow;
+        border: 1px solid white;
+        font-size: 0.5vw;
+        padding: 0 0.5vw 0 0.5vw;
+      }
+      .glyphicon-search {
+        line-height: 2vw;
+        font-size: 1vw;
+      }
+    }
+
+    &.minimized {
+      height: 2vw;
+      font-weight: 400;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+
+      /*line-height: 7vw;*/
+      .logo {
+        top: -0.9vh;
+        left: 1vw;
+        img {
+          height: 2vw;
+        }
+      }
+      #block-telephones {
+        top: 0.1vw;
+        p.h {
+          display: none;
+        }
+      }
+      #block-elpocta {
+        top: 0.1vw;
+        left: 74vw;
+        font-weight: 400;
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+        img {
+          display: none;
+        }
+      }
+      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
+        display: none;
+      }
+      #block-sitename {
+        top: 0.25vw;
+        left: 5vw;
+      }
+      #block-ltk-main-menu {
+      }
+    }
   }
 }
