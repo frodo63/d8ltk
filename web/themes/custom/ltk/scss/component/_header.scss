@@ -34,8 +34,8 @@
     }
 
     .logo {
-      top: 1vh;
-      left: 1vmax;
+      @media (orientation: portrait){top: 1vh; left: 1vh;}
+      @media (orientation: landscape){top: 0.2vh; left: 1vh;}
       padding: 0;
       margin: 0;
       img { height: 10vmax; width: 10vmax }
@@ -52,7 +52,7 @@
         top: 1vh;
       }
       @media (orientation: landscape) {
-        top: 3.5vh;
+        top: 1vh;
       }
     }
 
@@ -77,14 +77,14 @@
           width: 100vw;
           .btn-primary {
             top: 0.5vh;
-            right: 0.5vw;
+            right: 0.5vh;
             position: absolute;
-            width: 12vh;
+            width: 11vh;
             height: 11vh;
             border-radius: 1vh;
             z-index: 100;
             @media (orientation: landscape) {
-              right: 0.5vw;
+              right: 0.5vh;
               width: 20vh;
             }
           }
@@ -148,7 +148,7 @@
         width: 100vw;
       }
       @media (orientation: landscape) {
-        top: 16vh;
+        top: 20vh;
         left: 0vw;
         font-weight: 400;
         font-size: 3.5vmax;
@@ -204,43 +204,23 @@
 
     button.navbar-toggle {
       @media (orientation: portrait) {
-        top: 0.5vh;
-        right: 0.5vh;
+        top: 1vh;
+        right: 1vh;
         margin: 0;
         position: absolute;
-        height: 11vh;
-        width: 12vh;
-        span.icon-bar {
-          width: 8vh;
-          height: 3px;
-          margin-top: 4px;
-          margin-bottom: 4px;
-          margin-left: 0;
-          margin-right: 0;
-        }
       }
       @media (orientation: landscape) {
-        right: 0.5vw;
-        width: 20vh;
-      top: 3.5vh;
-      right: 0.5vh;
-      margin: 0;
-      position: absolute;
-      height: 11vh;
-      width: 20vh;
-      span.icon-bar {
-        width: 14vh;
-        height: 2px;
-        margin-top: 0.3vh;
-        margin-bottom: 1.2vh;
-        margin-left: 0;
-        margin-right: 0;
-      }
+        top: 1vh;
+        right: 1vh;
+        margin: 0;
+        position: absolute;
       }
     }
 
     #block-ltk-main-menu {
-      top: 24vh;
+      @media (orientation: portrait) {
+        top: 24vh;
+      }
       @media (orientation: landscape) {
         top: 28vh;
       }
@@ -250,27 +230,31 @@
         li {
           width: 100vw;
           background: $white;
-          &:hover {
-            background: $yellow;
-            color: $green;
-          }
           a {
             margin: 0;
             padding: 0;
-            font-size: 12vw;
-            line-height: 12.71vh;
             text-align: center;
+            border: 1px solid $white;
+            &:hover {
+              background: $yellow;
+              color: $green;
+            }
+
             @media (orientation: landscape){
               font-size: 6vw;
-              line-height: 12.1vh;
+              line-height: 11.57vh;
+            }
+            @media (orientation: portrait){
+              font-size: 12vw;
+              line-height: 12.292vh;
             }
           }
         }
       }
-
     }
 
     &.minimized {
+      margin-bottom: 0;
       @media (orientation: portrait){
         height: 12vh;
       }

@@ -9643,11 +9643,25 @@ p:last-child,
   }
   /* line 36, ../scss/component/_header.scss */
   .navbar .logo {
-    top: 1vh;
-    left: 1vmax;
     padding: 0;
     margin: 0;
   }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+  /* line 36, ../scss/component/_header.scss */
+  .navbar .logo {
+    top: 1vh;
+    left: 1vh;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
+  /* line 36, ../scss/component/_header.scss */
+  .navbar .logo {
+    top: 0.2vh;
+    left: 1vh;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
   /* line 41, ../scss/component/_header.scss */
   .navbar .logo img {
     height: 10vmax;
@@ -9672,7 +9686,7 @@ p:last-child,
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
   /* line 44, ../scss/component/_header.scss */
   .navbar #block-sitename {
-    top: 3.5vh;
+    top: 1vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -9702,9 +9716,9 @@ p:last-child,
   /* line 78, ../scss/component/_header.scss */
   .navbar #block-ltk-search .input-group .btn-primary {
     top: 0.5vh;
-    right: 0.5vw;
+    right: 0.5vh;
     position: absolute;
-    width: 12vh;
+    width: 11vh;
     height: 11vh;
     border-radius: 1vh;
     z-index: 100;
@@ -9713,7 +9727,7 @@ p:last-child,
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
   /* line 78, ../scss/component/_header.scss */
   .navbar #block-ltk-search .input-group .btn-primary {
-    right: 0.5vw;
+    right: 0.5vh;
     width: 20vh;
   }
 }
@@ -9793,7 +9807,7 @@ p:last-child,
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
   /* line 140, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
-    top: 16vh;
+    top: 20vh;
     left: 0vw;
     font-weight: 400;
     font-size: 3.5vmax;
@@ -9866,103 +9880,96 @@ p:last-child,
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
   /* line 205, ../scss/component/_header.scss */
   .navbar button.navbar-toggle {
-    top: 0.5vh;
-    right: 0.5vh;
+    top: 1vh;
+    right: 1vh;
     margin: 0;
     position: absolute;
-    height: 11vh;
-    width: 12vh;
-  }
-  /* line 213, ../scss/component/_header.scss */
-  .navbar button.navbar-toggle span.icon-bar {
-    width: 8vh;
-    height: 3px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
   /* line 205, ../scss/component/_header.scss */
   .navbar button.navbar-toggle {
-    right: 0.5vw;
-    width: 20vh;
-    top: 3.5vh;
-    right: 0.5vh;
+    top: 1vh;
+    right: 1vh;
     margin: 0;
     position: absolute;
-    height: 11vh;
-    width: 20vh;
-  }
-  /* line 231, ../scss/component/_header.scss */
-  .navbar button.navbar-toggle span.icon-bar {
-    width: 14vh;
-    height: 2px;
-    margin-top: 0.3vh;
-    margin-bottom: 1.2vh;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 242, ../scss/component/_header.scss */
+  /* line 220, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
-    top: 24vh;
     position: absolute;
   }
 }
+@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+  /* line 220, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu {
+    top: 24vh;
+  }
+}
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 242, ../scss/component/_header.scss */
+  /* line 220, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
     top: 28vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 248, ../scss/component/_header.scss */
+  /* line 228, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     margin: 0;
   }
-  /* line 250, ../scss/component/_header.scss */
+  /* line 230, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li {
     width: 100vw;
     background: #FFFFFF;
   }
-  /* line 253, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu ul.navbar-nav li:hover {
-    background: #FBBA00;
-    color: #17460F;
-  }
-  /* line 257, ../scss/component/_header.scss */
+  /* line 233, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li a {
     margin: 0;
     padding: 0;
-    font-size: 12vw;
-    line-height: 12.71vh;
     text-align: center;
+    border: 1px solid #FFFFFF;
+  }
+  /* line 238, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu ul.navbar-nav li a:hover {
+    background: #FBBA00;
+    color: #17460F;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 257, ../scss/component/_header.scss */
+  /* line 233, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li a {
     font-size: 6vw;
-    line-height: 12.1vh;
+    line-height: 11.57vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 273, ../scss/component/_header.scss */
+  /* line 233, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu ul.navbar-nav li a {
+    font-size: 12vw;
+    line-height: 12.292vh;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 256, ../scss/component/_header.scss */
+  .navbar.minimized {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+  /* line 256, ../scss/component/_header.scss */
   .navbar.minimized {
     height: 12vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 273, ../scss/component/_header.scss */
+  /* line 256, ../scss/component/_header.scss */
   .navbar.minimized {
     height: 18vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 282, ../scss/component/_header.scss */
+  /* line 266, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty,
   .navbar.minimized #block-elpocta, .navbar.minimized #block-telephones {
     display: none;
@@ -9986,27 +9993,27 @@ p:last-child,
     height: 10vw;
     min-height: 2vw;
   }
-  /* line 304, ../scss/component/_header.scss */
+  /* line 288, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 312, ../scss/component/_header.scss */
+  /* line 296, ../scss/component/_header.scss */
   .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     height: 1vw;
   }
-  /* line 317, ../scss/component/_header.scss */
+  /* line 301, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0;
     left: 1vw;
   }
-  /* line 320, ../scss/component/_header.scss */
+  /* line 304, ../scss/component/_header.scss */
   .navbar .logo img {
     height: 7.5vw;
   }
-  /* line 323, ../scss/component/_header.scss */
+  /* line 307, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
     top: 0.25vw;
     left: 0;
@@ -10014,22 +10021,22 @@ p:last-child,
     font-size: 1.5vw;
     line-height: 1.5vw;
   }
-  /* line 329, ../scss/component/_header.scss */
+  /* line 313, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     text-align: center;
     float: none !important;
   }
-  /* line 333, ../scss/component/_header.scss */
+  /* line 317, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li {
     float: none !important;
     display: inline-block !important;
   }
-  /* line 336, ../scss/component/_header.scss */
+  /* line 320, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a {
     padding: 0 0.5vw;
     color: #17460F;
   }
-  /* line 343, ../scss/component/_header.scss */
+  /* line 327, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
@@ -10038,7 +10045,7 @@ p:last-child,
     width: 100vw;
     text-align: left;
   }
-  /* line 352, ../scss/component/_header.scss */
+  /* line 336, ../scss/component/_header.scss */
   .navbar #block-sitename {
     top: 2.5vw;
     left: 10vw;
@@ -10047,7 +10054,7 @@ p:last-child,
     line-height: 1.5vw;
     text-transform: uppercase;
   }
-  /* line 361, ../scss/component/_header.scss */
+  /* line 345, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
     top: 6.5vw;
     left: 10vw;
@@ -10055,32 +10062,32 @@ p:last-child,
     font-size: 1vw;
     line-height: 1vw;
   }
-  /* line 369, ../scss/component/_header.scss */
+  /* line 353, ../scss/component/_header.scss */
   .navbar #block-vremaraboty {
     top: 2.5vw;
     left: 75vw;
     font-size: 1vw;
     line-height: 1vw;
   }
-  /* line 376, ../scss/component/_header.scss */
+  /* line 360, ../scss/component/_header.scss */
   .navbar #block-adres {
     top: 4vw;
     left: 75vw;
     font-size: 1vw;
     line-height: 1vw;
   }
-  /* line 383, ../scss/component/_header.scss */
+  /* line 367, ../scss/component/_header.scss */
   .navbar #block-elpocta {
     top: 5.5vw;
     left: 75vw;
     font-size: 1vw;
     line-height: 1vw;
   }
-  /* line 388, ../scss/component/_header.scss */
+  /* line 372, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 393, ../scss/component/_header.scss */
+  /* line 377, ../scss/component/_header.scss */
   .navbar #block-telephones {
     top: 1vw;
     right: 2vw;
@@ -10088,27 +10095,27 @@ p:last-child,
     font-size: 1.5vw;
     line-height: 1.5vw;
   }
-  /* line 401, ../scss/component/_header.scss */
+  /* line 385, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
     width: 23vw;
     top: 9vw;
     right: 2vw;
   }
-  /* line 406, ../scss/component/_header.scss */
+  /* line 390, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form {
     bottom: -1.6vw;
     position: absolute;
   }
-  /* line 411, ../scss/component/_header.scss */
+  /* line 395, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 414, ../scss/component/_header.scss */
+  /* line 398, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
     height: 2vw;
   }
-  /* line 418, ../scss/component/_header.scss */
+  /* line 402, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
     height: 2vw;
@@ -10117,12 +10124,12 @@ p:last-child,
     font-size: 0.5vw;
     padding: 0 0.5vw 0 0.5vw;
   }
-  /* line 426, ../scss/component/_header.scss */
+  /* line 410, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
     line-height: 2vw;
     font-size: 1vw;
   }
-  /* line 432, ../scss/component/_header.scss */
+  /* line 416, ../scss/component/_header.scss */
   .navbar.minimized {
     height: 2vw;
     font-weight: 400;
@@ -10130,24 +10137,24 @@ p:last-child,
     line-height: 1.5vw;
     /*line-height: 7vw;*/
   }
-  /* line 439, ../scss/component/_header.scss */
+  /* line 423, ../scss/component/_header.scss */
   .navbar.minimized .logo {
     top: -0.9vh;
     left: 1vw;
   }
-  /* line 442, ../scss/component/_header.scss */
+  /* line 426, ../scss/component/_header.scss */
   .navbar.minimized .logo img {
     height: 2vw;
   }
-  /* line 446, ../scss/component/_header.scss */
+  /* line 430, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones {
     top: 0.1vw;
   }
-  /* line 448, ../scss/component/_header.scss */
+  /* line 432, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones p.h {
     display: none;
   }
-  /* line 452, ../scss/component/_header.scss */
+  /* line 436, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta {
     top: 0.1vw;
     left: 74vw;
@@ -10155,15 +10162,15 @@ p:last-child,
     font-size: 1.5vw;
     line-height: 1.5vw;
   }
-  /* line 458, ../scss/component/_header.scss */
+  /* line 442, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 462, ../scss/component/_header.scss */
+  /* line 446, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 465, ../scss/component/_header.scss */
+  /* line 449, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
     top: 0.25vw;
     left: 5vw;
