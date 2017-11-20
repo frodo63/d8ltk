@@ -24,6 +24,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'blocks/blocks';
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
+@import 'component/arrows';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
@@ -44,7 +45,6 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
   .device-wide {display: block}
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-
 
 body {
   background: $white;

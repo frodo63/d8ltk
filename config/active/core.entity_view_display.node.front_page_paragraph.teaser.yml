@@ -1,0 +1,20 @@
+uuid: 730ba72e-edde-4480-9941-a5219a1569b9
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_page_paragraph.field_front_page_paragraph
+    - node.type.front_page_paragraph
+  module:
+    - user
+id: node.front_page_paragraph.teaser
+targetEntityType: node
+bundle: front_page_paragraph
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_front_page_paragraph: true

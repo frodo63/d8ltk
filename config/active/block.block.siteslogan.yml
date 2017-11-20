@@ -1,0 +1,25 @@
+uuid: 43189727-2078-4868-8760-17e28f7d5d70
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:09376231-2b7a-4c39-b7dd-8a757d8528ef'
+  module:
+    - block_content
+  theme:
+    - ltk
+id: siteslogan
+theme: ltk
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'block_content:09376231-2b7a-4c39-b7dd-8a757d8528ef'
+settings:
+  id: 'block_content:09376231-2b7a-4c39-b7dd-8a757d8528ef'
+  label: siteslogan
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

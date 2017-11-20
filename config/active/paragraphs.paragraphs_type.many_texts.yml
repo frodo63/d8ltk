@@ -1,0 +1,9 @@
+uuid: 9993ec15-4865-4f24-9451-05ca1ff28e67
+langcode: en
+status: true
+dependencies: {  }
+id: many_texts
+label: 'Many Texts'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

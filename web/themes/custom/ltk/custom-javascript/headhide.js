@@ -35,6 +35,17 @@ Drupal.behaviors.basic = {
                 }
             });
 
+          $('.arrow-down').off('click').on('click', function () {
+            $('.arrow-down').toggleClass('moving');
+          });
+
+          $( window ).on( "orientationchange", function( event ) {
+            $(document).css({ 'height' : $(window).height() });
+            $(document).css({ 'width' : $(window).width() });
+          });
+
+
+
              /*$('#navbar').off("mouseenter.navbar").on( "mouseenter.navbar", function () {
                  if ($('#navbar').hasClass("minimized")){
                      $('#navbar').removeClass("minimized");

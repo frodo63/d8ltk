@@ -29,6 +29,8 @@
         "drupal/paragraphs": "^1.2",
         "drupal/paragraphs_accordion": "1.x-dev",
         "drupal/paragraphs_tabs": "1.x-dev",
+        "drupal/slick": "^1.0",
+        "drupal/slick_paragraphs": "^1.0@RC",
         "drush/drush": "~8.0|^9.0.0-beta7",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

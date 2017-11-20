@@ -1,10 +1,4 @@
 @media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
-  .content>div:nth-child(even){
-    background: lightgrey;
-  }
-  .content>div:nth-child(odd){
-    background: $white;
-  }
 
   //Убираем BOotstrap паддинги боковые
   .col-sm-12, .container-fluid {
@@ -12,10 +6,15 @@
     padding-right: 0;
   }
 
-  .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6 {
+  .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6, .fp-slider {
     font-family: 'Oswald', sans-serif;
     color: $black;
     text-align: center;
+  }
+
+  //Slider
+  .fp-slider .paragraph__column {
+    height: 20vw;
   }
 
   //Paragraph 1
@@ -59,6 +58,7 @@
     min-height:55vw;
     .fp_simple_text {
       font-size: 3.5vw;
+      background: $yellow;
     }
     .paragraph__column {
       top: 10vw;
@@ -73,6 +73,7 @@
     .paragraph__column {
       top: 12vw;
       font-size: 1.7vw;
+      background: $yellow;
     }
   }
   .fp-4.simple > .paragraph__column {

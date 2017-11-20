@@ -1,0 +1,23 @@
+uuid: 07040e3c-9431-4a36-afc1-fa93891cfd71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabs_vertical_item
+    - paragraphs.paragraphs_type.tabs_vertical
+  module:
+    - text_with_title
+_core:
+  default_config_hash: QULOpbfCMZd3It5Ecq7jPN5gXYZKGBFdwTrolhFYzvk
+id: paragraph.tabs_vertical.field_tabs_vertical_item
+field_name: field_tabs_vertical_item
+entity_type: paragraph
+bundle: tabs_vertical
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_with_title_field

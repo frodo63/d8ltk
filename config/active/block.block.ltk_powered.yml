@@ -1,0 +1,22 @@
+uuid: 0fe65347-5cd3-4316-ae83-ad12a76685af
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ltk
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: ltk_powered
+theme: ltk
+region: navigation
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 77cd8aef-10a7-44cb-b838-52d54ac9f02b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_many_texts
+    - paragraphs.paragraphs_type.many_texts
+  module:
+    - text
+id: paragraph.many_texts.field_many_texts
+field_name: field_many_texts
+entity_type: paragraph
+bundle: many_texts
+label: 'many texts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

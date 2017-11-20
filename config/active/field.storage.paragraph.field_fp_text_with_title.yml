@@ -1,0 +1,19 @@
+uuid: 2f3002b8-c4ae-4558-af15-011a2ee1ddf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text_with_title
+id: paragraph.field_fp_text_with_title
+field_name: field_fp_text_with_title
+entity_type: paragraph
+type: text_with_title_field
+settings: {  }
+module: text_with_title
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
