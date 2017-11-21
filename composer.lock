@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cbc0cb11ef79735fa30f1c50e1bd0ed",
+    "content-hash": "5f1df7c7829a06e850e819c67ae98cf3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1939,6 +1939,57 @@
             }
         },
         {
+            "name": "drupal/hierarchical_taxonomy_menu",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/hierarchical_taxonomy_menu",
+                "reference": "8.x-1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hierarchical_taxonomy_menu-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "c2634bfbc9c78dba9b4ec84799db845da202fae1"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.15",
+                    "datestamp": "1505333345",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Goran Nikolovski",
+                    "homepage": "http://gorannikolovski.com",
+                    "email": "nikolovski84@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hierarchical Taxonomy Menu is a Drupal 8 module for creating menus from taxonomy vocabularies.",
+            "homepage": "http://drupal.org/project/hierarchical_taxonomy_menu",
+            "support": {
+                "source": "http://cgit.drupalcode.org/hierarchical_taxonomy_menu",
+                "issues": "https://www.drupal.org/project/issues/hierarchical_taxonomy_menu",
+                "email": "nikolovski84@gmail.com"
+            }
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.2.0",
             "source": {
@@ -2204,6 +2255,65 @@
             "homepage": "https://www.drupal.org/project/slick_paragraphs",
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_paragraphs"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_menu",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/taxonomy_menu",
+                "reference": "8.x-3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_menu-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "26492e3210430d44822de242449baa8e658568cf"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.3",
+                    "datestamp": "1479916742",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "NickWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "dstol",
+                    "homepage": "https://www.drupal.org/user/329570"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                }
+            ],
+            "description": "Creates menu items based on associations to taxonomy vocabularies",
+            "homepage": "http://drupal.org/project/taxonomy_menu",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_menu",
+                "issues": "http://drupal.org/project/taxonomy_menu"
             }
         },
         {
