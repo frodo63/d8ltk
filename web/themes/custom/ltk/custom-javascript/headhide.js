@@ -44,6 +44,10 @@ Drupal.behaviors.basic = {
             $(document).css({ 'width' : $(window).width() });
           });
 
+          $('#block-tipymasel h2').off('click.tm').on('click.tm', function(event){
+              $(event.target).siblings('ul.menu').toggle();
+          })
+
 
 
              /*$('#navbar').off("mouseenter.navbar").on( "mouseenter.navbar", function () {
