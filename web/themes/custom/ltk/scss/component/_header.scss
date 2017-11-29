@@ -22,21 +22,13 @@
   .logo, #block-uppertext {
     z-index: 200;
   }
-  #block-tipymasel {
+  #block-bokovoemenuspisokprodukcii {
     position: absolute;
     top: 18vh;
     background: white;
     color: black;
     left: 0vw;
     width: 14vw;
-    h2 {
-      position: absolute;
-      top: 23vh;
-      left: 10vw;
-      transform: rotate(-90deg);
-      z-index: 100;
-      width: 10vw;
-    }
   }
 
   @media #{$mobile}{

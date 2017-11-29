@@ -25,6 +25,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
 @import 'component/arrows';
+@import 'component/sidemenu';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/

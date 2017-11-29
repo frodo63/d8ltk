@@ -5,10 +5,10 @@ Drupal.behaviors.basic = {
                 var scroll = $(window).scrollTop();
 
                 if (scroll > 0) {
-                    $("#navbar").addClass('minimized');
+                    $("#navbar, .region-sidemenu").addClass('minimized');
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
-                    $("#navbar").removeClass("minimized");
+                    $("#navbar, .region-sidemenu").removeClass("minimized");
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 }
             });
@@ -38,14 +38,14 @@ Drupal.behaviors.basic = {
           $('.arrow-down').off('click').on('click', function () {
             $('.arrow-down').toggleClass('moving');
           });
-
+            /*MOBILE landscape height FIX*/
           $( window ).on( "orientationchange", function( event ) {
             $(document).css({ 'height' : $(window).height() });
             $(document).css({ 'width' : $(window).width() });
           });
 
-          $('#block-tipymasel h2').off('click.tm').on('click.tm', function(event){
-              $(event.target).siblings('ul.menu').toggle();
+          $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
+              $(event.target).next('ul.menu').toggle();
           })
 
 
