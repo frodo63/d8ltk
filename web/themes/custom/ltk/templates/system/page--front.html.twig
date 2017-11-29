@@ -139,6 +139,17 @@
           {% endblock %}
         {% endif %}
 
+          {# Custom Side Menu #}
+          {% if page.sidemenu %}
+            {% block sidemenu %}
+                  <section id="sidemenu" class="sidemenu">
+                      <div class="sidemenu-wrapper">
+                          {{ page.sidemenu }}
+                      </div>
+                  </section>
+            {% endblock %}
+          {% endif %}
+
         {# Breadcrumbs #}
         {% if breadcrumb %}
           {% block breadcrumb %}

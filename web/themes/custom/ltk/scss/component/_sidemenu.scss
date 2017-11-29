@@ -1,0 +1,20 @@
+.region-sidemenu {
+  background: $yellow;
+  width: 12vw;
+  top: 18vh;
+  position: fixed;
+  z-index: 150;
+  ul.menu.nav {
+    display: none;
+  }
+  h2 {
+    cursor: pointer;
+    &:hover{
+      background: $yellow;
+      color: $green;
+    }
+  }
+  &.minimized {
+    top: 4vh;
+  }
+}
