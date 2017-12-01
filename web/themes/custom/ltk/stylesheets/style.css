@@ -10696,30 +10696,93 @@ p:last-child,
     top: 90vh;
   }
 }
-/* line 1, ../scss/component/_sidemenu.scss */
-.region-sidemenu {
+/*.region-sidemenu*/
+/* line 2, ../scss/component/_sidemenu.scss */
+section.sidemenu {
   background: #FBBA00;
-  width: 12vw;
   top: 18vh;
+  height: 82vh;
   position: fixed;
-  z-index: 150;
-}
-/* line 7, ../scss/component/_sidemenu.scss */
-.region-sidemenu ul.menu.nav {
-  display: none;
+  z-index: 10;
+  width: 80px;
 }
 /* line 10, ../scss/component/_sidemenu.scss */
-.region-sidemenu h2 {
+section.sidemenu .side-menu-wrap p {
+  text-decoration: none;
+  color: grey;
+}
+/* line 13, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-wrap phover {
+  color: #FBBA00;
+}
+/* line 18, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--icon {
+  margin: 20px 30px 60px 30px;
   cursor: pointer;
 }
-/* line 12, ../scss/component/_sidemenu.scss */
-.region-sidemenu h2:hover {
-  background: #FBBA00;
+/* line 22, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--icon span {
+  height: 2px;
+  width: 20px;
+  background: #17460F;
+  margin-bottom: 4px;
+  display: block;
+  box-sizing: border-box;
+}
+/* line 31, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--icon.crossed span:nth-child(1) {
+  transform: rotate(45deg);
+  width: 23px;
+}
+/* line 32, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--icon.crossed span:nth-child(2) {
+  display: none;
+}
+/* line 33, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--icon.crossed span:nth-child(3) {
+  transform: rotate(-45deg);
+  width: 23px;
+  margin-top: -5px;
+}
+/* line 37, ../scss/component/_sidemenu.scss */
+section.sidemenu .side-menu-burger--name {
+  cursor: pointer;
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 47, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu nav {
+  display: none;
+}
+/* line 50, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu.active {
+  width: 200px;
+}
+/* line 51, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu.active nav {
+  display: block;
+}
+/* line 55, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu.active ul.menu.nav {
+  display: none;
+}
+/* line 58, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu.active h2 {
+  cursor: pointer;
   color: #17460F;
 }
-/* line 17, ../scss/component/_sidemenu.scss */
-.region-sidemenu.minimized {
+/* line 61, ../scss/component/_sidemenu.scss */
+section.sidemenu .region-sidemenu.active h2:hover {
+  background: #FBBA00;
+}
+/* line 67, ../scss/component/_sidemenu.scss */
+section.sidemenu.minimized {
   top: 4vh;
+  height: 96vh;
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
