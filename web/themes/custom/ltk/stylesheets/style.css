@@ -10698,30 +10698,53 @@ p:last-child,
 }
 /*.region-sidemenu*/
 /* line 2, ../scss/component/_sidemenu.scss */
-section.sidemenu {
+section.sidemenu, .region-sidemenu {
   background: #FBBA00;
   top: 18vh;
   height: 82vh;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 80px;
 }
-/* line 10, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-wrap p {
-  text-decoration: none;
-  color: grey;
+/* line 9, ../scss/component/_sidemenu.scss */
+section.sidemenu.minimized, .region-sidemenu.minimized {
+  top: 4vh;
+  height: 96vh;
 }
-/* line 13, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-wrap phover {
-  color: #FBBA00;
+
+/* line 15, ../scss/component/_sidemenu.scss */
+h2, a, .side-menu-burger--name {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
-/* line 18, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--icon {
-  margin: 20px 30px 60px 30px;
+
+/* line 20, ../scss/component/_sidemenu.scss */
+.side-menu-burger-link {
   cursor: pointer;
 }
 /* line 22, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--icon span {
+.side-menu-burger-link .side-menu-burger--name {
+  color: #17460F;
+  font-size: 20px;
+}
+/* line 27, ../scss/component/_sidemenu.scss */
+.side-menu-burger-link:hover span {
+  background: #17460F;
+}
+/* line 30, ../scss/component/_sidemenu.scss */
+.side-menu-burger-link:hover .side-menu-burger--name {
+  color: #17460F;
+  font-size: 20px;
+}
+
+/* line 36, ../scss/component/_sidemenu.scss */
+.side-menu-burger--icon {
+  margin: 20px 30px 60px 30px;
+}
+/* line 40, ../scss/component/_sidemenu.scss */
+.side-menu-burger--icon span {
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
   height: 2px;
   width: 20px;
   background: #17460F;
@@ -10729,131 +10752,179 @@ section.sidemenu .side-menu-burger--icon span {
   display: block;
   box-sizing: border-box;
 }
-/* line 31, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--icon.crossed span:nth-child(1) {
-  transform: rotate(45deg);
+/* line 53, ../scss/component/_sidemenu.scss */
+.side-menu-burger--icon.crossed span:nth-child(1) {
+  transform: translate(-2px, 6px) rotate(45deg);
+  -webkit-transform: translate(-2px, 6px) rotate(45deg);
+  -ms-transform: translate(-2px, 6px) rotate(45deg);
+  -moz-transform: translate(-2px, 6px) rotate(45deg);
+  -o-transform: translate(-2px, 6px) rotate(45deg);
   width: 23px;
 }
-/* line 32, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--icon.crossed span:nth-child(2) {
-  display: none;
-}
-/* line 33, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--icon.crossed span:nth-child(3) {
-  transform: rotate(-45deg);
+/* line 62, ../scss/component/_sidemenu.scss */
+.side-menu-burger--icon.crossed span:nth-child(2) {
+  transform: translate(-2px) rotate(-45deg);
+  -webkit-transform: translate(-2px) rotate(-45deg);
+  -ms-transform: translate(-2px) rotate(-45deg);
+  -moz-transform: translate(-2px) rotate(-45deg);
+  -o-transform: translate(-2px) rotate(-45deg);
   width: 23px;
-  margin-top: -5px;
 }
-/* line 37, ../scss/component/_sidemenu.scss */
-section.sidemenu .side-menu-burger--name {
-  cursor: pointer;
+/* line 71, ../scss/component/_sidemenu.scss */
+.side-menu-burger--icon.crossed span:nth-child(3) {
+  opacity: 0;
+}
+
+/* line 77, ../scss/component/_sidemenu.scss */
+.side-menu-burger--name {
   display: block;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  color: #17460F;
 }
-/* line 47, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu nav {
+
+/* line 86, ../scss/component/_sidemenu.scss */
+.region-sidemenu {
+  transform: translateX(-430px);
+  -webkit-transform: translateX(-430px);
+  -ms-transform: translateX(-430px);
+  -o-transform: translateX(-430px);
+  -moz-transform: translateX(-430px);
+  transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  width: 240px;
+  top: 18vh;
+  height: 82vh;
+  left: 80px;
+  background: #FBBA00;
+  position: fixed;
+}
+/* line 105, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav {
   display: none;
 }
-/* line 50, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu.active {
-  width: 200px;
-}
-/* line 51, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu.active nav {
-  display: block;
-}
-/* line 55, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu.active ul.menu.nav {
+/* line 107, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav ul {
   display: none;
 }
-/* line 58, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu.active h2 {
+/* line 110, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav h2, .region-sidemenu nav a, .region-sidemenu nav .glyphicon-menu-right {
   cursor: pointer;
   color: #17460F;
 }
-/* line 61, ../scss/component/_sidemenu.scss */
-section.sidemenu .region-sidemenu.active h2:hover {
-  background: #FBBA00;
+/* line 113, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav h2:hover, .region-sidemenu nav a:hover, .region-sidemenu nav .glyphicon-menu-right:hover {
+  color: #000000;
 }
-/* line 67, ../scss/component/_sidemenu.scss */
-section.sidemenu.minimized {
-  top: 4vh;
-  height: 96vh;
+/* line 117, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav h2 {
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+}
+/* line 122, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav a {
+  font-size: 15px;
+}
+/* line 125, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav .glyphicon-menu-right {
+  font-size: 20px;
+}
+/* line 128, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav a:hover {
+  background: #FBBA00;
+  text-decoration: underline;
+}
+/* line 133, ../scss/component/_sidemenu.scss */
+.region-sidemenu.active {
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+/* line 136, ../scss/component/_sidemenu.scss */
+.region-sidemenu.active nav {
+  display: block;
+}
+
+/* line 141, ../scss/component/_sidemenu.scss */
+.rotate {
+  transform: rotate(90deg);
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 33, ../scss/style.scss */
+  /* line 34, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 34, ../scss/style.scss */
+  /* line 35, ../scss/style.scss */
   .device-mobile {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 37, ../scss/style.scss */
+  /* line 38, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 38, ../scss/style.scss */
+  /* line 39, ../scss/style.scss */
   .device-tablet {
     display: block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 41, ../scss/style.scss */
+  /* line 42, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   .device-normal {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 45, ../scss/style.scss */
+  /* line 46, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 46, ../scss/style.scss */
+  /* line 47, ../scss/style.scss */
   .device-wide {
     display: block;
   }
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-/* line 50, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
   margin-top: 10vw;
 }
-/* line 53, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 55, ../scss/style.scss */
+/* line 56, ../scss/style.scss */
 body a:hover {
   color: #FFFFFF;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 50, ../scss/style.scss */
+  /* line 51, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }

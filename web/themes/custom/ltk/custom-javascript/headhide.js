@@ -5,10 +5,10 @@ Drupal.behaviors.basic = {
                 var scroll = $(window).scrollTop();
 
                 if (scroll > 0) {
-                    $('#navbar, section.sidemenu').addClass('minimized');
+                    $('#navbar, section.sidemenu, .region-sidemenu').addClass('minimized');
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
-                    $('#navbar, section.sidemenu').removeClass("minimized");
+                    $('#navbar, section.sidemenu, .region-sidemenu').removeClass("minimized");
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 }
             });
@@ -43,15 +43,18 @@ Drupal.behaviors.basic = {
             $(document).css({ 'height' : $(window).height() });
             $(document).css({ 'width' : $(window).width() });
           });
-
-          $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
+/*Анимация категорий в меню*/
+          $('.region-sidemenu h2, .region-sidemenu .menu-arrow-right').off('click.tm').on('click.tm', function(event){
+            /*Поворот стрелочки*/
+            $(event.target).parent().children('.menu-arrow-right').toggleClass('rotate');
+            /*Закончился поворот стрелочки*/
               $('.region-sidemenu ul.menu:visible').hide('slow');
-              $(event.target).next('ul.menu:hidden').show('slow');
+              $(event.target).siblings('ul.menu:hidden').show('slow');
           });
-
+/*Анимация выдвигающегося бокового меню*/
           $('.side-menu-burger-link').off('click.burger').on('click.burger', function(){
-              $('section.sidemenu, .region-sidemenu').toggleClass('active');
-              $('.side-menu-burger--icon').toggleClass('crossed');
+              $('.region-sidemenu').toggleClass('active'); //Выезжает меню
+              $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
 
 
