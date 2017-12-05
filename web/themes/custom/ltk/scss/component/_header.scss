@@ -12,7 +12,6 @@
   transition: height 0.2s;
   border-radius: 0px;
   margin-bottom: 0;
-  min-height: 0px;
 
   .btn-primary {
     background-color: $yellow;
@@ -279,8 +278,6 @@
 
   }
   @media #{$tablet}{
-    height: 10vmax;
-    min-height: 2vmax;
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
@@ -456,8 +453,6 @@
     }
   }
   @media #{$normal}{
-    height: 10vw;
-    min-height: 2vw;
 
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
@@ -588,7 +583,7 @@
     }
 
     &.minimized {
-      height: 2vw;
+      height: 4vh;
       font-weight: 400;
       font-size: 1.5vw;
       line-height: 1.5vw;

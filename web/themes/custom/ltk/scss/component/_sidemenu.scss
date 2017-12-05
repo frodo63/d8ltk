@@ -84,17 +84,18 @@ h2, a, .side-menu-burger--name {
     color: $green;
   }
 .region-sidemenu{
-  transform: translateX(-430px);
+  opacity:0;
+  /*transform: translateX(-430px);
   -webkit-transform: translateX(-430px);
   -ms-transform: translateX(-430px);
   -o-transform: translateX(-430px);
-  -moz-transform: translateX(-430px);
+  -moz-transform: translateX(-430px);*/
 
-  transition: all 2s ease-out;
-  -webkit-transition: all 2s ease-out;
-  -ms-transition: all 2s ease-out;
-  -o-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
 
   width: 240px;
   top: 18vh;
@@ -102,16 +103,17 @@ h2, a, .side-menu-burger--name {
   left: 80px;
   background: $yellow;
   position: fixed;
-  nav {
-    display: none;
-    ul {
+    ul.nav {
       display: none;
+      a:hover{
+        background: $yellow;
+      }
     }
     h2, a, .glyphicon-menu-right {
       cursor: pointer;
       color: $green;
       &:hover{
-        color: $black
+        color: $white;
       }
     }
     h2 {
@@ -129,13 +131,11 @@ h2, a, .side-menu-burger--name {
       background: $yellow;
       text-decoration: underline;
     }
-  }
+
     &.active {
-      transform: translateX(0px);
-      -webkit-transform: translateX(0px);
-      nav {
-        display: block;
-      }
+      /*transform: translateX(0px);
+      -webkit-transform: translateX(0px);*/
+      opacity: 1;
     }
   }
 .rotate {
