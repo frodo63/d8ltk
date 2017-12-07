@@ -10457,7 +10457,7 @@ p:last-child,
   .navbar #block-ltk-search {
     position: absolute;
     width: 23vw;
-    top: 9vw;
+    top: 16vh;
     right: 2vw;
   }
   /* line 730, ../scss/component/_header.scss */
@@ -10687,102 +10687,112 @@ p:last-child,
 }
 /*.region-sidemenu*/
 /* line 2, ../scss/component/_sidemenu.scss */
-section.sidemenu, .region-sidemenu {
+.region-sidemenu {
   background: #FBBA00;
   top: 18vh;
   height: 82vh;
   position: fixed;
   z-index: 100;
-  width: 80px;
+  width: 60px;
 }
 /* line 9, ../scss/component/_sidemenu.scss */
-section.sidemenu.minimized, .region-sidemenu.minimized {
+.region-sidemenu.minimized {
   top: 4vh;
   height: 96vh;
 }
+/* line 13, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav h2 {
+  cursor: pointer;
+  color: #17460F;
+  font-size: 20px;
+  display: block;
+  /*-webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);*/
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -10px;
+}
+/* line 29, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav h2:hover {
+  color: #FFFFFF;
+}
+/* line 33, ../scss/component/_sidemenu.scss */
+.region-sidemenu ul.menu.nav {
+  display: none;
+  overflow-y: auto;
+  max-height: 600px;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background: #FBBA00;
+}
+/* line 41, ../scss/component/_sidemenu.scss */
+.region-sidemenu ul.menu.nav li > a:hover {
+  color: #17460F;
+}
 
-/* line 15, ../scss/component/_sidemenu.scss */
-h2, a, .side-menu-burger--name {
+/* line 47, ../scss/component/_sidemenu.scss */
+#block-tipsmazki-menu {
+  margin-top: 50px;
+}
+
+/* line 48, ../scss/component/_sidemenu.scss */
+#block-speczidkosti-menu {
+  margin-top: 50px;
+}
+
+/* line 50, ../scss/component/_sidemenu.scss */
+h2, a, .side-menu-name span {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
-/* line 20, ../scss/component/_sidemenu.scss */
-.side-menu-burger-link {
-  cursor: pointer;
-}
-/* line 22, ../scss/component/_sidemenu.scss */
-.side-menu-burger-link .side-menu-burger--name {
-  color: #17460F;
-  font-size: 20px;
-}
-/* line 27, ../scss/component/_sidemenu.scss */
-.side-menu-burger-link:hover span {
-  background: #17460F;
-}
-/* line 30, ../scss/component/_sidemenu.scss */
-.side-menu-burger-link:hover .side-menu-burger--name {
-  color: #17460F;
-  font-size: 20px;
-}
+/*.side-menu-burger--icon{
+    margin: 20px 30px 30px 30px;
 
-/* line 36, ../scss/component/_sidemenu.scss */
-.side-menu-burger--icon {
-  margin: 20px 30px 60px 30px;
-}
-/* line 40, ../scss/component/_sidemenu.scss */
-.side-menu-burger--icon span {
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-  height: 2px;
-  width: 20px;
-  background: #17460F;
-  margin-bottom: 4px;
-  display: block;
-  box-sizing: border-box;
-}
-/* line 53, ../scss/component/_sidemenu.scss */
-.side-menu-burger--icon.crossed span:nth-child(1) {
-  transform: translate(-2px, 6px) rotate(45deg);
-  -webkit-transform: translate(-2px, 6px) rotate(45deg);
-  -ms-transform: translate(-2px, 6px) rotate(45deg);
-  -moz-transform: translate(-2px, 6px) rotate(45deg);
-  -o-transform: translate(-2px, 6px) rotate(45deg);
-  width: 23px;
-}
-/* line 62, ../scss/component/_sidemenu.scss */
-.side-menu-burger--icon.crossed span:nth-child(2) {
-  transform: translate(-2px) rotate(-45deg);
-  -webkit-transform: translate(-2px) rotate(-45deg);
-  -ms-transform: translate(-2px) rotate(-45deg);
-  -moz-transform: translate(-2px) rotate(-45deg);
-  -o-transform: translate(-2px) rotate(-45deg);
-  width: 23px;
-}
-/* line 71, ../scss/component/_sidemenu.scss */
-.side-menu-burger--icon.crossed span:nth-child(3) {
+    span {
+      -webkit-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+      height: 2px;
+      width: 20px;
+      background: $green;
+      margin-bottom: 4px;
+      display: block;
+      box-sizing: border-box;
+
+    }
+    &.crossed{
+
+      span:nth-child(1){
+        transform: translate(-2px,6px) rotate(45deg);
+        -webkit-transform: translate(-2px,6px) rotate(45deg);
+        -ms-transform: translate(-2px,6px) rotate(45deg);
+        -moz-transform: translate(-2px,6px) rotate(45deg);
+        -o-transform: translate(-2px,6px) rotate(45deg);
+
+        width: 23px
+      }
+      span:nth-child(2){
+        transform: translate(-2px) rotate(-45deg);
+        -webkit-transform: translate(-2px) rotate(-45deg);
+        -ms-transform: translate(-2px) rotate(-45deg);
+        -moz-transform: translate(-2px) rotate(-45deg);
+        -o-transform: translate(-2px) rotate(-45deg);
+
+        width: 23px;
+      }
+      span:nth-child(3){
+        opacity: 0;
+      }
+    }
+  }*/
+/*ТУТ БЛОК С БУРГЕР ИКОНКОЙ*/
+/* line 95, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu {
   opacity: 0;
-}
-
-/* line 77, ../scss/component/_sidemenu.scss */
-.side-menu-burger--name {
-  display: block;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  color: #17460F;
-}
-
-/* line 86, ../scss/component/_sidemenu.scss */
-.region-sidemenu {
-  opacity: 0;
-  /*transform: translateX(-430px);
-  -webkit-transform: translateX(-430px);
-  -ms-transform: translateX(-430px);
-  -o-transform: translateX(-430px);
-  -moz-transform: translateX(-430px);*/
   transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
   -ms-transition: all .5s ease-out;
@@ -10795,52 +10805,48 @@ h2, a, .side-menu-burger--name {
   background: #FBBA00;
   position: fixed;
 }
-/* line 106, ../scss/component/_sidemenu.scss */
-.region-sidemenu ul.nav {
+/* line 110, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu nav ul.nav {
   display: none;
+  max-height: 59vh;
+  min-height: 22vh;
+  width: 220px;
 }
-/* line 108, ../scss/component/_sidemenu.scss */
-.region-sidemenu ul.nav a:hover {
+/* line 115, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu nav ul.nav a:hover {
   background: #FBBA00;
 }
-/* line 112, ../scss/component/_sidemenu.scss */
-.region-sidemenu h2, .region-sidemenu a, .region-sidemenu .glyphicon-menu-right {
+/* line 119, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu h2, .region-sidemenu .category-menu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 115, ../scss/component/_sidemenu.scss */
-.region-sidemenu h2:hover, .region-sidemenu a:hover, .region-sidemenu .glyphicon-menu-right:hover {
+/* line 122, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu h2:hover, .region-sidemenu .category-menu a:hover {
   color: #FFFFFF;
 }
-/* line 119, ../scss/component/_sidemenu.scss */
-.region-sidemenu h2 {
+/* line 127, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu h2 {
   display: inline-block;
   width: 200px;
   font-size: 20px;
 }
-/* line 124, ../scss/component/_sidemenu.scss */
-.region-sidemenu a {
+/* line 132, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu a {
   font-size: 15px;
 }
-/* line 127, ../scss/component/_sidemenu.scss */
-.region-sidemenu .glyphicon-menu-right {
+/* line 135, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 130, ../scss/component/_sidemenu.scss */
-.region-sidemenu a:hover {
+/* line 138, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 135, ../scss/component/_sidemenu.scss */
-.region-sidemenu.active {
-  /*transform: translateX(0px);
-  -webkit-transform: translateX(0px);*/
+/* line 143, ../scss/component/_sidemenu.scss */
+.region-sidemenu .category-menu.active {
   opacity: 1;
-}
-
-/* line 141, ../scss/component/_sidemenu.scss */
-.rotate {
-  transform: rotate(90deg);
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/

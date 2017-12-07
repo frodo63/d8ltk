@@ -44,34 +44,15 @@ Drupal.behaviors.basic = {
             $(document).css({ 'width' : $(window).width() });
           });
 /*Анимация категорий в меню*/
-          $('.region-sidemenu h2, .region-sidemenu .menu-arrow-right').off('click.tm').on('click.tm', function(event){
-            /*Поворот стрелочки*/
-            $(event.target).parent().children('.menu-arrow-right').toggleClass('rotate');
-            /*Закончился поворот стрелочки*/
-              $('.region-sidemenu ul.menu:visible').hide('slow');
-              $(event.target).siblings('ul.menu:hidden').show('slow');
+          $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
+            $('.region-sidemenu ul.menu:visible').hide('slow');
+            $(event.target).siblings('ul.menu:hidden').show('slow');
           });
 /*Анимация выдвигающегося бокового меню*/
           $('.side-menu-burger-link').off('click.burger').on('click.burger', function(){
               $('.region-sidemenu').toggleClass('active'); //Выезжает меню
               $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
-
-
-
-             /*$('#navbar').off("mouseenter.navbar").on( "mouseenter.navbar", function () {
-                 if ($('#navbar').hasClass("minimized")){
-                     $('#navbar').removeClass("minimized");
-                   $('#block-sitename div').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ</br>"ЛУБРИТЭК"</p>');
-                 }
-             } );
-             $('#navbar').off("mouseleave.navbar").on("mouseleave.navbar", function () {
-               if ($(window).scrollTop() > 0){
-                 $('#navbar').addClass("minimized");
-                 $('#block-sitename div').html('<p>ЛУБРИТЭК</p>');
-               }
-             } );*/
-
         })(jQuery);
     }
 };

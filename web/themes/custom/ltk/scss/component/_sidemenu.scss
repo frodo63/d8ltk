@@ -1,41 +1,59 @@
 /*.region-sidemenu*/
-section.sidemenu, .region-sidemenu {
+.region-sidemenu {
   background: $yellow;
   top: 18vh;
   height: 82vh;
   position: fixed;
   z-index: 100;
-  width: 80px;
+  width: 60px;
   &.minimized{
     top: 4vh;
     height: 96vh;
   }
-}
+  nav h2{
+    cursor: pointer;
+    color: $green;
+    font-size: 20px;
+    display: block;
 
-h2, a, .side-menu-burger--name {
+    /*-webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);*/
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -10px;
+
+    &:hover{
+      color: $white;
+    }
+  }
+  ul.menu.nav {
+    display: none;
+    overflow-y: auto;
+    max-height:600px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    background: $yellow;
+    li > a:hover {
+      color: $green;
+    }
+  }
+}
+#block-tipmasla-menu {}
+#block-tipsmazki-menu {margin-top: 50px}
+#block-speczidkosti-menu {margin-top: 50px}
+
+h2, a, .side-menu-name span {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
-.side-menu-burger-link {
-  cursor: pointer;
-  .side-menu-burger--name{
-    color: $green;
-    font-size: 20px;
-  }
-  &:hover{
-    span {
-      background: $green;
-    }
-    .side-menu-burger--name{
-      color: $green;
-      font-size: 20px;
-    }
-  }
-}
-.side-menu-burger--icon{
-    margin: 20px 30px 60px 30px;
-
+/*.side-menu-burger--icon{
+    margin: 20px 30px 30px 30px;
 
     span {
       -webkit-transition: all .2s ease-out;
@@ -72,24 +90,10 @@ h2, a, .side-menu-burger--name {
         opacity: 0;
       }
     }
+  }*/ /*ТУТ БЛОК С БУРГЕР ИКОНКОЙ*/
 
-  }
-.side-menu-burger--name{
-    display: block;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    color: $green;
-  }
-.region-sidemenu{
+.region-sidemenu .category-menu{
   opacity:0;
-  /*transform: translateX(-430px);
-  -webkit-transform: translateX(-430px);
-  -ms-transform: translateX(-430px);
-  -o-transform: translateX(-430px);
-  -moz-transform: translateX(-430px);*/
 
   transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
@@ -103,19 +107,23 @@ h2, a, .side-menu-burger--name {
   left: 80px;
   background: $yellow;
   position: fixed;
-    ul.nav {
+    nav ul.nav {
       display: none;
+      max-height: 59vh;
+      min-height: 22vh;
+      width: 220px;
       a:hover{
         background: $yellow;
       }
     }
-    h2, a, .glyphicon-menu-right {
+    h2, a{
       cursor: pointer;
       color: $green;
       &:hover{
         color: $white;
       }
     }
+
     h2 {
       display: inline-block;
       width: 200px;
@@ -133,12 +141,9 @@ h2, a, .side-menu-burger--name {
     }
 
     &.active {
-      /*transform: translateX(0px);
-      -webkit-transform: translateX(0px);*/
       opacity: 1;
     }
   }
-.rotate {
-  transform: rotate(90deg);
-}
+
+
 
