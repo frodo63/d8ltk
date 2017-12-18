@@ -5,10 +5,10 @@ Drupal.behaviors.basic = {
                 var scroll = $(window).scrollTop();
 
                 if (scroll > 0) {
-                    $('#navbar, section.sidemenu, .region-sidemenu').addClass('minimized');
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').addClass('minimized');
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
-                    $('#navbar, section.sidemenu, .region-sidemenu').removeClass("minimized");
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').removeClass("minimized");
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 }
             });
@@ -28,7 +28,7 @@ Drupal.behaviors.basic = {
                     $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else if ($('.device-tablet').is(":visible")) {
                     $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
-                } else if ($('.device-normal').is(":visible")) {
+                } else if ($('dasd.device-normal').is(":visible")) {
                     $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК"</p>');
                 } else {
                     $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК" WIDE</p>');

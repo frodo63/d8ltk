@@ -1,30 +1,22 @@
-/*.region-sidemenu*/
-.region-sidemenu {
+.side-menu--wrap {
   background: $yellow;
   top: 18vh;
   height: 82vh;
   position: fixed;
   z-index: 100;
-  width: 60px;
+  width: 80px;
   &.minimized{
     top: 4vh;
     height: 96vh;
   }
-  nav h2{
+  h2, a, .side-menu-burger--name {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+  }
+/*  nav h2{
     cursor: pointer;
     color: $green;
     font-size: 20px;
-    display: block;
-
-    /*-webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);*/
-
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    letter-spacing: -10px;
 
     &:hover{
       color: $white;
@@ -35,24 +27,26 @@
     overflow-y: auto;
     max-height:600px;
     position: absolute;
-    top: 0;
-    left: 60px;
     background: $yellow;
     li > a:hover {
       color: $green;
     }
   }
-}
-#block-tipmasla-menu {}
-#block-tipsmazki-menu {margin-top: 50px}
-#block-speczidkosti-menu {margin-top: 50px}
+*/
+  /*НАДПИСЬ ПРОДУКЦИЯ*/
+  .side-menu-burger--name {
+    font-size: 20px;
+    margin-top: 60px;
 
-h2, a, .side-menu-name span {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
 
-/*.side-menu-burger--icon{
+  /*БЛОК С БУРГЕР ИКОНКОЙ*/
+  .side-menu-burger--icon{
     margin: 20px 30px 30px 30px;
 
     span {
@@ -90,23 +84,27 @@ h2, a, .side-menu-name span {
         opacity: 0;
       }
     }
-  }*/ /*ТУТ БЛОК С БУРГЕР ИКОНКОЙ*/
+  }
 
-.region-sidemenu .category-menu{
-  opacity:0;
+  /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
+  .region-sidemenu{
+    opacity:0;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
 
-  transition: all .5s ease-out;
-  -webkit-transition: all .5s ease-out;
-  -ms-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-
-  width: 240px;
-  top: 18vh;
-  height: 82vh;
-  left: 80px;
-  background: $yellow;
-  position: fixed;
+    top: 18vh;
+    height: 82vh;
+    &.minimized{
+      top: 4vh;
+      height: 96vh;
+    }
+    width: 240px;
+    left: 80px;
+    background: $yellow;
+    position: fixed;
     nav ul.nav {
       display: none;
       max-height: 59vh;
@@ -139,11 +137,14 @@ h2, a, .side-menu-name span {
       background: $yellow;
       text-decoration: underline;
     }
-
     &.active {
       opacity: 1;
     }
   }
+}
+
+
+
 
 
 

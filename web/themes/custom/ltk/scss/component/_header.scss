@@ -21,6 +21,17 @@
   .logo, #block-uppertext {
     z-index: 200;
   }
+
+  &.minimized{
+    .logo {
+      top: 5px;
+      margin: 0;
+      left: 25px;
+      img {
+        height: 30px;
+      }
+    }
+  }
   #block-bokovoemenuspisokprodukcii {
     position: absolute;
     top: 18vh;
@@ -415,13 +426,6 @@
       font-size: 1.5vw;
       line-height: 1.5vw;
 
-      .logo {
-        top: -1.4vh;
-        left: 1vw;
-        img {
-          height: 2vw;
-        }
-      }
       #block-telephones {
         top: 0.1vw;
         p.h {
@@ -587,14 +591,7 @@
       font-weight: 400;
       font-size: 1.5vw;
       line-height: 1.5vw;
-      .logo {
-        top: 0;
-        left: 1vw;
-        margin: 0;
-        img {
-          height: 2vw;
-        }
-      }
+
       #block-telephones {
         top: 0.2vw;
         p.h {
@@ -755,14 +752,6 @@
 
     &.minimized {
       height: 4vh;
-      .logo {
-        top: 0.25vh;
-        margin: 0;
-        left: 1vw;
-        img {
-          height: 3.5vh;
-        }
-      }
       #block-telephones {
         top: 0.1vw;
         p.h {
