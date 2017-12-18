@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f365802-ebe8-4cc1-a0c2-ca10470aebb3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--speczidkosti.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--tipmasla.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--tipsmazki.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_header.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_header.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_sidemenu.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_sidemenu.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.json" afterPath="$PROJECT_DIR$/../composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.lock" afterPath="$PROJECT_DIR$/../composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" afterPath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" afterPath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +25,10 @@
       <file leaf-file-name="_sidemenu.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="68">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
-                <element signature="e#630#854#0" expanded="false" />
-                <element signature="e#909#1937#0" expanded="false" />
+                <element signature="e#537#783#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,13 +37,33 @@
       <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="406">
+              <caret line="623" column="17" lean-forward="true" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="17" />
               <folding>
-                <element signature="e#728#5914#0" expanded="false" />
-                <element signature="e#5934#9203#0" expanded="false" />
-                <element signature="e#9223#12331#0" expanded="false" />
+                <element signature="e#743#5929#0" expanded="false" />
+                <element signature="e#5949#9218#0" expanded="false" />
+                <element signature="e#9238#12346#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_frontpage_paragraphs.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-46">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +81,8 @@
       <file leaf-file-name="headhide.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="312">
+              <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -98,6 +109,8 @@
       <find>h2</find>
       <find>content</find>
       <find>minimized</find>
+      <find>hover</find>
+      <find>.minimized</find>
     </findStrings>
     <replaceStrings>
       <replace>rotate(-45deg);</replace>
@@ -119,10 +132,10 @@
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--tipmasla.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--speczidkosti.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/system/block--tipsmazki.html.twig" />
-        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig" />
-        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" />
+        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" />
+        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss" />
       </list>
     </option>
@@ -134,7 +147,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1023" />
     <option name="y" value="29" />
     <option name="width" value="1681" />
@@ -307,12 +320,12 @@
       <workItem from="1513152540497" duration="5180000" />
       <workItem from="1513320396882" duration="4506000" />
       <workItem from="1513584776375" duration="5566000" />
-      <workItem from="1513590376008" duration="502000" />
+      <workItem from="1513590376008" duration="10307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140777000" />
+    <option name="totallyTimeSpent" value="150582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,7 +337,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1023" y="29" width="1681" height="1021" extended-state="1" />
+    <frame x="1023" y="29" width="1681" height="1021" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18106015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -333,7 +347,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673866" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24838012" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -629,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/menu/menu--tip-masla.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -651,14 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/menu/menu--tip-smazki.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -668,6 +667,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/system/block--tipmasla.html.twi" />
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/system/block--speczidkosti.html.twi" />
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -676,33 +683,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="406">
+          <caret line="623" column="17" lean-forward="true" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="17" />
           <folding>
-            <element signature="e#728#5914#0" expanded="false" />
-            <element signature="e#5934#9203#0" expanded="false" />
-            <element signature="e#9223#12331#0" expanded="false" />
+            <element signature="e#743#5929#0" expanded="false" />
+            <element signature="e#5949#9218#0" expanded="false" />
+            <element signature="e#9238#12346#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        <state relative-caret-position="331">
+          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
-            <element signature="e#630#854#0" expanded="false" />
-            <element signature="e#909#1937#0" expanded="false" />
+            <element signature="e#537#783#0" expanded="false" />
           </folding>
         </state>
       </provider>

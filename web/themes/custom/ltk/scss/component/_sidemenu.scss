@@ -1,7 +1,12 @@
 .side-menu--wrap {
   background: $yellow;
-  top: 18vh;
-  height: 82vh;
+  /*top: 18vh;
+  height: 82vh;*/
+  @media #{$wide, $normal, $tablet}{
+    $htop: 189px;
+    top: $htop;
+    height: calc(100% - #{$htop});
+  }
   position: fixed;
   z-index: 100;
   width: 80px;
@@ -13,30 +18,16 @@
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
   }
-/*  nav h2{
-    cursor: pointer;
-    color: $green;
-    font-size: 20px;
 
-    &:hover{
-      color: $white;
-    }
+  .side-menu-burger-link:hover {
+    .side-menu-burger--icon span {background: $white}
   }
-  ul.menu.nav {
-    display: none;
-    overflow-y: auto;
-    max-height:600px;
-    position: absolute;
-    background: $yellow;
-    li > a:hover {
-      color: $green;
-    }
-  }
-*/
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   .side-menu-burger--name {
     font-size: 20px;
     margin-top: 60px;
+
+    cursor: pointer;
 
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -58,7 +49,6 @@
       margin-bottom: 4px;
       display: block;
       box-sizing: border-box;
-
     }
     &.crossed{
 
@@ -88,7 +78,7 @@
 
   /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
   .region-sidemenu{
-    opacity:0;
+    display:none;
     transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
     -ms-transition: all .5s ease-out;
@@ -110,8 +100,12 @@
       max-height: 59vh;
       min-height: 22vh;
       width: 220px;
-      a:hover{
-        background: $yellow;
+      overflow-y: overlay;
+      li {
+        a{
+          padding:2px 0px 5px 10px;
+          &:hover{background: $yellow;}
+        }
       }
     }
     h2, a{
@@ -138,7 +132,7 @@
       text-decoration: underline;
     }
     &.active {
-      opacity: 1;
+      display: block;
     }
   }
 }

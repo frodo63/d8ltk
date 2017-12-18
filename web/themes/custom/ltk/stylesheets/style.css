@@ -9611,7 +9611,7 @@ p:last-child,
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background: #FBBA00;
   border: none;
   -webkit-transition: height 0.2s;
@@ -9627,7 +9627,7 @@ p:last-child,
   font-size: 5vh;
 }
 /* line 21, ../scss/component/_header.scss */
-.navbar .logo, .navbar #block-uppertext {
+.navbar .logo, .navbar #block-uppertext, .navbar #block-elpocta {
   z-index: 200;
 }
 /* line 26, ../scss/component/_header.scss */
@@ -10342,174 +10342,175 @@ p:last-child,
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 625, ../scss/component/_header.scss */
+  /* line 1, ../scss/component/_header.scss */
+  .navbar {
+    height: 189px;
+  }
+  /* line 626, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 633, ../scss/component/_header.scss */
+  /* line 634, ../scss/component/_header.scss */
   .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
-    height: 1vw;
+    height: 15px;
   }
-  /* line 638, ../scss/component/_header.scss */
+  /* line 639, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0;
-    left: 1vw;
+    left: 25px;
   }
-  /* line 641, ../scss/component/_header.scss */
+  /* line 642, ../scss/component/_header.scss */
   .navbar .logo img {
-    height: 7.5vw;
+    height: 130px;
   }
-  /* line 644, ../scss/component/_header.scss */
+  /* line 645, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
-    top: 0.25vw;
+    top: 5px;
     left: 0;
-    width: 100vw;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
   }
-  /* line 650, ../scss/component/_header.scss */
+  /* line 651, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     text-align: center;
     float: none !important;
   }
-  /* line 654, ../scss/component/_header.scss */
+  /* line 655, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li {
     float: none !important;
     display: inline-block !important;
   }
-  /* line 657, ../scss/component/_header.scss */
+  /* line 658, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a {
-    padding: 0 0.5vw;
+    padding: 0 8px;
     color: #17460F;
   }
-  /* line 664, ../scss/component/_header.scss */
+  /* line 665, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
     font-weight: 200;
-    font-size: 0.9vw;
+    font-size: 15px;
     width: 100vw;
     text-align: left;
   }
-  /* line 673, ../scss/component/_header.scss */
+  /* line 674, ../scss/component/_header.scss */
   .navbar #block-sitename {
-    top: 2.5vw;
-    left: 10vw;
+    top: 40px;
+    left: 170px;
     font-weight: 400;
-    font-size: 3.5vh;
-    line-height: 3.2vh;
+    font-size: 36px;
+    line-height: 36px;
     text-transform: uppercase;
   }
-  /* line 682, ../scss/component/_header.scss */
+  /* line 683, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
-    top: 6.5vw;
-    left: 10vw;
+    top: 110px;
+    left: 168px;
     font-weight: 400;
-    font-size: 1vw;
-    line-height: 1vw;
+    font-size: 17px;
+    line-height: 17px;
   }
-  /* line 690, ../scss/component/_header.scss */
-  .navbar #block-vremaraboty {
-    top: 2.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+  /* line 691, ../scss/component/_header.scss */
+  .navbar #block-vremaraboty, .navbar #block-adres, .navbar #block-elpocta {
+    left: 1090px;
+    font-size: 17px;
+    line-height: 17px;
   }
   /* line 697, ../scss/component/_header.scss */
-  .navbar #block-adres {
-    top: 4vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+  .navbar #block-vremaraboty {
+    top: 42px;
   }
-  /* line 704, ../scss/component/_header.scss */
+  /* line 701, ../scss/component/_header.scss */
+  .navbar #block-adres {
+    top: 67px;
+  }
+  /* line 705, ../scss/component/_header.scss */
   .navbar #block-elpocta {
     top: 5.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
   }
-  /* line 709, ../scss/component/_header.scss */
+  /* line 707, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 714, ../scss/component/_header.scss */
+  /* line 712, ../scss/component/_header.scss */
   .navbar #block-telephones {
-    top: 1vw;
-    right: 2vw;
+    top: 16px;
+    right: 32px;
     text-align: right;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 25px;
+    line-height: 25px;
   }
-  /* line 722, ../scss/component/_header.scss */
+  /* line 720, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
-    width: 23vw;
-    top: 16vh;
-    right: 2vw;
+    width: 386px;
+    top: 150px;
+    right: 34px;
   }
-  /* line 727, ../scss/component/_header.scss */
+  /* line 725, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form {
-    bottom: -1.6vw;
+    bottom: -26px;
     position: absolute;
   }
-  /* line 732, ../scss/component/_header.scss */
+  /* line 730, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 735, ../scss/component/_header.scss */
+  /* line 733, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
-    height: 2vw;
+    height: 34px;
   }
-  /* line 739, ../scss/component/_header.scss */
+  /* line 737, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
-    height: 2vw;
+    height: 34px;
     background-color: #FBBA00;
     border: 1px solid white;
-    font-size: 0.5vw;
-    padding: 0 0.5vw 0 0.5vw;
+    font-size: 8px;
+    padding: 0 8px 0 8px;
   }
-  /* line 747, ../scss/component/_header.scss */
+  /* line 745, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
-    line-height: 2vw;
-    font-size: 1vw;
+    line-height: 34px;
+    font-size: 17px;
+  }
+  /* line 751, ../scss/component/_header.scss */
+  .navbar.minimized {
+    height: 42px;
   }
   /* line 753, ../scss/component/_header.scss */
-  .navbar.minimized {
-    height: 4vh;
+  .navbar.minimized #block-telephones {
+    top: 5px;
   }
   /* line 755, ../scss/component/_header.scss */
-  .navbar.minimized #block-telephones {
-    top: 0.1vw;
-  }
-  /* line 757, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones p.h {
     display: none;
   }
-  /* line 761, ../scss/component/_header.scss */
+  /* line 759, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta {
-    top: 0.1vw;
-    left: 74vw;
+    top: 5px;
+    left: 1240px;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 25px;
+    line-height: 25px;
   }
-  /* line 767, ../scss/component/_header.scss */
+  /* line 765, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 771, ../scss/component/_header.scss */
+  /* line 769, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 774, ../scss/component/_header.scss */
+  /* line 772, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
-    top: 0.25vw;
-    left: 5vw;
+    top: 5px;
+    left: 84px;
   }
 }
 
@@ -10669,60 +10670,52 @@ p:last-child,
 /* line 1, ../scss/component/_sidemenu.scss */
 .side-menu--wrap {
   background: #FBBA00;
-  top: 18vh;
-  height: 82vh;
+  /*top: 18vh;
+  height: 82vh;*/
   position: fixed;
   z-index: 100;
   width: 80px;
-  /*  nav h2{
-      cursor: pointer;
-      color: $green;
-      font-size: 20px;
-  
-      &:hover{
-        color: $white;
-      }
-    }
-    ul.menu.nav {
-      display: none;
-      overflow-y: auto;
-      max-height:600px;
-      position: absolute;
-      background: $yellow;
-      li > a:hover {
-        color: $green;
-      }
-    }
-  */
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   /*БЛОК С БУРГЕР ИКОНКОЙ*/
   /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
 }
-/* line 8, ../scss/component/_sidemenu.scss */
+@media screen and (min-width: 1200px), screen and (min-width: 992px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 1, ../scss/component/_sidemenu.scss */
+  .side-menu--wrap {
+    top: 189px;
+    height: calc(100% - 189px);
+  }
+}
+/* line 13, ../scss/component/_sidemenu.scss */
 .side-menu--wrap.minimized {
   top: 4vh;
   height: 96vh;
 }
-/* line 12, ../scss/component/_sidemenu.scss */
+/* line 17, ../scss/component/_sidemenu.scss */
 .side-menu--wrap h2, .side-menu--wrap a, .side-menu--wrap .side-menu-burger--name {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
-/* line 37, ../scss/component/_sidemenu.scss */
+/* line 23, ../scss/component/_sidemenu.scss */
+.side-menu--wrap .side-menu-burger-link:hover .side-menu-burger--icon span {
+  background: #FFFFFF;
+}
+/* line 26, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--name {
   font-size: 20px;
   margin-top: 60px;
+  cursor: pointer;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
-/* line 49, ../scss/component/_sidemenu.scss */
+/* line 40, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon {
   margin: 20px 30px 30px 30px;
 }
-/* line 52, ../scss/component/_sidemenu.scss */
+/* line 43, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon span {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -10733,7 +10726,7 @@ p:last-child,
   display: block;
   box-sizing: border-box;
 }
-/* line 65, ../scss/component/_sidemenu.scss */
+/* line 55, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(1) {
   transform: translate(-2px, 6px) rotate(45deg);
   -webkit-transform: translate(-2px, 6px) rotate(45deg);
@@ -10742,7 +10735,7 @@ p:last-child,
   -o-transform: translate(-2px, 6px) rotate(45deg);
   width: 23px;
 }
-/* line 74, ../scss/component/_sidemenu.scss */
+/* line 64, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(2) {
   transform: translate(-2px) rotate(-45deg);
   -webkit-transform: translate(-2px) rotate(-45deg);
@@ -10751,13 +10744,13 @@ p:last-child,
   -o-transform: translate(-2px) rotate(-45deg);
   width: 23px;
 }
-/* line 83, ../scss/component/_sidemenu.scss */
+/* line 73, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(3) {
   opacity: 0;
 }
-/* line 90, ../scss/component/_sidemenu.scss */
+/* line 80, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu {
-  opacity: 0;
+  display: none;
   transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
   -ms-transition: all .5s ease-out;
@@ -10770,53 +10763,58 @@ p:last-child,
   background: #FBBA00;
   position: fixed;
 }
-/* line 100, ../scss/component/_sidemenu.scss */
+/* line 90, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu.minimized {
   top: 4vh;
   height: 96vh;
 }
-/* line 108, ../scss/component/_sidemenu.scss */
+/* line 98, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav {
   display: none;
   max-height: 59vh;
   min-height: 22vh;
   width: 220px;
+  overflow-y: overlay;
 }
-/* line 113, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu nav ul.nav a:hover {
+/* line 105, ../scss/component/_sidemenu.scss */
+.side-menu--wrap .region-sidemenu nav ul.nav li a {
+  padding: 2px 0px 5px 10px;
+}
+/* line 107, ../scss/component/_sidemenu.scss */
+.side-menu--wrap .region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
 }
-/* line 117, ../scss/component/_sidemenu.scss */
+/* line 111, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2, .side-menu--wrap .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 120, ../scss/component/_sidemenu.scss */
+/* line 114, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2:hover, .side-menu--wrap .region-sidemenu a:hover {
   color: #FFFFFF;
 }
-/* line 125, ../scss/component/_sidemenu.scss */
+/* line 119, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2 {
   display: inline-block;
   width: 200px;
   font-size: 20px;
 }
-/* line 130, ../scss/component/_sidemenu.scss */
+/* line 124, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a {
   font-size: 15px;
 }
-/* line 133, ../scss/component/_sidemenu.scss */
+/* line 127, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 136, ../scss/component/_sidemenu.scss */
+/* line 130, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 140, ../scss/component/_sidemenu.scss */
+/* line 134, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu.active {
-  opacity: 1;
+  display: block;
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
@@ -10870,7 +10868,7 @@ p:last-child,
 body {
   background: #FFFFFF;
   color: #17460F;
-  margin-top: 10vw;
+  margin-top: 18vh;
 }
 /* line 54, ../scss/style.scss */
 body a {
@@ -10881,8 +10879,12 @@ body a:hover {
   color: #FFFFFF;
 }
 /* line 59, ../scss/style.scss */
-body .region-content {
-  margin-left: 60px;
+body .region-content, body .region-footer {
+  margin-left: 80px;
+}
+/* line 62, ../scss/style.scss */
+body .row {
+  margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   /* line 51, ../scss/style.scss */
@@ -10891,7 +10893,7 @@ body .region-content {
   }
 }
 
-/* line 66, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }

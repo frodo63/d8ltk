@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background: $yellow;
   border: none;
   -webkit-transition: height 0.2s;
@@ -18,7 +18,7 @@
     border-color: $yellow;
     font-size: 5vh;
   }
-  .logo, #block-uppertext {
+  .logo, #block-uppertext, #block-elpocta {
     z-index: 200;
   }
 
@@ -621,6 +621,7 @@
     }
   }
   @media #{$wide}{
+    height: 189px;
 
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
@@ -631,22 +632,22 @@
 
     #block-adres, #block-vremaraboty, #block-elpocta {
       img {
-        height: 1vw;
+        height: 15px;
       }
     }
 
     .logo {
       top: 0;
-      left: 1vw;
-      img { height: 7.5vw; }
+      left: 25px;
+      img { height: 130px; }
     }
 
     #block-ltk-main-menu {
-      top: 0.25vw;
+      top: 5px;
       left: 0;
-      width: 100vw;
-      font-size: 1.5vw;
-      line-height: 1.5vw;
+      width: 100%;
+      font-size: 25px;
+      line-height: 25px;
       ul.navbar-nav {
         text-align: center;
         float: none !important;
@@ -655,7 +656,7 @@
         float: none !important;
         display: inline-block !important;
         a {
-          padding: 0 0.5vw;
+          padding: 0 8px;
           color: $green;
         }
       }
@@ -665,67 +666,64 @@
       bottom: 0;
       left: 0;
       font-weight: 200;
-      font-size: 0.9vw;
+      font-size: 15px;
       width: 100vw;
       text-align: left;
     }
 
     #block-sitename {
-      top: 2.5vw;
-      left: 10vw;
+      top: 40px;
+      left: 170px;
       font-weight: 400;
-      font-size: 3.5vh;
-      line-height: 3.2vh;
+      font-size: 36px;
+      line-height: 36px;
       text-transform: uppercase;
     }
 
     #block-siteslogan {
-      top: 6.5vw;
-      left: 10vw;
+      top: 110px;
+      left: 168px;
       font-weight: 400;
-      font-size: 1vw;
-      line-height: 1vw;
+      font-size: 17px;
+      line-height: 17px;
+    }
+
+    #block-vremaraboty, #block-adres, #block-elpocta {
+      left: 1090px;
+      font-size: 17px;
+      line-height: 17px;
     }
 
     #block-vremaraboty {
-      top: 2.5vw;
-      left: 75vw;
-      font-size: 1vw;
-      line-height: 1vw;
+      top: 42px;
     }
 
     #block-adres {
-      top: 4vw;
-      left: 75vw;
-      font-size: 1vw;
-      line-height: 1vw;
+      top: 67px;
     }
 
     #block-elpocta {
       top: 5.5vw;
-      left: 75vw;
-      font-size: 1vw;
-      line-height: 1vw;
       a:visited, a:hover, a:active {
         color: $green;
       }
     }
 
     #block-telephones {
-      top: 1vw;
-      right: 2vw;
+      top: 16px;
+      right: 32px;
       text-align: right;
-      font-size: 1.5vw;
-      line-height: 1.5vw;
+      font-size: 25px;
+      line-height: 25px;
     }
 
     #block-ltk-search {
       position: absolute;
-      width: 23vw;
-      top: 16vh;
-      right: 2vw;
+      width: 386px;
+      top: 150px;
+      right: 34px;
       #search-block-form {
-        bottom: -1.6vw;
+        bottom: -26px;
         position: absolute;
       }
 
@@ -733,37 +731,37 @@
         border: 1px solid white;
       }
       #edit-keys {
-        height: 2vw;
+        height: 34px;
       }
 
       .btn-primary {
         color: #fff;
-        height: 2vw;
+        height: 34px;
         background-color: $yellow;
         border: 1px solid white;
-        font-size: 0.5vw;
-        padding: 0 0.5vw 0 0.5vw;
+        font-size: 8px;
+        padding: 0 8px 0 8px;
       }
       .glyphicon-search {
-        line-height: 2vw;
-        font-size: 1vw;
+        line-height: 34px;
+        font-size: 17px;
       }
     }
 
     &.minimized {
-      height: 4vh;
+      height: 42px;
       #block-telephones {
-        top: 0.1vw;
+        top: 5px;
         p.h {
           display: none;
         }
       }
       #block-elpocta {
-        top: 0.1vw;
-        left: 74vw;
+        top: 5px;
+        left: 1240px;
         font-weight: 400;
-        font-size: 1.5vw;
-        line-height: 1.5vw;
+        font-size: 25px;
+        line-height: 25px;
         img {
           display: none;
         }
@@ -772,8 +770,8 @@
         display: none;
       }
       #block-sitename {
-        top: 0.25vw;
-        left: 5vw;
+        top: 5px;
+        left: 84px;
       }
     }
   }

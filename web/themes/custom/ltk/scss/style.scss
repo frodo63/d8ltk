@@ -55,9 +55,12 @@ body {
     color: $green;
     &:hover {color: $white;}
   }
-  margin-top: 10vw;
-  .region-content {
-    margin-left: 60px;
+  margin-top: 18vh;
+  .region-content, .region-footer {
+    margin-left: 80px;
+  }
+  .row {
+    margin:0;
   }
   @media #{$mobile}{
     margin-top:0;
