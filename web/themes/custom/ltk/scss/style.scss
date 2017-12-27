@@ -25,7 +25,6 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'blocks/blocks';
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
-@import 'component/arrows';
 @import 'component/sidemenu';
 
 /*BREAKPOINT DETECTION SYSTEM*/
@@ -55,19 +54,73 @@ body {
     color: $green;
     &:hover {color: $white;}
   }
-  margin-top: 18vh;
-  .region-content, .region-footer {
-    margin-left: 80px;
-  }
+
+  /*РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
   .row {
     margin:0;
   }
-  @media #{$mobile}{
-    margin-top:0;
+
+  &.body-minimized {
+    @media #{$mobile}{
+      margin-top:0;
+      .region-highlighted {
+        top: 50px;
+        height: 35px;
+      }
+    }
+    @media #{$tablet}{
+      margin-top: 40px;
+      .region-highlighted {
+        top: 50px;
+        height: 35px;
+      }
+    }
+    @media #{$normal}{
+      margin-top: 70px;
+      .region-highlighted {
+        top: 50px;
+        height: 35px;
+      }
+    }
+    @media #{$wide}{
+      margin-top: 100px;
+      .region-highlighted {
+        top: 50px;
+        height: 35px;
+        z-index:100;
+      }
+    }
   }
+
+  @media #{$mobile}{margin-top:0}
+  @media #{$tablet}{margin-top: 120px}
+  @media #{$normal}{margin-top: 150px}
+  @media #{$wide}{margin-top: 189px}
+
+  /*КРОШКИ базовые параметры*/
+  .region-highlighted {
+    position: fixed;
+    left: 80px;
+    width: calc(100% - 80px);/*Ширина - расчет от максимума минус 80px*/
+  }
+  /*ЗАКОНЧИЛИСЬ КРОШКИ*/
+
+
+
+
+  /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
+
 }
 h1, h2, h3, h4, h5 {
   color: $black;
+}
+
+/*Стиль для запрета копирования*/
+.no-copy {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
 

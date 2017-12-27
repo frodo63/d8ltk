@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   background: $yellow;
   border: none;
   -webkit-transition: height 0.2s;
@@ -289,25 +289,24 @@
 
   }
   @media #{$tablet}{
+    height: 120px;
+
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
-
     #block-adres, #block-vremaraboty, #block-elpocta {
       img {
         height: 1vw;
       }
     }
-
     .logo {
       top: 0;
       left: 1vmax;
       img { height: 7.5vmax; }
     }
-
     #block-ltk-main-menu {
       left: 0;
       width: 100vw;
@@ -335,7 +334,6 @@
         }
       }
     }
-
     #block-uppertext {
       bottom: 0;
       left: 0;
@@ -344,7 +342,6 @@
       width: 100vw;
       text-align: left;
     }
-
     #block-sitename {
       top: 2.5vw;
       left: 10vw;
@@ -353,7 +350,6 @@
       line-height: 1.5vw;
       text-transform: uppercase;
     }
-
     #block-siteslogan {
       top: 6.5vw;
       left: 10vw;
@@ -361,21 +357,18 @@
       font-size: 1vw;
       line-height: 1vw;
     }
-
     #block-vremaraboty {
       top: 2.5vw;
       left: 75vw;
       font-size: 1vw;
       line-height: 1vw;
     }
-
     #block-adres {
       top: 4vw;
       left: 75vw;
       font-size: 1vw;
       line-height: 1vw;
     }
-
     #block-elpocta {
       top: 5.5vw;
       left: 75vw;
@@ -385,7 +378,6 @@
         color: $green;
       }
     }
-
     #block-telephones {
       top: 1vw;
       right: 2vw;
@@ -393,7 +385,6 @@
       font-size: 1.5vw;
       line-height: 1.5vw;
     }
-
     #block-ltk-search {
       position: absolute;
       width: 25vw;
@@ -421,10 +412,10 @@
     }
 
     &.minimized {
-      height: 2vw;
+      height: 25px;
       font-weight: 400;
-      font-size: 1.5vw;
-      line-height: 1.5vw;
+      font-size: 20px;
+      line-height: 20px;
 
       #block-telephones {
         top: 0.1vw;
@@ -457,7 +448,7 @@
     }
   }
   @media #{$normal}{
-
+    height: 150px;
     #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
@@ -587,7 +578,7 @@
     }
 
     &.minimized {
-      height: 4vh;
+      height: 35px;
       font-weight: 400;
       font-size: 1.5vw;
       line-height: 1.5vw;
@@ -668,7 +659,7 @@
       font-weight: 200;
       font-size: 15px;
       width: 100vw;
-      text-align: left;
+      text-align: center;
     }
 
     #block-sitename {
@@ -689,7 +680,7 @@
     }
 
     #block-vremaraboty, #block-adres, #block-elpocta {
-      left: 1090px;
+      right: 280px;
       font-size: 17px;
       line-height: 17px;
     }
@@ -703,7 +694,7 @@
     }
 
     #block-elpocta {
-      top: 5.5vw;
+      top: 92px;
       a:visited, a:hover, a:active {
         color: $green;
       }
@@ -758,7 +749,7 @@
       }
       #block-elpocta {
         top: 5px;
-        left: 1240px;
+        right: 280px;
         font-weight: 400;
         font-size: 25px;
         line-height: 25px;

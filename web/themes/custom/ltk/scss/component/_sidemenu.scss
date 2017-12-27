@@ -1,33 +1,69 @@
 .side-menu--wrap {
   background: $yellow;
-  /*top: 18vh;
-  height: 82vh;*/
-  @media #{$wide, $normal, $tablet}{
+
+
+  /*НАЧАЛСЯ Расчет высоты бокового меню*/
+
+  /*Первоначально объявляем переменную*/
+  $htop:100px;
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+  @media #{$wide}{
     $htop: 189px;
     top: $htop;
     height: calc(100% - #{$htop});
+    &.minimized{
+      $htop: 42px;
+      top: $htop;
+      height: calc(100% - #{$htop});}
   }
+  @media #{$normal}{
+    $htop: 150px;
+    top: $htop;
+    height: calc(100% - #{$htop});
+    &.minimized{
+      $htop: 35px;
+      top: $htop;
+      height: calc(100% - #{$htop});
+    }
+  }
+  @media #{$tablet}{
+    $htop: 120px;
+    top: $htop;
+    height: calc(100% - #{$htop});
+    &.minimized{
+      $htop: 25px;
+      top: $htop;
+      height: calc(100% - #{$htop});
+    }
+  }
+
+  /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+
   position: fixed;
+  left: 0px;
   z-index: 100;
   width: 80px;
-  &.minimized{
-    top: 4vh;
-    height: 96vh;
-  }
+
   h2, a, .side-menu-burger--name {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
   }
 
-  .side-menu-burger-link:hover {
-    .side-menu-burger--icon span {background: $white}
+  .side-menu-burger-link {
+    height: 166px;
+    cursor: pointer;
+    &:hover{
+      .side-menu-burger--icon span {background: $white}
+      .side-menu-burger--name {color: $white}
+    }
   }
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   .side-menu-burger--name {
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+
     font-size: 20px;
     margin-top: 60px;
-
-    cursor: pointer;
 
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -85,11 +121,11 @@
     -o-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
 
-    top: 18vh;
-    height: 82vh;
+    top: inherit;
+    height: inherit;
     &.minimized{
-      top: 4vh;
-      height: 96vh;
+      top: inherit;
+      height: inherit;
     }
     width: 240px;
     left: 80px;
@@ -135,6 +171,7 @@
       display: block;
     }
   }
+  /*ЗАКОНЧИЛОСЬ МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
 }
 
 

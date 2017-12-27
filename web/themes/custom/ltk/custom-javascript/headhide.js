@@ -6,38 +6,37 @@ Drupal.behaviors.basic = {
 
                 if (scroll > 0) {
                     $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').addClass('minimized');
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('body').addClass('body-minimized');
                 } else {
                     $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').removeClass("minimized");
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('body').removeClass('body-minimized');
                 }
             });
 
+            /*Первоначальное положение, до ресайза*/
             if ($('.device-mobile').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК MOB</p>');
             } else if ($('.device-tablet').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК TAB</p>');
             } else if ($('.device-normal').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК"</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК NOR</p>');
             } else {
-                $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК" WIDE</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК W</p>');
             }
 
+            /*Событие на рейсайз*/
             $(window).off('resize').on('resize', function () {
                 if ($('.device-mobile').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК MOB</p>');
                 } else if ($('.device-tablet').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ООО "ЛУБРИТЭК"</p>');
-                } else if ($('dasd.device-normal').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК"</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК TAB</p>');
+                } else if ($('.device-normal').is(":visible")) {
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК NOR</p>');
                 } else {
-                    $('#block-sitename div.field--name-body').html('<p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛУБРИТЭК" WIDE</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК W</p>');
                 }
             });
 
-          $('.arrow-down').off('click').on('click', function () {
-            $('.arrow-down').toggleClass('moving');
-          });
             /*MOBILE landscape height FIX*/
           $( window ).on( "orientationchange", function( event ) {
             $(document).css({ 'height' : $(window).height() });
