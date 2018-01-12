@@ -56,6 +56,7 @@
   //Paragraph 3
   .fp-3.simple {
     min-height:55vw;
+    background: $yellow;
     .fp_simple_text {
       font-size: 3.5vw;
       background: $yellow;
@@ -69,12 +70,13 @@
   }
   //Paragraph 4
   .fp-4.twt {
-    height:55vw;
+    background: $yellow;
+    height:85vh;
     .paragraph__column {
       top: 12vw;
-      font-size: 1.7vw;
-      background: $yellow;
     }
+    h1.fp_twt_title{font-size: 25px}
+    fp_twt_text p{font-size: 20px}
   }
   .fp-4.simple > .paragraph__column {
     height:55vw;

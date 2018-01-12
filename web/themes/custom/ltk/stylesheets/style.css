@@ -10588,64 +10588,72 @@ p:last-child,
   /* line 57, ../scss/component/_frontpage_paragraphs.scss */
   .fp-3.simple {
     min-height: 55vw;
+    background: #FBBA00;
   }
-  /* line 59, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 60, ../scss/component/_frontpage_paragraphs.scss */
   .fp-3.simple .fp_simple_text {
     font-size: 3.5vw;
     background: #FBBA00;
   }
-  /* line 63, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 64, ../scss/component/_frontpage_paragraphs.scss */
   .fp-3.simple .paragraph__column {
     top: 10vw;
   }
 
-  /* line 67, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 68, ../scss/component/_frontpage_paragraphs.scss */
   .fp-3.simple > .paragraph__column {
     height: 55vw;
   }
 
-  /* line 71, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 72, ../scss/component/_frontpage_paragraphs.scss */
   .fp-4.twt {
-    height: 55vw;
+    background: #FBBA00;
+    height: 85vh;
   }
-  /* line 73, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 75, ../scss/component/_frontpage_paragraphs.scss */
   .fp-4.twt .paragraph__column {
     top: 12vw;
-    font-size: 1.7vw;
-    background: #FBBA00;
+  }
+  /* line 78, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-4.twt h1.fp_twt_title {
+    font-size: 25px;
+  }
+  /* line 79, ../scss/component/_frontpage_paragraphs.scss */
+  .fp-4.twt fp_twt_text p {
+    font-size: 20px;
   }
 
-  /* line 79, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 81, ../scss/component/_frontpage_paragraphs.scss */
   .fp-4.simple > .paragraph__column {
     height: 55vw;
   }
 
-  /* line 83, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 85, ../scss/component/_frontpage_paragraphs.scss */
   div.fp-5 {
     min-height: 55vw;
   }
-  /* line 85, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 87, ../scss/component/_frontpage_paragraphs.scss */
   div.fp-5 .card-header {
     height: 11vw;
   }
 
-  /* line 89, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 91, ../scss/component/_frontpage_paragraphs.scss */
   .fp-5 > .paragraph__column {
     padding-bottom: 0;
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 94, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 96, ../scss/component/_frontpage_paragraphs.scss */
   .fp-5 > .paragraph__column a {
     font-size: 2vw;
   }
-  /* line 96, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 98, ../scss/component/_frontpage_paragraphs.scss */
   .fp-5 > .paragraph__column a:hover {
     color: #17460F;
   }
 
-  /* line 102, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 104, ../scss/component/_frontpage_paragraphs.scss */
   .fp-6.twt > .paragraph__column {
     min-height: 55vw;
   }
@@ -10660,7 +10668,7 @@ p:last-child,
   position: fixed;
   left: 0px;
   z-index: 100;
-  width: 80px;
+  width: 40px;
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   /*БЛОК С БУРГЕР ИКОНКОЙ*/
   /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
@@ -10725,7 +10733,7 @@ p:last-child,
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -10734,7 +10742,7 @@ p:last-child,
 }
 /* line 76, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon {
-  margin: 20px 30px 30px 30px;
+  margin: 20px 10px 40px 10px;
 }
 /* line 79, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon span {
@@ -10771,6 +10779,8 @@ p:last-child,
 }
 /* line 116, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu {
+  overflow-y: scroll;
+  /*При длинном столбе опций появляется скролл*/
   display: none;
   transition: all .5s ease-out;
   -webkit-transition: all .5s ease-out;
@@ -10779,113 +10789,125 @@ p:last-child,
   -moz-transition: all .5s ease-out;
   top: inherit;
   height: inherit;
-  width: 240px;
-  left: 80px;
+  /*width: 240px;*/
+  left: 40px;
   background: #FBBA00;
   position: fixed;
 }
-/* line 126, ../scss/component/_sidemenu.scss */
+/* line 127, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu.minimized {
   top: inherit;
   height: inherit;
 }
-/* line 134, ../scss/component/_sidemenu.scss */
+/* line 135, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav {
-  display: none;
+  /*display: none;*/
   max-height: 59vh;
   min-height: 22vh;
-  width: 220px;
+  width: 240px;
   overflow-y: overlay;
 }
-/* line 141, ../scss/component/_sidemenu.scss */
+/* line 142, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav li a {
   padding: 2px 0px 5px 10px;
 }
-/* line 143, ../scss/component/_sidemenu.scss */
+/* line 144, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
 }
-/* line 147, ../scss/component/_sidemenu.scss */
+/* line 148, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2, .side-menu--wrap .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 150, ../scss/component/_sidemenu.scss */
+/* line 151, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2:hover, .side-menu--wrap .region-sidemenu a:hover {
   color: #FFFFFF;
 }
-/* line 155, ../scss/component/_sidemenu.scss */
+/* line 156, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2 {
   display: inline-block;
   width: 200px;
   font-size: 20px;
 }
-/* line 160, ../scss/component/_sidemenu.scss */
+/* line 161, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a {
   font-size: 15px;
 }
-/* line 163, ../scss/component/_sidemenu.scss */
+/* line 164, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 166, ../scss/component/_sidemenu.scss */
+/* line 167, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 170, ../scss/component/_sidemenu.scss */
+/* line 171, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu.active {
   display: block;
+}
+
+/* line 1, ../scss/component/_product_filters.scss */
+.region-sidebar-second {
+  /*position: absolute;*/
+  margin-top: 60px;
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 33, ../scss/style.scss */
+  /* line 34, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 34, ../scss/style.scss */
+  /* line 35, ../scss/style.scss */
   .device-mobile {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 37, ../scss/style.scss */
+  /* line 38, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 38, ../scss/style.scss */
+  /* line 39, ../scss/style.scss */
   .device-tablet {
     display: block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 41, ../scss/style.scss */
+  /* line 42, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   .device-normal {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 45, ../scss/style.scss */
+  /* line 46, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 46, ../scss/style.scss */
+  /* line 47, ../scss/style.scss */
   .device-wide {
     display: block;
   }
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-/* line 50, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
+.main-container {
+  position: relative;
+  left: 40px;
+}
+
+/* line 56, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
@@ -10894,57 +10916,57 @@ body {
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 }
-/* line 53, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 55, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 body a:hover {
   color: #FFFFFF;
 }
-/* line 59, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 body .row {
   margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 63, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   body.body-minimized {
     margin-top: 0;
   }
-  /* line 66, ../scss/style.scss */
+  /* line 72, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 63, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   body.body-minimized {
     margin-top: 40px;
   }
-  /* line 73, ../scss/style.scss */
+  /* line 79, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 63, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   body.body-minimized {
     margin-top: 70px;
   }
-  /* line 80, ../scss/style.scss */
+  /* line 86, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 63, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   body.body-minimized {
     margin-top: 100px;
   }
-  /* line 87, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
@@ -10952,44 +10974,49 @@ body .row {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 50, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 50, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   body {
     margin-top: 120px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 50, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   body {
     margin-top: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 50, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   body {
     margin-top: 189px;
   }
 }
-/* line 101, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 body .region-highlighted {
   position: fixed;
-  left: 80px;
-  width: calc(100% - 80px);
-  /*Ширина - расчет от максимума минус 80px*/
+  left: 40px;
+  width: calc(100% - 40px);
+  /*Ширина - расчет от максимума минус 40px*/
+}
+/* line 111, ../scss/style.scss */
+body .region-highlighted.active {
+  left: 280px;
+  width: calc(100% - 280px);
 }
 
-/* line 114, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
 /*Стиль для запрета копирования*/
-/* line 119, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */

@@ -42,7 +42,7 @@
   position: fixed;
   left: 0px;
   z-index: 100;
-  width: 80px;
+  width: 40px;
 
   h2, a, .side-menu-burger--name {
     font-family: 'Oswald', sans-serif;
@@ -63,7 +63,7 @@
     transition: all .2s ease-out;
 
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
 
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -74,7 +74,7 @@
 
   /*БЛОК С БУРГЕР ИКОНКОЙ*/
   .side-menu-burger--icon{
-    margin: 20px 30px 30px 30px;
+    margin: 20px 10px 40px 10px;
 
     span {
       -webkit-transition: all .2s ease-out;
@@ -114,6 +114,7 @@
 
   /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
   .region-sidemenu{
+    overflow-y: scroll;/*При длинном столбе опций появляется скролл*/
     display:none;
     transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
@@ -127,15 +128,15 @@
       top: inherit;
       height: inherit;
     }
-    width: 240px;
-    left: 80px;
+    /*width: 240px;*/
+    left: 40px;
     background: $yellow;
     position: fixed;
     nav ul.nav {
-      display: none;
+      /*display: none;*/
       max-height: 59vh;
       min-height: 22vh;
-      width: 220px;
+      width: 240px;
       overflow-y: overlay;
       li {
         a{

@@ -49,8 +49,9 @@ Drupal.behaviors.basic = {
           });
 /*Анимация выдвигающегося бокового меню*/
           $('.side-menu-burger-link').off('click.burger').on('click.burger', function(){
-              $('.region-sidemenu').toggleClass('active'); //Выезжает меню
-              $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
+            $('.region-highlighted').toggleClass('active');//Сжимается строка хлебных крошек
+            $('.region-sidemenu').toggleClass('active'); //Выезжает меню
+            $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
         })(jQuery);
     }

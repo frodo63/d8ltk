@@ -26,6 +26,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'component/header';
 @import 'component/frontpage_paragraphs';
 @import 'component/sidemenu';
+@import 'component/product_filters';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
@@ -46,6 +47,11 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
   .device-wide {display: block}
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
+
+.main-container {
+  position: relative;
+  left: 40px;
+}
 
 body {
   background: $white;
@@ -100,8 +106,12 @@ body {
   /*КРОШКИ базовые параметры*/
   .region-highlighted {
     position: fixed;
-    left: 80px;
-    width: calc(100% - 80px);/*Ширина - расчет от максимума минус 80px*/
+    left: 40px;
+    width: calc(100% - 40px);/*Ширина - расчет от максимума минус 40px*/
+    &.active{
+      left: 280px;
+      width: calc(100% - 280px);
+    }
   }
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
 
