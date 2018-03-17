@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f365802-ebe8-4cc1-a0c2-ca10470aebb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/services.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/ic_mail_outline_black_24px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/ic_room_black_24px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/ic_schedule_black_24px.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/grease1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/grease2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/liq1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/liq2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/oil1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/oil2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/spes/oil3.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_frontpage_paragraphs.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_frontpage_paragraphs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.lock" afterPath="$PROJECT_DIR$/../composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/development.services.yml" afterPath="$PROJECT_DIR$/sites/development.services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" afterPath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" afterPath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/node/node--view--frontpage--page-1.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/node--view--frontpage--page-1.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/paragraphs/paragraph--bp-accordion.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/paragraphs/paragraph--bp-accordion.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,14 +29,14 @@
     <favorites_list name="web" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5939538">
+    <splitter split-orientation="horizontal" split-proportion="0.48073503">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="_frontpage_paragraphs.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+                <state relative-caret-position="510">
+                  <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
                   <folding>
                     <element signature="e#74#277#0" expanded="false" />
                     <element signature="e#303#593#0" expanded="false" />
@@ -47,22 +44,22 @@
                     <element signature="e#498#589#0" expanded="false" />
                     <element signature="e#697#816#0" expanded="false" />
                     <element signature="e#829#893#0" expanded="false" />
-                    <element signature="e#1332#1355#0" expanded="false" />
-                    <element signature="e#1363#1395#0" expanded="false" />
-                    <element signature="e#1421#1604#0" expanded="false" />
-                    <element signature="e#1448#1477#0" expanded="false" />
-                    <element signature="e#1492#1600#0" expanded="false" />
-                    <element signature="e#1619#1705#0" expanded="false" />
-                    <element signature="e#1669#1701#0" expanded="false" />
-                    <element signature="e#1720#1918#0" expanded="false" />
-                    <element signature="e#1882#1914#0" expanded="false" />
-                    <element signature="e#1935#2025#0" expanded="false" />
-                    <element signature="e#2051#2259#0" expanded="false" />
-                    <element signature="e#2070#2255#0" expanded="false" />
-                    <element signature="e#2102#2249#0" expanded="false" />
-                    <element signature="e#2285#2881#0" expanded="false" />
-                    <element signature="e#2939#2986#0" expanded="false" />
-                    <element signature="e#2955#2982#0" expanded="false" />
+                    <element signature="e#1406#1429#0" expanded="false" />
+                    <element signature="e#1437#1469#0" expanded="false" />
+                    <element signature="e#1495#1678#0" expanded="false" />
+                    <element signature="e#1522#1551#0" expanded="false" />
+                    <element signature="e#1566#1674#0" expanded="false" />
+                    <element signature="e#1693#1779#0" expanded="false" />
+                    <element signature="e#1743#1775#0" expanded="false" />
+                    <element signature="e#1794#1992#0" expanded="false" />
+                    <element signature="e#1956#1988#0" expanded="false" />
+                    <element signature="e#2009#2099#0" expanded="false" />
+                    <element signature="e#2125#2333#0" expanded="false" />
+                    <element signature="e#2144#2329#0" expanded="false" />
+                    <element signature="e#2176#2323#0" expanded="false" />
+                    <element signature="e#2359#2955#0" expanded="false" />
+                    <element signature="e#3013#3060#0" expanded="false" />
+                    <element signature="e#3029#3056#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -81,8 +78,8 @@
           <file leaf-file-name="headhide.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+                <state relative-caret-position="310">
+                  <caret line="80" column="42" lean-forward="false" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
@@ -183,8 +180,8 @@
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
         <option value="$PROJECT_DIR$/sites/default/settings.local.php" />
         <option value="$PROJECT_DIR$/sites/development.services.yml" />
-        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" />
         <option value="$PROJECT_DIR$/modules/custom/custhtml/templates/custom-front.html.twig" />
+        <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" />
       </list>
     </option>
@@ -231,37 +228,55 @@
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="files" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="files" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme-images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sites" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="files" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme-images" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="spes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -321,18 +336,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/custom/ltk/images" />
-      <recent name="$PROJECT_DIR$/sites/default" />
-      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/paragraphs" />
-      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/system" />
-      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/block" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/custom/custhtml" />
       <recent name="$PROJECT_DIR$/modules/custom/custhtml/src" />
       <recent name="$PROJECT_DIR$/modules/contrib" />
       <recent name="$PROJECT_DIR$/modules/custom/request" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/default/files/theme-images/spes" />
+      <recent name="$PROJECT_DIR$/themes/custom/ltk/images" />
+      <recent name="$PROJECT_DIR$/sites/default" />
+      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/paragraphs" />
+      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/system" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,12 +458,12 @@
       <workItem from="1521189810509" duration="87000" />
       <workItem from="1521201170333" duration="900000" />
       <workItem from="1521203440407" duration="598000" />
-      <workItem from="1521218937042" duration="10425000" />
+      <workItem from="1521218937042" duration="12511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314666000" />
+    <option name="totallyTimeSpent" value="316752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,14 +478,14 @@
     <frame x="-1" y="29" width="1922" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10170394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14696486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38824764" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21618743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15248619" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3392265" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -512,13 +527,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/modules/block/src/BlockAccessControlHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/modules/block/src/BlockForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -796,49 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-          <folding>
-            <element signature="e#74#277#0" expanded="false" />
-            <element signature="e#303#593#0" expanded="false" />
-            <element signature="e#391#482#0" expanded="false" />
-            <element signature="e#498#589#0" expanded="false" />
-            <element signature="e#697#816#0" expanded="false" />
-            <element signature="e#829#893#0" expanded="false" />
-            <element signature="e#1332#1355#0" expanded="false" />
-            <element signature="e#1363#1395#0" expanded="false" />
-            <element signature="e#1421#1604#0" expanded="false" />
-            <element signature="e#1448#1477#0" expanded="false" />
-            <element signature="e#1492#1600#0" expanded="false" />
-            <element signature="e#1619#1705#0" expanded="false" />
-            <element signature="e#1669#1701#0" expanded="false" />
-            <element signature="e#1720#1918#0" expanded="false" />
-            <element signature="e#1882#1914#0" expanded="false" />
-            <element signature="e#1935#2025#0" expanded="false" />
-            <element signature="e#2051#2259#0" expanded="false" />
-            <element signature="e#2070#2255#0" expanded="false" />
-            <element signature="e#2102#2249#0" expanded="false" />
-            <element signature="e#2285#2881#0" expanded="false" />
-            <element signature="e#2939#2986#0" expanded="false" />
-            <element signature="e#2955#2982#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="978">
           <caret line="59" column="36" lean-forward="false" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -850,6 +819,53 @@
           <folding>
             <marker date="1521244097844" expanded="true" signature="6166:6167" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/files/config_uZkOZWGS8HQvgmmbe7iihV6-t18fGfXLlhymEypv5kGrPb8wJETRvCbgOlSTsxsbmhiCTWZ-Og/sync/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding>
+            <element signature="e#74#277#0" expanded="false" />
+            <element signature="e#303#593#0" expanded="false" />
+            <element signature="e#391#482#0" expanded="false" />
+            <element signature="e#498#589#0" expanded="false" />
+            <element signature="e#697#816#0" expanded="false" />
+            <element signature="e#829#893#0" expanded="false" />
+            <element signature="e#1406#1429#0" expanded="false" />
+            <element signature="e#1437#1469#0" expanded="false" />
+            <element signature="e#1495#1678#0" expanded="false" />
+            <element signature="e#1522#1551#0" expanded="false" />
+            <element signature="e#1566#1674#0" expanded="false" />
+            <element signature="e#1693#1779#0" expanded="false" />
+            <element signature="e#1743#1775#0" expanded="false" />
+            <element signature="e#1794#1992#0" expanded="false" />
+            <element signature="e#1956#1988#0" expanded="false" />
+            <element signature="e#2009#2099#0" expanded="false" />
+            <element signature="e#2125#2333#0" expanded="false" />
+            <element signature="e#2144#2329#0" expanded="false" />
+            <element signature="e#2176#2323#0" expanded="false" />
+            <element signature="e#2359#2955#0" expanded="false" />
+            <element signature="e#3013#3060#0" expanded="false" />
+            <element signature="e#3029#3056#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="80" column="42" lean-forward="false" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

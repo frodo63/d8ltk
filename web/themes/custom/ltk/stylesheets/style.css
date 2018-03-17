@@ -10582,6 +10582,8 @@ p:last-child,
     left: 0;
     height: 80%;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
   }
   /* line 46, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla ul,
@@ -10606,21 +10608,21 @@ p:last-child,
     width: 100px;
   }
 
-  /* line 66, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 68, ../scss/component/_frontpage_paragraphs.scss */
   .text {
     z-index: 100;
   }
 
-  /* line 69, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 71, ../scss/component/_frontpage_paragraphs.scss */
   .fix {
     background: lightpink;
   }
 
-  /* line 74, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 76, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2, .cfp-3 .col-lg-8 {
     height: inherit;
   }
-  /* line 77, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 79, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2 {
     font-size: 50px;
     position: absolute;
@@ -10628,17 +10630,17 @@ p:last-child,
     transform: translate(0, -50%);
   }
 
-  /* line 84, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 86, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title {
     font-size: 25px;
     cursor: pointer;
   }
-  /* line 87, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 89, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title p {
     text-align: right;
   }
 
-  /* line 91, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 93, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup {
     background: #FFFFFF;
     color: #000000;
@@ -10649,12 +10651,12 @@ p:last-child,
     top: 0;
     height: 100%;
   }
-  /* line 100, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 102, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup p {
     text-align: right;
   }
 
-  /* line 104, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 106, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-wrapper {
     height: inherit;
     width: 100%;
@@ -10663,11 +10665,11 @@ p:last-child,
     text-align: left;
   }
 
-  /* line 113, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 115, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column {
     height: inherit;
   }
-  /* line 115, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 117, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column p {
     background: #FBBA00;
     font-size: 35px;
@@ -10676,48 +10678,48 @@ p:last-child,
     transform: translate(0, -50%);
   }
 
-  /* line 125, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 127, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 {
     font-size: 20px;
   }
-  /* line 127, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 129, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 {
     padding: 0;
     height: inherit;
   }
-  /* line 130, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 132, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper {
     height: inherit;
     background: #FBBA00;
     margin: 0 .5vh;
   }
-  /* line 134, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 136, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper p {
     width: calc(100% - 1vh);
   }
-  /* line 139, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 141, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-title {
     font-size: 30px;
     position: absolute;
     top: 5%;
   }
-  /* line 144, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 146, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column {
     font-size: 17px;
     position: absolute;
     top: 45%;
   }
-  /* line 146, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 148, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span {
     text-decoration: underline;
     cursor: pointer;
   }
-  /* line 149, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 151, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span:hover {
     color: #17460F;
   }
 
-  /* line 162, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 164, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-8 .carousel {
     height: 70vh;
   }

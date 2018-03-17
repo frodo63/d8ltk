@@ -78,7 +78,7 @@ Drupal.behaviors.basic = {
           /*Анимация cfp2-divы ховеры для всех картинок*/
           $('div[class^="cfp2-"] li').off('mouseover.cfp2li').on('mouseover.cfp2li' , function () {
             var count = $(event.target).attr('data-count');
-            var path ="themes/custom/ltk/images/spes/"+count+".png";
+            var path ="sites/default/files/theme-images/spes/"+count+".png";
             var target = $(event.target).parents('div[class^="cfp2-"]');
             target.css('background-image','url('+path+')');
           })
