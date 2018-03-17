@@ -42,17 +42,47 @@ Drupal.behaviors.basic = {
             $(document).css({ 'height' : $(window).height() });
             $(document).css({ 'width' : $(window).width() });
           });
-/*Анимация категорий в меню*/
+           /*Анимация категорий в меню*/
           $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
             $('.region-sidemenu ul.menu:visible').hide('slow');
             $(event.target).siblings('ul.menu:hidden').show('slow');
           });
-/*Анимация выдвигающегося бокового меню*/
+          /*Анимация выдвигающегося бокового меню*/
           $('.side-menu-burger-link').off('click.burger').on('click.burger', function(){
             $('.region-highlighted').toggleClass('active');//Сжимается строка хлебных крошек
             $('.region-sidemenu').toggleClass('active'); //Выезжает меню
             $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
+
+          /*Анимация cfp-3 категория и содержимое отрасли*/
+          $('.cfp3-title').off('mouseover.cpf3').on('mouseover.cfp3', function (event) {
+            $('.cfp3-popup').hide();
+            var count = $(event.target).attr('data-count');
+            var target = $('.cfp3-popup[data-count='+count+']');
+            if (target.css('display') == 'none') {
+              target.show();
+            }
+            else {target.hide()};
+          });
+
+          /*Анимация cfp-2 категория и содержимое отрасли*/
+          $('.special').off('mouseover.cpf2').on('mouseover.cfp2', function (event) {
+              $('div[class^="cfp2-"]').hide();
+              var tag = $(event.target).attr('data-tag');
+              var target = $('.cfp2-'+tag);
+              if (target.css('display') == 'none') {target.show()}
+              else {target.hide()};
+              target = null;
+          });
+
+          /*Анимация cfp2-divы ховеры для всех картинок*/
+          $('div[class^="cfp2-"] li').off('mouseover.cfp2li').on('mouseover.cfp2li' , function () {
+            var count = $(event.target).attr('data-count');
+            var path ="themes/custom/ltk/images/spes/"+count+".png";
+            var target = $(event.target).parents('div[class^="cfp2-"]');
+            target.css('background-image','url('+path+')');
+          })
+
         })(jQuery);
     }
 };

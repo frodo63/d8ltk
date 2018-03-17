@@ -56,6 +56,8 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 body {
   background: $white;
   color: $green;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
   a{
     color: $green;
     &:hover {color: $white;}

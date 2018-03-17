@@ -2935,7 +2935,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/text_with_title",
-                "reference": "4c8526556efc3e19a37a0bf62bae090284be3cf6"
+                "reference": "494be15492f1c2152ca1888e85a3f36761026900"
             },
             "require": {
                 "drupal/core": "*"
@@ -2947,7 +2947,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1495543083",
+                    "datestamp": "1518515280",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2956,7 +2956,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2969,7 +2969,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/text_with_title"
             },
-            "time": "2017-05-23T12:34:16+00:00"
+            "time": "2018-02-13T09:45:39+00:00"
         },
         {
             "name": "drupal/viewsreference",

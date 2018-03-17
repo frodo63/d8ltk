@@ -1,111 +1,169 @@
 @media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
-
-  //Убираем BOotstrap паддинги боковые
-  .col-sm-12, .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .fp-1, .fp-2, .fp-3, .fp-4, .fp-5, .fp-6, .fp-slider {
+  div[class*='cfp-'] {
+    height: 60vh;
     font-family: 'Oswald', sans-serif;
-    color: $black;
+    color: #000000;
     text-align: center;
+    margin: 5vh 0 5vh 0;
+    border-bottom: 2px $yellow solid;
+    background-repeat: no-repeat;
   }
-
-  //Slider
-  .fp-slider .paragraph__column {
-    height: 20vw;
-  }
-
   //Paragraph 1
-  .fp-1.twt {
-    color: $black;
-  }
-  .fp-1.twt > .paragraph__column {
-    height: 48vw;
-    .fp_twt_title{
-      top: 10vw;
+  .cfp-1 {
+    background-image: url('/themes/custom/ltk/images/reductor2.png');
+    p.cfp_title {
+      top: 10vh;
       position: absolute;
       width: 100%;
       font-size: 4vw;
     }
-    .fp_twt_text{
-      top: 30vw;
+    p.cfp_text {
+      top: 30vh;
       position: absolute;
       width: 100%;
-      font-size: 2vw;
+      font-size: 2vh;
     }
   }
   //Paragraph 2
-  .fp-2.twt {
-    .fp_twt_title {
-      font-size: 3vw;
+  .cfp-2 {
+    background-image: url('/themes/custom/ltk/images/reductor1.png');
+    p {
+      font-size: 35px;
+      color: $black;
+      text-align: center;
+      position: absolute;
+      top: 80%;
     }
-    .fp_twt_text {
-      font-size: 1.5vw;
+    .special{
+      text-decoration: underline;
+      cursor: pointer;
     }
-    .paragraph__column {
-      height: 55vw;
-      top: 7vw;
+    .cfp2-masla,
+    .cfp2-smazki,
+    .cfp2-tzhid,
+    .cfp2-import,
+    .cfp2-otech {
+      ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 20px;
+        text-align: left;
+      }
+      img{
+        height: 40px;
+        width: 100px;
+      }
+      display: none;
+      position: absolute;
+      top:0;
+      left:0;
+      height: 80%;
+      width: 100%;
     }
   }
-  .fp-2.simple {
-    min-height:5vw;
-    font-size: 2vw;
+  .text {
+    z-index: 100;
+  }
+  .fix {
+    background: lightpink;
   }
   //Paragraph 3
-  .fp-3.simple {
-    min-height:55vw;
-    background: $yellow;
-    .fp_simple_text {
-      font-size: 3.5vw;
-      background: $yellow;
+  .cfp-3 {
+    .col-lg-2, .col-lg-8 {
+      height:inherit;
     }
-    .paragraph__column {
-      top: 10vw;
+    .col-lg-2 {
+      font-size: 50px;
+      position: absolute;
+      top:50%;
+      transform: translate(0, -50%);
     }
   }
-  .fp-3.simple > .paragraph__column {
-    height:55vw;
+  .cfp3-title {
+    font-size: 25px;
+    cursor: pointer;
+    p {
+      text-align: right;
+    }
+  }
+  .cfp3-popup {
+    background: $white;
+    color: $black;
+    display: none;
+    font-size: 35px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    p {
+      text-align: right;
+    }
+  }
+  .cfp3-wrapper {
+    height: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
   }
   //Paragraph 4
-  .fp-4.twt {
-    background: $yellow;
-    height:85vh;
-    .paragraph__column {
-      top: 12vw;
+  .cfp-4 {
+    .cfp4-column {
+      height:inherit;
+      p {
+        background: $yellow;
+        font-size: 35px;
+        position: absolute;
+        top:50%;
+        transform: translate(0, -50%);
+      }
     }
-    h1.fp_twt_title{font-size: 25px}
-    fp_twt_text p{font-size: 20px}
-  }
-  .fp-4.simple > .paragraph__column {
-    height:55vw;
   }
   //Paragraph 5
-  div.fp-5 {
-    min-height:55vw;
-    .card-header {
-      height: 11vw;
-    }
-  }
-  .fp-5 > .paragraph__column {
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    a{
-      font-size: 2vw;
-      &:hover{
-        color: $green;
+  .cfp-5 {
+    font-size: 20px;
+    .col-lg-2{
+      padding: 0;
+      height: inherit;
+      .cfp5-wrapper{
+        height: inherit;
+        background: $yellow;
+        margin: 0 .5vh;
+        p{
+          width: calc(100% - 1vh);
+        }
+
+      }
+      p.cfp5-title{
+        font-size: 30px;
+        position: absolute;
+        top:5%;
+      }
+      p.cfp5-column{
+        font-size: 17px;
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+          &:hover{
+            color: $green;
+          }
+        }
+        position: absolute;
+        top:45%;
       }
     }
   }
   //Paragraph 6
-  .fp-6.twt > .paragraph__column {
-    min-height:55vw;
+  //Paragraph 7
+  //Paragraph 8
+  .cfp-8 {
+    .carousel {
+      height: 70vh;
+    }
   }
+  //Paragraph 9
 }
-
-
 
 
