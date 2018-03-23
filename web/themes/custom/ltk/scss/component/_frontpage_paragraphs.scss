@@ -37,6 +37,9 @@
     .special{
       text-decoration: underline;
       cursor: pointer;
+      &:hover{
+        color: $green;
+      }
     }
     .cfp2-masla,
     .cfp2-smazki,
@@ -57,19 +60,24 @@
       }
       display: none;
       position: absolute;
-      top:0;
+      top:30%;
       left:0;
-      height: 80%;
+      height: 70%;
       width: 100%;
       background-repeat: no-repeat;
       background-position: right top;
     }
   }
-  .text {
-    z-index: 100;
-  }
   .fix {
     background: lightpink;
+  }
+  p.cfp-topline{
+    position: absolute;
+    top:0%;
+    height: 30%;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
   }
   //Paragraph 3
   .cfp-3 {
@@ -88,6 +96,10 @@
     cursor: pointer;
     p {
       text-align: right;
+    }
+    &:hover{
+      background: $yellow;
+      color: $black;
     }
   }
   .cfp3-popup {
@@ -159,6 +171,12 @@
   }
   //Paragraph 6
   //Paragraph 7
+  .cfp-7{
+    #accordion{
+      top: 20%;
+      position: absolute;
+    }
+  }
   //Paragraph 8
   .cfp-8 {
     .carousel {
@@ -166,6 +184,12 @@
     }
   }
   //Paragraph 9
+  .cfp-9 {
+    #myCarousel {
+      height:55vh;
+    }
+  }
+
 }
 
 
