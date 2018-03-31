@@ -19,6 +19,19 @@ drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_a
  git commit -m "smth"
  git push origin master
 
+Updating
+ drush sset system.maintenance_mode 1 - Режим обслуживания
+ drush cr - чистим кеш
+ composer update drupal/core --with-dependencies - Обновляем ядро
+ drush updatedb - обновляем базу 
+ drush cr
+ drush sset system.maintenance_mode 0 - включаем рабочий режим
+ drush cr  - и снова кеш
+
+ composer prohibits drupal/core:8.5.0 - показать, какие зависимости мешают обновлению
+ composer update --dry-run - холостой прогон для проверки возможности обновления
+ 
+
 
 git pull --rebase origin master 	- пулим удаленный и ставим свои изменения на самый верх
 
