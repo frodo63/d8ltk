@@ -1,0 +1,9 @@
+uuid: c9377822-1895-4dba-8152-f28941e2e42d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Класс NLGI'
+vid: klass_nlgi
+description: ''
+hierarchy: 0
+weight: 5

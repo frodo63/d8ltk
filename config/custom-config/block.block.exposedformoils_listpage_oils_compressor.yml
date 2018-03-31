@@ -1,0 +1,29 @@
+uuid: f04a96b5-cf5c-4d2f-b950-cf71997bf15a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_compressor
+theme: ltk
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_compressor'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_compressor'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/compressor
+    negate: false
+    context_mapping: {  }

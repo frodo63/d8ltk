@@ -1,0 +1,20 @@
+uuid: f67808d0-95bd-4212-b43a-8ce35550d743
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_food
+field_name: field_oil_food
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

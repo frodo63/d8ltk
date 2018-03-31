@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: telephones
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -7
 provider: null
 plugin: 'block_content:64c75563-c61e-4afd-b51e-4cb7966821dc'
 settings:

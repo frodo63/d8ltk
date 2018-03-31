@@ -1,0 +1,276 @@
+uuid: 41fd58c1-56fe-4006-81e8-1e74527ccb08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.maslo.field_acea
+    - field.field.node.maslo.field_api_c
+    - field.field.node.maslo.field_api_f
+    - field.field.node.maslo.field_api_s
+    - field.field.node.maslo.field_oil_application
+    - field.field.node.maslo.field_oil_apply_node
+    - field.field.node.maslo.field_oil_base_oil
+    - field.field.node.maslo.field_oil_brand
+    - field.field.node.maslo.field_oil_compr_env
+    - field.field.node.maslo.field_oil_compr_principle
+    - field.field.node.maslo.field_oil_description
+    - field.field.node.maslo.field_oil_dopuski
+    - field.field.node.maslo.field_oil_engine_type
+    - field.field.node.maslo.field_oil_food
+    - field.field.node.maslo.field_oil_freezer_type
+    - field.field.node.maslo.field_oil_heat_transfer_type
+    - field.field.node.maslo.field_oil_hydr_type
+    - field.field.node.maslo.field_oil_motor_sae
+    - field.field.node.maslo.field_oil_pairs
+    - field.field.node.maslo.field_oil_red_type
+    - field.field.node.maslo.field_oil_spec
+    - field.field.node.maslo.field_oil_temp__high
+    - field.field.node.maslo.field_oil_temp__low
+    - field.field.node.maslo.field_oil_trans_gm_type
+    - field.field.node.maslo.field_oil_type
+    - field.field.node.maslo.field_oil_visc
+    - field.field.node.maslo.field_oil_visc_index
+    - field.field.node.maslo.field_oil_working_range
+    - node.type.maslo
+  module:
+    - range
+    - text
+    - user
+id: node.maslo.default
+targetEntityType: node
+bundle: maslo
+mode: default
+content:
+  field_acea:
+    weight: 126
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_api_c:
+    weight: 128
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_api_f:
+    weight: 129
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_api_s:
+    weight: 127
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_application:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_oil_apply_node:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_base_oil:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_brand:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_compr_env:
+    weight: 117
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_compr_principle:
+    weight: 118
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_description:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_oil_dopuski:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_oil_engine_type:
+    weight: 122
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_food:
+    weight: 119
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_freezer_type:
+    weight: 123
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_heat_transfer_type:
+    weight: 120
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_hydr_type:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_motor_sae:
+    weight: 121
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_pairs:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_red_type:
+    weight: 116
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_spec:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_temp__high:
+    weight: 112
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oil_temp__low:
+    weight: 113
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oil_trans_gm_type:
+    weight: 125
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_type:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oil_visc:
+    weight: 131
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oil_visc_index:
+    weight: 111
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_oil_working_range:
+    weight: 130
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

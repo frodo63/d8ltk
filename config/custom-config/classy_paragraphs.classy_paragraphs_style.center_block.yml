@@ -1,0 +1,7 @@
+uuid: 21718e4d-6ec3-449a-9e06-0e9a387526c9
+langcode: en
+status: true
+dependencies: {  }
+id: center_block
+label: center-block
+classes: center-block

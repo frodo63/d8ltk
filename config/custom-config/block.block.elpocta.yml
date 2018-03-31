@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: elpocta
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -3
 provider: null
 plugin: 'block_content:e08800e2-b5bd-480b-96fb-1661f813b604'
 settings:

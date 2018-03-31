@@ -17,6 +17,8 @@ dependencies:
     - paragraphs.paragraphs_type.bp_simple
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
+    - paragraphs.paragraphs_type.frontpage_image_with_text
+    - paragraphs.paragraphs_type.frontpage_title_with_text
   module:
     - entity_reference_revisions
 _core:
@@ -34,6 +36,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bp_simple: bp_simple
       bp_image: bp_image
@@ -47,6 +50,8 @@ settings:
       bp_modal: bp_modal
       bp_tabs: bp_tabs
       bp_view: bp_view
+      frontpage_image_with_text: frontpage_image_with_text
+      frontpage_title_with_text: frontpage_title_with_text
     target_bundles_drag_drop:
       bp_simple:
         enabled: true
@@ -92,5 +97,26 @@ settings:
         weight: -22
       bp_column_wrapper:
         weight: -21
+        enabled: false
+      accordion:
+        weight: 23
+        enabled: false
+      frontpage_image_with_text:
+        enabled: true
+        weight: 39
+      frontpage_title_with_text:
+        enabled: true
+        weight: 40
+      many_images:
+        weight: 41
+        enabled: false
+      many_texts:
+        weight: 42
+        enabled: false
+      tabs_horizontal:
+        weight: 43
+        enabled: false
+      tabs_vertical:
+        weight: 44
         enabled: false
 field_type: entity_reference_revisions

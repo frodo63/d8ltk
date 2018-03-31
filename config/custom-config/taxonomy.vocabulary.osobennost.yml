@@ -1,0 +1,9 @@
+uuid: 7f3a05a7-e6af-447b-aff0-b29838ca038a
+langcode: en
+status: true
+dependencies: {  }
+name: Особенность
+vid: osobennost
+description: ''
+hierarchy: 0
+weight: -8

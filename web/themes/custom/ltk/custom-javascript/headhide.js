@@ -5,10 +5,10 @@ Drupal.behaviors.basic = {
                 var scroll = $(window).scrollTop();
 
                 if (scroll > 0) {
-                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').addClass('minimized');
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted').addClass('minimized');
                     $('body').addClass('body-minimized');
                 } else {
-                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap').removeClass("minimized");
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted').removeClass("minimized");
                     $('body').removeClass('body-minimized');
                 }
             });

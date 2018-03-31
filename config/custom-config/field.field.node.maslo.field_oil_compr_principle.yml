@@ -1,0 +1,29 @@
+uuid: 516dd796-13f3-4a46-8208-10186d8db3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_compr_principle
+    - node.type.maslo
+    - taxonomy.vocabulary.tip_kompressora
+id: node.maslo.field_oil_compr_principle
+field_name: field_oil_compr_principle
+entity_type: node
+bundle: maslo
+label: 'Тип компрессора по принципу действия'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tip_kompressora: tip_kompressora
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,35 @@
+uuid: 014ed34b-7d5e-466e-9327-9974ca18c2ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.specliquid.body
+    - field.field.node.specliquid.field_sliquid_title
+    - node.type.specliquid
+  module:
+    - text
+    - user
+id: node.specliquid.default
+targetEntityType: node
+bundle: specliquid
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sliquid_title:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

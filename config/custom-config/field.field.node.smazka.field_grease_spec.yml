@@ -1,0 +1,29 @@
+uuid: ddd5ac70-35e1-4d9e-b715-029d249b815a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_spec
+    - node.type.smazka
+    - taxonomy.vocabulary.osobennost
+id: node.smazka.field_grease_spec
+field_name: field_grease_spec
+entity_type: node
+bundle: smazka
+label: Особенность
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      osobennost: osobennost
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

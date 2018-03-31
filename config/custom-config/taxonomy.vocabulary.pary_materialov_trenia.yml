@@ -1,0 +1,9 @@
+uuid: 33363df6-8085-45a1-8b23-1e7e27a38553
+langcode: en
+status: true
+dependencies: {  }
+name: 'Пары материалов трения'
+vid: pary_materialov_trenia
+description: ''
+hierarchy: 0
+weight: -7

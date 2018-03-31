@@ -1,0 +1,21 @@
+uuid: 10a8cb64-aa71-474d-8aef-a4b44f7c2e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fp_iwt_text
+    - paragraphs.paragraphs_type.frontpage_image_with_text
+  module:
+    - text
+id: paragraph.frontpage_image_with_text.field_fp_iwt_text
+field_name: field_fp_iwt_text
+entity_type: paragraph
+bundle: frontpage_image_with_text
+label: fp_iwt_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

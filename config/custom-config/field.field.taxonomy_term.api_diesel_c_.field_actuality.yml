@@ -1,0 +1,23 @@
+uuid: 9b127164-d6fd-4640-9671-c07560bd3118
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_actuality
+    - taxonomy.vocabulary.api_diesel_c_
+id: taxonomy_term.api_diesel_c_.field_actuality
+field_name: field_actuality
+entity_type: taxonomy_term
+bundle: api_diesel_c_
+label: Статус
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Действующий
+  off_label: Устаревший
+field_type: boolean

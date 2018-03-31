@@ -1,0 +1,20 @@
+uuid: 0a53375d-d850-4eee-81cb-3ff868e9bf0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_heat_transfer_type
+field_name: field_oil_heat_transfer_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

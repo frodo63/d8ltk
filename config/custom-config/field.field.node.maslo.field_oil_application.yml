@@ -1,0 +1,22 @@
+uuid: 0dba397c-4c38-41bd-9202-115d93122a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_application
+    - node.type.maslo
+  module:
+    - text
+id: node.maslo.field_oil_application
+field_name: field_oil_application
+entity_type: node
+bundle: maslo
+label: 'Текст - Применение'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

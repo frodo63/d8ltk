@@ -1,0 +1,29 @@
+uuid: bdcb94ca-6a9b-4595-92f2-c6abf834aeb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_working_range
+    - node.type.maslo
+  module:
+    - range
+id: node.maslo.field_oil_working_range
+field_name: field_oil_working_range
+entity_type: node
+bundle: maslo
+label: 'Диапазон рабочей температуры масла'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -1000
+  max: 10000
+  from:
+    prefix: ''
+    suffix: °C
+  to:
+    prefix: ''
+    suffix: °C
+field_type: range_integer

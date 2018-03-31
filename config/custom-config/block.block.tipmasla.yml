@@ -1,0 +1,24 @@
+uuid: 0d5a5fcd-79b7-49b6-8b91-20b60556ecf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tip-masla
+  module:
+    - system
+  theme:
+    - ltk
+id: tipmasla
+theme: ltk
+region: sidemenu
+weight: -16
+provider: null
+plugin: 'system_menu_block:tip-masla'
+settings:
+  id: 'system_menu_block:tip-masla'
+  label: Масла
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

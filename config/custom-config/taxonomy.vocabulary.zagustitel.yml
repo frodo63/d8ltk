@@ -1,0 +1,9 @@
+uuid: d87720d4-2071-43e8-848c-fa3c30b91be4
+langcode: en
+status: true
+dependencies: {  }
+name: Загуститель
+vid: zagustitel
+description: ''
+hierarchy: 0
+weight: 4

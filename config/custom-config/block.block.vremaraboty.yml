@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: vremaraboty
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -4
 provider: null
 plugin: 'block_content:08778bc7-49b2-4db2-bf91-68df9da0b7d7'
 settings:

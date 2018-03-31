@@ -1,0 +1,29 @@
+uuid: 5094353e-9595-49cd-9fab-256048d1096f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_pairs
+    - node.type.maslo
+    - taxonomy.vocabulary.pary_materialov_trenia
+id: node.maslo.field_oil_pairs
+field_name: field_oil_pairs
+entity_type: node
+bundle: maslo
+label: 'Пара материалов трения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pary_materialov_trenia: pary_materialov_trenia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: c7b083e0-4f45-49d3-b682-4c852027ebfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.api_s.field_actuality
+    - taxonomy.vocabulary.api_s
+  module:
+    - text
+id: taxonomy_term.api_s.default
+targetEntityType: taxonomy_term
+bundle: api_s
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_actuality:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

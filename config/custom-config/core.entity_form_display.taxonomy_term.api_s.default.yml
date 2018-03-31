@@ -1,0 +1,45 @@
+uuid: a33751c7-037f-414c-953d-bbe0aade5e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.api_s.field_actuality
+    - taxonomy.vocabulary.api_s
+  module:
+    - path
+    - text
+id: taxonomy_term.api_s.default
+targetEntityType: taxonomy_term
+bundle: api_s
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_actuality:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 7f9d6b4e-2504-4ff0-a057-7196ada373f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_working_range
+    - node.type.smazka
+  module:
+    - range
+id: node.smazka.field_grease_working_range
+field_name: field_grease_working_range
+entity_type: node
+bundle: smazka
+label: 'Диапазон рабочей температуры смазки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -1000
+  max: 10000
+  from:
+    prefix: ''
+    suffix: °C
+  to:
+    prefix: ''
+    suffix: °C
+field_type: range_integer

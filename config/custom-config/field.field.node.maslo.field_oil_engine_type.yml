@@ -1,0 +1,29 @@
+uuid: e92a527d-b114-40a2-b709-ac992e029951
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_engine_type
+    - node.type.maslo
+    - taxonomy.vocabulary.tip_dvigatela
+id: node.maslo.field_oil_engine_type
+field_name: field_oil_engine_type
+entity_type: node
+bundle: maslo
+label: 'Тип двигателя'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tip_dvigatela: tip_dvigatela
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

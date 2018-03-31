@@ -1,0 +1,29 @@
+uuid: 1149eeb3-9b2e-4681-8fd6-2886547bde4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_circulating
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_circulating'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_circulating'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/circulating
+    negate: false
+    context_mapping: {  }

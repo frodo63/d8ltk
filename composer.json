@@ -34,6 +34,7 @@
         "drupal/paragraphs": "^1.2",
         "drupal/paragraphs_accordion": "1.x-dev",
         "drupal/paragraphs_tabs": "1.x-dev",
+        "drupal/range": "^1.1",
         "drupal/seo_checklist": "^4.0",
         "drupal/slick": "^1.0",
         "drupal/slick_paragraphs": "^1.0@RC",

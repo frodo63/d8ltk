@@ -1,0 +1,21 @@
+uuid: afb3839e-fb8d-4e2c-b2e0-b4f821cb2bc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_text_application
+    - node.type.smazka
+  module:
+    - text
+id: node.smazka.field_grease_text_application
+field_name: field_grease_text_application
+entity_type: node
+bundle: smazka
+label: 'Текст - Применение'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

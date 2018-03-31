@@ -1,0 +1,8 @@
+uuid: f593d6cf-8e56-4a67-856a-8b71fa7e807c
+langcode: en
+status: true
+dependencies: {  }
+id: tip-masla
+label: Масла
+description: ''
+locked: false

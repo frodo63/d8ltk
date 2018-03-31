@@ -1,0 +1,187 @@
+uuid: c5aac013-b2bc-4f06-8a97-4ddc36977693
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.smazka.field_grease_apply_node
+    - field.field.node.smazka.field_grease_base_oil
+    - field.field.node.smazka.field_grease_base_oil_viscosity
+    - field.field.node.smazka.field_grease_brand
+    - field.field.node.smazka.field_grease_food
+    - field.field.node.smazka.field_grease_nlgi
+    - field.field.node.smazka.field_grease_pairs
+    - field.field.node.smazka.field_grease_penetration
+    - field.field.node.smazka.field_grease_spec
+    - field.field.node.smazka.field_grease_speed
+    - field.field.node.smazka.field_grease_temp_flash
+    - field.field.node.smazka.field_grease_temp_pour
+    - field.field.node.smazka.field_grease_text_application
+    - field.field.node.smazka.field_grease_text_approvals
+    - field.field.node.smazka.field_grease_text_description
+    - field.field.node.smazka.field_grease_thickener
+    - field.field.node.smazka.field_grease_type
+    - field.field.node.smazka.field_grease_working_range
+    - node.type.smazka
+  module:
+    - range
+    - text
+    - user
+id: node.smazka.default
+targetEntityType: node
+bundle: smazka
+mode: default
+content:
+  field_grease_apply_node:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_base_oil:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_base_oil_viscosity:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_brand:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_food:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_nlgi:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_pairs:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_penetration:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_grease_spec:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_speed:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_grease_temp_flash:
+    weight: 111
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_grease_temp_pour:
+    weight: 112
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_grease_text_application:
+    weight: 118
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_grease_text_approvals:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_grease_text_description:
+    weight: 117
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_grease_thickener:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_type:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_grease_working_range:
+    weight: 113
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

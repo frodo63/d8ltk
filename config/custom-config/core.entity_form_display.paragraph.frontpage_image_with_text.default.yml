@@ -1,0 +1,37 @@
+uuid: d6515381-d177-4127-9701-40e022e6daa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontpage_image_with_text.field_fp_iwt_image
+    - field.field.paragraph.frontpage_image_with_text.field_fp_iwt_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.frontpage_image_with_text
+  module:
+    - image
+    - text
+id: paragraph.frontpage_image_with_text.default
+targetEntityType: paragraph
+bundle: frontpage_image_with_text
+mode: default
+content:
+  field_fp_iwt_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_fp_iwt_text:
+    weight: 2
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

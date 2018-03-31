@@ -1,0 +1,9 @@
+uuid: 763db845-fc0d-4c77-9bb8-67e2d61b96b8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип редукторного'
+vid: tip_reduktornogo
+description: ''
+hierarchy: 0
+weight: -4

@@ -1,0 +1,29 @@
+uuid: c48e9a10-3826-4acb-be40-f3a800c2c368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_food
+    - node.type.maslo
+    - taxonomy.vocabulary.pisevoi_dopusk
+id: node.maslo.field_oil_food
+field_name: field_oil_food
+entity_type: node
+bundle: maslo
+label: 'Пищевой допуск'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pisevoi_dopusk: pisevoi_dopusk
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

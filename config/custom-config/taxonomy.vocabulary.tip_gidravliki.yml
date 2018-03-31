@@ -1,0 +1,9 @@
+uuid: 92035840-5fc1-4325-a5f5-f6f182efda50
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип гидравлики'
+vid: tip_gidravliki
+description: ''
+hierarchy: 0
+weight: -5

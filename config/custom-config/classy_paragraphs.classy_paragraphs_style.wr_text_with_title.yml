@@ -1,7 +1,0 @@
-uuid: 17aceb82-4cfd-422e-a594-93de5729b372
-langcode: en
-status: true
-dependencies: {  }
-id: wr_text_with_title
-label: wr_text_with_title
-classes: wrap-twt

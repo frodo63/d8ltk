@@ -1,0 +1,9 @@
+uuid: 493350e4-cb33-4e24-ad81-b3ac5b9caec6
+langcode: en
+status: true
+dependencies: {  }
+id: custom_drupal_block
+label: 'Custom Drupal Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

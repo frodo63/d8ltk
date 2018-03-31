@@ -1,0 +1,29 @@
+uuid: 605a41c1-6910-4ba6-b4ca-99ab9ebfdb42
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_transformator
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_transformator'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_transformator'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/transformator
+    negate: false
+    context_mapping: {  }

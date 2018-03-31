@@ -21,7 +21,9 @@ dependencies:
     - paragraphs.paragraphs_type.bp_tab_section
     - paragraphs.paragraphs_type.bp_tabs
     - paragraphs.paragraphs_type.bp_view
+    - paragraphs.paragraphs_type.frontpage_image_with_text
     - paragraphs.paragraphs_type.frontpage_title_with_text
+    - paragraphs.paragraphs_type.frontpage_title_with_text_ad
     - paragraphs.paragraphs_type.many_images
     - paragraphs.paragraphs_type.many_texts
     - paragraphs.paragraphs_type.tabs_horizontal
@@ -61,71 +63,82 @@ settings:
       bp_view: bp_view
       tabs_horizontal: tabs_horizontal
       frontpage_title_with_text: frontpage_title_with_text
+      frontpage_image_with_text: frontpage_image_with_text
       tabs_vertical: tabs_vertical
       many_images: many_images
       many_texts: many_texts
+      frontpage_title_with_text_ad: frontpage_title_with_text_ad
     target_bundles_drag_drop:
       accordion:
         enabled: true
-        weight: 19
+        weight: -45
       bp_accordion:
         enabled: true
-        weight: 20
+        weight: -44
       bp_accordion_section:
         enabled: true
-        weight: 21
+        weight: -43
       bp_blank:
         enabled: true
-        weight: 22
+        weight: -42
       bp_block:
         enabled: true
-        weight: 23
+        weight: -41
       bp_carousel:
         enabled: true
-        weight: 24
+        weight: -40
       bp_column_wrapper:
         enabled: true
-        weight: 25
+        weight: -39
       bp_columns:
         enabled: true
-        weight: 26
+        weight: -38
       bp_columns_three_uneven:
         enabled: true
-        weight: 27
+        weight: -37
       bp_columns_two_uneven:
         enabled: true
-        weight: 28
+        weight: -36
       bp_image:
         enabled: true
-        weight: 29
+        weight: -35
       bp_modal:
         enabled: true
-        weight: 30
+        weight: -34
       bp_simple:
         enabled: true
-        weight: 31
+        weight: -33
       bp_tab_section:
         enabled: true
-        weight: 32
+        weight: -32
       bp_tabs:
         enabled: true
-        weight: 33
+        weight: -31
       bp_view:
         enabled: true
-        weight: 34
+        weight: -30
       tabs_horizontal:
         enabled: true
-        weight: 35
+        weight: -29
       frontpage_title_with_text:
         enabled: true
-        weight: 36
+        weight: -28
+      frontpage_image_with_text:
+        enabled: true
+        weight: -27
       tabs_vertical:
         enabled: true
-        weight: 36
+        weight: -26
       many_images:
         enabled: true
-        weight: 39
+        weight: -25
       many_texts:
         enabled: true
-        weight: 40
+        weight: -24
+      custom_drupal_block:
+        weight: 41
+        enabled: false
+      frontpage_title_with_text_ad:
+        enabled: true
+        weight: 42
 field_type: entity_reference_revisions

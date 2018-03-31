@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.bp_block.bp_background
-    - field.field.paragraph.bp_block.bp_block
     - field.field.paragraph.bp_block.bp_width
+    - field.field.paragraph.bp_block.field_bp_modal_block
     - paragraphs.paragraphs_type.bp_block
 _core:
   default_config_hash: C9JQkqmEcygxPLZrxrGGGwb_sBeGjZs1gz1hD5KW5dA
@@ -20,20 +20,17 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  bp_block:
-    weight: 2
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   bp_width:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_bp_modal_block:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
 hidden:
   created: true

@@ -1,0 +1,23 @@
+uuid: 55f2a557-4ff2-404f-ac1b-d03b29f946a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_temp_flash
+    - node.type.smazka
+id: node.smazka.field_grease_temp_flash
+field_name: field_grease_temp_flash
+entity_type: node
+bundle: smazka
+label: 'Температура вспышки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10000
+  prefix: ''
+  suffix: °C
+field_type: integer

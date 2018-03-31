@@ -1,0 +1,29 @@
+uuid: 1fd2f46a-66a7-4195-b672-620f85fc193d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_spec
+    - node.type.maslo
+    - taxonomy.vocabulary.osobennost
+id: node.maslo.field_oil_spec
+field_name: field_oil_spec
+entity_type: node
+bundle: maslo
+label: Особенность
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      osobennost: osobennost
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

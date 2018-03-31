@@ -1,9 +1,0 @@
-uuid: 6c9c1051-df30-48c5-878f-091bc95e4a88
-langcode: en
-status: true
-dependencies: {  }
-name: Смазки
-vid: smazki
-description: 'Всякие смазки'
-hierarchy: 0
-weight: 0

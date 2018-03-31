@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: uppertext
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -6
 provider: null
 plugin: 'block_content:92147044-1535-483d-8755-1516bf4f6133'
 settings:

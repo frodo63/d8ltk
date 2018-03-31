@@ -9,7 +9,7 @@ _core:
 id: ltk_local_actions
 theme: ltk
 region: content
-weight: -7
+weight: -14
 provider: null
 plugin: local_actions_block
 settings:

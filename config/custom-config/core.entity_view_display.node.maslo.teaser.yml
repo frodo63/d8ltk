@@ -1,0 +1,22 @@
+uuid: ac6b761d-11b0-4ce8-b315-5cbfe009747b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.maslo.field_oil_application
+    - field.field.node.maslo.field_oil_dopuski
+    - node.type.maslo
+  module:
+    - user
+id: node.maslo.teaser
+targetEntityType: node
+bundle: maslo
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_oil_application: true
+  field_oil_dopuski: true

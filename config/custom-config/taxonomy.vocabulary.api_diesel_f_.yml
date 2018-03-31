@@ -1,0 +1,9 @@
+uuid: 55a2c288-3d80-4722-bbbb-dd34bb123962
+langcode: en
+status: true
+dependencies: {  }
+name: 'API Diesel (F)'
+vid: api_diesel_f_
+description: ''
+hierarchy: 0
+weight: 1

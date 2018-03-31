@@ -1,0 +1,20 @@
+uuid: 49bd2e13-cb10-4508-950c-39796804a47c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_grease_temp_flash
+field_name: field_grease_temp_flash
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

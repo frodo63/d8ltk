@@ -1,0 +1,9 @@
+uuid: bf1c936f-3cfb-4565-9288-6cac3069acb0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Состав теплоносителя'
+vid: sostav_teplonositela
+description: ''
+hierarchy: 0
+weight: 7

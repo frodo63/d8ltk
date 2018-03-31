@@ -1,0 +1,31 @@
+uuid: 7bbe91da-3803-4339-b35c-e37c97030b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontpage_title_with_text_ad.field_fp_text_with_title
+    - field.field.paragraph.frontpage_title_with_text_ad.field_fp_twt_wr_class
+    - paragraphs.paragraphs_type.frontpage_title_with_text_ad
+  module:
+    - text_with_title
+id: paragraph.frontpage_title_with_text_ad.default
+targetEntityType: paragraph
+bundle: frontpage_title_with_text_ad
+mode: default
+content:
+  field_fp_text_with_title:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: text_with_title_widget
+    region: content
+  field_fp_twt_wr_class:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

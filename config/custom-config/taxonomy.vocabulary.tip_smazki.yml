@@ -1,0 +1,9 @@
+uuid: 26e5785a-f260-4c09-9b5b-f7a990d6d6c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип смазки'
+vid: tip_smazki
+description: 'По области применения'
+hierarchy: 0
+weight: -11

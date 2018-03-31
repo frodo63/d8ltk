@@ -1,0 +1,38 @@
+uuid: c8914ab2-e468-490a-86f4-68bbf489e732
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fp_iwt_image
+    - paragraphs.paragraphs_type.frontpage_image_with_text
+  module:
+    - image
+id: paragraph.frontpage_image_with_text.field_fp_iwt_image
+field_name: field_fp_iwt_image
+entity_type: paragraph
+bundle: frontpage_image_with_text
+label: fp_iwt_image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

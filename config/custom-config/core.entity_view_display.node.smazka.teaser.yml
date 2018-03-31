@@ -1,0 +1,18 @@
+uuid: 9b37ccd5-b1e0-4f22-b6da-06a9a6a4147d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.smazka
+  module:
+    - user
+id: node.smazka.teaser
+targetEntityType: node
+bundle: smazka
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

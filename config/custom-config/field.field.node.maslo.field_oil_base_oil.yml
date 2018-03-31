@@ -1,0 +1,29 @@
+uuid: 228ca115-fd1e-4ea4-98a8-7ba97d454881
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_base_oil
+    - node.type.maslo
+    - taxonomy.vocabulary.base_oil
+id: node.maslo.field_oil_base_oil
+field_name: field_oil_base_oil
+entity_type: node
+bundle: maslo
+label: 'Базовое масло'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      base_oil: base_oil
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

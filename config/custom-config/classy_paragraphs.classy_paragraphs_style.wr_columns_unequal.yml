@@ -1,7 +1,0 @@
-uuid: abc1d6fc-ac46-4a27-af01-b06aa4054f0e
-langcode: en
-status: true
-dependencies: {  }
-id: wr_columns_unequal
-label: wr_columns_unequal
-classes: wrap-col-unequal

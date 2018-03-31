@@ -1,0 +1,33 @@
+uuid: 84149154-1ae7-4060-926a-3799c5959747
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontpage_image_with_text.field_fp_iwt_image
+    - field.field.paragraph.frontpage_image_with_text.field_fp_iwt_text
+    - paragraphs.paragraphs_type.frontpage_image_with_text
+  module:
+    - image
+    - text
+id: paragraph.frontpage_image_with_text.default
+targetEntityType: paragraph
+bundle: frontpage_image_with_text
+mode: default
+content:
+  field_fp_iwt_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_fp_iwt_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

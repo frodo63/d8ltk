@@ -1,0 +1,29 @@
+uuid: a73f3197-312e-4d0f-a7d8-3ef2773c0859
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_hydraulic
+theme: ltk
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_hydraulic'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_hydraulic'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/hydraulic
+    negate: false
+    context_mapping: {  }

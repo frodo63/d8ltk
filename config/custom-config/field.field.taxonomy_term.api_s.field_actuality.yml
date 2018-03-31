@@ -1,0 +1,23 @@
+uuid: ba7e844b-d23a-4728-99c3-7a07556405ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_actuality
+    - taxonomy.vocabulary.api_s
+id: taxonomy_term.api_s.field_actuality
+field_name: field_actuality
+entity_type: taxonomy_term
+bundle: api_s
+label: Статус
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Действующий
+  off_label: Устаревший
+field_type: boolean

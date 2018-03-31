@@ -1,0 +1,9 @@
+uuid: bd73bec2-91bb-42f4-ae9b-10787f4a9792
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_image_with_text
+label: 'Frontpage image with text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

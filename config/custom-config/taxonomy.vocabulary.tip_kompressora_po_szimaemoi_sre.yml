@@ -1,0 +1,9 @@
+uuid: 9fc65b9a-c127-4f24-be5b-d65053a6c603
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип компрессора по сжимаемой среде'
+vid: tip_kompressora_po_szimaemoi_sre
+description: ''
+hierarchy: 0
+weight: 10

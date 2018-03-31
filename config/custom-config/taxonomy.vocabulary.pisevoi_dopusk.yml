@@ -1,0 +1,9 @@
+uuid: b27b0c9a-7abe-40f8-99c6-a91e32de8434
+langcode: en
+status: true
+dependencies: {  }
+name: 'Пищевой допуск'
+vid: pisevoi_dopusk
+description: ''
+hierarchy: 0
+weight: 6

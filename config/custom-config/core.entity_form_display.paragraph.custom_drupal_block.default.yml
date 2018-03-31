@@ -1,0 +1,15 @@
+uuid: b08fa739-361e-481b-aa92-92de86904abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.custom_drupal_block
+id: paragraph.custom_drupal_block.default
+targetEntityType: paragraph
+bundle: custom_drupal_block
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: fe714ec9-0cd5-4d2f-ae4d-368e2a31eade
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_plain
+theme: ltk
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_plain'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_plain'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/plain
+    negate: false
+    context_mapping: {  }

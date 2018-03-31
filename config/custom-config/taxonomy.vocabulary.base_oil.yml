@@ -1,0 +1,9 @@
+uuid: 639b3583-fd59-4b95-8aee-3b62b61ac978
+langcode: en
+status: true
+dependencies: {  }
+name: 'Базовое масло'
+vid: base_oil
+description: 'Базовое масло.'
+hierarchy: 0
+weight: -10

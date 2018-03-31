@@ -1,0 +1,22 @@
+uuid: 1298b297-214c-447e-a6c9-7719cfaf3097
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.smazka
+id: node.smazka.promote
+field_name: promote
+entity_type: node
+bundle: smazka
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

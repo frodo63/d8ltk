@@ -1,0 +1,29 @@
+uuid: 03c986be-8c56-418c-82e5-1a4f64e6f808
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.greases_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformgreases_listpage_greases_food
+theme: ltk
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:greases_list-page_greases_food'
+settings:
+  id: 'views_exposed_filter_block:greases_list-page_greases_food'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /greases/food
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: 91c73a3f-82fa-46cb-9357-675dc15f217f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acea
+    - node.type.maslo
+    - taxonomy.vocabulary.acea
+id: node.maslo.field_acea
+field_name: field_acea
+entity_type: node
+bundle: maslo
+label: ACEA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      acea: acea
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

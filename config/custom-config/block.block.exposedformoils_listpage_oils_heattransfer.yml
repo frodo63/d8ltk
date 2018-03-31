@@ -1,0 +1,29 @@
+uuid: 4907b18f-9bb9-4534-8a66-f12d8e2825e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_heattransfer
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_heattransfer'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_heattransfer'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/heat-transfer
+    negate: false
+    context_mapping: {  }

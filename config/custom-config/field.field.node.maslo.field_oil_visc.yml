@@ -1,0 +1,23 @@
+uuid: 85af1f22-050f-4780-bab6-1ba9790e948b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_visc
+    - node.type.maslo
+id: node.maslo.field_oil_visc
+field_name: field_oil_visc
+entity_type: node
+bundle: maslo
+label: Вязкость
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 2000
+  prefix: ''
+  suffix: 'сСт, при 40°C'
+field_type: integer

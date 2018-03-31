@@ -1,0 +1,9 @@
+uuid: 91d64cee-a6c4-4822-87ad-58db1bb78238
+langcode: en
+status: true
+dependencies: {  }
+name: 'Вязкость масла'
+vid: oil_viscosity
+description: ''
+hierarchy: 0
+weight: -9

@@ -6,7 +6,6 @@ dependencies:
     - field.storage.paragraph.bp_modal_footer
     - paragraphs.paragraphs_type.bp_accordion
     - paragraphs.paragraphs_type.bp_blank
-    - paragraphs.paragraphs_type.bp_block
     - paragraphs.paragraphs_type.bp_carousel
     - paragraphs.paragraphs_type.bp_columns
     - paragraphs.paragraphs_type.bp_columns_three_uneven
@@ -33,12 +32,12 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bp_simple: bp_simple
       bp_image: bp_image
       bp_blank: bp_blank
       bp_accordion: bp_accordion
-      bp_block: bp_block
       bp_carousel: bp_carousel
       bp_columns: bp_columns
       bp_columns_three_uneven: bp_columns_three_uneven
@@ -59,8 +58,8 @@ settings:
         enabled: true
         weight: -28
       bp_block:
-        enabled: true
         weight: -27
+        enabled: false
       bp_carousel:
         enabled: true
         weight: -26
@@ -87,5 +86,35 @@ settings:
         enabled: false
       bp_tab_section:
         weight: -18
+        enabled: false
+      accordion:
+        weight: 25
+        enabled: false
+      bp_column_wrapper:
+        weight: 34
+        enabled: false
+      custom_drupal_block:
+        weight: 41
+        enabled: false
+      frontpage_image_with_text:
+        weight: 42
+        enabled: false
+      frontpage_title_with_text:
+        weight: 43
+        enabled: false
+      frontpage_title_with_text_ad:
+        weight: 44
+        enabled: false
+      many_images:
+        weight: 45
+        enabled: false
+      many_texts:
+        weight: 46
+        enabled: false
+      tabs_horizontal:
+        weight: 47
+        enabled: false
+      tabs_vertical:
+        weight: 48
         enabled: false
 field_type: entity_reference_revisions

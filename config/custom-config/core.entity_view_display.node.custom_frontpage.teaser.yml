@@ -1,0 +1,28 @@
+uuid: b828ca68-15e7-4d52-86c2-2665bf034f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.custom_frontpage.body
+    - node.type.custom_frontpage
+  module:
+    - text
+    - user
+id: node.custom_frontpage.teaser
+targetEntityType: node
+bundle: custom_frontpage
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

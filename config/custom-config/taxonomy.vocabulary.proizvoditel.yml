@@ -1,0 +1,9 @@
+uuid: ff925968-51d1-448b-8e1a-a08d0a3490d7
+langcode: en
+status: true
+dependencies: {  }
+name: Производитель
+vid: proizvoditel
+description: ''
+hierarchy: 0
+weight: -6

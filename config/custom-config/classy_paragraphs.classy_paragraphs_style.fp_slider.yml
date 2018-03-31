@@ -1,0 +1,7 @@
+uuid: c33a9ed6-7e36-490e-83c4-c18cbd51c596
+langcode: en
+status: true
+dependencies: {  }
+id: fp_slider
+label: fp_slider
+classes: fp-slider

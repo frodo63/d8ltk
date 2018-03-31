@@ -1,0 +1,2052 @@
+uuid: 73a581e2-a1a5-41fc-b5f3-09b82c604ddb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_base_oil
+    - field.storage.node.field_grease_base_oil_viscosity
+    - field.storage.node.field_grease_brand
+    - field.storage.node.field_grease_temp_flash
+    - field.storage.node.field_grease_temp_pour
+    - field.storage.node.field_grease_thickener
+    - node.type.smazka
+    - taxonomy.vocabulary.base_oil
+    - taxonomy.vocabulary.klass_nlgi
+    - taxonomy.vocabulary.osobennost
+    - taxonomy.vocabulary.pary_materialov_trenia
+    - taxonomy.vocabulary.pisevoi_dopusk
+    - taxonomy.vocabulary.proizvoditel
+    - taxonomy.vocabulary.tip_smazki
+    - taxonomy.vocabulary.uzel_primenenia
+    - taxonomy.vocabulary.zagustitel
+  content:
+    - 'taxonomy_term:tip_smazki:79a35d37-9a0e-47ef-a548-1ace32cc2383'
+  module:
+    - better_exposed_filters
+    - node
+    - taxonomy
+    - user
+id: greases_list
+label: 'All Greases List'
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Отбор
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          input_required: true
+          text_input_required: 'Отметьте нужные фильтры и нажмите кнопку "Отбор".'
+          bef:
+            general:
+              allow_secondary: true
+              secondary_label: 'Вязкостно-температурные характеристики'
+              autosubmit: false
+              autosubmit_hide: false
+            field_grease_food_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_thickener_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_base_oil_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_brand_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_pairs_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_spec_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_apply_node_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: true
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+            field_oil_visc_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+            field_grease_nlgi_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: true
+                rewrite:
+                  filter_rewrite_values: ''
+            field_grease_working_range_from:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+            field_grease_working_range_to:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+            field_grease_temp_flash_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+            field_grease_temp_pour_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+          text_input_required_format: basic_html
+      pager:
+        type: mini
+        options:
+          items_per_page: 20
+          offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      style:
+        type: table
+      row:
+        type: fields
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Title
+          exclude: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_grease_base_oil:
+          id: field_grease_base_oil
+          table: node__field_grease_base_oil
+          field: field_grease_base_oil
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Базовое масло'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_grease_base_oil_viscosity:
+          id: field_grease_base_oil_viscosity
+          table: node__field_grease_base_oil_viscosity
+          field: field_grease_base_oil_viscosity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Вязкость базового масла'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_grease_thickener:
+          id: field_grease_thickener
+          table: node__field_grease_thickener
+          field: field_grease_thickener
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Загуститель
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_grease_brand:
+          id: field_grease_brand
+          table: node__field_grease_brand
+          field: field_grease_brand
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Марка
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_grease_temp_flash:
+          id: field_grease_temp_flash
+          table: node__field_grease_temp_flash
+          field: field_grease_temp_flash
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Температура вспышки'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_grease_temp_pour:
+          id: field_grease_temp_pour
+          table: node__field_grease_temp_pour
+          field: field_grease_temp_pour
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Температура замерзания'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            smazka: smazka
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_grease_type_target_id:
+          id: field_grease_type_target_id
+          table: node__field_grease_type
+          field: field_grease_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            use_operator: false
+            operator: field_grease_type_target_id_op
+            identifier: field_grease_type_target_id
+            label: 'Тип смазки (field_grease_type)'
+            description: null
+            remember: false
+            multiple: false
+            required: false
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tip_smazki
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_thickener_target_id:
+          id: field_grease_thickener_target_id
+          table: node__field_grease_thickener
+          field: field_grease_thickener_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_thickener_target_id_op
+            label: Загуститель
+            description: ''
+            use_operator: false
+            operator: field_grease_thickener_target_id_op
+            identifier: field_grease_thickener_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: zagustitel
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_base_oil_target_id:
+          id: field_grease_base_oil_target_id
+          table: node__field_grease_base_oil
+          field: field_grease_base_oil_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_base_oil_target_id_op
+            label: 'Базовое масло'
+            description: ''
+            use_operator: false
+            operator: field_grease_base_oil_target_id_op
+            identifier: field_grease_base_oil_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: base_oil
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_brand_target_id:
+          id: field_grease_brand_target_id
+          table: node__field_grease_brand
+          field: field_grease_brand_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_brand_target_id_op
+            label: Марка
+            description: ''
+            use_operator: false
+            operator: field_grease_brand_target_id_op
+            identifier: field_grease_brand_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proizvoditel
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_food_target_id:
+          id: field_grease_food_target_id
+          table: node__field_grease_food
+          field: field_grease_food_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_food_target_id_op
+            label: 'Пищевой допуск'
+            description: ''
+            use_operator: false
+            operator: field_grease_food_target_id_op
+            identifier: field_grease_food_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: pisevoi_dopusk
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_pairs_target_id:
+          id: field_grease_pairs_target_id
+          table: node__field_grease_pairs
+          field: field_grease_pairs_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_pairs_target_id_op
+            label: 'Пары материалов трения'
+            description: ''
+            use_operator: false
+            operator: field_grease_pairs_target_id_op
+            identifier: field_grease_pairs_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: pary_materialov_trenia
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_spec_target_id:
+          id: field_grease_spec_target_id
+          table: node__field_grease_spec
+          field: field_grease_spec_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_spec_target_id_op
+            label: Особенность
+            description: ''
+            use_operator: false
+            operator: field_grease_spec_target_id_op
+            identifier: field_grease_spec_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: osobennost
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_apply_node_target_id:
+          id: field_grease_apply_node_target_id
+          table: node__field_grease_apply_node
+          field: field_grease_apply_node_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_apply_node_target_id_op
+            label: 'Узел применения'
+            description: ''
+            use_operator: false
+            operator: field_grease_apply_node_target_id_op
+            identifier: field_grease_apply_node_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: uzel_primenenia
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_oil_visc_value:
+          id: field_oil_visc_value
+          table: node__field_oil_visc
+          field: field_oil_visc_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_oil_visc_value_op
+            label: 'Вязкость базового масла'
+            description: ''
+            use_operator: false
+            operator: field_oil_visc_value_op
+            identifier: field_oil_visc_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_nlgi_target_id:
+          id: field_grease_nlgi_target_id
+          table: node__field_grease_nlgi
+          field: field_grease_nlgi_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_nlgi_target_id_op
+            label: 'Тип костистенции (NLGI)'
+            description: ''
+            use_operator: false
+            operator: field_grease_nlgi_target_id_op
+            identifier: field_grease_nlgi_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: klass_nlgi
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_working_range_from:
+          id: field_grease_working_range_from
+          table: node__field_grease_working_range
+          field: field_grease_working_range_from
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_working_range_from_op
+            label: 'Диапазон рабочей температуры смазки FROM'
+            description: ''
+            use_operator: false
+            operator: field_grease_working_range_from_op
+            identifier: field_grease_working_range_from
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_working_range_to:
+          id: field_grease_working_range_to
+          table: node__field_grease_working_range
+          field: field_grease_working_range_to
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_working_range_to_op
+            label: 'Диапазон рабочей температуры смазки TO'
+            description: ''
+            use_operator: false
+            operator: field_grease_working_range_to_op
+            identifier: field_grease_working_range_to
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_temp_flash_value:
+          id: field_grease_temp_flash_value
+          table: node__field_grease_temp_flash
+          field: field_grease_temp_flash_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_temp_flash_value_op
+            label: 'Температура вспышки NOT LOWER'
+            description: ''
+            use_operator: false
+            operator: field_grease_temp_flash_value_op
+            identifier: field_grease_temp_flash_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_temp_pour_value:
+          id: field_grease_temp_pour_value
+          table: node__field_grease_temp_pour
+          field: field_grease_temp_pour_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_temp_pour_value_op
+            label: 'Температура замерзания not higher'
+            description: ''
+            use_operator: false
+            operator: field_grease_temp_pour_value_op
+            identifier: field_grease_temp_pour_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+      sorts: {  }
+      title: Смазки
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: true
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grease_base_oil'
+        - 'config:field.storage.node.field_grease_base_oil_viscosity'
+        - 'config:field.storage.node.field_grease_brand'
+        - 'config:field.storage.node.field_grease_temp_flash'
+        - 'config:field.storage.node.field_grease_temp_pour'
+        - 'config:field.storage.node.field_grease_thickener'
+  page_greases_food:
+    display_plugin: page
+    id: page_greases_food
+    display_title: 'Food Greases List'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: greases/food
+      display_description: ''
+      exposed_block: true
+      title: 'Пищевые Смазки'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            smazka: smazka
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_grease_type_target_id:
+          id: field_grease_type_target_id
+          table: node__field_grease_type
+          field: field_grease_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            267: 267
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_grease_type_target_id_op
+            label: 'Тип смазки (field_grease_type)'
+            description: null
+            use_operator: false
+            operator: field_grease_type_target_id_op
+            identifier: field_grease_type_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: tip_smazki
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_food_target_id:
+          id: field_grease_food_target_id
+          table: node__field_grease_food
+          field: field_grease_food_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_food_target_id_op
+            label: 'Пищевой допуск'
+            description: ''
+            use_operator: false
+            operator: field_grease_food_target_id_op
+            identifier: field_grease_food_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: pisevoi_dopusk
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_thickener_target_id:
+          id: field_grease_thickener_target_id
+          table: node__field_grease_thickener
+          field: field_grease_thickener_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_thickener_target_id_op
+            label: Загуститель
+            description: ''
+            use_operator: false
+            operator: field_grease_thickener_target_id_op
+            identifier: field_grease_thickener_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: zagustitel
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_base_oil_target_id:
+          id: field_grease_base_oil_target_id
+          table: node__field_grease_base_oil
+          field: field_grease_base_oil_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_base_oil_target_id_op
+            label: 'Базовое масло'
+            description: ''
+            use_operator: false
+            operator: field_grease_base_oil_target_id_op
+            identifier: field_grease_base_oil_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: base_oil
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_brand_target_id:
+          id: field_grease_brand_target_id
+          table: node__field_grease_brand
+          field: field_grease_brand_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_brand_target_id_op
+            label: Марка
+            description: ''
+            use_operator: false
+            operator: field_grease_brand_target_id_op
+            identifier: field_grease_brand_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proizvoditel
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_pairs_target_id:
+          id: field_grease_pairs_target_id
+          table: node__field_grease_pairs
+          field: field_grease_pairs_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_pairs_target_id_op
+            label: 'Пары материалов трения'
+            description: ''
+            use_operator: false
+            operator: field_grease_pairs_target_id_op
+            identifier: field_grease_pairs_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: pary_materialov_trenia
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_spec_target_id:
+          id: field_grease_spec_target_id
+          table: node__field_grease_spec
+          field: field_grease_spec_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_spec_target_id_op
+            label: Особенность
+            description: ''
+            use_operator: false
+            operator: field_grease_spec_target_id_op
+            identifier: field_grease_spec_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: osobennost
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_apply_node_target_id:
+          id: field_grease_apply_node_target_id
+          table: node__field_grease_apply_node
+          field: field_grease_apply_node_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_apply_node_target_id_op
+            label: 'Узел применения'
+            description: ''
+            use_operator: false
+            operator: field_grease_apply_node_target_id_op
+            identifier: field_grease_apply_node_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: uzel_primenenia
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_oil_visc_value:
+          id: field_oil_visc_value
+          table: node__field_oil_visc
+          field: field_oil_visc_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_oil_visc_value_op
+            label: 'Вязкость базового масла'
+            description: ''
+            use_operator: false
+            operator: field_oil_visc_value_op
+            identifier: field_oil_visc_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_nlgi_target_id:
+          id: field_grease_nlgi_target_id
+          table: node__field_grease_nlgi
+          field: field_grease_nlgi_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_nlgi_target_id_op
+            label: 'Тип костистенции (NLGI)'
+            description: ''
+            use_operator: false
+            operator: field_grease_nlgi_target_id_op
+            identifier: field_grease_nlgi_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: klass_nlgi
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_grease_working_range_from:
+          id: field_grease_working_range_from
+          table: node__field_grease_working_range
+          field: field_grease_working_range_from
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_working_range_from_op
+            label: 'Диапазон рабочей температуры смазки FROM'
+            description: ''
+            use_operator: false
+            operator: field_grease_working_range_from_op
+            identifier: field_grease_working_range_from
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_working_range_to:
+          id: field_grease_working_range_to
+          table: node__field_grease_working_range
+          field: field_grease_working_range_to
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_working_range_to_op
+            label: 'Диапазон рабочей температуры смазки TO'
+            description: ''
+            use_operator: false
+            operator: field_grease_working_range_to_op
+            identifier: field_grease_working_range_to
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_temp_flash_value:
+          id: field_grease_temp_flash_value
+          table: node__field_grease_temp_flash
+          field: field_grease_temp_flash_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_temp_flash_value_op
+            label: 'Температура вспышки NOT LOWER'
+            description: ''
+            use_operator: false
+            operator: field_grease_temp_flash_value_op
+            identifier: field_grease_temp_flash_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_grease_temp_pour_value:
+          id: field_grease_temp_pour_value
+          table: node__field_grease_temp_pour
+          field: field_grease_temp_pour_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_grease_temp_pour_value_op
+            label: 'Температура замерзания not higher'
+            description: ''
+            use_operator: false
+            operator: field_grease_temp_pour_value_op
+            identifier: field_grease_temp_pour_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grease_base_oil'
+        - 'config:field.storage.node.field_grease_base_oil_viscosity'
+        - 'config:field.storage.node.field_grease_brand'
+        - 'config:field.storage.node.field_grease_temp_flash'
+        - 'config:field.storage.node.field_grease_temp_pour'
+        - 'config:field.storage.node.field_grease_thickener'
+  page_greases_general:
+    display_plugin: page
+    id: page_greases_general
+    display_title: 'All Greases List'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: greases/general
+      display_description: ''
+      exposed_block: true
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grease_base_oil'
+        - 'config:field.storage.node.field_grease_base_oil_viscosity'
+        - 'config:field.storage.node.field_grease_brand'
+        - 'config:field.storage.node.field_grease_temp_flash'
+        - 'config:field.storage.node.field_grease_temp_pour'
+        - 'config:field.storage.node.field_grease_thickener'
+  page_greases_hightemp:
+    display_plugin: page
+    id: page_greases_hightemp
+    display_title: 'High-temperature Greases List'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: greases/hightemp
+      display_description: ''
+      exposed_block: true
+      title: 'Высокотемпературные Смазки'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grease_base_oil'
+        - 'config:field.storage.node.field_grease_base_oil_viscosity'
+        - 'config:field.storage.node.field_grease_brand'
+        - 'config:field.storage.node.field_grease_temp_flash'
+        - 'config:field.storage.node.field_grease_temp_pour'
+        - 'config:field.storage.node.field_grease_thickener'
+  page_greases_lowtemp:
+    display_plugin: page
+    id: page_greases_lowtemp
+    display_title: 'Low-temperature Greases List'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: greases/lowtemp
+      display_description: ''
+      exposed_block: true
+      title: 'Низкотемпературные Смазки'
+      defaults:
+        title: false
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_grease_base_oil'
+        - 'config:field.storage.node.field_grease_base_oil_viscosity'
+        - 'config:field.storage.node.field_grease_brand'
+        - 'config:field.storage.node.field_grease_temp_flash'
+        - 'config:field.storage.node.field_grease_temp_pour'
+        - 'config:field.storage.node.field_grease_thickener'

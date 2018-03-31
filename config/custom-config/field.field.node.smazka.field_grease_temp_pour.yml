@@ -1,0 +1,23 @@
+uuid: 92dd874d-64a5-487d-a2f9-fa0ec5942510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_temp_pour
+    - node.type.smazka
+id: node.smazka.field_grease_temp_pour
+field_name: field_grease_temp_pour
+entity_type: node
+bundle: smazka
+label: 'Температура замерзания'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -1000
+  max: 0
+  prefix: ''
+  suffix: °C
+field_type: integer

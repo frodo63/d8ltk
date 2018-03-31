@@ -1,0 +1,29 @@
+uuid: 13185062-447b-42a1-8a3b-a59f3a240dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_transmission
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_transmission'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_transmission'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/transmission
+    negate: false
+    context_mapping: {  }

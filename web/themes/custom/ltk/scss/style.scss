@@ -51,6 +51,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 .main-container {
   position: relative;
   left: 40px;
+  top: 80px;
 }
 
 body {
@@ -110,6 +111,10 @@ body {
     position: fixed;
     left: 40px;
     width: calc(100% - 40px);/*Ширина - расчет от максимума минус 40px*/
+    top: 189px;
+    &.minimized{
+      top: 50px;
+    }
     &.active{
       left: 280px;
       width: calc(100% - 280px);

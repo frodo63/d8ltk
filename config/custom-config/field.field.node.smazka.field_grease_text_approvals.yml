@@ -1,0 +1,21 @@
+uuid: 7aa40a5d-d693-4bcb-8d5f-365ab32acc91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_text_approvals
+    - node.type.smazka
+  module:
+    - text
+id: node.smazka.field_grease_text_approvals
+field_name: field_grease_text_approvals
+entity_type: node
+bundle: smazka
+label: 'Текст - Одобрения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

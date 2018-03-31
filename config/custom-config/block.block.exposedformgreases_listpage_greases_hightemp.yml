@@ -1,0 +1,29 @@
+uuid: 4ded4ff4-adab-49f2-8add-abaed87dce28
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.greases_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformgreases_listpage_greases_hightemp
+theme: ltk
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'views_exposed_filter_block:greases_list-page_greases_hightemp'
+settings:
+  id: 'views_exposed_filter_block:greases_list-page_greases_hightemp'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /greases/hightemp
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,23 @@
+uuid: 71ab870f-db88-4625-b389-aeb7506e6987
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_temp__low
+    - node.type.maslo
+id: node.maslo.field_oil_temp__low
+field_name: field_oil_temp__low
+entity_type: node
+bundle: maslo
+label: 'Температура замерзания'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -1000
+  max: 10000
+  prefix: ''
+  suffix: °C
+field_type: integer

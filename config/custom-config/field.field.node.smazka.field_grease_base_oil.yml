@@ -1,0 +1,29 @@
+uuid: 4feeac14-26e6-4267-bd05-f1cdddcb6e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_base_oil
+    - node.type.smazka
+    - taxonomy.vocabulary.base_oil
+id: node.smazka.field_grease_base_oil
+field_name: field_grease_base_oil
+entity_type: node
+bundle: smazka
+label: 'Базовое масло'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      base_oil: base_oil
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

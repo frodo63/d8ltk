@@ -1,0 +1,22 @@
+uuid: fd536faa-4770-4896-ac70-ffc2a4be0986
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.custom_frontpage
+  module:
+    - text
+id: node.custom_frontpage.body
+field_name: body
+entity_type: node
+bundle: custom_frontpage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

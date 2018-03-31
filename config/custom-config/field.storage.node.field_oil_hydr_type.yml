@@ -1,0 +1,20 @@
+uuid: d5e1b2a8-dced-4802-a0a7-3f7b52600c3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_hydr_type
+field_name: field_oil_hydr_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: b01a1199-f81c-43a1-9a22-1ab602567d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.maslo
+id: node.maslo.status
+field_name: status
+entity_type: node
+bundle: maslo
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

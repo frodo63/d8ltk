@@ -1,0 +1,20 @@
+uuid: d122a9d3-a46e-4259-9e5e-b665ef656998
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_grease_temp_pour
+field_name: field_grease_temp_pour
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

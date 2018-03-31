@@ -1,0 +1,9 @@
+uuid: 645de88d-4d72-4ee6-bca3-369752e00b43
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип масла для АКПП по GM'
+vid: tip_masla_dla_akpp_po_gm
+description: ''
+hierarchy: 0
+weight: -3

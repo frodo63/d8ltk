@@ -1,0 +1,22 @@
+uuid: f9baf385-e01a-4ebb-90c7-c1446c7bf54e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_dopuski
+    - node.type.maslo
+  module:
+    - text
+id: node.maslo.field_oil_dopuski
+field_name: field_oil_dopuski
+entity_type: node
+bundle: maslo
+label: 'Текст - Одобрения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

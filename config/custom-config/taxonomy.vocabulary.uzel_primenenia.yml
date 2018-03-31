@@ -1,0 +1,9 @@
+uuid: 1ab71d39-bfa2-44da-87f8-22347ae0cc8a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Узел применения'
+vid: uzel_primenenia
+description: ''
+hierarchy: 0
+weight: 2

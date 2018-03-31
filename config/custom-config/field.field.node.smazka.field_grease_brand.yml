@@ -1,0 +1,29 @@
+uuid: 8449cd8c-50bc-418e-abff-d2ca0b82a9a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_brand
+    - node.type.smazka
+    - taxonomy.vocabulary.proizvoditel
+id: node.smazka.field_grease_brand
+field_name: field_grease_brand
+entity_type: node
+bundle: smazka
+label: Марка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      proizvoditel: proizvoditel
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

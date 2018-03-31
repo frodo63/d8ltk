@@ -1,0 +1,23 @@
+uuid: c1afbeac-50bf-4269-8e8a-a31fbe3f340d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_penetration
+    - node.type.smazka
+id: node.smazka.field_grease_penetration
+field_name: field_grease_penetration
+entity_type: node
+bundle: smazka
+label: Пенетрация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

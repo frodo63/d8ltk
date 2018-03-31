@@ -1,0 +1,12 @@
+uuid: 55fc8719-d1d7-4dc8-999f-bce68c601169
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.custom_drupal_block
+id: paragraph.custom_drupal_block.default
+targetEntityType: paragraph
+bundle: custom_drupal_block
+mode: default
+content: {  }
+hidden: {  }

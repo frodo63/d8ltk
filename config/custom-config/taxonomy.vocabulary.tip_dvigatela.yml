@@ -1,0 +1,9 @@
+uuid: 5c720f7a-ddc1-4a11-9efb-d236ba5c519f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип двигателя'
+vid: tip_dvigatela
+description: ''
+hierarchy: 0
+weight: 8

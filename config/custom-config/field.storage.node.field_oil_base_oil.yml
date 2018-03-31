@@ -1,0 +1,20 @@
+uuid: 6f53eca6-9969-4be0-8595-b08a5cc52f9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_base_oil
+field_name: field_oil_base_oil
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

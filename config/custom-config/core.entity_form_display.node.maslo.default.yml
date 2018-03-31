@@ -1,0 +1,272 @@
+uuid: 23b71205-9311-45a1-9bd5-ae93813586a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.maslo.field_acea
+    - field.field.node.maslo.field_api_c
+    - field.field.node.maslo.field_api_f
+    - field.field.node.maslo.field_api_s
+    - field.field.node.maslo.field_oil_application
+    - field.field.node.maslo.field_oil_apply_node
+    - field.field.node.maslo.field_oil_base_oil
+    - field.field.node.maslo.field_oil_brand
+    - field.field.node.maslo.field_oil_compr_env
+    - field.field.node.maslo.field_oil_compr_principle
+    - field.field.node.maslo.field_oil_description
+    - field.field.node.maslo.field_oil_dopuski
+    - field.field.node.maslo.field_oil_engine_type
+    - field.field.node.maslo.field_oil_food
+    - field.field.node.maslo.field_oil_freezer_type
+    - field.field.node.maslo.field_oil_heat_transfer_type
+    - field.field.node.maslo.field_oil_hydr_type
+    - field.field.node.maslo.field_oil_motor_sae
+    - field.field.node.maslo.field_oil_pairs
+    - field.field.node.maslo.field_oil_red_type
+    - field.field.node.maslo.field_oil_spec
+    - field.field.node.maslo.field_oil_temp__high
+    - field.field.node.maslo.field_oil_temp__low
+    - field.field.node.maslo.field_oil_trans_gm_type
+    - field.field.node.maslo.field_oil_type
+    - field.field.node.maslo.field_oil_visc
+    - field.field.node.maslo.field_oil_visc_index
+    - field.field.node.maslo.field_oil_working_range
+    - node.type.maslo
+  module:
+    - path
+    - range
+    - text
+id: node.maslo.default
+targetEntityType: node
+bundle: maslo
+mode: default
+content:
+  field_acea:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_api_c:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_api_f:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_api_s:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_application:
+    weight: 3
+    settings:
+      rows: 1
+      placeholder: ''
+      summary_rows: 1
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_oil_apply_node:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_base_oil:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_brand:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_compr_env:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_compr_principle:
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_description:
+    weight: 2
+    settings:
+      rows: 1
+      placeholder: ''
+      summary_rows: 1
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_oil_dopuski:
+    weight: 4
+    settings:
+      rows: 1
+      placeholder: ''
+      summary_rows: 1
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_oil_engine_type:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_food:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_freezer_type:
+    weight: 25
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_heat_transfer_type:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_hydr_type:
+    weight: 16
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        0b70757d-3063-4c0c-a573-6b64b4d36e1b:
+          dependee: field_oil_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                target_id: '204'
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+          entity_type: node
+          bundle: maslo
+    type: options_buttons
+    region: content
+  field_oil_motor_sae:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_pairs:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_red_type:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_spec:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_temp__high:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_oil_temp__low:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_oil_trans_gm_type:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_type:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_oil_visc:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_oil_visc_index:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_oil_working_range:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: range
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

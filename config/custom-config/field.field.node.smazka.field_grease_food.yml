@@ -1,0 +1,29 @@
+uuid: 87c5f919-8ef1-4432-b185-cf0b0d0d3528
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_food
+    - node.type.smazka
+    - taxonomy.vocabulary.pisevoi_dopusk
+id: node.smazka.field_grease_food
+field_name: field_grease_food
+entity_type: node
+bundle: smazka
+label: 'Пищевой допуск'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pisevoi_dopusk: pisevoi_dopusk
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

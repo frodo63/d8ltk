@@ -1,0 +1,20 @@
+uuid: 26fde300-a7be-4af7-933a-ba1a6f4883ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_compr_principle
+field_name: field_oil_compr_principle
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

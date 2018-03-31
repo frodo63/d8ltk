@@ -1,0 +1,29 @@
+uuid: 5c23dd65-4197-4aab-8c55-f5691293670f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_food
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_food'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_food'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/food
+    negate: false
+    context_mapping: {  }

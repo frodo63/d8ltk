@@ -1,0 +1,24 @@
+uuid: 38ef802c-b25e-49eb-8e80-4b73ca1f3997
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.speczidkosti
+  module:
+    - system
+  theme:
+    - ltk
+id: speczidkosti
+theme: ltk
+region: sidemenu
+weight: -16
+provider: null
+plugin: 'system_menu_block:speczidkosti'
+settings:
+  id: 'system_menu_block:speczidkosti'
+  label: Техжидкости
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

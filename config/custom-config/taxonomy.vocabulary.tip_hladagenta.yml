@@ -1,0 +1,9 @@
+uuid: b1ac19f3-8d37-4004-8d36-e11dfe3f8a1e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип хладагента'
+vid: tip_hladagenta
+description: ''
+hierarchy: 0
+weight: 11

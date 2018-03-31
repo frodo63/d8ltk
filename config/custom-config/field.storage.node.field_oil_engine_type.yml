@@ -1,0 +1,20 @@
+uuid: 1e69fd20-729d-4f19-b618-a97673c7e1b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_oil_engine_type
+field_name: field_oil_engine_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

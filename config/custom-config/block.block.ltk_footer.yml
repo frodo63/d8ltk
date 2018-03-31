@@ -1,6 +1,6 @@
 uuid: c241835f-ed17-498e-b496-0ad0dee03fd4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: ltk_footer
 theme: ltk
 region: footer
-weight: -6
+weight: -16
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

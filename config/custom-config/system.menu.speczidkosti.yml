@@ -1,0 +1,8 @@
+uuid: 52819649-40a1-4743-9708-59a991964818
+langcode: en
+status: true
+dependencies: {  }
+id: speczidkosti
+label: Техжидкости
+description: ''
+locked: false

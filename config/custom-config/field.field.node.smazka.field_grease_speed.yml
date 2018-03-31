@@ -1,0 +1,19 @@
+uuid: bc2caaf8-bcad-4969-bd05-44521111a6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_speed
+    - node.type.smazka
+id: node.smazka.field_grease_speed
+field_name: field_grease_speed
+entity_type: node
+bundle: smazka
+label: 'Скоростной фактор'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: b79132d1-0706-43a2-bcdb-267dc81c0c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_pairs
+    - node.type.smazka
+    - taxonomy.vocabulary.pary_materialov_trenia
+id: node.smazka.field_grease_pairs
+field_name: field_grease_pairs
+entity_type: node
+bundle: smazka
+label: 'Пары материалов трения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pary_materialov_trenia: pary_materialov_trenia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

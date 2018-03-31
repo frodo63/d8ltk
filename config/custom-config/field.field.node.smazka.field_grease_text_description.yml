@@ -1,0 +1,21 @@
+uuid: 5a35130e-3c87-452c-9078-c4212279f855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grease_text_description
+    - node.type.smazka
+  module:
+    - text
+id: node.smazka.field_grease_text_description
+field_name: field_grease_text_description
+entity_type: node
+bundle: smazka
+label: 'Текст - Описание'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

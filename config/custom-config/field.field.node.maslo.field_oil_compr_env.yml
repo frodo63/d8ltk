@@ -1,0 +1,29 @@
+uuid: fbeec580-d961-49f3-920a-42b25cad0d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_compr_env
+    - node.type.maslo
+    - taxonomy.vocabulary.tip_kompressora_po_szimaemoi_sre
+id: node.maslo.field_oil_compr_env
+field_name: field_oil_compr_env
+entity_type: node
+bundle: maslo
+label: 'Тип компрессора по сжимаемой среде'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tip_kompressora_po_szimaemoi_sre: tip_kompressora_po_szimaemoi_sre
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

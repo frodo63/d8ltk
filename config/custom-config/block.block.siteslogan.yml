@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: siteslogan
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -8
 provider: null
 plugin: 'block_content:09376231-2b7a-4c39-b7dd-8a757d8528ef'
 settings:

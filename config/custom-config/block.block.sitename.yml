@@ -10,8 +10,8 @@ dependencies:
     - ltk
 id: sitename
 theme: ltk
-region: navigation_collapsible
-weight: 0
+region: navigation
+weight: -9
 provider: null
 plugin: 'block_content:38686750-aa71-467e-bc8c-ddebc59c9259'
 settings:

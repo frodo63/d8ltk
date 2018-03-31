@@ -1,0 +1,9 @@
+uuid: e79db01a-49ea-4334-aa3a-c9222a7bb797
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип компрессора по принципу действия'
+vid: tip_kompressora
+description: ''
+hierarchy: 0
+weight: 9

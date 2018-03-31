@@ -1,0 +1,29 @@
+uuid: 42bd5060-43e9-4883-912c-f6352e2a1a6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.greases_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformgreases_listpage_greases_lowtemp
+theme: ltk
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:greases_list-page_greases_lowtemp'
+settings:
+  id: 'views_exposed_filter_block:greases_list-page_greases_lowtemp'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /greases/lowtemp
+    negate: false
+    context_mapping: {  }

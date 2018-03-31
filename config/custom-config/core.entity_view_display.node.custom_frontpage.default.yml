@@ -1,0 +1,26 @@
+uuid: 91270391-394c-4097-9b98-b84d113e59eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.custom_frontpage.body
+    - node.type.custom_frontpage
+  module:
+    - text
+    - user
+id: node.custom_frontpage.default
+targetEntityType: node
+bundle: custom_frontpage
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

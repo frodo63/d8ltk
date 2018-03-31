@@ -1,0 +1,32 @@
+uuid: 14e96673-0e43-4c92-a440-b47379b6fd91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.api_diesel_f_.field_actuality
+    - taxonomy.vocabulary.api_diesel_f_
+  module:
+    - text
+id: taxonomy_term.api_diesel_f_.default
+targetEntityType: taxonomy_term
+bundle: api_diesel_f_
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_actuality:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

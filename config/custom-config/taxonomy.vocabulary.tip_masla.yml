@@ -1,0 +1,9 @@
+uuid: 29f4cb7a-7717-4083-bfd9-ce56d7910539
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип масла'
+vid: tip_masla
+description: 'По категории'
+hierarchy: 0
+weight: -12

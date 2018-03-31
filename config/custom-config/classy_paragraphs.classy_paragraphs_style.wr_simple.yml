@@ -1,7 +1,0 @@
-uuid: aa9e7560-d68f-41c0-aad6-1086ca26d304
-langcode: en
-status: true
-dependencies: {  }
-id: wr_simple
-label: wr_simple
-classes: wrap-simple

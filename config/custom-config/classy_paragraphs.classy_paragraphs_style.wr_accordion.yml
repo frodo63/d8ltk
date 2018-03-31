@@ -1,7 +1,0 @@
-uuid: 65c780c9-43e2-4c5c-bf7a-6b112d89057c
-langcode: en
-status: true
-dependencies: {  }
-id: wr_accordion
-label: wr_accordion
-classes: wrap-acc

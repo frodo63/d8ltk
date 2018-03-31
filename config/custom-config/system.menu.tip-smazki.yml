@@ -1,0 +1,8 @@
+uuid: e223b0da-e3aa-4525-a4d0-b6b2ab26a538
+langcode: en
+status: true
+dependencies: {  }
+id: tip-smazki
+label: Смазки
+description: ''
+locked: false

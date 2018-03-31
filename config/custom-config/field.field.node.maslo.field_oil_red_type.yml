@@ -1,0 +1,29 @@
+uuid: 78f7e1a1-94fb-43ff-bd04-532077194651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oil_red_type
+    - node.type.maslo
+    - taxonomy.vocabulary.tip_reduktornogo
+id: node.maslo.field_oil_red_type
+field_name: field_oil_red_type
+entity_type: node
+bundle: maslo
+label: 'Тип редукторного'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tip_reduktornogo: tip_reduktornogo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

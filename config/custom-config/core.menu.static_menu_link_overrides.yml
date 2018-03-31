@@ -11,5 +11,107 @@ definitions:
     menu_name: main
     parent: ''
     expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__204':
+    weight: -50
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__217':
+    enabled: false
+    menu_name: side-menu--catalog
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.tip_masla.204'
+    weight: 0
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__218':
+    enabled: false
+    menu_name: side-menu--catalog
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.tip_masla.204'
+    weight: 0
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__219':
+    enabled: false
+    menu_name: side-menu--catalog
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.tip_masla.204'
+    weight: 0
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__220':
+    enabled: false
+    menu_name: side-menu--catalog
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.tip_masla.204'
+    weight: 0
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__206':
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    enabled: true
+    expanded: true
+    weight: -50
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__207':
+    weight: -48
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__209':
+    weight: -47
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__208':
+    weight: -46
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__212':
+    weight: -45
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__213':
+    weight: -44
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__210':
+    weight: -43
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__205':
+    weight: -42
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__215':
+    weight: -41
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__216':
+    weight: -40
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__214':
+    weight: -39
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__tip_masla__211':
+    weight: -38
+    menu_name: side-menu--catalog
+    parent: 'menu_link_content:b13e1be3-946b-44c8-ac61-db57549d478b'
+    expanded: true
+    enabled: true
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

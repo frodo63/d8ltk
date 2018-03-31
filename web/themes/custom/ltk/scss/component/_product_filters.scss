@@ -1,4 +1,90 @@
 .region-sidebar-second {
-  /*position: absolute;*/
-  margin-top: 60px;
+  padding:5px;
+  font-family: 'Oswald', sans-serif;
+
+  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке. Привязка по id*/
+  /*Масла*/
+  /*Тип масла*/div[data-drupal-selector="edit-field-oil-type-target-id"],
+  /*Базовое масло*/div[data-drupal-selector="edit-field-oil-base-oil-target-id"],
+  /*Производитель*/div[data-drupal-selector="edit-field-oil-brand-target-id"],
+  /*Узел применения*/div[data-drupal-selector="edit-field-oil-apply-node-target-id"],
+  /*Пары трения*/div[data-drupal-selector="edit-field-oil-pairs-target-id"],
+  /*Особенность*/div[data-drupal-selector="edit-field-oil-spec-target-id"],
+  /*Смазки*/div[data-drupal-selector="edit-field-oil-spec-target-id"],
+  /*Тип смазки*/div[data-drupal-selector="edit-field-grease-type-target-id"],
+  /*Загуститель*/div[data-drupal-selector="edit-field-grease-thickener-target-id"],
+  /*Базовое масло*/div[data-drupal-selector="edit-field-grease-base-oil-target-id"],
+  /*Производитель*/div[data-drupal-selector="edit-field-grease-brand-target-id"],
+  /*Пищевой допуск*/div[data-drupal-selector="edit-field-grease-food-target-id"],
+  /*Пары трения*/div[data-drupal-selector="edit-field-grease-pairs-target-id"],
+  /*Особенность*/div[data-drupal-selector="edit-field-grease-spec-target-id"],
+  /*Узел применения*/div[data-drupal-selector="edit-field-grease-apply-node-target-id"]
+{
+    &>div{
+      width: 100%;
+    }
+    label.control-label.option{
+      font-size:20px;
+      font-weight: 400;
+      color: $black;
+    }
+  }
+  details.form-item{
+    border-bottom: 1px $black solid;
+    width: 100%;
+    margin: 5px 0;
+    summary[role="button"]{
+      font-size:25px;
+      color: $black;
+    }
+  }
+  #edit-secondary{
+    margin: 10px 0;
+    width: 100%;
+    div.panel-heading>a{
+      font-size:25px;
+      color: $black;
+    }
+    label.control-label{
+      font-size:20px;
+      font-weight: 400;
+      color: $black;
+    }
+
+  }
+
+  #edit-actions--2{
+
+    @media #{$wide}{
+      --side: 1170px;
+    }
+    @media #{$normal}{
+      --side: 970px;
+    }
+    @media #{$tablet}{
+      --side: 750px;
+    }
+
+    position: fixed;
+    top: 194px;
+    left: calc(100vw - (100vw - var(--side)));
+    width: calc(100vw/12*2);
+    &.minimized{
+      top: 50px;
+    }
+    #edit-submit-oils-list, #edit-submit-greases-list{
+      bottom: 0;
+      left: 15px;
+      width: 100%;
+      font-size: 30px;
+      background: $yellow;
+      border: 2px $white solid;
+      color: $green;
+    }
+  }
+
+
+
+
+
 }

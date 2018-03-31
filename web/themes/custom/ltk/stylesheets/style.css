@@ -10894,55 +10894,161 @@ p:last-child,
 .side-menu--wrap .region-sidemenu nav ul.nav {
   /*display: none;*/
   max-height: 59vh;
-  min-height: 22vh;
   width: 240px;
   overflow-y: overlay;
 }
-/* line 142, ../scss/component/_sidemenu.scss */
+/* line 141, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav li a {
   padding: 2px 0px 5px 10px;
 }
-/* line 144, ../scss/component/_sidemenu.scss */
+/* line 143, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
 }
-/* line 148, ../scss/component/_sidemenu.scss */
+/* line 147, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2, .side-menu--wrap .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 151, ../scss/component/_sidemenu.scss */
+/* line 150, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2:hover, .side-menu--wrap .region-sidemenu a:hover {
   color: #FFFFFF;
 }
-/* line 156, ../scss/component/_sidemenu.scss */
+/* line 155, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu h2 {
   display: inline-block;
   width: 200px;
   font-size: 20px;
 }
-/* line 161, ../scss/component/_sidemenu.scss */
+/* line 160, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a {
   font-size: 15px;
 }
-/* line 164, ../scss/component/_sidemenu.scss */
+/* line 163, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 167, ../scss/component/_sidemenu.scss */
+/* line 166, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 171, ../scss/component/_sidemenu.scss */
+/* line 170, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .region-sidemenu.active {
   display: block;
 }
 
 /* line 1, ../scss/component/_product_filters.scss */
 .region-sidebar-second {
-  /*position: absolute;*/
-  margin-top: 60px;
+  padding: 5px;
+  font-family: 'Oswald', sans-serif;
+  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке. Привязка по id*/
+  /*Масла*/
+  /*Тип масла*/
+}
+/* line 23, ../scss/component/_product_filters.scss */
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-type-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-base-oil-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-brand-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-apply-node-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-pairs-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-type-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-thickener-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-base-oil-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-brand-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-food-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-pairs-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-spec-target-id"] > div,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-apply-node-target-id"] > div {
+  width: 100%;
+}
+/* line 26, ../scss/component/_product_filters.scss */
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-type-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-base-oil-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-brand-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-apply-node-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-pairs-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-type-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-thickener-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-base-oil-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-brand-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-food-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-pairs-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-spec-target-id"] label.control-label.option,
+.region-sidebar-second div[data-drupal-selector="edit-field-grease-apply-node-target-id"] label.control-label.option {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+/* line 32, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item {
+  border-bottom: 1px #000000 solid;
+  width: 100%;
+  margin: 5px 0;
+}
+/* line 36, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item summary[role="button"] {
+  font-size: 25px;
+  color: #000000;
+}
+/* line 41, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-secondary {
+  margin: 10px 0;
+  width: 100%;
+}
+/* line 44, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-secondary div.panel-heading > a {
+  font-size: 25px;
+  color: #000000;
+}
+/* line 48, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-secondary label.control-label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+/* line 56, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-actions--2 {
+  position: fixed;
+  top: 194px;
+  left: calc(100vw - (100vw - var(--side)));
+  width: calc(100vw/12*2);
+}
+@media screen and (min-width: 1200px) {
+  /* line 56, ../scss/component/_product_filters.scss */
+  .region-sidebar-second #edit-actions--2 {
+    --side: 1170px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 56, ../scss/component/_product_filters.scss */
+  .region-sidebar-second #edit-actions--2 {
+    --side: 970px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 56, ../scss/component/_product_filters.scss */
+  .region-sidebar-second #edit-actions--2 {
+    --side: 750px;
+  }
+}
+/* line 72, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-actions--2.minimized {
+  top: 50px;
+}
+/* line 75, ../scss/component/_product_filters.scss */
+.region-sidebar-second #edit-actions--2 #edit-submit-oils-list, .region-sidebar-second #edit-actions--2 #edit-submit-greases-list {
+  bottom: 0;
+  left: 15px;
+  width: 100%;
+  font-size: 30px;
+  background: #FBBA00;
+  border: 2px #FFFFFF solid;
+  color: #17460F;
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
@@ -10996,9 +11102,10 @@ p:last-child,
 .main-container {
   position: relative;
   left: 40px;
+  top: 80px;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
@@ -11009,57 +11116,57 @@ body {
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 }
-/* line 61, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 63, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 body a:hover {
   color: #FFFFFF;
 }
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 body .row {
   margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 71, ../scss/style.scss */
+  /* line 72, ../scss/style.scss */
   body.body-minimized {
     margin-top: 0;
   }
-  /* line 74, ../scss/style.scss */
+  /* line 75, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 71, ../scss/style.scss */
+  /* line 72, ../scss/style.scss */
   body.body-minimized {
     margin-top: 40px;
   }
-  /* line 81, ../scss/style.scss */
+  /* line 82, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 71, ../scss/style.scss */
+  /* line 72, ../scss/style.scss */
   body.body-minimized {
     margin-top: 70px;
   }
-  /* line 88, ../scss/style.scss */
+  /* line 89, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 71, ../scss/style.scss */
+  /* line 72, ../scss/style.scss */
   body.body-minimized {
     margin-top: 100px;
   }
-  /* line 95, ../scss/style.scss */
+  /* line 96, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
@@ -11067,49 +11174,54 @@ body .row {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 56, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 56, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   body {
     margin-top: 120px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 56, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   body {
     margin-top: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 56, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   body {
     margin-top: 189px;
   }
 }
-/* line 109, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 body .region-highlighted {
   position: fixed;
   left: 40px;
   width: calc(100% - 40px);
   /*Ширина - расчет от максимума минус 40px*/
+  top: 189px;
 }
-/* line 113, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
+body .region-highlighted.minimized {
+  top: 50px;
+}
+/* line 118, ../scss/style.scss */
 body .region-highlighted.active {
   left: 280px;
   width: calc(100% - 280px);
 }
 
-/* line 126, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
 /*Стиль для запрета копирования*/
-/* line 131, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */

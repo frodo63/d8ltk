@@ -1,0 +1,29 @@
+uuid: e7eb598b-3650-43e4-b89f-95fd1149d8ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oils_list
+  module:
+    - system
+    - views
+  theme:
+    - ltk
+id: exposedformoils_listpage_oils_turbine
+theme: ltk
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oils_list-page_oils_turbine'
+settings:
+  id: 'views_exposed_filter_block:oils_list-page_oils_turbine'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /oils/turbine
+    negate: false
+    context_mapping: {  }

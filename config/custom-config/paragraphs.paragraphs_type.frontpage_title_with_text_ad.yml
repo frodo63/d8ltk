@@ -1,0 +1,9 @@
+uuid: 5effdebc-c03d-47a9-ad11-caa331220907
+langcode: en
+status: true
+dependencies: {  }
+id: frontpage_title_with_text_ad
+label: 'Frontpage title with text --AD'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
