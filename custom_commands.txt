@@ -12,27 +12,7 @@ drush pml --type=module
 drush en entity_reference_revisions paragraphs bootstrap_paragraphs paragraphs_accordion paragraphs_tabs ltk
 
 
- drush sql-dump --result-file=../ltk18-10.sql - выгрузили базу
- drush cex --destination=../config/custom-config - выгрузили конфигурацию
  
- git add .
- git commit -m "smth"
- git push origin master
-
-Updating
- drush sset system.maintenance_mode 1 - Режим обслуживания
- drush cr - чистим кеш
- composer update drupal/core --with-dependencies - Обновляем ядро
- drush updatedb - обновляем базу 
- drush cr
- drush sset system.maintenance_mode 0 - включаем рабочий режим
- drush cr  - и снова кеш
-
- composer prohibits drupal/core:8.5.0 - показать, какие зависимости мешают обновлению
- composer update --dry-run - холостой прогон для проверки возможности обновления
- 
-
-
 git pull --rebase origin master 	- пулим удаленный и ставим свои изменения на самый верх
 
 git rebase --abort    			- If you get to this point and realize and you have no idea what’s going on, don’t panic. Just execute the following command and you’ll be right back to where you started before you ran [git pull --rebase](/tutorials/syncing/git-pull):
@@ -83,3 +63,26 @@ field--node--content-type.html.twig			field in all nodes of a content-type
 field--node--field-name.html.twig			field-namein a node
 field--field-type.html.twig				field-type
 field.html.twig						al of them
+
+
+
+ drush sql-dump --result-file=../ltk18-10.sql - выгрузили базу
+ drush cex --destination=../config/custom-config - выгрузили конфигурацию
+ 
+ git add .
+ git commit -m "smth"
+ git push origin master
+
+Updating
+ drush sset system.maintenance_mode 1 - Режим обслуживания
+ drush cr - чистим кеш
+ composer update drupal/core --with-dependencies - Обновляем ядро
+ composer update --with-dependencies
+ 
+ drush updatedb - обновляем базу 
+ drush cr
+ drush sset system.maintenance_mode 0 - включаем рабочий режим
+ drush cr  - и снова кеш
+
+ composer prohibits drupal/core:8.5.0 - показать, какие зависимости мешают обновлению
+ composer update --dry-run - холостой прогон для проверки возможности обновления

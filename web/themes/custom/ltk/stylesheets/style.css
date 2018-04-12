@@ -9656,14 +9656,14 @@ p:last-child,
     /*    #block-ltk-search {display: none}*/
   }
   /* line 49, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
+  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
   /* line 57, ../scss/component/_header.scss */
-  .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
+  .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     display: none;
   }
   /* line 60, ../scss/component/_header.scss */
@@ -9830,7 +9830,7 @@ p:last-child,
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   /* line 180, ../scss/component/_header.scss */
-  .navbar #block-adres {
+  .navbar #block-adres-2 {
     top: 58vh;
     left: 0vw;
     width: 100vw;
@@ -9841,7 +9841,7 @@ p:last-child,
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
   /* line 180, ../scss/component/_header.scss */
-  .navbar #block-adres {
+  .navbar #block-adres-2 {
     top: 54vh;
   }
 }
@@ -9968,7 +9968,7 @@ p:last-child,
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   /* line 278, ../scss/component/_header.scss */
-  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty,
+  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty,
   .navbar.minimized #block-elpocta, .navbar.minimized #block-telephones {
     display: none;
   }
@@ -9979,14 +9979,14 @@ p:last-child,
     height: 120px;
   }
   /* line 294, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
+  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
   /* line 301, ../scss/component/_header.scss */
-  .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
+  .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     height: 1vw;
   }
   /* line 305, ../scss/component/_header.scss */
@@ -10070,7 +10070,7 @@ p:last-child,
     line-height: 1vw;
   }
   /* line 366, ../scss/component/_header.scss */
-  .navbar #block-adres {
+  .navbar #block-adres-2 {
     top: 4vw;
     left: 75vw;
     font-size: 1vw;
@@ -10152,7 +10152,7 @@ p:last-child,
     display: none;
   }
   /* line 436, ../scss/component/_header.scss */
-  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
+  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
   /* line 439, ../scss/component/_header.scss */
@@ -10173,14 +10173,14 @@ p:last-child,
     height: 150px;
   }
   /* line 452, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
+  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
   /* line 460, ../scss/component/_header.scss */
-  .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
+  .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     height: 1vw;
   }
   /* line 465, ../scss/component/_header.scss */
@@ -10249,7 +10249,7 @@ p:last-child,
     line-height: 1vw;
   }
   /* line 524, ../scss/component/_header.scss */
-  .navbar #block-adres {
+  .navbar #block-adres-2 {
     top: 4vw;
     left: 75vw;
     font-size: 1vw;
@@ -10336,7 +10336,7 @@ p:last-child,
     display: none;
   }
   /* line 602, ../scss/component/_header.scss */
-  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
+  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
   /* line 605, ../scss/component/_header.scss */
@@ -10355,14 +10355,14 @@ p:last-child,
     height: 189px;
   }
   /* line 617, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres, .navbar #block-vremaraboty,
+  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
   /* line 625, ../scss/component/_header.scss */
-  .navbar #block-adres img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
+  .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     height: 15px;
   }
   /* line 630, ../scss/component/_header.scss */
@@ -10424,7 +10424,7 @@ p:last-child,
     line-height: 17px;
   }
   /* line 682, ../scss/component/_header.scss */
-  .navbar #block-vremaraboty, .navbar #block-adres, .navbar #block-elpocta {
+  .navbar #block-vremaraboty, .navbar #block-adres-2, .navbar #block-elpocta {
     right: 280px;
     font-size: 17px;
     line-height: 17px;
@@ -10434,7 +10434,7 @@ p:last-child,
     top: 42px;
   }
   /* line 692, ../scss/component/_header.scss */
-  .navbar #block-adres {
+  .navbar #block-adres-2 {
     top: 67px;
   }
   /* line 696, ../scss/component/_header.scss */
@@ -10512,7 +10512,7 @@ p:last-child,
     display: none;
   }
   /* line 760, ../scss/component/_header.scss */
-  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
+  .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
   /* line 763, ../scss/component/_header.scss */
@@ -10534,18 +10534,14 @@ p:last-child,
     background-repeat: no-repeat;
   }
 
-  /* line 12, ../scss/component/_frontpage_paragraphs.scss */
-  .cfp-1 {
-    background-image: url("/themes/custom/ltk/images/reductor2.png");
-  }
-  /* line 14, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 13, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-1 p.cfp_title {
     top: 10vh;
     position: absolute;
     width: 100%;
     font-size: 4vw;
   }
-  /* line 20, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 19, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-1 p.cfp_text {
     top: 30vh;
     position: absolute;
@@ -10554,10 +10550,6 @@ p:last-child,
   }
 
   /* line 28, ../scss/component/_frontpage_paragraphs.scss */
-  .cfp-2 {
-    background-image: url("/themes/custom/ltk/images/reductor1.png");
-  }
-  /* line 30, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 p {
     font-size: 35px;
     color: #000000;
@@ -10565,16 +10557,16 @@ p:last-child,
     position: absolute;
     top: 80%;
   }
-  /* line 37, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 35, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .special {
     text-decoration: underline;
     cursor: pointer;
   }
-  /* line 40, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 38, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .special:hover {
     color: #17460F;
   }
-  /* line 44, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 42, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla,
   .cfp-2 .cfp2-smazki,
   .cfp-2 .cfp2-tzhid,
@@ -10589,7 +10581,7 @@ p:last-child,
     background-repeat: no-repeat;
     background-position: right top;
   }
-  /* line 49, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 47, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla ul,
   .cfp-2 .cfp2-smazki ul,
   .cfp-2 .cfp2-tzhid ul,
@@ -10602,7 +10594,7 @@ p:last-child,
     font-size: 20px;
     text-align: left;
   }
-  /* line 57, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 55, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla img,
   .cfp-2 .cfp2-smazki img,
   .cfp-2 .cfp2-tzhid img,
@@ -10612,12 +10604,12 @@ p:last-child,
     width: 100px;
   }
 
-  /* line 71, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 69, ../scss/component/_frontpage_paragraphs.scss */
   .fix {
     background: lightpink;
   }
 
-  /* line 74, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 72, ../scss/component/_frontpage_paragraphs.scss */
   p.cfp-topline {
     position: absolute;
     top: 0%;
@@ -10627,11 +10619,11 @@ p:last-child,
     text-align: center;
   }
 
-  /* line 84, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 82, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2, .cfp-3 .col-lg-8 {
     height: inherit;
   }
-  /* line 87, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 85, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2 {
     font-size: 50px;
     position: absolute;
@@ -10639,22 +10631,22 @@ p:last-child,
     transform: translate(0, -50%);
   }
 
-  /* line 94, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 92, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title {
     font-size: 25px;
     cursor: pointer;
   }
-  /* line 97, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 95, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title p {
     text-align: right;
   }
-  /* line 100, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 98, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title:hover {
     background: #FBBA00;
     color: #000000;
   }
 
-  /* line 105, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 103, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup {
     background: #FFFFFF;
     color: #000000;
@@ -10665,12 +10657,12 @@ p:last-child,
     top: 0;
     height: 100%;
   }
-  /* line 114, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 112, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup p {
     text-align: right;
   }
 
-  /* line 118, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 116, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-wrapper {
     height: inherit;
     width: 100%;
@@ -10679,11 +10671,11 @@ p:last-child,
     text-align: left;
   }
 
-  /* line 127, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 125, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column {
     height: inherit;
   }
-  /* line 129, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 127, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column p {
     background: #FBBA00;
     font-size: 35px;
@@ -10692,59 +10684,59 @@ p:last-child,
     transform: translate(0, -50%);
   }
 
-  /* line 139, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 137, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 {
     font-size: 20px;
   }
-  /* line 141, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 139, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 {
     padding: 0;
     height: inherit;
   }
-  /* line 144, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 142, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper {
     height: inherit;
     background: #FBBA00;
     margin: 0 .5vh;
   }
-  /* line 148, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 146, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper p {
     width: calc(100% - 1vh);
   }
-  /* line 153, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 151, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-title {
     font-size: 30px;
     position: absolute;
     top: 5%;
   }
-  /* line 158, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 156, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column {
     font-size: 17px;
     position: absolute;
     top: 45%;
   }
-  /* line 160, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 158, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span {
     text-decoration: underline;
     cursor: pointer;
   }
-  /* line 163, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 161, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span:hover {
     color: #17460F;
   }
 
-  /* line 175, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 173, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-7 #accordion {
     top: 20%;
     position: absolute;
   }
 
-  /* line 182, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 180, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-8 .carousel {
     height: 70vh;
   }
 
-  /* line 188, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 186, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-9 #myCarousel {
     height: 55vh;
   }
@@ -10942,170 +10934,256 @@ p:last-child,
 .region-sidebar-second {
   padding: 5px;
   font-family: 'Oswald', sans-serif;
-  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке. Привязка по id*/
+  /*Фильтры чекбоксы все остальные*/
+  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке.*/
   /*Масла*/
-  /*Тип масла*/
+  /*Фильтры вязкость и температура со слайдерами и инпутами*/
+  /*Кнопка Отбор*/
+  /*Сворачиваемые фильтры*/
 }
-/* line 23, ../scss/component/_product_filters.scss */
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-type-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-base-oil-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-brand-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-apply-node-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-pairs-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-type-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-thickener-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-base-oil-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-brand-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-food-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-pairs-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-spec-target-id"] > div,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-apply-node-target-id"] > div {
+/* line 7, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"],
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] {
+  background: #efefef;
+  border-radius: 5px;
+  width: 100%;
+  /*[data-drupal-selector~="api"]>div,
+  [data-drupal-selector~="acea"]>div,
+  [data-drupal-selector~="sae"]>div{
+    width: auto;
+  }*/
+  margin-bottom: 15px;
+  border-bottom: 1px #e5e5e5 solid;
+}
+/* line 14, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector^="edit"] > div,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector^="edit"] > div {
   width: 100%;
 }
-/* line 26, ../scss/component/_product_filters.scss */
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-type-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-base-oil-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-brand-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-apply-node-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-pairs-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-oil-spec-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-type-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-thickener-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-base-oil-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-brand-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-food-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-pairs-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-spec-target-id"] label.control-label.option,
-.region-sidebar-second div[data-drupal-selector="edit-field-grease-apply-node-target-id"] label.control-label.option {
-  font-size: 20px;
-  font-weight: 400;
-  color: #000000;
+/* line 19, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="api"] > div, .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="acea"] > div, .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="sae"] > div,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector*="api"] > div,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector*="acea"] > div,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector*="sae"] > div {
+  width: auto;
+  margin-right: 16px;
 }
-/* line 32, ../scss/component/_product_filters.scss */
-.region-sidebar-second details.form-item {
-  border-bottom: 1px #000000 solid;
-  width: 100%;
-  margin: 5px 0;
+/* line 33, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] legend,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] legend {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: none;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 10px;
 }
-/* line 36, ../scss/component/_product_filters.scss */
-.region-sidebar-second details.form-item summary[role="button"] {
-  font-size: 25px;
-  color: #000000;
-}
-/* line 41, ../scss/component/_product_filters.scss */
-.region-sidebar-second #edit-secondary {
-  margin: 10px 0;
-  width: 100%;
+/* line 40, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] legend span,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] legend span {
+  color: #17460F;
 }
 /* line 44, ../scss/component/_product_filters.scss */
-.region-sidebar-second #edit-secondary div.panel-heading > a {
-  font-size: 25px;
-  color: #000000;
-}
-/* line 48, ../scss/component/_product_filters.scss */
-.region-sidebar-second #edit-secondary label.control-label {
-  font-size: 20px;
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] label.control-label.option,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] label.control-label.option {
+  font-size: 16px;
   font-weight: 400;
   color: #000000;
 }
-/* line 56, ../scss/component/_product_filters.scss */
+/* line 49, ../scss/component/_product_filters.scss */
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] .fieldset-wrapper,
+.region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] .fieldset-wrapper {
+  padding: 10px;
+}
+/* line 55, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] {
+  width: 100%;
+  margin-bottom: 15px;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* line 61, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:first-child {
+  margin-bottom: 0px;
+  border-radius: 5px 5px 0 0;
+}
+/* line 64, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:first-child #edit-field-oil-visc-value-min + .bef-slider {
+  margin-top: 20px;
+}
+/* line 68, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:nth-child(2) {
+  border-radius: 0 0 5px 5px;
+}
+/* line 72, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] label {
+  font-size: 18px;
+  color: #17460F;
+  font-weight: normal;
+}
+/* line 77, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] input {
+  width: 50%;
+}
+/* line 80, ../scss/component/_product_filters.scss */
+.region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] .bef-slider {
+  width: 90%;
+}
+/* line 86, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2 {
+  z-index: 110;
   position: fixed;
-  top: 194px;
-  left: calc(100vw - (100vw - var(--side)));
-  width: calc(100vw/12*2);
+  top: 224px;
+  left: calc(var(--view)/12*9 + 40px + 25px + (100vw - 40px - var(--view))/2);
+  width: calc(var(--view)/12*3 - 35px);
 }
 @media screen and (min-width: 1200px) {
-  /* line 56, ../scss/component/_product_filters.scss */
+  /* line 86, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
-    --side: 1170px;
+    --view: 1170px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 56, ../scss/component/_product_filters.scss */
+  /* line 86, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
-    --side: 970px;
+    --view: 970px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 56, ../scss/component/_product_filters.scss */
+  /* line 86, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
-    --side: 750px;
+    --view: 750px;
   }
 }
-/* line 72, ../scss/component/_product_filters.scss */
+/* line 102, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2.minimized {
-  top: 50px;
+  top: 85px;
 }
-/* line 75, ../scss/component/_product_filters.scss */
+/* line 106, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2 #edit-submit-oils-list, .region-sidebar-second #edit-actions--2 #edit-submit-greases-list {
-  bottom: 0;
-  left: 15px;
-  width: 100%;
+  width: 95%;
   font-size: 30px;
   background: #FBBA00;
   border: 2px #FFFFFF solid;
   color: #17460F;
 }
+/* line 116, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item {
+  margin-bottom: 15px;
+  width: 100%;
+  background: #efefef;
+  border-radius: 5px;
+}
+/* line 121, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item summary {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #17460F;
+  padding: 10px;
+}
+/* line 127, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item .form-checkboxes > div {
+  width: 100%;
+  padding: 0 0 0 10px;
+}
+/* line 130, ../scss/component/_product_filters.scss */
+.region-sidebar-second details.form-item .form-checkboxes > div label.control-label.option {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 1, ../scss/component/_footer.scss */
+.main-container.container.js-quickedit-main-content {
+  /*margin-bottom: 350px;*/
+}
+
+/* line 4, ../scss/component/_footer.scss */
+footer.footer {
+  height: 350px;
+  bottom: 0;
+  left: 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  background: #FBBA00;
+}
+/* line 13, ../scss/component/_footer.scss */
+footer.footer .region.region-footer > nav, footer.footer .region.region-footer > section {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+/* line 18, ../scss/component/_footer.scss */
+footer.footer .region.region-footer > nav {
+  text-transform: uppercase;
+}
+/* line 21, ../scss/component/_footer.scss */
+footer.footer .region.region-footer > section:last-child {
+  clear: right;
+}
+/* line 24, ../scss/component/_footer.scss */
+footer.footer .region.region-footer > section:nth-child(3), footer.footer .region.region-footer > section:nth-child(4) {
+  /*margin-top: 70px;*/
+}
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 34, ../scss/style.scss */
+  /* line 35, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 35, ../scss/style.scss */
+  /* line 36, ../scss/style.scss */
   .device-mobile {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 38, ../scss/style.scss */
+  /* line 39, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   .device-tablet {
     display: block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 43, ../scss/style.scss */
+  /* line 44, ../scss/style.scss */
   .device-normal {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 46, ../scss/style.scss */
+  /* line 47, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 47, ../scss/style.scss */
+  /* line 48, ../scss/style.scss */
   .device-wide {
     display: block;
   }
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 .main-container {
   position: relative;
   left: 40px;
   top: 80px;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
@@ -11116,57 +11194,57 @@ body {
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 }
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 64, ../scss/style.scss */
+/* line 65, ../scss/style.scss */
 body a:hover {
-  color: #FFFFFF;
+  color: #17460F;
 }
-/* line 68, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 body .row {
   margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 72, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body.body-minimized {
     margin-top: 0;
   }
-  /* line 75, ../scss/style.scss */
+  /* line 76, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 72, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body.body-minimized {
     margin-top: 40px;
   }
-  /* line 82, ../scss/style.scss */
+  /* line 83, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 72, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body.body-minimized {
     margin-top: 70px;
   }
-  /* line 89, ../scss/style.scss */
+  /* line 90, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 72, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body.body-minimized {
     margin-top: 100px;
   }
-  /* line 96, ../scss/style.scss */
+  /* line 97, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
@@ -11174,30 +11252,30 @@ body .row {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 57, ../scss/style.scss */
+  /* line 58, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 57, ../scss/style.scss */
+  /* line 58, ../scss/style.scss */
   body {
     margin-top: 120px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 57, ../scss/style.scss */
+  /* line 58, ../scss/style.scss */
   body {
     margin-top: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 57, ../scss/style.scss */
+  /* line 58, ../scss/style.scss */
   body {
     margin-top: 189px;
   }
 }
-/* line 110, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 body .region-highlighted {
   position: fixed;
   left: 40px;
@@ -11205,23 +11283,23 @@ body .region-highlighted {
   /*Ширина - расчет от максимума минус 40px*/
   top: 189px;
 }
-/* line 115, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 body .region-highlighted.minimized {
   top: 50px;
 }
-/* line 118, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 body .region-highlighted.active {
   left: 280px;
   width: calc(100% - 280px);
 }
 
-/* line 131, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
 /*Стиль для запрета копирования*/
-/* line 136, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */

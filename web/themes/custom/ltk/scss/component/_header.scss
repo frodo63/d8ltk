@@ -46,14 +46,14 @@
 
 /*    #block-ltk-search {display: none}*/
 
-    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres-2, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
 
-    #block-adres, #block-vremaraboty, #block-elpocta {
+    #block-adres-2, #block-vremaraboty, #block-elpocta {
       img { display: none }
     }
 
@@ -177,7 +177,7 @@
       }
     }
 
-    #block-adres {
+    #block-adres-2 {
       top: 58vh;
       left: 0vw;
       width: 100vw;
@@ -275,7 +275,7 @@
         height: 18vh;
       }
 
-      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty,
+      #block-uppertext, #block-siteslogan, #block-adres-2, #block-vremaraboty,
       #block-elpocta, #block-telephones {
         display: none;
       }
@@ -291,13 +291,13 @@
   @media #{$tablet}{
     height: 120px;
 
-    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres-2, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
-    #block-adres, #block-vremaraboty, #block-elpocta {
+    #block-adres-2, #block-vremaraboty, #block-elpocta {
       img {
         height: 1vw;
       }
@@ -363,7 +363,7 @@
       font-size: 1vw;
       line-height: 1vw;
     }
-    #block-adres {
+    #block-adres-2 {
       top: 4vw;
       left: 75vw;
       font-size: 1vw;
@@ -433,7 +433,7 @@
           display: none;
         }
       }
-      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
+      #block-uppertext, #block-siteslogan, #block-adres-2, #block-vremaraboty, #block-ltk-search {
         display: none;
       }
       #block-sitename {
@@ -449,14 +449,14 @@
   }
   @media #{$normal}{
     height: 150px;
-    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres-2, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
 
-    #block-adres, #block-vremaraboty, #block-elpocta {
+    #block-adres-2, #block-vremaraboty, #block-elpocta {
       img {
         height: 1vw;
       }
@@ -521,7 +521,7 @@
       line-height: 1vw;
     }
 
-    #block-adres {
+    #block-adres-2 {
       top: 4vw;
       left: 75vw;
       font-size: 1vw;
@@ -599,7 +599,7 @@
           display: none;
         }
       }
-      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
+      #block-uppertext, #block-siteslogan, #block-adres-2, #block-vremaraboty, #block-ltk-search {
         display: none;
       }
       #block-sitename {
@@ -614,14 +614,14 @@
   @media #{$wide}{
     height: 189px;
 
-    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres, #block-vremaraboty,
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres-2, #block-vremaraboty,
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
 
-    #block-adres, #block-vremaraboty, #block-elpocta {
+    #block-adres-2, #block-vremaraboty, #block-elpocta {
       img {
         height: 15px;
       }
@@ -679,7 +679,7 @@
       line-height: 17px;
     }
 
-    #block-vremaraboty, #block-adres, #block-elpocta {
+    #block-vremaraboty, #block-adres-2, #block-elpocta {
       right: 280px;
       font-size: 17px;
       line-height: 17px;
@@ -689,7 +689,7 @@
       top: 42px;
     }
 
-    #block-adres {
+    #block-adres-2 {
       top: 67px;
     }
 
@@ -757,7 +757,7 @@
           display: none;
         }
       }
-      #block-uppertext, #block-siteslogan, #block-adres, #block-vremaraboty, #block-ltk-search {
+      #block-uppertext, #block-siteslogan, #block-adres-2, #block-vremaraboty, #block-ltk-search {
         display: none;
       }
       #block-sitename {

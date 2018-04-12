@@ -39,6 +39,7 @@
         "drupal/slick": "^1.0",
         "drupal/slick_paragraphs": "^1.0@RC",
         "drupal/taxonomy_menu": "^3.3",
+        "drupal/themable_forms": "^1.0@beta",
         "drush/drush": "^9",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

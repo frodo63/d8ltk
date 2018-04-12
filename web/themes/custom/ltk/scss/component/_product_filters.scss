@@ -2,80 +2,109 @@
   padding:5px;
   font-family: 'Oswald', sans-serif;
 
-  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке. Привязка по id*/
-  /*Масла*/
-  /*Тип масла*/div[data-drupal-selector="edit-field-oil-type-target-id"],
-  /*Базовое масло*/div[data-drupal-selector="edit-field-oil-base-oil-target-id"],
-  /*Производитель*/div[data-drupal-selector="edit-field-oil-brand-target-id"],
-  /*Узел применения*/div[data-drupal-selector="edit-field-oil-apply-node-target-id"],
-  /*Пары трения*/div[data-drupal-selector="edit-field-oil-pairs-target-id"],
-  /*Особенность*/div[data-drupal-selector="edit-field-oil-spec-target-id"],
-  /*Смазки*/div[data-drupal-selector="edit-field-oil-spec-target-id"],
-  /*Тип смазки*/div[data-drupal-selector="edit-field-grease-type-target-id"],
-  /*Загуститель*/div[data-drupal-selector="edit-field-grease-thickener-target-id"],
-  /*Базовое масло*/div[data-drupal-selector="edit-field-grease-base-oil-target-id"],
-  /*Производитель*/div[data-drupal-selector="edit-field-grease-brand-target-id"],
-  /*Пищевой допуск*/div[data-drupal-selector="edit-field-grease-food-target-id"],
-  /*Пары трения*/div[data-drupal-selector="edit-field-grease-pairs-target-id"],
-  /*Особенность*/div[data-drupal-selector="edit-field-grease-spec-target-id"],
-  /*Узел применения*/div[data-drupal-selector="edit-field-grease-apply-node-target-id"]
-{
-    &>div{
-      width: 100%;
+  /*Фильтры чекбоксы все остальные*/
+  /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке.*/
+  /*Масла*/fieldset[data-drupal-selector^="edit-field-oil-"],
+  /*Смазки*/fieldset[data-drupal-selector^="edit-field-grease-"]
+  {
+    background: #efefef;
+    border-radius: 5px;
+    width: 100%;
+    div[data-drupal-selector^="edit"]{
+      &>div{
+        width: 100%;
+      }
+    }
+    div[data-drupal-selector*="api"], div[data-drupal-selector*="acea"], div[data-drupal-selector*="sae"]{
+      &>div{
+        width: auto;
+        margin-right: 16px;
+      }
+    }
+    /*[data-drupal-selector~="api"]>div,
+    [data-drupal-selector~="acea"]>div,
+    [data-drupal-selector~="sae"]>div{
+      width: auto;
+    }*/
+
+
+    margin-bottom: 15px;
+    border-bottom: 1px #e5e5e5 solid;
+    legend{
+      font-size:18px;
+      margin-bottom: 10px;
+      border-bottom: none;
+      background: #efefef;
+      border-radius: 5px;
+      padding:10px;
+      span{
+        color: $green;
+      }
     }
     label.control-label.option{
-      font-size:20px;
+      font-size:16px;
       font-weight: 400;
       color: $black;
     }
-  }
-  details.form-item{
-    border-bottom: 1px $black solid;
-    width: 100%;
-    margin: 5px 0;
-    summary[role="button"]{
-      font-size:25px;
-      color: $black;
+    .fieldset-wrapper {
+      padding: 10px
     }
-  }
-  #edit-secondary{
-    margin: 10px 0;
-    width: 100%;
-    div.panel-heading>a{
-      font-size:25px;
-      color: $black;
-    }
-    label.control-label{
-      font-size:20px;
-      font-weight: 400;
-      color: $black;
-    }
-
   }
 
+  /*Фильтры вязкость и температура со слайдерами и инпутами*/
+  div.form--inline>div[class*="js-form-item-field-oil"]{
+    width: 100%;
+    margin-bottom: 15px;
+    background: #efefef;
+    border-radius: 5px;
+    padding: 10px;
+    &:first-child{
+      margin-bottom: 0px;
+      border-radius: 5px 5px 0 0;
+      #edit-field-oil-visc-value-min+.bef-slider{
+        margin-top: 20px;
+      }
+    }
+    &:nth-child(2){
+      border-radius: 0 0 5px 5px;
+    }
+
+    label{
+      font-size:18px;
+      color: $green;
+      font-weight:normal;
+    }
+    input{
+      width:50%;
+    }
+    .bef-slider{
+      width:90%;
+    }
+  }
+
+  /*Кнопка Отбор*/
   #edit-actions--2{
-
     @media #{$wide}{
-      --side: 1170px;
+      --view: 1170px;
     }
     @media #{$normal}{
-      --side: 970px;
+      --view: 970px;
     }
     @media #{$tablet}{
-      --side: 750px;
+      --view: 750px;
     }
 
+    z-index: 110;
     position: fixed;
-    top: 194px;
-    left: calc(100vw - (100vw - var(--side)));
-    width: calc(100vw/12*2);
+    top: 224px;
+    left: calc(var(--view)/12*9 + 40px + 25px + (100vw - 40px - var(--view))/2);
+    width: calc(var(--view)/12*3 - 35px);
     &.minimized{
-      top: 50px;
+      top: 85px;
     }
+
     #edit-submit-oils-list, #edit-submit-greases-list{
-      bottom: 0;
-      left: 15px;
-      width: 100%;
+      width: 95%;
       font-size: 30px;
       background: $yellow;
       border: 2px $white solid;
@@ -83,8 +112,26 @@
     }
   }
 
-
-
-
-
+  /*Сворачиваемые фильтры*/
+  details.form-item{
+    margin-bottom: 15px;
+    width:100%;
+    background: #efefef;
+    border-radius: 5px;
+    summary{
+      font-size:18px;
+      margin-bottom: 10px;
+      color: $green;
+      padding:10px;
+    }
+    .form-checkboxes>div{
+      width: 100%;
+      padding: 0 0 0 10px;
+      label.control-label.option{
+        color: $black;
+        font-size:16px;
+        font-weight: 400;
+      }
+    }
+  }
 }

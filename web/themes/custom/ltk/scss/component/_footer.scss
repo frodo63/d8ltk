@@ -1,0 +1,27 @@
+.main-container.container.js-quickedit-main-content {
+  /*margin-bottom: 350px;*/
+}
+footer.footer {
+  height: 350px;
+  bottom: 0;
+  left: 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size:20px;
+  font-weight: 400;
+  width:100%;
+  background: $yellow;
+  .region.region-footer>nav, .region.region-footer>section{
+    width: 25%;
+    float: left;
+    text-align: center;
+  }
+  .region.region-footer>nav{
+    text-transform: uppercase;
+  }
+  .region.region-footer>section:last-child{
+    clear: right;
+  }
+  .region.region-footer>section:nth-child(3), .region.region-footer>section:nth-child(4){
+  /*margin-top: 70px;*/
+  }
+}

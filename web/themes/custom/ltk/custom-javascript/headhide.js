@@ -4,7 +4,7 @@ Drupal.behaviors.basic = {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
 
-                if (scroll > 0) {
+                if (scroll > 50) {
                     $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted').addClass('minimized');
                     $('body').addClass('body-minimized');
                 } else {
@@ -77,11 +77,15 @@ Drupal.behaviors.basic = {
 
           /*Анимация cfp2-divы ховеры для всех картинок*/
           $('div[class^="cfp2-"] li').off('mouseover.cfp2li').on('mouseover.cfp2li' , function () {
-            var count = $(event.target).attr('data-count');
+            var count = $(this).attr('data-count');
             var path ="sites/default/files/theme-images/spes/"+count+".png";
-            var target = $(event.target).parents('div[class^="cfp2-"]');
+            var target = $(this).parents('div[class^="cfp2-"]');
             target.css('background-image','url('+path+')');
           })
+
+          /*Меняем value с And на "До" во втором инпуте Выбора Вязкости масла*/
+          $('.form-item label[for="edit-field-oil-visc-value-max"]').html("до:");
+
 
         })(jQuery);
     }

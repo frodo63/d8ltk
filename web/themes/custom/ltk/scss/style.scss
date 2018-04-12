@@ -27,6 +27,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'component/frontpage_paragraphs';
 @import 'component/sidemenu';
 @import 'component/product_filters';
+@import 'component/footer';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
@@ -61,7 +62,7 @@ body {
   -webkit-overflow-scrolling: touch;
   a{
     color: $green;
-    &:hover {color: $white;}
+    &:hover {color: $green;}
   }
 
   /*РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
