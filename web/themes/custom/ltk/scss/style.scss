@@ -15,6 +15,19 @@ $lightyellow: #FCD973;
 $black: #000000;
 $white: #FFFFFF;
 
+/*Шрифт для тултипов*/
+.tooltip-inner {
+  padding: 3px 8px;
+  color: $green;
+  text-align: center;
+  background-color: #FBBA00;
+  border-radius: $border-radius-base;
+  border: 1px solid $green;
+  font-weight: 400;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+}
+
 //Manual Breakpoints
 $mobile: "screen and (min-width: 0px) and (max-width: 767px)";        /*0     -   767*/
 $tablet: "screen and (min-width: 768px) and (max-width: 991px)";      /*768   -   991*/
@@ -28,6 +41,9 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'component/sidemenu';
 @import 'component/product_filters';
 @import 'component/footer';
+@import 'component/var_pages';
+@import 'component/add_request';
+@import 'component/masla';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
@@ -51,8 +67,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 
 .main-container {
   position: relative;
-  left: 40px;
-  top: 80px;
+  /*left: 40px;*/
 }
 
 body {
@@ -117,8 +132,8 @@ body {
       top: 50px;
     }
     &.active{
-      left: 280px;
-      width: calc(100% - 280px);
+      left: 300px;
+      width: calc(100% - 300px);
     }
   }
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
@@ -133,12 +148,20 @@ h1, h2, h3, h4, h5 {
   color: $black;
 }
 
+/**/
+
 /*Стиль для запрета копирования*/
 .no-copy {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */
+}
+
+.breadcrumb {
+  height:50px;
+  padding: 14px 15px;
+
 }
 
 

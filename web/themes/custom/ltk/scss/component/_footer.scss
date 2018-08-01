@@ -1,6 +1,3 @@
-.main-container.container.js-quickedit-main-content {
-  /*margin-bottom: 350px;*/
-}
 footer.footer {
   height: 350px;
   bottom: 0;
@@ -8,8 +5,22 @@ footer.footer {
   font-family: 'Oswald', sans-serif;
   font-size:20px;
   font-weight: 400;
-  width:100%;
-  background: $yellow;
+  width: calc(100% - 40px);
+  margin-left: 40px;
+  background: #555;
+  color: $yellow;
+  a, a:hover, a:visited{
+    color: $yellow;
+  }
+  #block-shortfaq .panel-heading, #block-shortfaq .panel-body, #block-shortfaq .panel-default {
+    background-color: $black;
+    border-top:none;
+    border:none;
+  }
+  #block-shortfaq .panel-body, #block-shortfaq .panel-body a  {
+    color: $white;
+  }
+
   .region.region-footer>nav, .region.region-footer>section{
     width: 25%;
     float: left;
@@ -20,8 +31,5 @@ footer.footer {
   }
   .region.region-footer>section:last-child{
     clear: right;
-  }
-  .region.region-footer>section:nth-child(3), .region.region-footer>section:nth-child(4){
-  /*margin-top: 70px;*/
   }
 }

@@ -21,6 +21,29 @@
   ]
 %}
 {% if content %}
+
+
+    <div{{ attributes.addClass(classes) }}>{{ content }}</div>
+    <div class="side-menu--wrap"><div class="side-menu-burger-link">
+            <div class="side-menu-burger--icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="side-menu-burger--name no-copy">ПРОДУКЦИЯ</div>
+        </div></div>
+
+{% endif %}
+
+
+{#
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
     <div class="side-menu--wrap">
       <div class="side-menu-burger-link">
           <div class="side-menu-burger--icon">
@@ -35,3 +58,4 @@
       </div>
     </div>
 {% endif %}
+#}

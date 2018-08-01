@@ -2,6 +2,11 @@
   padding:5px;
   font-family: 'Oswald', sans-serif;
 
+  section[id^='block-exposedform']{
+    padding-top:80px;
+  }
+
+
   /*Фильтры чекбоксы все остальные*/
   /*РАстягиваем на 100% ширину каждого лейбла, чтобы каждая опция была на своей строчке.*/
   /*Масла*/fieldset[data-drupal-selector^="edit-field-oil-"],

@@ -148,6 +148,23 @@
             {% endblock %}
           {% endif %}
 
+          {# Add Request region #}
+          {% if page.add_request %}
+              {% block add_request %}
+                  <div class="request-button">
+                      <span class="arr-down"></span>
+                      <span class="arr-down"></span>
+                      <p>Заполнить заявку</p>
+                      <span class="arr-down"></span>
+                      <span class="arr-down"></span>
+                  </div>
+
+                  <section id="add-request" class="add-request">
+                      {{ page.add_request }}
+                  </section>
+              {% endblock %}
+          {% endif %}
+
         {# Breadcrumbs #}
         {% if breadcrumb %}
           {% block breadcrumb %}
@@ -184,6 +201,8 @@
           </aside>
         {% endblock %}
       {% endif %}
+
+
     </div>
   </div>
 {% endblock %}

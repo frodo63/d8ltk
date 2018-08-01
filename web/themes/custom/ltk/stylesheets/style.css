@@ -7909,8 +7909,8 @@ button.close {
 }
 /* line 18, ../bootstrap/assets/stylesheets/bootstrap/_tooltip.scss */
 .tooltip.in {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 /* line 19, ../bootstrap/assets/stylesheets/bootstrap/_tooltip.scss */
 .tooltip.top {
@@ -9564,40 +9564,53 @@ ol, ul {
 
 /* line 34, ../scss/_overrides.scss */
 .footer {
-  margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
 }
 
-/* line 42, ../scss/_overrides.scss */
+/* line 41, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 50, ../scss/_overrides.scss */
+/* line 49, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 55, ../scss/_overrides.scss */
+/* line 54, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 61, ../scss/_overrides.scss */
+/* line 60, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 66, ../scss/_overrides.scss */
+/* line 65, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
+}
+
+/*Шрифт для тултипов*/
+/* line 19, ../scss/style.scss */
+.tooltip-inner {
+  padding: 3px 8px;
+  color: #17460F;
+  text-align: center;
+  background-color: #FBBA00;
+  border-radius: 4px;
+  border: 1px solid #17460F;
+  font-weight: 400;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
 }
 
 /*0     -   767*/
@@ -10397,7 +10410,11 @@ p:last-child,
     padding: 0 8px;
     color: #17460F;
   }
-  /* line 656, ../scss/component/_header.scss */
+  /* line 652, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu li a:hover {
+    color: #FFFFFF;
+  }
+  /* line 659, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
@@ -10406,7 +10423,7 @@ p:last-child,
     width: 100vw;
     text-align: center;
   }
-  /* line 665, ../scss/component/_header.scss */
+  /* line 668, ../scss/component/_header.scss */
   .navbar #block-sitename {
     top: 40px;
     left: 170px;
@@ -10415,7 +10432,7 @@ p:last-child,
     line-height: 36px;
     text-transform: uppercase;
   }
-  /* line 674, ../scss/component/_header.scss */
+  /* line 677, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
     top: 110px;
     left: 168px;
@@ -10423,29 +10440,29 @@ p:last-child,
     font-size: 17px;
     line-height: 17px;
   }
-  /* line 682, ../scss/component/_header.scss */
+  /* line 685, ../scss/component/_header.scss */
   .navbar #block-vremaraboty, .navbar #block-adres-2, .navbar #block-elpocta {
     right: 280px;
     font-size: 17px;
     line-height: 17px;
   }
-  /* line 688, ../scss/component/_header.scss */
+  /* line 691, ../scss/component/_header.scss */
   .navbar #block-vremaraboty {
     top: 42px;
   }
-  /* line 692, ../scss/component/_header.scss */
+  /* line 695, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
     top: 67px;
   }
-  /* line 696, ../scss/component/_header.scss */
+  /* line 699, ../scss/component/_header.scss */
   .navbar #block-elpocta {
     top: 92px;
   }
-  /* line 698, ../scss/component/_header.scss */
+  /* line 701, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 703, ../scss/component/_header.scss */
+  /* line 706, ../scss/component/_header.scss */
   .navbar #block-telephones {
     top: 16px;
     right: 32px;
@@ -10453,27 +10470,28 @@ p:last-child,
     font-size: 25px;
     line-height: 25px;
   }
-  /* line 711, ../scss/component/_header.scss */
+  /* line 714, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
-    width: 386px;
+    width: 265px;
     top: 150px;
-    right: 34px;
+    right: 10px;
   }
-  /* line 716, ../scss/component/_header.scss */
+  /* line 720, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form {
     bottom: -26px;
     position: absolute;
+    width: 265px;
   }
-  /* line 721, ../scss/component/_header.scss */
+  /* line 726, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 724, ../scss/component/_header.scss */
+  /* line 729, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
     height: 34px;
   }
-  /* line 728, ../scss/component/_header.scss */
+  /* line 733, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
     height: 34px;
@@ -10482,24 +10500,24 @@ p:last-child,
     font-size: 8px;
     padding: 0 8px 0 8px;
   }
-  /* line 736, ../scss/component/_header.scss */
+  /* line 741, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
     line-height: 34px;
     font-size: 17px;
   }
-  /* line 742, ../scss/component/_header.scss */
+  /* line 747, ../scss/component/_header.scss */
   .navbar.minimized {
     height: 42px;
   }
-  /* line 744, ../scss/component/_header.scss */
+  /* line 749, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones {
     top: 5px;
   }
-  /* line 746, ../scss/component/_header.scss */
+  /* line 751, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones p.h {
     display: none;
   }
-  /* line 750, ../scss/component/_header.scss */
+  /* line 755, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta {
     top: 5px;
     right: 280px;
@@ -10507,15 +10525,15 @@ p:last-child,
     font-size: 25px;
     line-height: 25px;
   }
-  /* line 756, ../scss/component/_header.scss */
+  /* line 761, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 760, ../scss/component/_header.scss */
+  /* line 765, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 763, ../scss/component/_header.scss */
+  /* line 768, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
     top: 5px;
     left: 84px;
@@ -10525,48 +10543,72 @@ p:last-child,
 @media screen and (min-width: 1200px), screen and (min-width: 992px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 991px), screen and (min-width: 0px) and (max-width: 767px) {
   /* line 2, ../scss/component/_frontpage_paragraphs.scss */
   div[class*='cfp-'] {
-    height: 60vh;
+    height: 70vh;
     font-family: 'Oswald', sans-serif;
     color: #000000;
     text-align: center;
-    margin: 5vh 0 5vh 0;
+    margin: 0 0 5vh 0;
     border-bottom: 2px #FBBA00 solid;
     background-repeat: no-repeat;
+    /*ЗАДАЕМ РАЗМЕРЫ ШРИФТА ДЛЯ ВСЕГО В ОДНОСМ МЕСТЕ*/
+    /**/
+  }
+  /* line 12, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-'] p.cfp_title {
+    font-size: 50px;
+  }
+  /* line 13, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-'] .cfp-topline, div[class*='cfp-'] span.special {
+    font-size: 35px;
+  }
+  /* line 14, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-'] p, div[class*='cfp-'] span, div[class*='cfp-'] .cfp-2 li, div[class*='cfp-'] div[class*='cfp2'] li {
+    font-size: 25px;
+  }
+  /* line 15, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-'] #myTab a, div[class*='cfp-'] #myTabContent p {
+    font-size: 20px;
+  }
+  /* line 16, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-'] .cfp5-column {
+    font-size: 18px;
+  }
+  /* line 19, ../scss/component/_frontpage_paragraphs.scss */
+  div[class*='cfp-']:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
   }
 
-  /* line 13, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 26, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-1 p.cfp_title {
     top: 10vh;
     position: absolute;
     width: 100%;
-    font-size: 4vw;
   }
-  /* line 19, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 31, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-1 p.cfp_text {
     top: 30vh;
     position: absolute;
     width: 100%;
-    font-size: 2vh;
   }
 
-  /* line 28, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 39, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 p {
-    font-size: 35px;
     color: #000000;
     text-align: center;
     position: absolute;
-    top: 80%;
+    /*top: 80%;*/
   }
-  /* line 35, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 45, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .special {
     text-decoration: underline;
     cursor: pointer;
   }
-  /* line 38, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 48, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .special:hover {
     color: #17460F;
   }
-  /* line 42, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 52, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla,
   .cfp-2 .cfp2-smazki,
   .cfp-2 .cfp2-tzhid,
@@ -10581,7 +10623,7 @@ p:last-child,
     background-repeat: no-repeat;
     background-position: right top;
   }
-  /* line 47, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 57, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla ul,
   .cfp-2 .cfp2-smazki ul,
   .cfp-2 .cfp2-tzhid ul,
@@ -10591,10 +10633,19 @@ p:last-child,
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 20px;
     text-align: left;
   }
-  /* line 55, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 64, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-2 .cfp2-masla ul li:hover,
+  .cfp-2 .cfp2-smazki ul li:hover,
+  .cfp-2 .cfp2-tzhid ul li:hover,
+  .cfp-2 .cfp2-import ul li:hover,
+  .cfp-2 .cfp2-otech ul li:hover {
+    background: #FBBA00;
+    color: #000000;
+    cursor: pointer;
+  }
+  /* line 71, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-2 .cfp2-masla img,
   .cfp-2 .cfp2-smazki img,
   .cfp-2 .cfp2-tzhid img,
@@ -10604,65 +10655,59 @@ p:last-child,
     width: 100px;
   }
 
-  /* line 69, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 85, ../scss/component/_frontpage_paragraphs.scss */
   .fix {
     background: lightpink;
   }
 
-  /* line 72, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 88, ../scss/component/_frontpage_paragraphs.scss */
   p.cfp-topline {
-    position: absolute;
-    top: 0%;
-    height: 30%;
-    font-size: 35px;
+    height: 60px;
     color: #000000;
     text-align: center;
   }
 
-  /* line 82, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 95, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2, .cfp-3 .col-lg-8 {
     height: inherit;
   }
-  /* line 85, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 98, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-3 .col-lg-2 {
-    font-size: 50px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
   }
 
-  /* line 92, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 104, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title {
-    font-size: 25px;
     cursor: pointer;
   }
-  /* line 95, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 106, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title p {
     text-align: right;
   }
-  /* line 98, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 109, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-title:hover {
     background: #FBBA00;
     color: #000000;
   }
 
-  /* line 103, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 114, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup {
     background: #FFFFFF;
     color: #000000;
     display: none;
-    font-size: 35px;
     width: 100%;
     position: absolute;
     top: 0;
     height: 100%;
   }
-  /* line 112, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 122, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-popup p {
     text-align: right;
   }
 
-  /* line 116, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 126, ../scss/component/_frontpage_paragraphs.scss */
   .cfp3-wrapper {
     height: inherit;
     width: 100%;
@@ -10671,147 +10716,235 @@ p:last-child,
     text-align: left;
   }
 
-  /* line 125, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 135, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column {
     height: inherit;
   }
-  /* line 127, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 137, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-4 .cfp4-column p {
     background: #FBBA00;
-    font-size: 35px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
   }
 
-  /* line 137, ../scss/component/_frontpage_paragraphs.scss */
-  .cfp-5 {
-    font-size: 20px;
-  }
-  /* line 139, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 147, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 {
     padding: 0;
     height: inherit;
   }
-  /* line 142, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 150, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper {
     height: inherit;
+    height: calc(100% - 5vh);
     background: #FBBA00;
     margin: 0 .5vh;
   }
-  /* line 146, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 155, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 .cfp5-wrapper p {
     width: calc(100% - 1vh);
   }
-  /* line 151, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 160, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-5 .col-lg-2 .cf5-arrow {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+  }
+  /* line 165, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-title {
-    font-size: 30px;
     position: absolute;
     top: 5%;
   }
-  /* line 156, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 169, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column {
-    font-size: 17px;
     position: absolute;
     top: 45%;
   }
-  /* line 158, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 170, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span {
     text-decoration: underline;
     cursor: pointer;
   }
-  /* line 161, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 173, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-5 .col-lg-2 p.cfp5-column span:hover {
     color: #17460F;
   }
 
-  /* line 173, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 185, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-7 #accordion {
     top: 20%;
     position: absolute;
   }
 
-  /* line 180, ../scss/component/_frontpage_paragraphs.scss */
-  .cfp-8 .carousel {
-    height: 70vh;
+  /* line 191, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 {
+    height: 100vh;
+  }
+  /* line 194, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3, #brands.cfp-8 .brands-import .col-lg-3 {
+    height: 100px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.2;
+  }
+  /* line 199, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:hover, #brands.cfp-8 .brands-import .col-lg-3:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  /* line 208, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(1) {
+    background: url("../images/brands/kzm logo.png") center center no-repeat;
+  }
+  /* line 209, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(2) {
+    background: url("../images/brands/gazpromneft logo.png") center center no-repeat;
+  }
+  /* line 210, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(3) {
+    background: url("../images/brands/lukoil logo.png") center center no-repeat;
+  }
+  /* line 211, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(4) {
+    background: url("../images/brands/rosneft logo.png") center center no-repeat;
+  }
+  /* line 212, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(5) {
+    background: url("../images/brands/delfin logo.png") center center no-repeat;
+  }
+  /* line 213, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(6) {
+    background: url("../images/brands/luxe logo.png") center center no-repeat;
+  }
+  /* line 214, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(7) {
+    background: url("../images/brands/devon logo.png") center center no-repeat;
+  }
+  /* line 215, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-otech .col-lg-3:nth-child(8) {
+    background: url("../images/brands/centeroil logo.png") center center no-repeat;
+  }
+  /* line 220, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(1) {
+    background: url("../images/brands/shell logo.png") center center no-repeat;
+  }
+  /* line 221, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(2) {
+    background: url("../images/brands/mobil logo.png") center center no-repeat;
+  }
+  /* line 222, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(3) {
+    background: url("../images/brands/agip logo.png") center center no-repeat;
+  }
+  /* line 223, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(4) {
+    background: url("../images/brands/castrol logo.png") center center no-repeat;
+  }
+  /* line 224, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(5) {
+    background: url("../images/brands/total logo.png") center center no-repeat;
+  }
+  /* line 225, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(6) {
+    background: url("../images/brands/motorex logo.png") center center no-repeat;
+  }
+  /* line 226, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(7) {
+    background: url("../images/brands/kluber logo.png") center center no-repeat;
+  }
+  /* line 227, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .brands-import .col-lg-3:nth-child(8) {
+    background: url("../images/brands/oks logo.png") center center no-repeat;
+  }
+  /* line 230, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .dealership {
+    position: relative;
+    margin: 20px 0;
+  }
+  /* line 233, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .dealership img:last-child {
+    margin-top: 20px;
+  }
+  /* line 236, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .dealership .text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 60%;
+  }
+  /* line 241, ../scss/component/_frontpage_paragraphs.scss */
+  #brands.cfp-8 .dealership .text p {
+    text-align: justify;
   }
 
-  /* line 186, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 249, ../scss/component/_frontpage_paragraphs.scss */
   .cfp-9 #myCarousel {
     height: 55vh;
+  }
+
+  /* line 255, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 {
+    height: 90vh;
+  }
+  /* line 257, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 .tab-pane {
+    text-align: left;
+  }
+  /* line 260, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 img.ico {
+    height: 40px;
+    width: 40px;
+    color: grey;
+  }
+  /* line 265, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 img.ico-big {
+    height: 60px;
+    width: 60px;
+    color: #000000;
+  }
+  /* line 270, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 img.ico-small {
+    height: 20px;
+    width: 20px;
+    color: #17460F;
+  }
+  /* line 275, ../scss/component/_frontpage_paragraphs.scss */
+  .cfp-10 #clock {
+    height: 15px;
+    width: 15px;
   }
 }
 /* line 1, ../scss/component/_sidemenu.scss */
 .side-menu--wrap {
   background: #FBBA00;
-  /*НАЧАЛСЯ Расчет высоты бокового меню*/
-  /*Первоначально объявляем переменную*/
-  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
-  /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
   position: fixed;
   left: 0px;
-  z-index: 100;
   width: 40px;
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   /*БЛОК С БУРГЕР ИКОНКОЙ*/
-  /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
-  /*ЗАКОНЧИЛОСЬ МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
 }
-@media screen and (min-width: 1200px) {
-  /* line 1, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap {
-    top: 189px;
-    height: calc(100% - 189px);
-  }
-  /* line 14, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap.minimized {
-    top: 42px;
-    height: calc(100% - 42px);
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 1, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap {
-    top: 150px;
-    height: calc(100% - 150px);
-  }
-  /* line 23, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap.minimized {
-    top: 35px;
-    height: calc(100% - 35px);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 1, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap {
-    top: 120px;
-    height: calc(100% - 120px);
-  }
-  /* line 33, ../scss/component/_sidemenu.scss */
-  .side-menu--wrap.minimized {
-    top: 25px;
-    height: calc(100% - 25px);
-  }
-}
-/* line 47, ../scss/component/_sidemenu.scss */
+/* line 8, ../scss/component/_sidemenu.scss */
 .side-menu--wrap h2, .side-menu--wrap a, .side-menu--wrap .side-menu-burger--name {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
-/* line 52, ../scss/component/_sidemenu.scss */
+/* line 13, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link {
   height: 166px;
   cursor: pointer;
 }
-/* line 56, ../scss/component/_sidemenu.scss */
+/* line 17, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link:hover .side-menu-burger--icon span {
   background: #FFFFFF;
 }
-/* line 57, ../scss/component/_sidemenu.scss */
+/* line 18, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link:hover .side-menu-burger--name {
   color: #FFFFFF;
 }
-/* line 61, ../scss/component/_sidemenu.scss */
+/* line 22, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--name {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -10823,11 +10956,11 @@ p:last-child,
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
-/* line 76, ../scss/component/_sidemenu.scss */
+/* line 37, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon {
   margin: 20px 10px 40px 10px;
 }
-/* line 79, ../scss/component/_sidemenu.scss */
+/* line 40, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon span {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -10838,7 +10971,7 @@ p:last-child,
   display: block;
   box-sizing: border-box;
 }
-/* line 91, ../scss/component/_sidemenu.scss */
+/* line 52, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(1) {
   transform: translate(-2px, 6px) rotate(45deg);
   -webkit-transform: translate(-2px, 6px) rotate(45deg);
@@ -10847,7 +10980,7 @@ p:last-child,
   -o-transform: translate(-2px, 6px) rotate(45deg);
   width: 23px;
 }
-/* line 100, ../scss/component/_sidemenu.scss */
+/* line 61, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(2) {
   transform: translate(-2px) rotate(-45deg);
   -webkit-transform: translate(-2px) rotate(-45deg);
@@ -10856,80 +10989,114 @@ p:last-child,
   -o-transform: translate(-2px) rotate(-45deg);
   width: 23px;
 }
-/* line 109, ../scss/component/_sidemenu.scss */
+/* line 70, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(3) {
   opacity: 0;
 }
-/* line 116, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu {
-  overflow-y: scroll;
-  /*При длинном столбе опций появляется скролл*/
-  display: none;
-  transition: all .5s ease-out;
-  -webkit-transition: all .5s ease-out;
-  -ms-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  top: inherit;
-  height: inherit;
-  /*width: 240px;*/
-  left: 40px;
-  background: #FBBA00;
+
+/*НАЧАЛСЯ Расчет высоты РАЗНЫХ боковых меню*/
+/* line 77, ../scss/component/_sidemenu.scss */
+.region-sidemenu, .side-menu--wrap {
+  /*Первоначально объявляем переменную*/
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+}
+@media screen and (min-width: 1200px) {
+  /* line 77, ../scss/component/_sidemenu.scss */
+  .region-sidemenu, .side-menu--wrap {
+    top: 189px;
+    height: calc(100% - 189px);
+  }
+  /* line 87, ../scss/component/_sidemenu.scss */
+  .region-sidemenu.minimized, .side-menu--wrap.minimized {
+    top: 42px;
+    height: calc(100% - 42px);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 77, ../scss/component/_sidemenu.scss */
+  .region-sidemenu, .side-menu--wrap {
+    top: 150px;
+    height: calc(100% - 150px);
+  }
+  /* line 96, ../scss/component/_sidemenu.scss */
+  .region-sidemenu.minimized, .side-menu--wrap.minimized {
+    top: 35px;
+    height: calc(100% - 35px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 77, ../scss/component/_sidemenu.scss */
+  .region-sidemenu, .side-menu--wrap {
+    top: 120px;
+    height: calc(100% - 120px);
+  }
+  /* line 106, ../scss/component/_sidemenu.scss */
+  .region-sidemenu.minimized, .side-menu--wrap.minimized {
+    top: 25px;
+    height: calc(100% - 25px);
+  }
+}
+
+/*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+/*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
+/* line 117, ../scss/component/_sidemenu.scss */
+.region-sidemenu {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  left: -255px;
+  transition: left .5s ease-out;
+  -webkit-transition: left .5s ease-out;
+  -ms-transition: left .5s ease-out;
+  -o-transition: left .5s ease-out;
+  -moz-transition: left .5s ease-out;
   position: fixed;
 }
-/* line 127, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu.minimized {
-  top: inherit;
-  height: inherit;
-}
-/* line 135, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu nav ul.nav {
+/* line 131, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav ul.nav {
   /*display: none;*/
   max-height: 59vh;
   width: 240px;
   overflow-y: overlay;
 }
-/* line 141, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu nav ul.nav li a {
+/* line 137, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav ul.nav li a {
   padding: 2px 0px 5px 10px;
 }
-/* line 143, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu nav ul.nav li a:hover {
+/* line 139, ../scss/component/_sidemenu.scss */
+.region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
 }
-/* line 147, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu h2, .side-menu--wrap .region-sidemenu a {
+/* line 143, ../scss/component/_sidemenu.scss */
+.region-sidemenu h2, .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 150, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu h2:hover, .side-menu--wrap .region-sidemenu a:hover {
-  color: #FFFFFF;
-}
-/* line 155, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu h2 {
+/* line 148, ../scss/component/_sidemenu.scss */
+.region-sidemenu h2 {
   display: inline-block;
   width: 200px;
   font-size: 20px;
 }
-/* line 160, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu a {
+/* line 153, ../scss/component/_sidemenu.scss */
+.region-sidemenu a {
   font-size: 15px;
 }
-/* line 163, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu .glyphicon-menu-right {
+/* line 156, ../scss/component/_sidemenu.scss */
+.region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 166, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu a:hover {
+/* line 159, ../scss/component/_sidemenu.scss */
+.region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 170, ../scss/component/_sidemenu.scss */
-.side-menu--wrap .region-sidemenu.active {
-  display: block;
+/* line 163, ../scss/component/_sidemenu.scss */
+.region-sidemenu.active {
+  left: 40px;
 }
 
+/*ЗАКОНЧИЛОСЬ МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
 /* line 1, ../scss/component/_product_filters.scss */
 .region-sidebar-second {
   padding: 5px;
@@ -10941,7 +11108,11 @@ p:last-child,
   /*Кнопка Отбор*/
   /*Сворачиваемые фильтры*/
 }
-/* line 7, ../scss/component/_product_filters.scss */
+/* line 5, ../scss/component/_product_filters.scss */
+.region-sidebar-second section[id^='block-exposedform'] {
+  padding-top: 80px;
+}
+/* line 12, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"],
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] {
   background: #efefef;
@@ -10955,12 +11126,12 @@ p:last-child,
   margin-bottom: 15px;
   border-bottom: 1px #e5e5e5 solid;
 }
-/* line 14, ../scss/component/_product_filters.scss */
+/* line 19, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector^="edit"] > div,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector^="edit"] > div {
   width: 100%;
 }
-/* line 19, ../scss/component/_product_filters.scss */
+/* line 24, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="api"] > div, .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="acea"] > div, .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] div[data-drupal-selector*="sae"] > div,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector*="api"] > div,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] div[data-drupal-selector*="acea"] > div,
@@ -10968,7 +11139,7 @@ p:last-child,
   width: auto;
   margin-right: 16px;
 }
-/* line 33, ../scss/component/_product_filters.scss */
+/* line 38, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] legend,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] legend {
   font-size: 18px;
@@ -10978,24 +11149,24 @@ p:last-child,
   border-radius: 5px;
   padding: 10px;
 }
-/* line 40, ../scss/component/_product_filters.scss */
+/* line 45, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] legend span,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] legend span {
   color: #17460F;
 }
-/* line 44, ../scss/component/_product_filters.scss */
+/* line 49, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] label.control-label.option,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] label.control-label.option {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
 }
-/* line 49, ../scss/component/_product_filters.scss */
+/* line 54, ../scss/component/_product_filters.scss */
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-oil-"] .fieldset-wrapper,
 .region-sidebar-second fieldset[data-drupal-selector^="edit-field-grease-"] .fieldset-wrapper {
   padding: 10px;
 }
-/* line 55, ../scss/component/_product_filters.scss */
+/* line 60, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] {
   width: 100%;
   margin-bottom: 15px;
@@ -11003,34 +11174,34 @@ p:last-child,
   border-radius: 5px;
   padding: 10px;
 }
-/* line 61, ../scss/component/_product_filters.scss */
+/* line 66, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:first-child {
   margin-bottom: 0px;
   border-radius: 5px 5px 0 0;
 }
-/* line 64, ../scss/component/_product_filters.scss */
+/* line 69, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:first-child #edit-field-oil-visc-value-min + .bef-slider {
   margin-top: 20px;
 }
-/* line 68, ../scss/component/_product_filters.scss */
+/* line 73, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"]:nth-child(2) {
   border-radius: 0 0 5px 5px;
 }
-/* line 72, ../scss/component/_product_filters.scss */
+/* line 77, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] label {
   font-size: 18px;
   color: #17460F;
   font-weight: normal;
 }
-/* line 77, ../scss/component/_product_filters.scss */
+/* line 82, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] input {
   width: 50%;
 }
-/* line 80, ../scss/component/_product_filters.scss */
+/* line 85, ../scss/component/_product_filters.scss */
 .region-sidebar-second div.form--inline > div[class*="js-form-item-field-oil"] .bef-slider {
   width: 90%;
 }
-/* line 86, ../scss/component/_product_filters.scss */
+/* line 91, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2 {
   z-index: 110;
   position: fixed;
@@ -11039,28 +11210,28 @@ p:last-child,
   width: calc(var(--view)/12*3 - 35px);
 }
 @media screen and (min-width: 1200px) {
-  /* line 86, ../scss/component/_product_filters.scss */
+  /* line 91, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
     --view: 1170px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 86, ../scss/component/_product_filters.scss */
+  /* line 91, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
     --view: 970px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 86, ../scss/component/_product_filters.scss */
+  /* line 91, ../scss/component/_product_filters.scss */
   .region-sidebar-second #edit-actions--2 {
     --view: 750px;
   }
 }
-/* line 102, ../scss/component/_product_filters.scss */
+/* line 107, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2.minimized {
   top: 85px;
 }
-/* line 106, ../scss/component/_product_filters.scss */
+/* line 111, ../scss/component/_product_filters.scss */
 .region-sidebar-second #edit-actions--2 #edit-submit-oils-list, .region-sidebar-second #edit-actions--2 #edit-submit-greases-list {
   width: 95%;
   font-size: 30px;
@@ -11068,26 +11239,26 @@ p:last-child,
   border: 2px #FFFFFF solid;
   color: #17460F;
 }
-/* line 116, ../scss/component/_product_filters.scss */
+/* line 121, ../scss/component/_product_filters.scss */
 .region-sidebar-second details.form-item {
   margin-bottom: 15px;
   width: 100%;
   background: #efefef;
   border-radius: 5px;
 }
-/* line 121, ../scss/component/_product_filters.scss */
+/* line 126, ../scss/component/_product_filters.scss */
 .region-sidebar-second details.form-item summary {
   font-size: 18px;
   margin-bottom: 10px;
   color: #17460F;
   padding: 10px;
 }
-/* line 127, ../scss/component/_product_filters.scss */
+/* line 132, ../scss/component/_product_filters.scss */
 .region-sidebar-second details.form-item .form-checkboxes > div {
   width: 100%;
   padding: 0 0 0 10px;
 }
-/* line 130, ../scss/component/_product_filters.scss */
+/* line 135, ../scss/component/_product_filters.scss */
 .region-sidebar-second details.form-item .form-checkboxes > div label.control-label.option {
   color: #000000;
   font-size: 16px;
@@ -11095,11 +11266,6 @@ p:last-child,
 }
 
 /* line 1, ../scss/component/_footer.scss */
-.main-container.container.js-quickedit-main-content {
-  /*margin-bottom: 350px;*/
-}
-
-/* line 4, ../scss/component/_footer.scss */
 footer.footer {
   height: 350px;
   bottom: 0;
@@ -11107,83 +11273,675 @@ footer.footer {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  width: 100%;
-  background: #FBBA00;
+  width: calc(100% - 40px);
+  margin-left: 40px;
+  background: #555;
+  color: #FBBA00;
 }
-/* line 13, ../scss/component/_footer.scss */
+/* line 12, ../scss/component/_footer.scss */
+footer.footer a, footer.footer a:hover, footer.footer a:visited {
+  color: #FBBA00;
+}
+/* line 15, ../scss/component/_footer.scss */
+footer.footer #block-shortfaq .panel-heading, footer.footer #block-shortfaq .panel-body, footer.footer #block-shortfaq .panel-default {
+  background-color: #000000;
+  border-top: none;
+  border: none;
+}
+/* line 20, ../scss/component/_footer.scss */
+footer.footer #block-shortfaq .panel-body, footer.footer #block-shortfaq .panel-body a {
+  color: #FFFFFF;
+}
+/* line 24, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > nav, footer.footer .region.region-footer > section {
   width: 25%;
   float: left;
   text-align: center;
 }
-/* line 18, ../scss/component/_footer.scss */
+/* line 29, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > nav {
   text-transform: uppercase;
 }
-/* line 21, ../scss/component/_footer.scss */
+/* line 32, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > section:last-child {
   clear: right;
 }
-/* line 24, ../scss/component/_footer.scss */
-footer.footer .region.region-footer > section:nth-child(3), footer.footer .region.region-footer > section:nth-child(4) {
-  /*margin-top: 70px;*/
+
+/* line 1, ../scss/component/_var_pages.scss */
+.main-container {
+  min-height: 100vh;
+}
+
+/*Стили к разным страницам*/
+/*Страница контактов*/
+/* line 8, ../scss/component/_var_pages.scss */
+.page-contacts {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  margin: 5vh 0 5vh 0;
+  border-bottom: 2px #FBBA00 solid;
+  background-repeat: no-repeat;
+}
+
+/*Страница реквизитов*/
+/* line 19, ../scss/component/_var_pages.scss */
+.page-requisites {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  margin: 5vh 0 5vh 0;
+  border-bottom: 2px #FBBA00 solid;
+  background-repeat: no-repeat;
+}
+
+/*Общая косметика*/
+/* line 2, ../scss/component/_add_request.scss */
+.region-add-request, .request-button {
+  background: #FBBA00;
+  color: #17460F;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  width: 285px;
+}
+
+/*Общая косметика кончилась*/
+/*Описание кнопки, вызывающей форму подачи заявки*/
+/* line 16, ../scss/component/_add_request.scss */
+.request-button {
+  position: fixed;
+  text-transform: uppercase;
+  height: 50px;
+  text-align: center;
+  z-index: 100;
+  /*СТРЕЛОЧКИ В КНОПКЕ будут самодельные*/
+  /*ЗАКОНЧИЛИСЬ СТРЕЛОЧКИ*/
+  /*НАЧАЛСЯ Расчет вертикального отступа КНОПКИ ВЫЗОВА ФОРМЫ ЗАЯВКИ*/
+  /*Первоначально объявляем переменную*/
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+}
+/* line 23, ../scss/component/_add_request.scss */
+.request-button:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+/* line 26, ../scss/component/_add_request.scss */
+.request-button:hover span {
+  background: #FFFFFF;
+}
+/* line 29, ../scss/component/_add_request.scss */
+.request-button:hover p {
+  display: inline;
+}
+/* line 33, ../scss/component/_add_request.scss */
+.request-button span.arr-down {
+  animation: drag-down 10s ease-out infinite;
+}
+/* line 34, ../scss/component/_add_request.scss */
+.request-button:hover span.arr-up {
+  animation: drag-up 10s ease-out 1;
+}
+/* line 35, ../scss/component/_add_request.scss */
+.request-button:hover span.arr-down {
+  animation: drag-down 10s ease-out 1;
+}
+/* line 36, ../scss/component/_add_request.scss */
+.request-button:hover {
+  animation-play-state: paused;
+}
+/* line 39, ../scss/component/_add_request.scss */
+.request-button span {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  height: 2px;
+  width: 23px;
+  background: #17460F;
+  margin-bottom: 4px;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 25px;
+}
+/* line 50, ../scss/component/_add_request.scss */
+.request-button span:nth-child(1) {
+  left: 20px;
+}
+/* line 51, ../scss/component/_add_request.scss */
+.request-button span:nth-child(2) {
+  left: 36px;
+}
+/* line 52, ../scss/component/_add_request.scss */
+.request-button span:nth-child(4) {
+  left: 230px;
+}
+/* line 53, ../scss/component/_add_request.scss */
+.request-button span:nth-child(5) {
+  left: 246px;
+}
+/* line 56, ../scss/component/_add_request.scss */
+.request-button span.arr-up:nth-child(1) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+/* line 63, ../scss/component/_add_request.scss */
+.request-button span.arr-up:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+/* line 70, ../scss/component/_add_request.scss */
+.request-button span.arr-up:nth-child(4) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+/* line 77, ../scss/component/_add_request.scss */
+.request-button span.arr-up:nth-child(5) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+/* line 86, ../scss/component/_add_request.scss */
+.request-button span.arr-down:nth-child(1) {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+}
+/* line 93, ../scss/component/_add_request.scss */
+.request-button span.arr-down:nth-child(2) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+/* line 100, ../scss/component/_add_request.scss */
+.request-button span.arr-down:nth-child(4) {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+}
+/* line 107, ../scss/component/_add_request.scss */
+.request-button span.arr-down:nth-child(5) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+@keyframes drag-up {
+  0% {
+    top: 25px;
+  }
+  5% {
+    top: 8px;
+  }
+  10% {
+    top: 25px;
+  }
+  15% {
+    top: 8px;
+  }
+  20% {
+    top: 25px;
+  }
+}
+@keyframes drag-down {
+  0% {
+    top: 20px;
+  }
+  5% {
+    top: 33px;
+  }
+  10% {
+    top: 20px;
+  }
+  15% {
+    top: 33px;
+  }
+  20% {
+    top: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 16, ../scss/component/_add_request.scss */
+  .request-button {
+    top: 189px;
+  }
+  /* line 144, ../scss/component/_add_request.scss */
+  .request-button.minimized {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 16, ../scss/component/_add_request.scss */
+  .request-button {
+    top: 150px;
+  }
+  /* line 153, ../scss/component/_add_request.scss */
+  .request-button.minimized {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 16, ../scss/component/_add_request.scss */
+  .request-button {
+    top: 120px;
+  }
+  /* line 161, ../scss/component/_add_request.scss */
+  .request-button.minimized {
+    top: 50px;
+  }
+}
+
+/*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+/*НАЧАЛСЯ Расчет высоты ФОРМЫ ЗАЯВКИ*/
+/* line 170, ../scss/component/_add_request.scss */
+.region-add-request {
+  /*Первоначально объявляем переменную*/
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+}
+@media screen and (min-width: 1200px) {
+  /* line 170, ../scss/component/_add_request.scss */
+  .region-add-request {
+    height: calc(100% - 239px);
+  }
+  /* line 177, ../scss/component/_add_request.scss */
+  .region-add-request.minimized {
+    height: calc(100% - 92px);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 170, ../scss/component/_add_request.scss */
+  .region-add-request {
+    height: calc(100% - 200px);
+  }
+  /* line 184, ../scss/component/_add_request.scss */
+  .region-add-request.minimized {
+    height: calc(100% - 85px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 170, ../scss/component/_add_request.scss */
+  .region-add-request {
+    height: calc(100% - 170px);
+  }
+  /* line 192, ../scss/component/_add_request.scss */
+  .region-add-request.minimized {
+    height: calc(100% - 75px);
+  }
+}
+
+/*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+/* line 199, ../scss/component/_add_request.scss */
+.region-add-request {
+  z-index: 10;
+  top: -2000px;
+  transition: top 1s ease-out;
+  -webkit-transition: top 1s ease-out;
+  -ms-transition: top 1s ease-out;
+  -o-transition: top 1s ease-out;
+  -moz-transition: top 1s ease-out;
+}
+/* line 202, ../scss/component/_add_request.scss */
+.region-add-request.down {
+  /*Первоначальное значение переменной*/
+  /*В зависимости от брекета и статуса минимайзда задается вертикальный отступ*/
+}
+@media screen and (min-width: 1200px) {
+  /* line 202, ../scss/component/_add_request.scss */
+  .region-add-request.down {
+    top: 239px;
+  }
+  /* line 209, ../scss/component/_add_request.scss */
+  .region-add-request.down.minimized {
+    top: 92px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 202, ../scss/component/_add_request.scss */
+  .region-add-request.down {
+    top: 200px;
+  }
+  /* line 217, ../scss/component/_add_request.scss */
+  .region-add-request.down.minimized {
+    top: 85px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 202, ../scss/component/_add_request.scss */
+  .region-add-request.down {
+    top: 170px;
+  }
+  /* line 225, ../scss/component/_add_request.scss */
+  .region-add-request.down.minimized {
+    top: 75px;
+  }
+}
+/* line 237, ../scss/component/_add_request.scss */
+.region-add-request label {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/* line 241, ../scss/component/_add_request.scss */
+.region-add-request span.block-title {
+  font-size: 20px;
+}
+/* line 244, ../scss/component/_add_request.scss */
+.region-add-request input {
+  font-size: 20px;
+}
+/* line 247, ../scss/component/_add_request.scss */
+.region-add-request #edit-submit--3 {
+  width: 265px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 2, ../scss/component/_masla.scss */
+article.oil-hydraulic .content, article.motornoe-maslo .content, article.oil-compressor .content, article.oil-reductor .content, article.oil-plain .content {
+  display: flex;
+  flex-flow: column;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+}
+/* line 6, ../scss/component/_masla.scss */
+article.oil-hydraulic .content h1, article.motornoe-maslo .content h1, article.oil-compressor .content h1, article.oil-reductor .content h1, article.oil-plain .content h1 {
+  font-size: 60px;
+}
+/* line 10, ../scss/component/_masla.scss */
+article.oil-hydraulic .content .order-btn, article.motornoe-maslo .content .order-btn, article.oil-compressor .content .order-btn, article.oil-reductor .content .order-btn, article.oil-plain .content .order-btn {
+  align-self: flex-end;
+}
+/* line 13, ../scss/component/_masla.scss */
+article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, article.oil-compressor .content > div, article.oil-reductor .content > div, article.oil-plain .content > div {
+  margin: 10px 0 10px 0;
+}
+
+/* line 19, ../scss/component/_masla.scss */
+.main-table {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  flex-wrap: wrap;
+  border: 1px solid #17460F;
+  width: 415px;
+  padding: 5px;
+  /*Borders*/
+  /*&>div { border-left:1px solid $green; padding:5px; }
+  &>div:first-child { border-left:none }
+  &>div:last-child { border-right:1px solid $green }*/
+  /*Borders end*/
+}
+/* line 27, ../scss/component/_masla.scss */
+.main-table > div {
+  padding: 5px;
+  width: 200px;
+}
+/* line 28, ../scss/component/_masla.scss */
+.main-table > div:nth-child(4) {
+  width: 200px;
+}
+/* line 29, ../scss/component/_masla.scss */
+.main-table > div:nth-child(5) {
+  width: 200px;
+}
+/* line 30, ../scss/component/_masla.scss */
+.main-table > div:nth-child(6) {
+  width: 400px;
+}
+/* line 36, ../scss/component/_masla.scss */
+.main-table .plain_text {
+  width: 400px;
+  text-align: center;
+  background: lightgreen;
+}
+/* line 42, ../scss/component/_masla.scss */
+.main-table .mt-maslo-api {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* line 46, ../scss/component/_masla.scss */
+.main-table .mt-maslo-api span:nth-child(1) {
+  width: 400px;
+}
+/* line 49, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso, .main-table .mt-hydr-maslo-din,
+.main-table .mt-compr-maslo-din, .main-table .mt-compr-maslo-iso,
+.main-table .mt-maslo-acea, .main-table .mt-maslo-api, .main-table .mt-maslo-sae,
+.main-table .mt-red-maslo-iso, .main-table .mt-red-maslo-din,
+.main-table .mt-plain-maslo-standart {
+  margin-top: 15px;
+  line-height: 35px;
+  text-align: center;
+}
+/* line 57, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.specifications, .main-table .mt-hydr-maslo-din span.specifications,
+.main-table .mt-compr-maslo-din span.specifications, .main-table .mt-compr-maslo-iso span.specifications,
+.main-table .mt-maslo-acea span.specifications, .main-table .mt-maslo-api span.specifications, .main-table .mt-maslo-sae span.specifications,
+.main-table .mt-red-maslo-iso span.specifications, .main-table .mt-red-maslo-din span.specifications,
+.main-table .mt-plain-maslo-standart span.specifications {
+  font-size: 35px;
+  font-weight: bold;
+}
+/* line 61, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.glyphicon-info-sign, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign,
+.main-table .mt-compr-maslo-din span.glyphicon-info-sign, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign,
+.main-table .mt-maslo-acea span.glyphicon-info-sign, .main-table .mt-maslo-api span.glyphicon-info-sign, .main-table .mt-maslo-sae span.glyphicon-info-sign,
+.main-table .mt-red-maslo-iso span.glyphicon-info-sign, .main-table .mt-red-maslo-din span.glyphicon-info-sign,
+.main-table .mt-plain-maslo-standart span.glyphicon-info-sign {
+  vertical-align: top;
+}
+/* line 63, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.glyphicon-info-sign:hover, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign:hover,
+.main-table .mt-compr-maslo-din span.glyphicon-info-sign:hover, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign:hover,
+.main-table .mt-maslo-acea span.glyphicon-info-sign:hover, .main-table .mt-maslo-api span.glyphicon-info-sign:hover, .main-table .mt-maslo-sae span.glyphicon-info-sign:hover,
+.main-table .mt-red-maslo-iso span.glyphicon-info-sign:hover, .main-table .mt-red-maslo-din span.glyphicon-info-sign:hover,
+.main-table .mt-plain-maslo-standart span.glyphicon-info-sign:hover {
+  cursor: pointer;
+}
+
+/* line 70, ../scss/component/_masla.scss */
+.pack-tds-table {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  flex-wrap: wrap;
+  border: 1px solid #17460F;
+  width: 410px;
+  padding: 5px;
+}
+/* line 78, ../scss/component/_masla.scss */
+.pack-tds-table > div {
+  padding: 5px;
+  width: 390px;
+}
+
+/* line 81, ../scss/component/_masla.scss */
+.chars-table {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  flex-wrap: wrap;
+  border: 1px solid #17460F;
+  width: 600px;
+  padding: 5px;
+}
+/* line 89, ../scss/component/_masla.scss */
+.chars-table > div {
+  padding: 5px;
+  width: inherit;
+  display: inherit;
+  vertical-align: middle;
+}
+/* line 90, ../scss/component/_masla.scss */
+.chars-table > div:nth-child(odd) {
+  background: lightgrey;
+}
+/* line 91, ../scss/component/_masla.scss */
+.chars-table > div:nth-child(even) {
+  background: lightgreen;
+}
+/* line 92, ../scss/component/_masla.scss */
+.chars-table > div:first-child {
+  border-bottom: 1px solid #17460F;
+  background: none;
+}
+/* line 94, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(1) {
+  width: 33%;
+  text-align: left;
+}
+/* line 95, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(2) {
+  width: 33%;
+  text-align: center;
+}
+/* line 96, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(3) {
+  width: 66%;
+  text-align: right;
+}
+
+/* line 99, ../scss/component/_masla.scss */
+.order-btn {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 20%;
+  background: #FBBA00;
+  color: #17460F;
+  font-family: Oswald;
+  font-size: 40px;
+  line-height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 10px;
+}
+/* line 112, ../scss/component/_masla.scss */
+.order-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #FBBA00;
+  color: #FFFFFF;
+}
+
+/* line 119, ../scss/component/_masla.scss */
+.mt-maslo-tds {
+  /*Убираем базовую рамку вокруг ссылки на файл*/
+  /**/
+}
+/* line 121, ../scss/component/_masla.scss */
+.mt-maslo-tds .file-link, .mt-maslo-tds .file-icon, .mt-maslo-tds .file-size, .mt-maslo-tds .file > span:last-child, .mt-maslo-tds .file > span:first-child {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/*РАЗМЕТКА ОСНОВНОЙ ТАБЛИЦЫ ИНДУСТРИАЛЬНЫХ МАСЕЛ*/
+/* line 136, ../scss/component/_masla.scss */
+article.oil-plain .main-table {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  flex-wrap: wrap;
+  border: 1px solid #17460F;
+  width: 415px;
+  padding: 5px;
+}
+/* line 144, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div {
+  padding: 5px;
+  width: 400px;
+}
+/* line 145, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div:nth-child(1) {
+  width: 200px;
+}
+/* line 146, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div:nth-child(2) {
+  width: 200px;
+}
+/* line 148, ../scss/component/_masla.scss */
+article.oil-plain .main-table .plain_text {
+  width: 400px;
+  text-align: center;
+  background: lightgreen;
 }
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 35, ../scss/style.scss */
+  /* line 51, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 36, ../scss/style.scss */
+  /* line 52, ../scss/style.scss */
   .device-mobile {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 39, ../scss/style.scss */
+  /* line 55, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 40, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   .device-tablet {
     display: block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 43, ../scss/style.scss */
+  /* line 59, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 44, ../scss/style.scss */
+  /* line 60, ../scss/style.scss */
   .device-normal {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 47, ../scss/style.scss */
+  /* line 63, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 48, ../scss/style.scss */
+  /* line 64, ../scss/style.scss */
   .device-wide {
     display: block;
   }
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-/* line 52, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .main-container {
   position: relative;
-  left: 40px;
-  top: 80px;
+  /*left: 40px;*/
 }
 
-/* line 58, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
@@ -11194,57 +11952,57 @@ body {
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 }
-/* line 63, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 65, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 body a:hover {
   color: #17460F;
 }
-/* line 69, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 body .row {
   margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 73, ../scss/style.scss */
+  /* line 88, ../scss/style.scss */
   body.body-minimized {
     margin-top: 0;
   }
-  /* line 76, ../scss/style.scss */
+  /* line 91, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 73, ../scss/style.scss */
+  /* line 88, ../scss/style.scss */
   body.body-minimized {
     margin-top: 40px;
   }
-  /* line 83, ../scss/style.scss */
+  /* line 98, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 73, ../scss/style.scss */
+  /* line 88, ../scss/style.scss */
   body.body-minimized {
     margin-top: 70px;
   }
-  /* line 90, ../scss/style.scss */
+  /* line 105, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 73, ../scss/style.scss */
+  /* line 88, ../scss/style.scss */
   body.body-minimized {
     margin-top: 100px;
   }
-  /* line 97, ../scss/style.scss */
+  /* line 112, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
@@ -11252,30 +12010,30 @@ body .row {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 58, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 58, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body {
     margin-top: 120px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 58, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body {
     margin-top: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 58, ../scss/style.scss */
+  /* line 73, ../scss/style.scss */
   body {
     margin-top: 189px;
   }
 }
-/* line 111, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 body .region-highlighted {
   position: fixed;
   left: 40px;
@@ -11283,23 +12041,24 @@ body .region-highlighted {
   /*Ширина - расчет от максимума минус 40px*/
   top: 189px;
 }
-/* line 116, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 body .region-highlighted.minimized {
   top: 50px;
 }
-/* line 119, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 body .region-highlighted.active {
-  left: 280px;
-  width: calc(100% - 280px);
+  left: 300px;
+  width: calc(100% - 300px);
 }
 
-/* line 132, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
+/**/
 /*Стиль для запрета копирования*/
-/* line 137, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -11309,4 +12068,10 @@ h1, h2, h3, h4, h5 {
   /* IE 10+ */
   user-select: none;
   /* Likely future */
+}
+
+/* line 161, ../scss/style.scss */
+.breadcrumb {
+  height: 50px;
+  padding: 14px 15px;
 }

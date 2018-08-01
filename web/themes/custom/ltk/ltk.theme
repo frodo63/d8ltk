@@ -40,3 +40,13 @@ function ltk_menu_link(array $variables) {
   return '<li' . drupal_attributes($attributes) . '>' . l($title, $href, $options) . $sub_menu . "</li>\n";
 }
 
+/*function ltk_preprocess_field(&$variables) {
+  if ($variables['field_name'] == 'field_oil_density') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $variables['method'] = '';
+    if ($node && isset($node->field_oil_density_method->value)) {
+      $variables['method'] = $node->field_oil_density_method->value;
+    }
+  }
+}*/
+

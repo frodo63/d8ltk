@@ -649,6 +649,9 @@
         a {
           padding: 0 8px;
           color: $green;
+          &:hover{
+            color: $white;
+          }
         }
       }
     }
@@ -710,12 +713,14 @@
 
     #block-ltk-search {
       position: absolute;
-      width: 386px;
+      width: 265px;
       top: 150px;
-      right: 34px;
+      right: 10px;
+
       #search-block-form {
         bottom: -26px;
         position: absolute;
+        width: 265px;
       }
 
       .form-search {

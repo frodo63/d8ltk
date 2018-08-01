@@ -1,0 +1,252 @@
+/*Общая косметика*/
+.region-add-request, .request-button{
+  background: $yellow;
+  color: $green;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding:10px;
+  position: fixed;
+  right:0;
+  width: 285px;
+}
+/*Общая косметика кончилась*/
+
+
+/*Описание кнопки, вызывающей форму подачи заявки*/
+.request-button {
+  position: fixed;
+  text-transform: uppercase;
+  height: 50px;
+  text-align: center;
+  z-index: 100;
+
+  &:hover{
+    cursor: pointer;
+    color: $white;
+    span{
+      background: $white;
+    }
+    p{
+      display: inline;
+    }
+  }
+  & span.arr-down {animation: drag-down 10s ease-out infinite;} //Вечно, раз в 8 секунд, стрелка вниз 2 раза, если форма заявки не открыта
+  &:hover span.arr-up {animation: drag-up 10s ease-out 1;} //При наведении - 2 раза вверх
+  &:hover span.arr-down {animation: drag-down 10s ease-out 1;} //При наведении - 2 раза вниз
+  &:hover {animation-play-state: paused;} //При наведении - пауза во всех анимациях
+
+  /*СТРЕЛОЧКИ В КНОПКЕ будут самодельные*/
+  span {
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    height: 2px;
+    width: 23px;
+    background: $green;
+    margin-bottom: 4px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 25px;
+    &:nth-child(1){left:20px}
+    &:nth-child(2){left:36px}
+    &:nth-child(4){left:230px}
+    &:nth-child(5){left:246px}
+
+    &.arr-up {
+      &:nth-child(1) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+      }
+      &:nth-child(4) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+      &:nth-child(5) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+      }
+    }
+    &.arr-down {
+      &:nth-child(1) {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+      }
+      &:nth-child(5) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+    }
+  }
+  @keyframes drag-up {
+    0%{top: 25px}
+    5%{top: 8px}
+    10%{top: 25px}
+    15%{top: 8px}
+    20%{top: 25px}
+    100%{}
+  }
+  @keyframes drag-down {
+    0%{top: 20px}
+    5%{top: 33px}
+    10%{top: 20px}
+    15%{top: 33px}
+    20%{top: 25px}
+    100%{}
+  }
+
+  /*ЗАКОНЧИЛИСЬ СТРЕЛОЧКИ*/
+  
+
+  
+  /*НАЧАЛСЯ Расчет вертикального отступа КНОПКИ ВЫЗОВА ФОРМЫ ЗАЯВКИ*/
+  /*Первоначально объявляем переменную*/
+  $htop:100px;
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+  @media #{$wide}{
+    $htop: 189px;
+    top: $htop;
+    &.minimized{
+      $htop: 50px;
+      top: $htop;
+    }
+  }
+  @media #{$normal}{
+    $htop: 150px;
+    top: $htop;
+
+    &.minimized{
+      $htop: 50px;
+      top: $htop;
+    }
+  }
+  @media #{$tablet}{
+    $htop: 120px;
+    top: $htop;
+    &.minimized{
+      $htop: 50px;
+      top: $htop;
+    }
+  }
+}
+/*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+
+/*НАЧАЛСЯ Расчет высоты ФОРМЫ ЗАЯВКИ*/
+.region-add-request {
+  /*Первоначально объявляем переменную*/
+  $htop:100px;
+  /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
+  @media #{$wide}{
+    $htop: 239px;
+    height: calc(100% - #{$htop});
+    &.minimized {
+      $htop: 92px;
+      height: calc(100% - #{$htop}); }
+  }
+  @media #{$normal}{
+    $htop: 200px;
+    height: calc(100% - #{$htop});
+    &.minimized {
+      $htop: 85px;
+      height: calc(100% - #{$htop});
+    }
+  }
+  @media #{$tablet}{
+    $htop: 170px;
+    height: calc(100% - #{$htop});
+    &.minimized {
+      $htop: 75px;
+      height: calc(100% - #{$htop});
+    }
+  }
+}
+/*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
+.region-add-request {
+  z-index: 10;
+  top:-2000px;
+  &.down{
+    /*Первоначальное значение переменной*/
+    $htop:100px;
+    /*В зависимости от брекета и статуса минимайзда задается вертикальный отступ*/
+    @media #{$wide}{
+      $htop: 239px;
+      top: $htop;
+      &.minimized {
+        $htop: 92px;
+        top: $htop;
+      }
+    }
+    @media #{$normal}{
+      $htop: 200px;
+      top: $htop;
+      &.minimized {
+        $htop: 85px;
+        top: $htop;
+      }
+    }
+    @media #{$tablet}{
+      $htop: 170px;
+      top: $htop;
+      &.minimized {
+        $htop: 75px;
+        top: $htop;
+      }
+    }
+  }
+
+  transition: top 1s ease-out;
+  -webkit-transition: top 1s ease-out;
+  -ms-transition: top 1s ease-out;
+  -o-transition: top 1s ease-out;
+  -moz-transition: top 1s ease-out;
+  label{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  span.block-title {
+    font-size: 20px;
+  }
+  input {
+    font-size: 20px;
+  }
+  #edit-submit--3 {
+    width: 265px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}

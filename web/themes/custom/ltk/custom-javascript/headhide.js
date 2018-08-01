@@ -5,10 +5,10 @@ Drupal.behaviors.basic = {
                 var scroll = $(window).scrollTop();
 
                 if (scroll > 50) {
-                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted').addClass('minimized');
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted, .region-add-request, .request-button').addClass('minimized');
                     $('body').addClass('body-minimized');
                 } else {
-                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted').removeClass("minimized");
+                    $('#navbar, section.sidemenu, .region-sidemenu, .side-menu--wrap, #edit-actions--2, .region-highlighted, .region-add-request, .request-button').removeClass("minimized");
                     $('body').removeClass('body-minimized');
                 }
             });
@@ -54,6 +54,20 @@ Drupal.behaviors.basic = {
             $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
 
+          /*Анимация спускающейся формы заявки*/
+          $('.request-button').off('click.request').on('click.request', function(){
+            $('.request-button span').toggleClass('arr-up arr-down');
+            $('.region-add-request').toggleClass('down');
+            if($('.region-add-request').hasClass('down')){
+              $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
+            }else{
+              $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
+            };
+          });
+          /*Анимация стрелочек на кнопке вызова формы выше*/
+
+
+
           /*Анимация cfp-3 категория и содержимое отрасли*/
           $('.cfp3-title').off('mouseover.cpf3').on('mouseover.cfp3', function (event) {
             $('.cfp3-popup').hide();
@@ -85,6 +99,14 @@ Drupal.behaviors.basic = {
 
           /*Меняем value с And на "До" во втором инпуте Выбора Вязкости масла*/
           $('.form-item label[for="edit-field-oil-visc-value-max"]').html("до:");
+
+          /*Скролл-линки на главной*/
+          $('.menu.navbar-nav li a').off('click.scrlnk').on('click.scrlnk', function (event) {
+            event.preventDefault();
+            var anchor = $(event.target).attr('href').substr(1);
+            $('html, body').animate({scrollTop: $('#'+anchor).offset().top-100}, 1000);
+          })
+          /**/
 
 
         })(jQuery);
