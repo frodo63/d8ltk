@@ -2,76 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f365802-ebe8-4cc1-a0c2-ca10470aebb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_add_request.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_masla.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_var_pages.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/block/block--requestblock.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/field--node--maslo.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--acea.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--api-diesel-c-.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--api-s.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base_oil.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--iso.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--klass-nlgi.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--name--methods.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--osobennost.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--proizvoditel.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--rus-oil-standart.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--sae.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-compr-din.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-compr-iso.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-gidravliki.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-reductor-din.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-reductor-iso.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-reduktornogo.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip_masla_dlya_akpp_po_gm.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--motornoe-maslo--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-compressor--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-hydraulic--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-plain--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-reductor--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/field--node--field-oil-brand--maslo.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/node--maslo--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/taxonomy/taxonomy-term.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Agip logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Bechem logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Castrol logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Gazpromneft logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Kluber logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Lukoil logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Mobil logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/OKS logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Rosneft logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/custom/ltk/images/Shell logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/_overrides.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/_overrides.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/088f00f56f7fd89b1bd14d5da86cb63f30fab94b/style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/5ed01ca332c7327c52ce0f2318bc13a47f9336d0/_variables.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/5ed01ca332c7327c52ce0f2318bc13a47f9336d0/_variables.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_footer.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_footer.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_frontpage_paragraphs.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_frontpage_paragraphs.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_header.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_product_filters.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_product_filters.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_sidemenu.scssc" afterPath="$PROJECT_DIR$/themes/custom/ltk/.sass-cache/f5d0570b25c1716cf6baa8d5bd7948fa0c6a87aa/_sidemenu.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.json" afterPath="$PROJECT_DIR$/../composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.lock" afterPath="$PROJECT_DIR$/../composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../custom_commands.txt" afterPath="$PROJECT_DIR$/../custom_commands.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ht.router.php" afterPath="$PROJECT_DIR$/.ht.router.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/bootstrap/assets/stylesheets/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/bootstrap/assets/stylesheets/bootstrap/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/config/install/ltk.settings.yml" afterPath="$PROJECT_DIR$/themes/custom/ltk/config/install/ltk.settings.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" afterPath="$PROJECT_DIR$/themes/custom/ltk/custom-javascript/headhide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/ltk.info.yml" afterPath="$PROJECT_DIR$/themes/custom/ltk/ltk.info.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/ltk.theme" afterPath="$PROJECT_DIR$/themes/custom/ltk/ltk.theme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/_overrides.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/_overrides.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_footer.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_frontpage_paragraphs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_product_filters.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_product_filters.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/component/_sidemenu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" afterPath="$PROJECT_DIR$/themes/custom/ltk/scss/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" afterPath="$PROJECT_DIR$/themes/custom/ltk/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/field/field.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/field.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/page--front.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/system/page--front.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/page.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/system/page.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/system/region--sidemenu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots.txt" afterPath="$PROJECT_DIR$/robots.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -148,13 +84,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="208">
+              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Local (1)" pinned="false" current-in-tab="true">
+        <entry file="mock:///Local (1)">
+          <provider selected="true" editor-type-id="terminal-session-editor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -204,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/custom/custhtml/custhtml.module" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/maslo.scss" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/field/field--node--maslo.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/field/field--field-oil-brand.html.twig" />
@@ -255,6 +197,7 @@
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-plain--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--rus-oil-standart.html.twig" />
         <option value="$PROJECT_DIR$/themes/custom/ltk/scss/component/_masla.scss" />
+        <option value="$PROJECT_DIR$/../composer.json" />
       </list>
     </option>
   </component>
@@ -363,87 +306,6 @@
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="field" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="field" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="taxonomy term reference fields" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="content type page nodes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -663,12 +525,12 @@
       <workItem from="1529994511938" duration="9440000" />
       <workItem from="1530423370210" duration="92000" />
       <workItem from="1530733471959" duration="2000" />
-      <workItem from="1533103395935" duration="1139000" />
+      <workItem from="1533103395935" duration="4153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="659302000" />
+    <option name="totallyTimeSpent" value="662316000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -681,9 +543,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1684" height="1052" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1978022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1978022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38824764" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1059,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="208">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding />
         </state>
       </provider>
