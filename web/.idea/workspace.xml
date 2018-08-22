@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f365802-ebe8-4cc1-a0c2-ca10470aebb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-transmission-sae.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base_oil.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base-oil.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip_masla_dlya_akpp_po_gm.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-masla-dlya-akpp-po-gm.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-transmission--full.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base-oil.html.twig" afterPath="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base_oil.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.json" afterPath="$PROJECT_DIR$/../composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../composer.lock" afterPath="$PROJECT_DIR$/../composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../custom_commands.txt" afterPath="$PROJECT_DIR$/../custom_commands.txt" />
@@ -45,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="field--taxonomy-term--tip-transmission-sae.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="field--taxonomy-term--tip-transmission-sae.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-transmission-sae.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node--oil-transmission--full.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-transmission--full.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -307,25 +316,6 @@
               <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="field" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="field" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="taxonomy term reference fields" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="custom" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ltk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="node" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -404,8 +394,8 @@
       <recent name="$PROJECT_DIR$/modules/custom/custhtml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields" />
       <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes" />
+      <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields" />
       <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/node" />
       <recent name="$PROJECT_DIR$/themes/custom/ltk/templates/field/my custom fields" />
       <recent name="$PROJECT_DIR$/modules/custom/request/src" />
@@ -605,12 +595,12 @@
       <workItem from="1533275334163" duration="7086000" />
       <workItem from="1533809011446" duration="799000" />
       <workItem from="1534765460283" duration="774000" />
-      <workItem from="1534920341046" duration="5456000" />
+      <workItem from="1534920341046" duration="6411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="676431000" />
+    <option name="totallyTimeSpent" value="677386000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -655,13 +645,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/file/file-link.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="35" column="80" lean-forward="false" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-kompressora.html.twig" />
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--tip-kompressora-po-szimaemoi-sre.html.twig" />
     <entry file="file://$PROJECT_DIR$/themes/custom/ltk/config/install/ltk.settings.yml">
@@ -720,7 +703,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base-oil.html.twig">
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/field/taxonomy term reference fields/field--taxonomy-term--base_oil.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="66" column="98" lean-forward="false" selection-start-line="66" selection-start-column="98" selection-end-line="66" selection-end-column="98" />
@@ -1001,6 +984,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/custom/ltk/templates/node/content type page nodes/node--oil-transmission--full.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding />
         </state>
       </provider>
