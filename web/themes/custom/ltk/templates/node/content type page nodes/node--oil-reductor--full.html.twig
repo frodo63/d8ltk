@@ -136,27 +136,27 @@
             <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_visc|render is not empty and content.field_oil_visc_method|render is not empty  %}
+        {% if content.field_oil_visc|render is not empty or content.field_oil_visc_method|render is not empty  %}
             <div><div>Вязкость</div><div>{{ content.field_oil_visc_method }}</div><div>{{ content.field_oil_visc }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_density|render is not empty and content.field_oil_density_method|render is not empty  %}
+        {% if content.field_oil_density|render is not empty or content.field_oil_density_method|render is not empty  %}
             <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_visc_index|render is not empty and content.field_oil_visc_index_method|render is not empty  %}
+        {% if content.field_oil_visc_index|render is not empty or content.field_oil_visc_index_method|render is not empty  %}
             <div><div>Индекс вязкости</div><div>{{ content.field_oil_visc_index_method }}</div><div>{{ content.field_oil_visc_index }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_temp__flash|render is not empty and content.field_oil_temp__flash_method|render is not empty %}
+        {% if content.field_oil_temp__flash|render is not empty or content.field_oil_temp__flash_method|render is not empty %}
             <div><div>Температура вспышки</div><div>{{ content.field_oil_temp__flash_method }}</div><div>{{ content.field_oil_temp__flash }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_temp__pour|render is not empty and content.field_oil_temp__pour_method|render is not empty %}
+        {% if content.field_oil_temp__pour|render is not empty or content.field_oil_temp__pour_method|render is not empty %}
             <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
         {% endif %}
 
-        {% if content.field_oil_temp__high|render is not empty and content.field_oil_temp__low|render is not empty %}
+        {% if content.field_oil_temp__high|render is not empty or content.field_oil_temp__low|render is not empty %}
             <div><div>Рабочий диапазон</div><div>{{ content.field_oil_temp__low }} - {{ content.field_oil_temp__high }}</div></div>
         {% endif %}
 
