@@ -9,6 +9,12 @@
   right:0;
   width: 285px;
 }
+.request-button{
+  @media #{$mobile} {
+    background: $blue;
+    color: $white;
+  }
+}
 /*Общая косметика кончилась*/
 
 
@@ -19,7 +25,6 @@
   height: 50px;
   text-align: center;
   z-index: 100;
-
   &:hover{
     cursor: pointer;
     color: $white;
@@ -30,6 +35,7 @@
       display: inline;
     }
   }
+
   & span.arr-down {animation: drag-down 10s ease-out infinite;} //Вечно, раз в 8 секунд, стрелка вниз 2 раза, если форма заявки не открыта
   &:hover span.arr-up {animation: drag-up 10s ease-out 1;} //При наведении - 2 раза вверх
   &:hover span.arr-down {animation: drag-down 10s ease-out 1;} //При наведении - 2 раза вниз
@@ -42,15 +48,18 @@
     height: 2px;
     width: 23px;
     background: $green;
+    @media #{$mobile}{
+      background: $white;
+    }
     margin-bottom: 4px;
     display: block;
     box-sizing: border-box;
     position: absolute;
     top: 25px;
-    &:nth-child(1){left:20px}
-    &:nth-child(2){left:36px}
-    &:nth-child(4){left:230px}
-    &:nth-child(5){left:246px}
+    &:nth-child(1){left:0px}
+    &:nth-child(2){left:16px}
+    &:nth-child(4){right:16px}
+    &:nth-child(5){right:0px}
 
     &.arr-up {
       &:nth-child(1) {
@@ -163,6 +172,10 @@
       top: $htop;
     }
   }
+  @media #{$mobile}{
+    width: 100vw;
+    bottom: 0px;
+  }
 }
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
 
@@ -194,11 +207,23 @@
       height: calc(100% - #{$htop});
     }
   }
+  @media #{$mobile}{
+    $htop: 11vmax;
+    //height: calc(100% - #{$htop});
+    height: calc(100vh - #{$htop} - 50px);
+    &.minimized {
+      $htop: 50px;
+      height: calc(100vh - #{$htop});
+    }
+  }
 }
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
 .region-add-request {
-  z-index: 10;
+  z-index: 110;
   top:-2000px;
+  @media #{$mobile}{
+    width: 100vw;
+  }
   &.down{
     /*Первоначальное значение переменной*/
     $htop:100px;
@@ -224,6 +249,14 @@
       top: $htop;
       &.minimized {
         $htop: 75px;
+        top: $htop;
+      }
+    }
+    @media #{$mobile}{
+      $htop: 11vmax;
+      top: $htop;
+      &.minimized {
+        $htop: 50px;
         top: $htop;
       }
     }

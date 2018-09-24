@@ -150,7 +150,7 @@
           {# Add Request region #}
           {% if page.add_request %}
               {% block add_request %}
-                  <div class="request-button">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 request-button">
                       <span class="arr-down"></span>
                       <span class="arr-down"></span>
                       <p>Заполнить заявку</p>
@@ -213,7 +213,7 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="hidden-xs footer {{ container }}" role="contentinfo">
       {{ page.footer }}
     </footer>
   {% endblock %}

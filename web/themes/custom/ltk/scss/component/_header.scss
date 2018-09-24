@@ -18,8 +18,8 @@
     border-color: $yellow;
     font-size: 5vh;
   }
-  .logo, #block-uppertext, #block-elpocta {
-    z-index: 200;
+  .logo, #block-uppertext/*, #block-elpocta */{
+    z-index: 100;
   }
 
   &.minimized{
@@ -76,42 +76,63 @@
     }
 
     #block-ltk-search {
+      font-family: "Oswald", sans-serif;
+      @media #{$mobile}{
+        height: 6vmax;
+      }
         position: absolute;
-        width: 100vw;
-        top: 12vh;
-        height: 12vh;
-        #search-block-form {
-          .form-item {
-            margin-bottom: 0;
-          }
-        }
+        top: 12vmax;
+        height: 10vmax;
+        #search-block-form {.form-item {margin-bottom: 0}}
         input.form-search {
-          height: 12vh;
-          border-radius: 0;
+
+          -webkit-border-top-right-radius: 0px;
+          -moz-border-top-right-radius: 0px;
+          border-top-right-radius: 0px;
+          -webkit-border-bottom-right-radius: 0px;
+          -moz-border-bottom-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          -webkit-border-bottom-left-radius: 0px;
+          -moz-border-bottom-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+
+          @media #{$mobile}{height: inherit;}
+          height: 10vmax;
           border: none;
         }
         .input-group {
+          height: 6vmax;
+          width: calc(89vw - 30px);
+          #edit-keys--2{
+            @media #{$mobile}{
+              font-size: 4vh;
+            }
+          }
           position: absolute;
           display: block;
-          width: 100vw;
           .btn-primary {
-            top: 0.5vh;
-            right: 0.5vh;
+            font-size: 3vh;
+            border: 1px white solid;
             position: absolute;
-            width: 11vh;
-            height: 11vh;
-            border-radius: 1vh;
+            width: 11vw;
+            height: 11vw;
             z-index: 100;
             @media (orientation: landscape) {
               right: 0.5vh;
               width: 20vh;
+            }
+            //Кнопка
+            @media #{$mobile}{
+              height: 6vmax;
+              width: 11vw;
+              background: $blue;
             }
           }
         }
       @media (orientation: landscape) {
         top: 17vh;
       }
-      }
+    }
 
     #block-elpocta {
       top: 45vh;
@@ -237,19 +258,18 @@
     }
 
     #block-ltk-main-menu {
-      @media (orientation: portrait) {
-        top: 11vmax;
-      }
-      @media (orientation: landscape) {
-        top: 11vmax;
+      @media #{$mobile}{
+        top: 18vh;
       }
       position: absolute;
+
       ul.navbar-nav {
-        margin: 0;
+        margin: 0px;
         li {
-          width: 100vw;
           background: $white;
+          width: calc(100vw - 30px);
           a {
+            height: 6vmax;
             margin: 0;
             padding: 0;
             text-align: center;

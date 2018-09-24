@@ -15,25 +15,25 @@ Drupal.behaviors.basic = {
 
             /*Первоначальное положение, до ресайза*/
             if ($('.device-mobile').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК MOB</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
             } else if ($('.device-tablet').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК TAB</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
             } else if ($('.device-normal').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК NOR</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
             } else {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК W</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
             }
 
             /*Событие на рейсайз*/
             $(window).off('resize').on('resize', function () {
                 if ($('.device-mobile').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК MOB</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else if ($('.device-tablet').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК TAB</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else if ($('.device-normal').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК NOR</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 } else {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК W</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
                 }
             });
 
@@ -59,7 +59,7 @@ Drupal.behaviors.basic = {
             $('.request-button span').toggleClass('arr-up arr-down');
             $('.region-add-request').toggleClass('down');
             if($('.region-add-request').hasClass('down')){
-              $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
+              $('.request-button p').text('СКРЫТЬ ФОРМУ ЗАЯВКИ');
             }else{
               $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
             };
@@ -107,6 +107,12 @@ Drupal.behaviors.basic = {
             $('html, body').animate({scrollTop: $('#'+anchor).offset().top-100}, 1000);
           })
           /**/
+
+            /*Перевод тултипа в поиске на русский*/
+            $('.input-group #edit-keys--2').off('mouseover').on('mouseover', function (event) {
+                //$(event.target).attr('data-original-title', 'Введите поисковый запрос');
+            });
+            $('.input-group #edit-keys--2').attr('placeholder', 'Поиск по сайту');
 
 
         })(jQuery);
