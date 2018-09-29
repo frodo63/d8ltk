@@ -15,25 +15,25 @@ Drupal.behaviors.basic = {
 
             /*Первоначальное положение, до ресайза*/
             if ($('.device-mobile').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК S</p>');
             } else if ($('.device-tablet').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК M</p>');
             } else if ($('.device-normal').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК L</p>');
             } else {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК XL</p>');
             }
 
             /*Событие на рейсайз*/
             $(window).off('resize').on('resize', function () {
                 if ($('.device-mobile').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК S</p>');
                 } else if ($('.device-tablet').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК M</p>');
                 } else if ($('.device-normal').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК L</p>');
                 } else {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК</p>');
+                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК XL</p>');
                 }
             });
 
@@ -42,11 +42,7 @@ Drupal.behaviors.basic = {
             $(document).css({ 'height' : $(window).height() });
             $(document).css({ 'width' : $(window).width() });
           });
-           /*Анимация категорий в меню*/
-          $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
-            $('.region-sidemenu ul.menu:visible').hide('slow');
-            $(event.target).siblings('ul.menu:hidden').show('slow');
-          });
+
           /*Анимация выдвигающегося бокового меню*/
           $('.side-menu-burger-link').off('click.burger').on('click.burger', function(){
             $('.region-highlighted').toggleClass('active');//Сжимается строка хлебных крошек
@@ -54,12 +50,19 @@ Drupal.behaviors.basic = {
             $('.side-menu-burger--icon').toggleClass('crossed'); //Бургер становится крестиком
           });
 
+            /*Анимация категорий в меню*/
+            $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
+                //$('.region-sidemenu ul.menu:visible').hide('slow');//Закрыть все менюшки
+                $(event.target).siblings('ul.menu').toggle('slow');//ОТкрыть эту одну
+                $(event.target).children('span.glyphicon').toggleClass('glyphicon-triangle-bottom glyphicon-triangle-top');
+            });
+
           /*Анимация спускающейся формы заявки*/
           $('.request-button').off('click.request').on('click.request', function(){
             $('.request-button span').toggleClass('arr-up arr-down');
             $('.region-add-request').toggleClass('down');
             if($('.region-add-request').hasClass('down')){
-              $('.request-button p').text('СКРЫТЬ ФОРМУ ЗАЯВКИ');
+              $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
             }else{
               $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
             };

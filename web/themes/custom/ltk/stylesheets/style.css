@@ -9643,17 +9643,7 @@ p:last-child,
 .navbar .logo, .navbar #block-uppertext {
   z-index: 100;
 }
-/* line 26, ../scss/component/_header.scss */
-.navbar.minimized .logo {
-  top: 5px;
-  margin: 0;
-  left: 25px;
-}
-/* line 30, ../scss/component/_header.scss */
-.navbar.minimized .logo img {
-  height: 30px;
-}
-/* line 35, ../scss/component/_header.scss */
+/* line 25, ../scss/component/_header.scss */
 .navbar #block-bokovoemenuspisokprodukcii {
   position: absolute;
   top: 18vh;
@@ -9665,76 +9655,66 @@ p:last-child,
 @media screen and (min-width: 0px) and (max-width: 767px) {
   /* line 1, ../scss/component/_header.scss */
   .navbar {
-    height: 100vh;
-    /*    #block-ltk-search {display: none}*/
+    height: 18vmax;
   }
-  /* line 49, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
-  .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
+  /* line 36, ../scss/component/_header.scss */
+  .navbar #block-uppertext, .navbar #block-siteslogan, .navbar #block-vremaraboty {
+    display: none;
+  }
+  /* line 37, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu, .navbar #block-sitename, .navbar #block-adres-2, .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 57, ../scss/component/_header.scss */
-  .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
-    display: none;
-  }
-  /* line 60, ../scss/component/_header.scss */
+  /* line 42, ../scss/component/_header.scss */
   .navbar .logo {
     padding: 0;
     margin: 0;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 60, ../scss/component/_header.scss */
+  /* line 42, ../scss/component/_header.scss */
   .navbar .logo {
     top: 1vh;
     left: 1vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 60, ../scss/component/_header.scss */
+  /* line 42, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0.2vh;
     left: 1vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 65, ../scss/component/_header.scss */
+  /* line 47, ../scss/component/_header.scss */
   .navbar .logo img {
     height: 10vmax;
     width: 10vmax;
   }
-  /* line 68, ../scss/component/_header.scss */
+  /* line 49, ../scss/component/_header.scss */
   .navbar #block-sitename {
-    left: 0;
+    top: 1vmax;
+    left: 11vmax;
     font-weight: 400;
     font-size: 8vmax;
     line-height: 8vmax;
-    width: 100vw;
     text-align: center;
-    top: 1vh;
   }
-  /* line 78, ../scss/component/_header.scss */
+  /* line 57, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     font-family: "Oswald", sans-serif;
+    height: 6vmax;
     position: absolute;
     top: 12vmax;
     height: 10vmax;
   }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
-  /* line 78, ../scss/component/_header.scss */
-  .navbar #block-ltk-search {
-    height: 6vmax;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 86, ../scss/component/_header.scss */
+  /* line 63, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form .form-item {
     margin-bottom: 0;
   }
-  /* line 87, ../scss/component/_header.scss */
+  /* line 64, ../scss/component/_header.scss */
   .navbar #block-ltk-search input.form-search {
     -webkit-border-top-right-radius: 0px;
     -moz-border-top-right-radius: 0px;
@@ -9748,30 +9728,18 @@ p:last-child,
     height: 10vmax;
     border: none;
   }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
-  /* line 87, ../scss/component/_header.scss */
-  .navbar #block-ltk-search input.form-search {
-    height: inherit;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 103, ../scss/component/_header.scss */
+  /* line 77, ../scss/component/_header.scss */
   .navbar #block-ltk-search .input-group {
     height: 6vmax;
     width: calc(89vw - 30px);
     position: absolute;
     display: block;
   }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
-  /* line 106, ../scss/component/_header.scss */
+  /* line 80, ../scss/component/_header.scss */
   .navbar #block-ltk-search .input-group #edit-keys--2 {
     font-size: 4vh;
   }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 113, ../scss/component/_header.scss */
+  /* line 85, ../scss/component/_header.scss */
   .navbar #block-ltk-search .input-group .btn-primary {
     font-size: 3vh;
     border: 1px white solid;
@@ -9779,210 +9747,101 @@ p:last-child,
     width: 11vw;
     height: 11vw;
     z-index: 100;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 113, ../scss/component/_header.scss */
-  .navbar #block-ltk-search .input-group .btn-primary {
-    right: 0.5vh;
-    width: 20vh;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
-  /* line 113, ../scss/component/_header.scss */
-  .navbar #block-ltk-search .input-group .btn-primary {
-    height: 6vmax;
-    width: 11vw;
     background: #337ab7;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 78, ../scss/component/_header.scss */
+  /* line 57, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     top: 17vh;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 137, ../scss/component/_header.scss */
+  /* line 99, ../scss/component/_header.scss */
   .navbar #block-elpocta {
-    top: 45vh;
-    left: 0vmax;
-    width: 100vw;
-    font-size: 6vmax;
-    line-height: 6vmax;
+    top: 6vmax;
+    right: 1vmax;
+    font-size: 3vmax;
+    line-height: 3vmax;
     text-align: center;
   }
-  /* line 144, ../scss/component/_header.scss */
+  /* line 105, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 137, ../scss/component/_header.scss */
+  /* line 99, ../scss/component/_header.scss */
   .navbar #block-elpocta {
-    top: 40vh;
+    top: 6vmax;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 113, ../scss/component/_header.scss */
+  .navbar #block-telephones p:nth-child(1), .navbar #block-telephones p:nth-child(3) {
+    display: none;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 152, ../scss/component/_header.scss */
+  /* line 112, ../scss/component/_header.scss */
   .navbar #block-telephones {
-    top: 18vh;
-    left: 0vw;
-    width: 100vw;
+    top: 2vmax;
+    right: 1vmax;
   }
-  /* line 157, ../scss/component/_header.scss */
+  /* line 119, ../scss/component/_header.scss */
   .navbar #block-telephones p {
-    font-size: 6vmax;
-    line-height: 6vmax;
+    font-size: 3vmax;
+    line-height: 3vmax;
     font-weight: 400;
     text-align: center;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 152, ../scss/component/_header.scss */
+  /* line 112, ../scss/component/_header.scss */
   .navbar #block-telephones {
-    top: 28vh;
+    top: 2vmax;
+    right: 1vmax;
     text-align: center;
-    font-size: 5vmax;
-    line-height: 4vmax;
-    width: 100vw;
+    font-size: 3vmax;
+    line-height: 3vmax;
   }
-  /* line 170, ../scss/component/_header.scss */
-  .navbar #block-telephones p {
-    width: 40vw;
-    float: left;
-  }
-  /* line 174, ../scss/component/_header.scss */
+  /* line 132, ../scss/component/_header.scss */
   .navbar #block-telephones .h {
     width: 30vw;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 180, ../scss/component/_header.scss */
-  .navbar #block-siteslogan {
-    top: 12vh;
-    left: 0vw;
-    font-weight: 400;
-    font-size: 3.5vmax;
-    line-height: 4vmax;
-    text-align: center;
-    width: 100vw;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 180, ../scss/component/_header.scss */
-  .navbar #block-siteslogan {
-    top: 20vh;
-    left: 0vw;
-    font-weight: 400;
-    font-size: 3.5vmax;
-    line-height: 4vmax;
-    text-align: center;
-    width: 100vw;
-  }
-}
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 201, ../scss/component/_header.scss */
+  /* line 137, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
-    top: 58vh;
-    left: 0vw;
-    width: 100vw;
-    font-size: 5vmax;
-    line-height: 5vmax;
+    top: 11vmax;
+    right: 1vmax;
+    font-size: 3vmax;
+    line-height: 3vmax;
     text-align: center;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 201, ../scss/component/_header.scss */
+  /* line 137, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
-    top: 54vh;
+    top: 11vmax;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 213, ../scss/component/_header.scss */
-  .navbar #block-vremaraboty {
-    top: 64vh;
-    left: 0vw;
-    width: 100vw;
-    font-size: 5vmax;
-    line-height: 5vmax;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 213, ../scss/component/_header.scss */
-  .navbar #block-vremaraboty {
-    top: 64vh;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 225, ../scss/component/_header.scss */
-  .navbar #block-uppertext {
-    top: 74vh;
-    left: 0;
-    width: 100vw;
-    height: 24vmax;
-  }
-  /* line 230, ../scss/component/_header.scss */
-  .navbar #block-uppertext p {
-    line-height: 3.5vmax;
-    font-size: 3.5vmax;
-    font-weight: 100;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 225, ../scss/component/_header.scss */
-  .navbar #block-uppertext {
-    top: 74vh;
-  }
-  /* line 238, ../scss/component/_header.scss */
-  .navbar #block-uppertext p {
-    line-height: 4vmax;
-    font-size: 4vmax;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 245, ../scss/component/_header.scss */
-  .navbar button.navbar-toggle {
-    top: 1vh;
-    right: 1vh;
-    margin: 0;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 245, ../scss/component/_header.scss */
-  .navbar button.navbar-toggle {
-    top: 1vh;
-    right: 1vh;
-    margin: 0;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 260, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu {
-    position: absolute;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
-  /* line 260, ../scss/component/_header.scss */
+  /* line 147, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
     top: 18vh;
+    position: absolute;
   }
-}
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 266, ../scss/component/_header.scss */
+  /* line 150, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     margin: 0px;
   }
-  /* line 268, ../scss/component/_header.scss */
+  /* line 152, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li {
     background: #FFFFFF;
     width: calc(100vw - 30px);
   }
-  /* line 271, ../scss/component/_header.scss */
+  /* line 155, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li a {
     height: 6vmax;
     margin: 0;
@@ -9992,33 +9851,52 @@ p:last-child,
     font-size: 30px;
     line-height: 40px;
   }
-  /* line 277, ../scss/component/_header.scss */
+  /* line 161, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav li a:hover {
     background: #FBBA00;
     color: #17460F;
   }
-  /* line 288, ../scss/component/_header.scss */
+  /* line 172, ../scss/component/_header.scss */
   .navbar.minimized {
+    height: 50px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  /* line 288, ../scss/component/_header.scss */
+  /* line 172, ../scss/component/_header.scss */
   .navbar.minimized {
-    height: 12vh;
+    height: 50px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
-  /* line 288, ../scss/component/_header.scss */
+  /* line 172, ../scss/component/_header.scss */
   .navbar.minimized {
-    height: 18vh;
+    height: 50px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 298, ../scss/component/_header.scss */
+  /* line 181, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty,
   .navbar.minimized #block-elpocta, .navbar.minimized #block-telephones {
     display: none;
+  }
+  /* line 190, ../scss/component/_header.scss */
+  .navbar.minimized #block-sitename {
+    top: 5px;
+    left: 55px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  /* line 196, ../scss/component/_header.scss */
+  .navbar.minimized .logo {
+    top: 5px;
+    margin: 0;
+    left: 5px;
+  }
+  /* line 200, ../scss/component/_header.scss */
+  .navbar.minimized .logo img {
+    height: 30px;
+    width: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -10026,193 +9904,186 @@ p:last-child,
   .navbar {
     height: 120px;
   }
-  /* line 314, ../scss/component/_header.scss */
+  /* line 209, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 321, ../scss/component/_header.scss */
+  /* line 215, ../scss/component/_header.scss */
   .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
-    height: 1vw;
+    height: 9px;
   }
-  /* line 325, ../scss/component/_header.scss */
+  /* line 216, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0;
-    left: 1vmax;
+    left: 15px;
   }
-  /* line 328, ../scss/component/_header.scss */
+  /* line 219, ../scss/component/_header.scss */
   .navbar .logo img {
-    height: 7.5vmax;
+    height: 78px;
   }
-  /* line 330, ../scss/component/_header.scss */
+  /* line 221, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
+    top: 5px;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-  /* line 330, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu {
-    top: 0.25vmax;
-    font-size: 1.5vmax;
-    line-height: 1.5vmax;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
-  /* line 330, ../scss/component/_header.scss */
-  .navbar #block-ltk-main-menu {
-    top: 0.25vmax;
-    font-size: 1.5vmax;
-    line-height: 1.5vmax;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 344, ../scss/component/_header.scss */
+  /* line 227, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     text-align: center;
     float: none !important;
   }
-  /* line 348, ../scss/component/_header.scss */
+  /* line 231, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li {
     float: none !important;
     display: inline-block !important;
   }
-  /* line 351, ../scss/component/_header.scss */
+  /* line 234, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a {
-    padding: 0 0.5vw;
+    padding: 0 6px;
     color: #17460F;
   }
-  /* line 357, ../scss/component/_header.scss */
+  /* line 237, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu li a:hover {
+    color: #FFFFFF;
+  }
+  /* line 243, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
     font-weight: 200;
-    font-size: 0.9vw;
+    font-size: 9px;
     width: 100vw;
-    text-align: left;
+    text-align: center;
   }
-  /* line 365, ../scss/component/_header.scss */
+  /* line 251, ../scss/component/_header.scss */
   .navbar #block-sitename {
-    top: 2.5vw;
-    left: 10vw;
+    top: 24px;
+    left: 102px;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 21px;
+    line-height: 21px;
     text-transform: uppercase;
   }
-  /* line 373, ../scss/component/_header.scss */
+  /* line 259, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
-    top: 6.5vw;
-    left: 10vw;
+    top: 66px;
+    left: 100px;
     font-weight: 400;
-    font-size: 1vw;
-    line-height: 1vw;
+    font-size: 10px;
+    line-height: 10px;
   }
-  /* line 380, ../scss/component/_header.scss */
+  /* line 266, ../scss/component/_header.scss */
+  .navbar #block-vremaraboty, .navbar #block-adres-2, .navbar #block-elpocta {
+    right: 168px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  /* line 271, ../scss/component/_header.scss */
   .navbar #block-vremaraboty {
-    top: 2.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 25px;
   }
-  /* line 386, ../scss/component/_header.scss */
+  /* line 274, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
-    top: 4vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 40px;
   }
-  /* line 392, ../scss/component/_header.scss */
+  /* line 277, ../scss/component/_header.scss */
   .navbar #block-elpocta {
-    top: 5.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 55px;
   }
-  /* line 397, ../scss/component/_header.scss */
+  /* line 279, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 401, ../scss/component/_header.scss */
+  /* line 283, ../scss/component/_header.scss */
   .navbar #block-telephones {
-    top: 1vw;
-    right: 2vw;
+    top: 10px;
+    right: 19px;
     text-align: right;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 15px;
+    line-height: 15px;
   }
-  /* line 408, ../scss/component/_header.scss */
+  /* line 290, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
-    width: 25vw;
-    top: 7.9vw;
-    right: 0;
+    width: 159px;
+    top: 90px;
+    right: 6px;
   }
-  /* line 413, ../scss/component/_header.scss */
+  /* line 296, ../scss/component/_header.scss */
+  .navbar #block-ltk-search #search-block-form {
+    bottom: -15px;
+    position: absolute;
+    width: 159px;
+  }
+  /* line 302, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 416, ../scss/component/_header.scss */
+  /* line 305, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
-    height: 2vw;
+    height: 20px;
   }
-  /* line 420, ../scss/component/_header.scss */
+  /* line 309, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
-    height: 2vw;
+    height: 20px;
     background-color: #FBBA00;
     border: 1px solid white;
-    font-size: 0.5vw;
-    padding: 0 0.5vw 0 0.5vw;
+    font-size: 6px;
+    padding: 0 6px 0 6px;
   }
-  /* line 428, ../scss/component/_header.scss */
+  /* line 317, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
-    line-height: 2vw;
-    font-size: 1vw;
+    line-height: 20px;
+    font-size: 10px;
   }
-  /* line 434, ../scss/component/_header.scss */
+  /* line 322, ../scss/component/_header.scss */
   .navbar.minimized {
-    height: 25px;
+    height: 50px;
+  }
+  /* line 324, ../scss/component/_header.scss */
+  .navbar.minimized #block-telephones {
+    top: 5px;
+  }
+  /* line 326, ../scss/component/_header.scss */
+  .navbar.minimized #block-telephones p.h {
+    display: none;
+  }
+  /* line 330, ../scss/component/_header.scss */
+  .navbar.minimized #block-elpocta {
+    top: 5px;
+    right: 280px;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
   }
-  /* line 440, ../scss/component/_header.scss */
-  .navbar.minimized #block-telephones {
-    top: 0.1vw;
-  }
-  /* line 442, ../scss/component/_header.scss */
-  .navbar.minimized #block-telephones p.h {
-    display: none;
-  }
-  /* line 446, ../scss/component/_header.scss */
-  .navbar.minimized #block-elpocta {
-    top: 0.1vw;
-    left: 74vw;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
-  }
-  /* line 452, ../scss/component/_header.scss */
+  /* line 336, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 456, ../scss/component/_header.scss */
+  /* line 340, ../scss/component/_header.scss */
+  .navbar.minimized .logo {
+    top: 5px;
+    margin: 0;
+    left: 5px;
+  }
+  /* line 344, ../scss/component/_header.scss */
+  .navbar.minimized .logo img {
+    height: 30px;
+  }
+  /* line 348, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 459, ../scss/component/_header.scss */
+  /* line 351, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
-    top: 0.25vw;
-    left: 5vw;
-  }
-  /* line 463, ../scss/component/_header.scss */
-  .navbar.minimized #block-ltk-main-menu {
-    top: -0.25vmax;
-    font-size: 1.5vmax;
-    line-height: 1.5vmax;
+    top: 5px;
+    left: 84px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -10220,181 +10091,186 @@ p:last-child,
   .navbar {
     height: 150px;
   }
-  /* line 472, ../scss/component/_header.scss */
+  /* line 359, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 480, ../scss/component/_header.scss */
+  /* line 365, ../scss/component/_header.scss */
   .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
-    height: 1vw;
+    height: 12px;
   }
-  /* line 485, ../scss/component/_header.scss */
+  /* line 366, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0;
-    left: 1vw;
+    left: 25px;
   }
-  /* line 488, ../scss/component/_header.scss */
+  /* line 369, ../scss/component/_header.scss */
   .navbar .logo img {
-    height: 7.5vw;
+    height: 104px;
   }
-  /* line 491, ../scss/component/_header.scss */
+  /* line 371, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
-    top: 0.25vw;
+    top: 5px;
     left: 0;
-    width: 100vw;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
   }
-  /* line 497, ../scss/component/_header.scss */
+  /* line 377, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     text-align: center;
     float: none !important;
   }
-  /* line 501, ../scss/component/_header.scss */
+  /* line 381, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li {
     float: none !important;
     display: inline-block !important;
   }
-  /* line 504, ../scss/component/_header.scss */
+  /* line 384, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a {
-    padding: 0 0.5vw;
+    padding: 0 8px;
     color: #17460F;
   }
-  /* line 511, ../scss/component/_header.scss */
+  /* line 387, ../scss/component/_header.scss */
+  .navbar #block-ltk-main-menu li a:hover {
+    color: #FFFFFF;
+  }
+  /* line 393, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
     font-weight: 200;
-    font-size: 0.9vw;
+    font-size: 12px;
     width: 100vw;
-    text-align: left;
+    text-align: center;
   }
-  /* line 520, ../scss/component/_header.scss */
+  /* line 401, ../scss/component/_header.scss */
   .navbar #block-sitename {
-    top: 2.5vw;
-    left: 10vw;
+    top: 32px;
+    left: 136px;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 28px;
+    line-height: 28px;
     text-transform: uppercase;
   }
-  /* line 529, ../scss/component/_header.scss */
+  /* line 409, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
-    top: 6.5vw;
-    left: 10vw;
+    top: 88px;
+    left: 134px;
     font-weight: 400;
-    font-size: 1vw;
-    line-height: 1vw;
+    font-size: 13px;
+    line-height: 13px;
   }
-  /* line 537, ../scss/component/_header.scss */
+  /* line 416, ../scss/component/_header.scss */
+  .navbar #block-vremaraboty, .navbar #block-adres-2, .navbar #block-elpocta {
+    right: 224px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+  /* line 421, ../scss/component/_header.scss */
   .navbar #block-vremaraboty {
-    top: 2.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 34px;
   }
-  /* line 544, ../scss/component/_header.scss */
+  /* line 424, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
-    top: 4vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 53px;
   }
-  /* line 551, ../scss/component/_header.scss */
+  /* line 427, ../scss/component/_header.scss */
   .navbar #block-elpocta {
-    top: 5.5vw;
-    left: 75vw;
-    font-size: 1vw;
-    line-height: 1vw;
+    top: 73px;
   }
-  /* line 556, ../scss/component/_header.scss */
+  /* line 429, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 561, ../scss/component/_header.scss */
+  /* line 433, ../scss/component/_header.scss */
   .navbar #block-telephones {
-    top: 1vw;
-    right: 2vw;
+    top: 12px;
+    right: 25px;
     text-align: right;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 20px;
+    line-height: 20px;
   }
-  /* line 569, ../scss/component/_header.scss */
+  /* line 440, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
-    width: 23vw;
-    top: 9vw;
-    right: 2vw;
+    width: 212px;
+    top: 120px;
+    right: 8px;
   }
-  /* line 574, ../scss/component/_header.scss */
+  /* line 446, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form {
-    bottom: -1.6vw;
+    bottom: -20px;
     position: absolute;
+    width: 212px;
   }
-  /* line 579, ../scss/component/_header.scss */
+  /* line 452, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 582, ../scss/component/_header.scss */
+  /* line 455, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
-    height: 2vw;
+    height: 27px;
   }
-  /* line 586, ../scss/component/_header.scss */
+  /* line 459, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
-    height: 2vw;
+    height: 27px;
     background-color: #FBBA00;
     border: 1px solid white;
-    font-size: 0.5vw;
-    padding: 0 0.5vw 0 0.5vw;
+    font-size: 7px;
+    padding: 0 7px 0 7px;
   }
-  /* line 594, ../scss/component/_header.scss */
+  /* line 467, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
-    line-height: 2vw;
-    font-size: 1vw;
+    line-height: 27px;
+    font-size: 13px;
   }
-  /* line 600, ../scss/component/_header.scss */
+  /* line 472, ../scss/component/_header.scss */
   .navbar.minimized {
-    height: 35px;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    height: 50px;
   }
-  /* line 606, ../scss/component/_header.scss */
+  /* line 474, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones {
-    top: 0.2vw;
+    top: 5px;
   }
-  /* line 608, ../scss/component/_header.scss */
+  /* line 476, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones p.h {
     display: none;
   }
-  /* line 612, ../scss/component/_header.scss */
+  /* line 480, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta {
-    top: 0.25vw;
-    left: 74vw;
+    top: 5px;
+    right: 224px;
     font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 20px;
+    line-height: 20px;
   }
-  /* line 618, ../scss/component/_header.scss */
+  /* line 486, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 622, ../scss/component/_header.scss */
+  /* line 490, ../scss/component/_header.scss */
+  .navbar.minimized .logo {
+    top: 5px;
+    margin: 0;
+    left: 5px;
+  }
+  /* line 494, ../scss/component/_header.scss */
+  .navbar.minimized .logo img {
+    height: 30px;
+  }
+  /* line 498, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 625, ../scss/component/_header.scss */
+  /* line 501, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
-    top: 0.25vw;
-    left: 5vw;
-  }
-  /* line 629, ../scss/component/_header.scss */
-  .navbar.minimized #block-ltk-main-menu {
-    top: 0;
+    top: 5px;
+    left: 67px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -10402,27 +10278,27 @@ p:last-child,
   .navbar {
     height: 189px;
   }
-  /* line 637, ../scss/component/_header.scss */
+  /* line 509, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu, .navbar #block-uppertext, .navbar #block-sitename, .navbar #block-siteslogan, .navbar #block-adres-2, .navbar #block-vremaraboty,
   .navbar #block-telephones, .navbar #block-elpocta, .navbar .logo {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: #17460F;
   }
-  /* line 645, ../scss/component/_header.scss */
+  /* line 515, ../scss/component/_header.scss */
   .navbar #block-adres-2 img, .navbar #block-vremaraboty img, .navbar #block-elpocta img {
     height: 15px;
   }
-  /* line 650, ../scss/component/_header.scss */
+  /* line 516, ../scss/component/_header.scss */
   .navbar .logo {
     top: 0;
     left: 25px;
   }
-  /* line 653, ../scss/component/_header.scss */
+  /* line 519, ../scss/component/_header.scss */
   .navbar .logo img {
     height: 130px;
   }
-  /* line 656, ../scss/component/_header.scss */
+  /* line 521, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu {
     top: 5px;
     left: 0;
@@ -10430,26 +10306,26 @@ p:last-child,
     font-size: 25px;
     line-height: 25px;
   }
-  /* line 662, ../scss/component/_header.scss */
+  /* line 527, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu ul.navbar-nav {
     text-align: center;
     float: none !important;
   }
-  /* line 666, ../scss/component/_header.scss */
+  /* line 531, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li {
     float: none !important;
     display: inline-block !important;
   }
-  /* line 669, ../scss/component/_header.scss */
+  /* line 534, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a {
     padding: 0 8px;
     color: #17460F;
   }
-  /* line 672, ../scss/component/_header.scss */
+  /* line 537, ../scss/component/_header.scss */
   .navbar #block-ltk-main-menu li a:hover {
     color: #FFFFFF;
   }
-  /* line 679, ../scss/component/_header.scss */
+  /* line 543, ../scss/component/_header.scss */
   .navbar #block-uppertext {
     bottom: 0;
     left: 0;
@@ -10458,7 +10334,7 @@ p:last-child,
     width: 100vw;
     text-align: center;
   }
-  /* line 688, ../scss/component/_header.scss */
+  /* line 551, ../scss/component/_header.scss */
   .navbar #block-sitename {
     top: 40px;
     left: 170px;
@@ -10467,7 +10343,7 @@ p:last-child,
     line-height: 36px;
     text-transform: uppercase;
   }
-  /* line 697, ../scss/component/_header.scss */
+  /* line 559, ../scss/component/_header.scss */
   .navbar #block-siteslogan {
     top: 110px;
     left: 168px;
@@ -10475,29 +10351,29 @@ p:last-child,
     font-size: 17px;
     line-height: 17px;
   }
-  /* line 705, ../scss/component/_header.scss */
+  /* line 566, ../scss/component/_header.scss */
   .navbar #block-vremaraboty, .navbar #block-adres-2, .navbar #block-elpocta {
     right: 280px;
     font-size: 17px;
     line-height: 17px;
   }
-  /* line 711, ../scss/component/_header.scss */
+  /* line 571, ../scss/component/_header.scss */
   .navbar #block-vremaraboty {
     top: 42px;
   }
-  /* line 715, ../scss/component/_header.scss */
+  /* line 574, ../scss/component/_header.scss */
   .navbar #block-adres-2 {
     top: 67px;
   }
-  /* line 719, ../scss/component/_header.scss */
+  /* line 577, ../scss/component/_header.scss */
   .navbar #block-elpocta {
     top: 92px;
   }
-  /* line 721, ../scss/component/_header.scss */
+  /* line 579, ../scss/component/_header.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
     color: #17460F;
   }
-  /* line 726, ../scss/component/_header.scss */
+  /* line 583, ../scss/component/_header.scss */
   .navbar #block-telephones {
     top: 16px;
     right: 32px;
@@ -10505,28 +10381,28 @@ p:last-child,
     font-size: 25px;
     line-height: 25px;
   }
-  /* line 734, ../scss/component/_header.scss */
+  /* line 590, ../scss/component/_header.scss */
   .navbar #block-ltk-search {
     position: absolute;
     width: 265px;
     top: 150px;
     right: 10px;
   }
-  /* line 740, ../scss/component/_header.scss */
+  /* line 596, ../scss/component/_header.scss */
   .navbar #block-ltk-search #search-block-form {
     bottom: -26px;
     position: absolute;
     width: 265px;
   }
-  /* line 746, ../scss/component/_header.scss */
+  /* line 602, ../scss/component/_header.scss */
   .navbar #block-ltk-search .form-search {
     border: 1px solid white;
   }
-  /* line 749, ../scss/component/_header.scss */
+  /* line 605, ../scss/component/_header.scss */
   .navbar #block-ltk-search #edit-keys {
     height: 34px;
   }
-  /* line 753, ../scss/component/_header.scss */
+  /* line 609, ../scss/component/_header.scss */
   .navbar #block-ltk-search .btn-primary {
     color: #fff;
     height: 34px;
@@ -10535,24 +10411,24 @@ p:last-child,
     font-size: 8px;
     padding: 0 8px 0 8px;
   }
-  /* line 761, ../scss/component/_header.scss */
+  /* line 617, ../scss/component/_header.scss */
   .navbar #block-ltk-search .glyphicon-search {
     line-height: 34px;
     font-size: 17px;
   }
-  /* line 767, ../scss/component/_header.scss */
+  /* line 622, ../scss/component/_header.scss */
   .navbar.minimized {
-    height: 42px;
+    height: 50px;
   }
-  /* line 769, ../scss/component/_header.scss */
+  /* line 624, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones {
     top: 5px;
   }
-  /* line 771, ../scss/component/_header.scss */
+  /* line 626, ../scss/component/_header.scss */
   .navbar.minimized #block-telephones p.h {
     display: none;
   }
-  /* line 775, ../scss/component/_header.scss */
+  /* line 630, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta {
     top: 5px;
     right: 280px;
@@ -10560,15 +10436,25 @@ p:last-child,
     font-size: 25px;
     line-height: 25px;
   }
-  /* line 781, ../scss/component/_header.scss */
+  /* line 636, ../scss/component/_header.scss */
   .navbar.minimized #block-elpocta img {
     display: none;
   }
-  /* line 785, ../scss/component/_header.scss */
+  /* line 640, ../scss/component/_header.scss */
+  .navbar.minimized .logo {
+    top: 5px;
+    margin: 0;
+    left: 5px;
+  }
+  /* line 644, ../scss/component/_header.scss */
+  .navbar.minimized .logo img {
+    height: 30px;
+  }
+  /* line 648, ../scss/component/_header.scss */
   .navbar.minimized #block-uppertext, .navbar.minimized #block-siteslogan, .navbar.minimized #block-adres-2, .navbar.minimized #block-vremaraboty, .navbar.minimized #block-ltk-search {
     display: none;
   }
-  /* line 788, ../scss/component/_header.scss */
+  /* line 651, ../scss/component/_header.scss */
   .navbar.minimized #block-sitename {
     top: 5px;
     left: 84px;
@@ -10826,7 +10712,7 @@ p:last-child,
 
 /* line 199, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 {
-  height: 110vh;
+  height: 120vh;
 }
 /* line 202, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3, #brands.cfp-8 .brands-import .col-lg-3 {
@@ -10967,17 +10853,17 @@ p:last-child,
 
 /* line 287, ../scss/component/_frontpage_paragraphs.scss */
 #about-company.cfp-12 {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 /* line 290, ../scss/component/_frontpage_paragraphs.scss */
 #complexity.cfp-13 {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 /* line 293, ../scss/component/_frontpage_paragraphs.scss */
 #competenivity.cfp-14 {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 /* line 1, ../scss/component/_sidemenu.scss */
@@ -10986,44 +10872,45 @@ p:last-child,
   position: fixed;
   left: 0px;
   width: 40px;
+  z-index: 500;
   /*НАДПИСЬ ПРОДУКЦИЯ*/
   /*БЛОК С БУРГЕР ИКОНКОЙ*/
 }
-/* line 8, ../scss/component/_sidemenu.scss */
+/* line 9, ../scss/component/_sidemenu.scss */
 .side-menu--wrap h2, .side-menu--wrap a, .side-menu--wrap .side-menu-burger--name {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
-/* line 13, ../scss/component/_sidemenu.scss */
+/* line 14, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link {
   height: 166px;
   cursor: pointer;
 }
-/* line 17, ../scss/component/_sidemenu.scss */
+/* line 18, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link:hover .side-menu-burger--icon span {
   background: #FFFFFF;
 }
-/* line 18, ../scss/component/_sidemenu.scss */
+/* line 19, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger-link:hover .side-menu-burger--name {
   color: #FFFFFF;
 }
-/* line 22, ../scss/component/_sidemenu.scss */
+/* line 23, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--name {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
   font-size: 20px;
-  margin-top: 80px;
+  margin-top: 42px;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
 }
-/* line 37, ../scss/component/_sidemenu.scss */
+/* line 38, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon {
   margin: 20px 10px 40px 10px;
 }
-/* line 40, ../scss/component/_sidemenu.scss */
+/* line 41, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon span {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -11034,7 +10921,7 @@ p:last-child,
   display: block;
   box-sizing: border-box;
 }
-/* line 52, ../scss/component/_sidemenu.scss */
+/* line 53, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(1) {
   transform: translate(-2px, 6px) rotate(45deg);
   -webkit-transform: translate(-2px, 6px) rotate(45deg);
@@ -11043,7 +10930,7 @@ p:last-child,
   -o-transform: translate(-2px, 6px) rotate(45deg);
   width: 23px;
 }
-/* line 61, ../scss/component/_sidemenu.scss */
+/* line 62, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(2) {
   transform: translate(-2px) rotate(-45deg);
   -webkit-transform: translate(-2px) rotate(-45deg);
@@ -11052,61 +10939,79 @@ p:last-child,
   -o-transform: translate(-2px) rotate(-45deg);
   width: 23px;
 }
-/* line 70, ../scss/component/_sidemenu.scss */
+/* line 71, ../scss/component/_sidemenu.scss */
 .side-menu--wrap .side-menu-burger--icon.crossed span:nth-child(3) {
   opacity: 0;
 }
 
 /*НАЧАЛСЯ Расчет высоты РАЗНЫХ боковых меню*/
-/* line 77, ../scss/component/_sidemenu.scss */
+/* line 78, ../scss/component/_sidemenu.scss */
 .region-sidemenu, .side-menu--wrap {
   /*Первоначально объявляем переменную*/
   /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
 }
 @media screen and (min-width: 1200px) {
-  /* line 77, ../scss/component/_sidemenu.scss */
+  /* line 78, ../scss/component/_sidemenu.scss */
   .region-sidemenu, .side-menu--wrap {
     top: 189px;
     height: calc(100% - 189px);
   }
-  /* line 87, ../scss/component/_sidemenu.scss */
+  /* line 88, ../scss/component/_sidemenu.scss */
   .region-sidemenu.minimized, .side-menu--wrap.minimized {
-    top: 42px;
-    height: calc(100% - 42px);
+    top: 50px;
+    height: calc(100% - 50px);
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 77, ../scss/component/_sidemenu.scss */
+  /* line 78, ../scss/component/_sidemenu.scss */
   .region-sidemenu, .side-menu--wrap {
     top: 150px;
     height: calc(100% - 150px);
   }
-  /* line 96, ../scss/component/_sidemenu.scss */
+  /* line 97, ../scss/component/_sidemenu.scss */
   .region-sidemenu.minimized, .side-menu--wrap.minimized {
-    top: 35px;
-    height: calc(100% - 35px);
+    top: 50px;
+    height: calc(100% - 50px);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 77, ../scss/component/_sidemenu.scss */
+  /* line 78, ../scss/component/_sidemenu.scss */
   .region-sidemenu, .side-menu--wrap {
     top: 120px;
     height: calc(100% - 120px);
   }
-  /* line 106, ../scss/component/_sidemenu.scss */
+  /* line 107, ../scss/component/_sidemenu.scss */
   .region-sidemenu.minimized, .side-menu--wrap.minimized {
-    top: 25px;
-    height: calc(100% - 25px);
+    top: 50px;
+    height: calc(100% - 50px);
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 78, ../scss/component/_sidemenu.scss */
+  .region-sidemenu, .side-menu--wrap {
+    top: 18vmax;
+    height: calc(100% - 18vmax);
+  }
+  /* line 117, ../scss/component/_sidemenu.scss */
+  .region-sidemenu.minimized, .side-menu--wrap.minimized {
+    top: 50px;
+    height: calc(100% - 50px);
   }
 }
 
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
 /*МЕНЮ КАТЕГОРИЙ ПРОДУКЦИИ (ВЫЕЗЖАЮЩЕЕ)*/
-/* line 117, ../scss/component/_sidemenu.scss */
+/* line 128, ../scss/component/_sidemenu.scss */
 .region-sidemenu {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   padding: 10px;
+  /*Добавлено 24 сент 18*/
+  width: 192px;
+  background: white;
+  border-right: 1px solid black;
+  z-index: 500;
+  /**/
   left: -255px;
   transition: left .5s ease-out;
   -webkit-transition: left .5s ease-out;
@@ -11115,46 +11020,54 @@ p:last-child,
   -moz-transition: left .5s ease-out;
   position: fixed;
 }
-/* line 131, ../scss/component/_sidemenu.scss */
+/* line 149, ../scss/component/_sidemenu.scss */
 .region-sidemenu nav ul.nav {
-  /*display: none;*/
+  display: none;
   max-height: 59vh;
-  width: 240px;
   overflow-y: overlay;
 }
-/* line 137, ../scss/component/_sidemenu.scss */
+/* line 154, ../scss/component/_sidemenu.scss */
 .region-sidemenu nav ul.nav li a {
   padding: 2px 0px 5px 10px;
 }
-/* line 139, ../scss/component/_sidemenu.scss */
+/* line 156, ../scss/component/_sidemenu.scss */
 .region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
 }
-/* line 143, ../scss/component/_sidemenu.scss */
+/* line 161, ../scss/component/_sidemenu.scss */
+.region-sidemenu #block-ltk-main-menu ul.nav {
+  display: block;
+}
+/* line 164, ../scss/component/_sidemenu.scss */
 .region-sidemenu h2, .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
 }
-/* line 148, ../scss/component/_sidemenu.scss */
+/* line 169, ../scss/component/_sidemenu.scss */
 .region-sidemenu h2 {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   font-size: 20px;
 }
-/* line 153, ../scss/component/_sidemenu.scss */
+/* line 174, ../scss/component/_sidemenu.scss */
+.region-sidemenu h2 span {
+  pointer-events: none;
+  color: #FBBA00;
+}
+/* line 178, ../scss/component/_sidemenu.scss */
 .region-sidemenu a {
   font-size: 15px;
 }
-/* line 156, ../scss/component/_sidemenu.scss */
+/* line 181, ../scss/component/_sidemenu.scss */
 .region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 159, ../scss/component/_sidemenu.scss */
+/* line 184, ../scss/component/_sidemenu.scss */
 .region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 163, ../scss/component/_sidemenu.scss */
+/* line 188, ../scss/component/_sidemenu.scss */
 .region-sidemenu.active {
   left: 40px;
 }
@@ -11338,22 +11251,22 @@ footer.footer {
   font-weight: 400;
   width: calc(100% - 40px);
   margin-left: 40px;
-  background: #555;
-  color: #FBBA00;
+  background: #FBBA00;
+  color: #17460F;
 }
 /* line 12, ../scss/component/_footer.scss */
 footer.footer a, footer.footer a:hover, footer.footer a:visited {
-  color: #FBBA00;
+  color: #17460F;
 }
 /* line 15, ../scss/component/_footer.scss */
 footer.footer #block-shortfaq .panel-heading, footer.footer #block-shortfaq .panel-body, footer.footer #block-shortfaq .panel-default {
-  background-color: #000000;
+  background-color: #FBBA00;
   border-top: none;
   border: none;
 }
 /* line 20, ../scss/component/_footer.scss */
 footer.footer #block-shortfaq .panel-body, footer.footer #block-shortfaq .panel-body a {
-  color: #FFFFFF;
+  color: #17460F;
 }
 /* line 24, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > nav, footer.footer .region.region-footer > section {
@@ -11361,11 +11274,24 @@ footer.footer .region.region-footer > nav, footer.footer .region.region-footer >
   float: left;
   text-align: center;
 }
-/* line 29, ../scss/component/_footer.scss */
+/* line 30, ../scss/component/_footer.scss */
+footer.footer #block-ltk-footer li a {
+  border-radius: 10px;
+}
+/* line 34, ../scss/component/_footer.scss */
+footer.footer #block-shortfaq {
+  width: 50%;
+}
+/* line 36, ../scss/component/_footer.scss */
+footer.footer #block-shortfaq .panel-body {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+/* line 41, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > nav {
   text-transform: uppercase;
 }
-/* line 32, ../scss/component/_footer.scss */
+/* line 44, ../scss/component/_footer.scss */
 footer.footer .region.region-footer > section:last-child {
   clear: right;
 }
@@ -11406,15 +11332,44 @@ footer.footer .region.region-footer > section:last-child {
   background: #FBBA00;
   color: #17460F;
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  padding: 10px;
   position: fixed;
   right: 0;
-  width: 285px;
+}
+@media screen and (min-width: 1200px) {
+  /* line 2, ../scss/component/_add_request.scss */
+  .region-add-request, .request-button {
+    font-size: 20px;
+    padding: 10px;
+    width: 285px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 2, ../scss/component/_add_request.scss */
+  .region-add-request, .request-button {
+    font-size: 16px;
+    padding: 8px;
+    width: 228px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, ../scss/component/_add_request.scss */
+  .region-add-request, .request-button {
+    font-size: 12px;
+    padding: 6px;
+    width: 154px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 2, ../scss/component/_add_request.scss */
+  .region-add-request, .request-button {
+    font-size: 20px;
+    padding: 10px;
+    width: 285px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 12, ../scss/component/_add_request.scss */
+  /* line 29, ../scss/component/_add_request.scss */
   .request-button {
     background: #337ab7;
     color: #FFFFFF;
@@ -11423,11 +11378,10 @@ footer.footer .region.region-footer > section:last-child {
 
 /*Общая косметика кончилась*/
 /*Описание кнопки, вызывающей форму подачи заявки*/
-/* line 22, ../scss/component/_add_request.scss */
+/* line 39, ../scss/component/_add_request.scss */
 .request-button {
   position: fixed;
   text-transform: uppercase;
-  height: 50px;
   text-align: center;
   z-index: 100;
   /*СТРЕЛОЧКИ В КНОПКЕ будут самодельные*/
@@ -11436,71 +11390,187 @@ footer.footer .region.region-footer > section:last-child {
   /*Первоначально объявляем переменную*/
   /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
 }
-/* line 28, ../scss/component/_add_request.scss */
+@media screen and (min-width: 1200px) {
+  /* line 39, ../scss/component/_add_request.scss */
+  .request-button {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 39, ../scss/component/_add_request.scss */
+  .request-button {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 39, ../scss/component/_add_request.scss */
+  .request-button {
+    height: 40px;
+  }
+}
+/* line 48, ../scss/component/_add_request.scss */
 .request-button:hover {
   cursor: pointer;
   color: #FFFFFF;
 }
-/* line 31, ../scss/component/_add_request.scss */
+/* line 51, ../scss/component/_add_request.scss */
 .request-button:hover span {
   background: #FFFFFF;
 }
-/* line 34, ../scss/component/_add_request.scss */
+/* line 54, ../scss/component/_add_request.scss */
 .request-button:hover p {
   display: inline;
 }
-/* line 39, ../scss/component/_add_request.scss */
+/* line 59, ../scss/component/_add_request.scss */
 .request-button span.arr-down {
-  animation: drag-down 10s ease-out infinite;
+  animation: drag-down 5s ease-out infinite;
 }
-/* line 40, ../scss/component/_add_request.scss */
+/* line 60, ../scss/component/_add_request.scss */
 .request-button:hover span.arr-up {
-  animation: drag-up 10s ease-out 1;
+  animation: drag-up 5s ease-out 1;
 }
-/* line 41, ../scss/component/_add_request.scss */
+/* line 61, ../scss/component/_add_request.scss */
 .request-button:hover span.arr-down {
-  animation: drag-down 10s ease-out 1;
+  animation: drag-down 5s ease-out 1;
 }
-/* line 42, ../scss/component/_add_request.scss */
+/* line 62, ../scss/component/_add_request.scss */
 .request-button:hover {
   animation-play-state: paused;
 }
-/* line 45, ../scss/component/_add_request.scss */
+/* line 65, ../scss/component/_add_request.scss */
 .request-button span {
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   height: 2px;
-  width: 23px;
   background: #17460F;
   margin-bottom: 4px;
   display: block;
   box-sizing: border-box;
   position: absolute;
-  top: 25px;
+}
+@media screen and (min-width: 1200px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    width: 23px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    width: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    width: 13px;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 45, ../scss/component/_add_request.scss */
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    width: 23px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 65, ../scss/component/_add_request.scss */
   .request-button span {
     background: #FFFFFF;
   }
 }
-/* line 59, ../scss/component/_add_request.scss */
-.request-button span:nth-child(1) {
-  left: 0px;
+@media screen and (min-width: 1200px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    top: 25px;
+  }
 }
-/* line 60, ../scss/component/_add_request.scss */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    top: 15px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 65, ../scss/component/_add_request.scss */
+  .request-button span {
+    top: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 85, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(1) {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 85, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(1) {
+    left: 4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 85, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(1) {
+    left: 8px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 85, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(1) {
+    left: 4px;
+  }
+}
+/* line 91, ../scss/component/_add_request.scss */
 .request-button span:nth-child(2) {
   left: 16px;
 }
-/* line 61, ../scss/component/_add_request.scss */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 91, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(2) {
+    left: 19px;
+  }
+}
+/* line 95, ../scss/component/_add_request.scss */
 .request-button span:nth-child(4) {
   right: 16px;
 }
-/* line 62, ../scss/component/_add_request.scss */
-.request-button span:nth-child(5) {
-  right: 0px;
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 95, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(4) {
+    right: 23px;
+  }
 }
-/* line 65, ../scss/component/_add_request.scss */
+@media screen and (min-width: 1200px) {
+  /* line 99, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(5) {
+    right: 1px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 99, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(5) {
+    right: 4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 99, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(5) {
+    right: 8px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 99, ../scss/component/_add_request.scss */
+  .request-button span:nth-child(5) {
+    right: 8px;
+  }
+}
+/* line 107, ../scss/component/_add_request.scss */
 .request-button span.arr-up:nth-child(1) {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -11508,7 +11578,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-/* line 72, ../scss/component/_add_request.scss */
+/* line 114, ../scss/component/_add_request.scss */
 .request-button span.arr-up:nth-child(2) {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -11516,7 +11586,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-/* line 79, ../scss/component/_add_request.scss */
+/* line 121, ../scss/component/_add_request.scss */
 .request-button span.arr-up:nth-child(4) {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -11524,7 +11594,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-/* line 86, ../scss/component/_add_request.scss */
+/* line 128, ../scss/component/_add_request.scss */
 .request-button span.arr-up:nth-child(5) {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -11532,7 +11602,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
-/* line 95, ../scss/component/_add_request.scss */
+/* line 137, ../scss/component/_add_request.scss */
 .request-button span.arr-down:nth-child(1) {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
@@ -11540,7 +11610,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
 }
-/* line 102, ../scss/component/_add_request.scss */
+/* line 144, ../scss/component/_add_request.scss */
 .request-button span.arr-down:nth-child(2) {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -11548,7 +11618,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-/* line 109, ../scss/component/_add_request.scss */
+/* line 151, ../scss/component/_add_request.scss */
 .request-button span.arr-down:nth-child(4) {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
@@ -11556,7 +11626,7 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
 }
-/* line 116, ../scss/component/_add_request.scss */
+/* line 158, ../scss/component/_add_request.scss */
 .request-button span.arr-down:nth-child(5) {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -11564,128 +11634,264 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-@keyframes drag-up {
-  0% {
-    top: 25px;
+@media screen and (min-width: 1200px) {
+  @keyframes drag-up {
+    0% {
+      top: calc(25px - 13px);
+    }
+    20% {
+      top: 25px;
+    }
+    40% {
+      top: calc(25px - 13px);
+    }
+    60% {
+      top: 25px;
+    }
+    80% {
+      top: calc(25px - 13px);
+    }
+    100% {
+      top: 25px;
+    }
   }
-  5% {
-    top: 8px;
-  }
-  10% {
-    top: 25px;
-  }
-  15% {
-    top: 8px;
-  }
-  20% {
-    top: 25px;
+  @keyframes drag-down {
+    0% {
+      top: calc(25px - 5px);
+    }
+    20% {
+      top: calc(25px + 8px);
+    }
+    40% {
+      top: calc(25px - 5px);
+    }
+    60% {
+      top: calc(25px + 8px);
+    }
+    80% {
+      top: calc(25px - 5px);
+    }
+    100% {
+      top: 25px;
+    }
   }
 }
-@keyframes drag-down {
-  0% {
-    top: 20px;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  @keyframes drag-up {
+    0% {
+      top: calc(20px - 13px);
+    }
+    20% {
+      top: 20px;
+    }
+    40% {
+      top: calc(20px - 13px);
+    }
+    60% {
+      top: 20px;
+    }
+    80% {
+      top: calc(20px - 13px);
+    }
+    100% {
+      top: 20px;
+    }
   }
-  5% {
-    top: 33px;
+  @keyframes drag-down {
+    0% {
+      top: calc(20px - 5px);
+    }
+    20% {
+      top: calc(20px + 8px);
+    }
+    40% {
+      top: calc(20px - 5px);
+    }
+    60% {
+      top: calc(20px + 8px);
+    }
+    80% {
+      top: calc(20px - 5px);
+    }
+    100% {
+      top: 20px;
+    }
   }
-  10% {
-    top: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  @keyframes drag-up {
+    0% {
+      top: calc(15px - 13px);
+    }
+    20% {
+      top: 15px;
+    }
+    40% {
+      top: calc(15px - 13px);
+    }
+    60% {
+      top: 15px;
+    }
+    80% {
+      top: calc(15px - 13px);
+    }
+    100% {
+      top: 15px;
+    }
   }
-  15% {
-    top: 33px;
+  @keyframes drag-down {
+    0% {
+      top: calc(15px - 5px);
+    }
+    20% {
+      top: calc(15px + 8px);
+    }
+    40% {
+      top: calc(15px - 5px);
+    }
+    60% {
+      top: calc(15px + 8px);
+    }
+    80% {
+      top: calc(15px - 5px);
+    }
+    100% {
+      top: 15px;
+    }
   }
-  20% {
-    top: 25px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  @keyframes drag-up {
+    0% {
+      top: calc(25px - 13px);
+    }
+    20% {
+      top: 25px;
+    }
+    40% {
+      top: calc(25px - 13px);
+    }
+    60% {
+      top: 25px;
+    }
+    80% {
+      top: calc(25px - 13px);
+    }
+    100% {
+      top: 25px;
+    }
+  }
+  @keyframes drag-down {
+    0% {
+      top: calc(25px - 5px);
+    }
+    20% {
+      top: calc(25px + 8px);
+    }
+    40% {
+      top: calc(25px - 5px);
+    }
+    60% {
+      top: calc(25px + 8px);
+    }
+    80% {
+      top: calc(25px - 5px);
+    }
+    100% {
+      top: 25px;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 22, ../scss/component/_add_request.scss */
+  /* line 39, ../scss/component/_add_request.scss */
   .request-button {
     top: 189px;
   }
-  /* line 153, ../scss/component/_add_request.scss */
+  /* line 258, ../scss/component/_add_request.scss */
   .request-button.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 22, ../scss/component/_add_request.scss */
+  /* line 39, ../scss/component/_add_request.scss */
   .request-button {
     top: 150px;
   }
-  /* line 162, ../scss/component/_add_request.scss */
+  /* line 267, ../scss/component/_add_request.scss */
   .request-button.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 22, ../scss/component/_add_request.scss */
+  /* line 39, ../scss/component/_add_request.scss */
   .request-button {
     top: 120px;
   }
-  /* line 170, ../scss/component/_add_request.scss */
+  /* line 275, ../scss/component/_add_request.scss */
   .request-button.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 22, ../scss/component/_add_request.scss */
+  /* line 39, ../scss/component/_add_request.scss */
   .request-button {
-    width: 100vw;
+    width: calc(100% - 40px);
     bottom: 0px;
+    height: 50px;
+    right: 0px;
   }
 }
 
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
 /*НАЧАЛСЯ Расчет высоты ФОРМЫ ЗАЯВКИ*/
-/* line 183, ../scss/component/_add_request.scss */
+/* line 290, ../scss/component/_add_request.scss */
 .region-add-request {
   /*Первоначально объявляем переменную*/
   /*В зависимости от брекета и статуса минимайзда задается значени новое прееменной*/
 }
 @media screen and (min-width: 1200px) {
-  /* line 183, ../scss/component/_add_request.scss */
+  /* line 290, ../scss/component/_add_request.scss */
   .region-add-request {
     height: calc(100% - 239px);
   }
-  /* line 190, ../scss/component/_add_request.scss */
+  /* line 297, ../scss/component/_add_request.scss */
   .region-add-request.minimized {
     height: calc(100% - 92px);
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 183, ../scss/component/_add_request.scss */
+  /* line 290, ../scss/component/_add_request.scss */
   .region-add-request {
     height: calc(100% - 200px);
   }
-  /* line 197, ../scss/component/_add_request.scss */
+  /* line 304, ../scss/component/_add_request.scss */
   .region-add-request.minimized {
     height: calc(100% - 85px);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 183, ../scss/component/_add_request.scss */
+  /* line 290, ../scss/component/_add_request.scss */
   .region-add-request {
     height: calc(100% - 170px);
   }
-  /* line 205, ../scss/component/_add_request.scss */
+  /* line 312, ../scss/component/_add_request.scss */
   .region-add-request.minimized {
     height: calc(100% - 75px);
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 183, ../scss/component/_add_request.scss */
+  /* line 290, ../scss/component/_add_request.scss */
   .region-add-request {
-    height: calc(100vh - 11vmax - 50px);
+    height: calc(100vh - 18vmax - 50px);
   }
-  /* line 214, ../scss/component/_add_request.scss */
+  /* line 321, ../scss/component/_add_request.scss */
   .region-add-request.minimized {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 50px - 50px);
   }
 }
 
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
-/* line 221, ../scss/component/_add_request.scss */
+/* line 328, ../scss/component/_add_request.scss */
 .region-add-request {
   z-index: 110;
   top: -2000px;
@@ -11696,74 +11902,79 @@ footer.footer .region.region-footer > section:last-child {
   -moz-transition: top 1s ease-out;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 221, ../scss/component/_add_request.scss */
+  /* line 328, ../scss/component/_add_request.scss */
   .region-add-request {
-    width: 100vw;
+    width: calc(100vw - 54px);
   }
 }
-/* line 227, ../scss/component/_add_request.scss */
+/* line 334, ../scss/component/_add_request.scss */
 .region-add-request.down {
   /*Первоначальное значение переменной*/
   /*В зависимости от брекета и статуса минимайзда задается вертикальный отступ*/
 }
 @media screen and (min-width: 1200px) {
-  /* line 227, ../scss/component/_add_request.scss */
+  /* line 334, ../scss/component/_add_request.scss */
   .region-add-request.down {
     top: 239px;
   }
-  /* line 234, ../scss/component/_add_request.scss */
+  /* line 341, ../scss/component/_add_request.scss */
   .region-add-request.down.minimized {
     top: 92px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 227, ../scss/component/_add_request.scss */
+  /* line 334, ../scss/component/_add_request.scss */
   .region-add-request.down {
-    top: 200px;
+    top: 190px;
   }
-  /* line 242, ../scss/component/_add_request.scss */
+  /* line 349, ../scss/component/_add_request.scss */
   .region-add-request.down.minimized {
     top: 85px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 227, ../scss/component/_add_request.scss */
+  /* line 334, ../scss/component/_add_request.scss */
   .region-add-request.down {
-    top: 170px;
+    top: 150px;
   }
-  /* line 250, ../scss/component/_add_request.scss */
+  /* line 357, ../scss/component/_add_request.scss */
   .region-add-request.down.minimized {
     top: 75px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 227, ../scss/component/_add_request.scss */
+  /* line 334, ../scss/component/_add_request.scss */
   .region-add-request.down {
-    top: 11vmax;
+    top: 18vmax;
   }
-  /* line 258, ../scss/component/_add_request.scss */
+  /* line 365, ../scss/component/_add_request.scss */
   .region-add-request.down.minimized {
     top: 50px;
   }
 }
-/* line 270, ../scss/component/_add_request.scss */
+/* line 377, ../scss/component/_add_request.scss */
 .region-add-request label {
   font-size: 20px;
   text-transform: uppercase;
 }
-/* line 274, ../scss/component/_add_request.scss */
+/* line 381, ../scss/component/_add_request.scss */
 .region-add-request span.block-title {
   font-size: 20px;
 }
-/* line 277, ../scss/component/_add_request.scss */
+/* line 384, ../scss/component/_add_request.scss */
 .region-add-request input {
   font-size: 20px;
 }
-/* line 280, ../scss/component/_add_request.scss */
+/* line 387, ../scss/component/_add_request.scss */
 .region-add-request #edit-submit--3 {
-  width: 265px;
   font-size: 20px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 387, ../scss/component/_add_request.scss */
+  .region-add-request #edit-submit--3 {
+    font-size: 14px;
+  }
 }
 
 /* line 2, ../scss/component/_masla.scss */
@@ -11893,7 +12104,7 @@ article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, art
   align-items: inherit;
   flex-wrap: wrap;
   border: 1px solid #17460F;
-  width: 600px;
+  width: 540px;
   padding: 5px;
 }
 /* line 89, ../scss/component/_masla.scss */
@@ -11935,7 +12146,7 @@ article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, art
 /* line 99, ../scss/component/_masla.scss */
 .order-btn {
   position: absolute;
-  top: 10%;
+  top: 13%;
   right: 0%;
   width: 20%;
   background: #FBBA00;
@@ -11947,19 +12158,26 @@ article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, art
   text-align: center;
   border-radius: 10px;
 }
-/* line 112, ../scss/component/_masla.scss */
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 99, ../scss/component/_masla.scss */
+  .order-btn {
+    top: 36vmax;
+    font-size: 30px;
+  }
+}
+/* line 116, ../scss/component/_masla.scss */
 .order-btn:hover {
   cursor: pointer;
   box-shadow: 0 0 20px #FBBA00;
   color: #FFFFFF;
 }
 
-/* line 119, ../scss/component/_masla.scss */
+/* line 123, ../scss/component/_masla.scss */
 .mt-maslo-tds {
   /*Убираем базовую рамку вокруг ссылки на файл*/
   /**/
 }
-/* line 121, ../scss/component/_masla.scss */
+/* line 125, ../scss/component/_masla.scss */
 .mt-maslo-tds .file-link, .mt-maslo-tds .file-icon, .mt-maslo-tds .file-size, .mt-maslo-tds .file > span:last-child, .mt-maslo-tds .file > span:first-child {
   border-top: none;
   border-bottom: none;
@@ -11968,7 +12186,7 @@ article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, art
 }
 
 /*РАЗМЕТКА ОСНОВНОЙ ТАБЛИЦЫ ИНДУСТРИАЛЬНЫХ МАСЕЛ*/
-/* line 136, ../scss/component/_masla.scss */
+/* line 140, ../scss/component/_masla.scss */
 article.oil-plain .main-table {
   display: flex;
   flex-direction: row;
@@ -11978,20 +12196,20 @@ article.oil-plain .main-table {
   width: 415px;
   padding: 5px;
 }
-/* line 144, ../scss/component/_masla.scss */
+/* line 148, ../scss/component/_masla.scss */
 article.oil-plain .main-table > div {
   padding: 5px;
   width: 400px;
 }
-/* line 145, ../scss/component/_masla.scss */
+/* line 149, ../scss/component/_masla.scss */
 article.oil-plain .main-table > div:nth-child(1) {
   width: 200px;
 }
-/* line 146, ../scss/component/_masla.scss */
+/* line 150, ../scss/component/_masla.scss */
 article.oil-plain .main-table > div:nth-child(2) {
   width: 200px;
 }
-/* line 148, ../scss/component/_masla.scss */
+/* line 152, ../scss/component/_masla.scss */
 article.oil-plain .main-table .plain_text {
   width: 400px;
   text-align: center;
@@ -12145,30 +12363,69 @@ body .row {
 }
 /* line 127, ../scss/style.scss */
 body .region-highlighted {
+  z-index: 1;
   position: fixed;
   left: 40px;
   width: calc(100% - 40px);
   /*Ширина - расчет от максимума минус 40px*/
-  top: 189px;
 }
-/* line 132, ../scss/style.scss */
-body .region-highlighted.minimized {
-  top: 50px;
-}
-/* line 135, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 body .region-highlighted.active {
-  left: 300px;
-  width: calc(100% - 300px);
+  left: 232px;
+  width: calc(100% - 232px);
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 127, ../scss/style.scss */
+  body .region-highlighted {
+    top: 18vmax;
+  }
+  /* line 140, ../scss/style.scss */
+  body .region-highlighted.minimized {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 127, ../scss/style.scss */
+  body .region-highlighted {
+    height: 30px;
+    top: 120px;
+  }
+  /* line 147, ../scss/style.scss */
+  body .region-highlighted.minimized {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 127, ../scss/style.scss */
+  body .region-highlighted {
+    height: 40px;
+    top: 150px;
+  }
+  /* line 154, ../scss/style.scss */
+  body .region-highlighted.minimized {
+    top: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 127, ../scss/style.scss */
+  body .region-highlighted {
+    top: 189px;
+    height: 50px;
+  }
+  /* line 161, ../scss/style.scss */
+  body .region-highlighted.minimized {
+    top: 50px;
+  }
 }
 
-/* line 148, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 h1, h2, h3, h4, h5 {
   color: #000000;
 }
 
 /**/
 /*Стиль для запрета копирования*/
-/* line 155, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -12180,8 +12437,37 @@ h1, h2, h3, h4, h5 {
   /* Likely future */
 }
 
-/* line 162, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .breadcrumb {
-  height: 50px;
   padding: 14px 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 188, ../scss/style.scss */
+  .breadcrumb {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 188, ../scss/style.scss */
+  .breadcrumb {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 188, ../scss/style.scss */
+  .breadcrumb {
+    height: 50px;
+  }
+}
+
+/* line 196, ../scss/style.scss */
+.region-content {
+  padding-top: 50px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 196, ../scss/style.scss */
+  .region-content {
+    padding-top: 25vmax;
+    padding-left: 40px;
+  }
 }

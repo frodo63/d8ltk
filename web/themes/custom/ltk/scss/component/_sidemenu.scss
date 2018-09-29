@@ -3,6 +3,7 @@
   position: fixed;
   left: 0px;
   width: 40px;
+  z-index: 500;
 
 
   h2, a, .side-menu-burger--name {
@@ -24,7 +25,7 @@
     transition: all .2s ease-out;
 
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 42px;
 
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -85,7 +86,7 @@
     top: $htop;
     height: calc(100% - #{$htop});
     &.minimized{
-      $htop: 42px;
+      $htop: 50px;
       top: $htop;
       height: calc(100% - #{$htop});}
   }
@@ -94,7 +95,7 @@
     top: $htop;
     height: calc(100% - #{$htop});
     &.minimized{
-      $htop: 35px;
+      $htop: 50px;
       top: $htop;
       height: calc(100% - #{$htop});
     }
@@ -104,7 +105,17 @@
     top: $htop;
     height: calc(100% - #{$htop});
     &.minimized{
-      $htop: 25px;
+      $htop: 50px;
+      top: $htop;
+      height: calc(100% - #{$htop});
+    }
+  }
+  @media #{$mobile}{
+    $htop: 18vmax;
+    top: $htop;
+    height: calc(100% - #{$htop});
+    &.minimized{
+      $htop: 50px;
       top: $htop;
       height: calc(100% - #{$htop});
     }
@@ -118,6 +129,13 @@
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 10px;
+    /*Добавлено 24 сент 18*/
+    width: 192px;
+    background: white;
+    border-right: 1px solid black;
+    z-index: 500;
+    /**/
+
 
     //Изначально - скрыто слева экрана
     left: -255px;
@@ -129,9 +147,8 @@
     -moz-transition: left .5s ease-out;
     position: fixed;
     nav ul.nav {
-      /*display: none;*/
+      display: none;//Менюшки изначально закрыты
       max-height: 59vh;
-      width: 240px;
       overflow-y: overlay;
       li {
         a{
@@ -140,6 +157,10 @@
         }
       }
     }
+    //А главное меню изначально открыто
+    #block-ltk-main-menu ul.nav{
+      display: block;
+    }
     h2, a{
       cursor: pointer;
       color: $green;
@@ -147,8 +168,12 @@
 
     h2 {
       display: inline-block;
-      width: 200px;
+      width: 150px;
       font-size: 20px;
+    }
+    h2 span{
+      pointer-events: none;
+      color: $yellow;
     }
     a {
       font-size: 15px;

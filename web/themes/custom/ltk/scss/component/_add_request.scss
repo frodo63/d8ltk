@@ -3,11 +3,28 @@
   background: $yellow;
   color: $green;
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  padding:10px;
+  @media #{$wide}{
+    font-size: 20px;
+    padding:10px;
+    width: 285px;
+  }
+  @media #{$normal}{
+    font-size: 16px;
+    padding:8px;
+    width: 228px;
+  }
+  @media #{$tablet}{
+    font-size: 12px;
+    padding:6px;
+    width: 154px;
+  }
+  @media #{$mobile}{
+    font-size: 20px;
+    padding:10px;
+    width: 285px;
+  }
   position: fixed;
   right:0;
-  width: 285px;
 }
 .request-button{
   @media #{$mobile} {
@@ -22,7 +39,10 @@
 .request-button {
   position: fixed;
   text-transform: uppercase;
-  height: 50px;
+  @media #{$wide}{height: 50px;}
+  @media #{$normal}{height: 40px;}
+  @media #{$tablet}{height: 40px;}
+
   text-align: center;
   z-index: 100;
   &:hover{
@@ -36,9 +56,9 @@
     }
   }
 
-  & span.arr-down {animation: drag-down 10s ease-out infinite;} //Вечно, раз в 8 секунд, стрелка вниз 2 раза, если форма заявки не открыта
-  &:hover span.arr-up {animation: drag-up 10s ease-out 1;} //При наведении - 2 раза вверх
-  &:hover span.arr-down {animation: drag-down 10s ease-out 1;} //При наведении - 2 раза вниз
+  & span.arr-down {animation: drag-down 5s ease-out infinite;} //Вечно, раз в 8 секунд, стрелка вниз 2 раза, если форма заявки не открыта
+  &:hover span.arr-up {animation: drag-up 5s ease-out 1;} //При наведении - 2 раза вверх
+  &:hover span.arr-down {animation: drag-down 5s ease-out 1;} //При наведении - 2 раза вниз
   &:hover {animation-play-state: paused;} //При наведении - пауза во всех анимациях
 
   /*СТРЕЛОЧКИ В КНОПКЕ будут самодельные*/
@@ -46,7 +66,10 @@
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
     height: 2px;
-    width: 23px;
+    @media #{$wide}{width: 23px;}
+    @media #{$normal}{width: 18px;}
+    @media #{$tablet}{width: 13px;}
+    @media #{$mobile}{width: 23px;}
     background: $green;
     @media #{$mobile}{
       background: $white;
@@ -55,11 +78,30 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 25px;
-    &:nth-child(1){left:0px}
-    &:nth-child(2){left:16px}
-    &:nth-child(4){right:16px}
-    &:nth-child(5){right:0px}
+    @media #{$wide}{top: 25px;}
+    @media #{$normal}{top: 20px;}
+    @media #{$tablet}{top: 15px;}
+    @media #{$mobile}{top: 25px;}
+    &:nth-child(1){
+      @media #{$wide}{left:0px;}
+      @media #{$normal}{left:4px;}
+      @media #{$tablet}{left:8px;}
+      @media #{$mobile}{left:4px;}
+    }
+    &:nth-child(2){
+      left:16px;
+      @media #{$mobile}{left:19px;}
+    }
+    &:nth-child(4){
+      right:16px;
+      @media #{$mobile}{right:23px;}
+    }
+    &:nth-child(5){
+      @media #{$wide}{right:1px;}
+      @media #{$normal}{right:4px;}
+      @media #{$tablet}{right:8px;}
+      @media #{$mobile}{right:8px;}
+    }
 
     &.arr-up {
       &:nth-child(1) {
@@ -122,22 +164,85 @@
       }
     }
   }
-  @keyframes drag-up {
-    0%{top: 25px}
-    5%{top: 8px}
-    10%{top: 25px}
-    15%{top: 8px}
-    20%{top: 25px}
-    100%{}
+
+  @media #{$wide}{
+    $hpos: 25px;
+    @keyframes drag-up {
+      0%{top: calc(#{$hpos} - 13px)}
+      20%{top: $hpos}
+      40%{top: calc(#{$hpos} - 13px)}
+      60%{top: $hpos}
+      80%{top: calc(#{$hpos} - 13px)}
+      100%{top: $hpos}
+    }
+    @keyframes drag-down {
+      0%{top: calc(#{$hpos} - 5px)}
+      20%{top: calc(#{$hpos} + 8px)}
+      40%{top: calc(#{$hpos} - 5px)}
+      60%{top: calc(#{$hpos} + 8px)}
+      80%{top: calc(#{$hpos} - 5px)}
+      100%{top: $hpos}
+    }
   }
-  @keyframes drag-down {
-    0%{top: 20px}
-    5%{top: 33px}
-    10%{top: 20px}
-    15%{top: 33px}
-    20%{top: 25px}
-    100%{}
+  @media #{$normal}{
+    $hpos: 20px;
+    @keyframes drag-up {
+      0%{top: calc(#{$hpos} - 13px)}
+      20%{top: $hpos}
+      40%{top: calc(#{$hpos} - 13px)}
+      60%{top: $hpos}
+      80%{top: calc(#{$hpos} - 13px)}
+      100%{top: $hpos}
+    }
+    @keyframes drag-down {
+      0%{top: calc(#{$hpos} - 5px)}
+      20%{top: calc(#{$hpos} + 8px)}
+      40%{top: calc(#{$hpos} - 5px)}
+      60%{top: calc(#{$hpos} + 8px)}
+      80%{top: calc(#{$hpos} - 5px)}
+      100%{top: $hpos}
+    }
   }
+  @media #{$tablet}{
+    $hpos: 15px;
+    @keyframes drag-up {
+      0%{top: calc(#{$hpos} - 13px)}
+      20%{top: $hpos}
+      40%{top: calc(#{$hpos} - 13px)}
+      60%{top: $hpos}
+      80%{top: calc(#{$hpos} - 13px)}
+      100%{top: $hpos}
+    }
+    @keyframes drag-down {
+      0%{top: calc(#{$hpos} - 5px)}
+      20%{top: calc(#{$hpos} + 8px)}
+      40%{top: calc(#{$hpos} - 5px)}
+      60%{top: calc(#{$hpos} + 8px)}
+      80%{top: calc(#{$hpos} - 5px)}
+      100%{top: $hpos}
+    }
+  }
+  @media #{$mobile}{
+    $hpos: 25px;
+    @keyframes drag-up {
+      0%{top: calc(#{$hpos} - 13px)}
+      20%{top: $hpos}
+      40%{top: calc(#{$hpos} - 13px)}
+      60%{top: $hpos}
+      80%{top: calc(#{$hpos} - 13px)}
+      100%{top: $hpos}
+    }
+    @keyframes drag-down {
+      0%{top: calc(#{$hpos} - 5px)}
+      20%{top: calc(#{$hpos} + 8px)}
+      40%{top: calc(#{$hpos} - 5px)}
+      60%{top: calc(#{$hpos} + 8px)}
+      80%{top: calc(#{$hpos} - 5px)}
+      100%{top: $hpos}
+    }
+  }
+
+
 
   /*ЗАКОНЧИЛИСЬ СТРЕЛОЧКИ*/
   
@@ -173,8 +278,10 @@
     }
   }
   @media #{$mobile}{
-    width: 100vw;
+    width: calc(100% - 40px);
     bottom: 0px;
+    height: 50px;
+    right: 0px;
   }
 }
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
@@ -208,12 +315,12 @@
     }
   }
   @media #{$mobile}{
-    $htop: 11vmax;
+    $htop: 18vmax;
     //height: calc(100% - #{$htop});
     height: calc(100vh - #{$htop} - 50px);
     &.minimized {
       $htop: 50px;
-      height: calc(100vh - #{$htop});
+      height: calc(100vh - #{$htop} - 50px);
     }
   }
 }
@@ -222,7 +329,7 @@
   z-index: 110;
   top:-2000px;
   @media #{$mobile}{
-    width: 100vw;
+    width: calc(100vw - 54px);
   }
   &.down{
     /*Первоначальное значение переменной*/
@@ -237,7 +344,7 @@
       }
     }
     @media #{$normal}{
-      $htop: 200px;
+      $htop: 190px;
       top: $htop;
       &.minimized {
         $htop: 85px;
@@ -245,7 +352,7 @@
       }
     }
     @media #{$tablet}{
-      $htop: 170px;
+      $htop: 150px;
       top: $htop;
       &.minimized {
         $htop: 75px;
@@ -253,7 +360,7 @@
       }
     }
     @media #{$mobile}{
-      $htop: 11vmax;
+      $htop: 18vmax;
       top: $htop;
       &.minimized {
         $htop: 50px;
@@ -278,7 +385,9 @@
     font-size: 20px;
   }
   #edit-submit--3 {
-    width: 265px;
+    @media #{$tablet}{
+      font-size: 14px;
+    }
     font-size: 20px;
     text-transform: uppercase;
   }

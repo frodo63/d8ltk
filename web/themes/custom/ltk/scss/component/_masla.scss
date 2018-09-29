@@ -84,7 +84,7 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
   align-items: inherit;
   flex-wrap: wrap;
   border:1px solid $green;
-  width:600px;
+  width:540px;
   padding:5px;
   &>div { padding:5px; width:inherit; display: inherit; vertical-align: middle}
   &>div:nth-child(odd) { background: lightgrey}
@@ -98,7 +98,7 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
 
 .order-btn {
   position: absolute;
-  top: 10%;
+  top: 13%;
   right: 0%;
   width: 20%;
   background: $yellow;
@@ -109,6 +109,10 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
   vertical-align: middle;
   text-align: center;
   border-radius: 10px;
+  @media #{$mobile}{
+  top: 36vmax;
+  font-size: 30px;
+}
   &:hover{
     cursor: pointer;
     box-shadow: 0 0 20px $yellow;

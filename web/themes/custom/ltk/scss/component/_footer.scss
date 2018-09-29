@@ -7,24 +7,36 @@ footer.footer {
   font-weight: 400;
   width: calc(100% - 40px);
   margin-left: 40px;
-  background: #555;
-  color: $yellow;
+  background: $yellow;
+  color: $green;
   a, a:hover, a:visited{
-    color: $yellow;
+    color: $green;
   }
   #block-shortfaq .panel-heading, #block-shortfaq .panel-body, #block-shortfaq .panel-default {
-    background-color: $black;
+    background-color: $yellow;
     border-top:none;
     border:none;
   }
   #block-shortfaq .panel-body, #block-shortfaq .panel-body a  {
-    color: $white;
+    color: $green;
   }
 
   .region.region-footer>nav, .region.region-footer>section{
     width: 25%;
     float: left;
     text-align: center;
+  }
+  #block-ltk-footer{
+    li a{
+      border-radius: 10px;
+    }
+  }
+  #block-shortfaq{
+    width: 50%;
+    .panel-body{
+      background: $white;
+      border-radius: 10px;
+    }
   }
   .region.region-footer>nav{
     text-transform: uppercase;
