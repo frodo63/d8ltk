@@ -1,4 +1,4 @@
-@media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
+//@media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
   div[class*='cfp-'] {
     height: 100%;
     /*Высота внутренних дивов в cfp-шках прописывается в самих cfp-шках*/
@@ -12,9 +12,19 @@
     /*ЗАДАЕМ РАЗМЕРЫ ШРИФТА ДЛЯ ВСЕГО В ОДНОСМ МЕСТЕ*/
     p.cfp_title {font-size:50px;}
     .cfp-topline, span.special {font-size: 35px}
-    p, span, .cfp-2 li, div[class*='cfp2'] li {font-size:25px;}
+    p, span, .cfp-2 li, div[class*='cfp2'] li {
+      font-size:25px;
+      @media #{$tablet}{
+        font-size:20px;
+      }
+    }
     #myTab a, #myTabContent p {font-size:20px;}
-    .cfp5-column {font-size: 18px}
+    .cfp5-column {
+      font-size: 18px;
+      @media #{$tablet}{
+        font-size: 17px;
+      }
+    }
     /**/
 
     &:last-child{
@@ -30,7 +40,7 @@
     color: #000000;
     text-align: center;
   }
-}
+//}
 
   //Paragraph 1
   .cfp-1 {
@@ -246,6 +256,10 @@
         top: 30%;
         left: 30%;
         width: 60%;
+        @media #{$tablet}{
+          left: 50%;
+          width: 50%;
+        }
         p{
           text-align: justify;
         }
