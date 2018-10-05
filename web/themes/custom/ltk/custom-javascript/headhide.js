@@ -67,6 +67,16 @@ Drupal.behaviors.basic = {
               $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
             };
           });
+
+            $('.order-btn').off('click.orderbtn').on('click.orderbtn', function(){
+                $('.request-button span').toggleClass('arr-up arr-down');
+                $('.region-add-request').toggleClass('down');
+                if($('.region-add-request').hasClass('down')){
+                    $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
+                }else{
+                    $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
+                };
+            });
           /*Анимация стрелочек на кнопке вызова формы выше*/
 
 

@@ -1,51 +1,51 @@
 article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.oil-reductor, article.oil-plain, article.oil-transmission {
   .content{
-    display:flex;
-    flex-flow: column;
+    //display:flex;
+    //flex-flow: column;
     font-family: Oswald, sans-serif;
     h1{
       font-size: 60px;
+      max-width: 78%;
     }
     font-size: 20px;
-    .order-btn {
-      align-self: flex-end;
-    }
     &>div {
       margin: 10px 0 10px 0;
     }
   }
 }
 
-.main-table {
+.main-table,.pack-tds-table,.text-description,.chars-table {
   display: flex;
-  flex-direction: row;
-  align-items: inherit;
   flex-wrap: wrap;
+  align-content: stretch;
+
+  padding:15px;
+  &>div{padding:15px;}
+  min-height: 31vmax;
+}
+
+.pack-tds-table,.text-description {
+  @media #{$wide},#{$normal},#{$tablet} {
+    border-left: none;
+  }
+}
+
+.main-table {
   border:1px solid $green;
-  width:415px;
-  padding:5px;
-  &>div { padding:5px; width:200px;}
-  &>div:nth-child(4) { width:200px;}
-  &>div:nth-child(5) { width:200px;}
-  &>div:nth-child(6) { width:400px;}
-/*Borders*/
-  /*&>div { border-left:1px solid $green; padding:5px; }
-  &>div:first-child { border-left:none }
-  &>div:last-child { border-right:1px solid $green }*/
-/*Borders end*/
+  &>div { width:50%;}
+  &>div:nth-child(2) { text-align: center}
+  &>div:nth-child(6) { width:100%;}
   .plain_text{
-    width:400px;
+    width:100%;
     text-align: center;
     background: lightgreen;
   }
-
   .mt-maslo-api {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: space-evenly;
     span:nth-child(1){width:400px}
   }
-
   .mt-hydr-maslo-iso, .mt-hydr-maslo-din,/*гидравлика*/
   .mt-compr-maslo-din, .mt-compr-maslo-iso,/*компрессорные*/
   .mt-maslo-acea, .mt-maslo-api, .mt-maslo-sae,/*моторные*/
@@ -66,27 +66,8 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
     }
   }
 }
-
-.pack-tds-table {
-  display: flex;
-  flex-direction: row;
-  align-items: inherit;
-  flex-wrap: wrap;
-  border:1px solid $green;
-  width:410px;
-  padding:5px;
-  &>div { padding:5px; width: 390px}
-}
-
 .chars-table {
-  display: flex;
-  flex-direction: row;
-  align-items: inherit;
-  flex-wrap: wrap;
-  border:1px solid $green;
-  width:540px;
-  padding:5px;
-  &>div { padding:5px; width:inherit; display: inherit; vertical-align: middle}
+  &>div {padding:5px; width:100%; display: inherit; vertical-align: middle}
   &>div:nth-child(odd) { background: lightgrey}
   &>div:nth-child(even) { background: lightgreen}
   &>div:first-child { border-bottom: 1px solid $green; background: none}
@@ -98,8 +79,8 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
 
 .order-btn {
   position: absolute;
-  top: 13%;
-  right: 0%;
+  top: 40px;
+  right: 15px;
   width: 20%;
   background: $yellow;
   color: $green;
@@ -110,16 +91,18 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
   text-align: center;
   border-radius: 10px;
   @media #{$mobile}{
-  top: 36vmax;
+  top: 24vmax;
   font-size: 30px;
-}
+  }
+  @media #{$tablet}{
+    font-size: 30px;
+  }
   &:hover{
     cursor: pointer;
     box-shadow: 0 0 20px $yellow;
     color: $white;
   }
 }
-
 .mt-maslo-tds {
   /*Убираем базовую рамку вокруг ссылки на файл*/
   .file-link, .file-icon, .file-size, .file > span:last-child, .file > span:first-child {
@@ -143,14 +126,14 @@ article.oil-plain{
     align-items: inherit;
     flex-wrap: wrap;
     border:1px solid $green;
-    width:415px;
+    /*width:415px;*/
     padding:5px;
-    &>div { padding:5px; width:400px;}
-    &>div:nth-child(1) { width:200px;}
-    &>div:nth-child(2) { width:200px;}
+    &>div { padding:5px; /*width:400px*/;}
+    &>div:nth-child(1) { /*width:200px*/;}
+    &>div:nth-child(2) { /*width:200px*/;}
 
     .plain_text{
-      width:400px;
+      /*width:400px;*/
       text-align: center;
       background: lightgreen;
     }
@@ -161,3 +144,6 @@ article.oil-plain{
 }
 
 //TODO: Создать аккаунты в FAcebook и Twitter  и обновить OPENGRAPH теги
+//TODO:Make all tpls like hydraulic.
+//TODO:Finish with metas.
+//TODO:Include all Bechem
