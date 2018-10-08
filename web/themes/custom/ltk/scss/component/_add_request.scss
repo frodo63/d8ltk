@@ -278,7 +278,7 @@
     }
   }
   @media #{$mobile}{
-    width: calc(100% - 40px);
+    width: 100vw;
     bottom: 0px;
     height: 50px;
     right: 0px;
@@ -315,12 +315,11 @@
     }
   }
   @media #{$mobile}{
-    $htop: 18vmax;
-    //height: calc(100% - #{$htop});
-    height: calc(100vh - #{$htop} - 50px);
+    $htop: 42vw;
+    height: calc(100% - #{$htop} - 50px);
     &.minimized {
-      $htop: 50px;
-      height: calc(100vh - #{$htop} - 50px);
+      $htop: 23vw;
+      height: calc(100% - #{$htop} - 50px);
     }
   }
 }
@@ -329,7 +328,7 @@
   z-index: 110;
   top:-2000px;
   @media #{$mobile}{
-    width: calc(100vw - 54px);
+    width: 100vw;
   }
   &.down{
     /*Первоначальное значение переменной*/
@@ -360,10 +359,10 @@
       }
     }
     @media #{$mobile}{
-      $htop: 18vmax;
+      $htop: 42vw;
       top: $htop;
       &.minimized {
-        $htop: 50px;
+        $htop: 23vw;
         top: $htop;
       }
     }

@@ -15,25 +15,25 @@ Drupal.behaviors.basic = {
 
             /*Первоначальное положение, до ресайза*/
             if ($('.device-mobile').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК S</p>');
+                $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК</h1>');
             } else if ($('.device-tablet').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК M</p>');
+                $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК M</h1>');
             } else if ($('.device-normal').is(":visible")) {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК L</p>');
+                $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК L</h1>');
             } else {
-                $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК XL</p>');
+                $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК XL</h1>');
             }
 
             /*Событие на рейсайз*/
             $(window).off('resize').on('resize', function () {
                 if ($('.device-mobile').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК S</p>');
+                    $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК</h1>');
                 } else if ($('.device-tablet').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК M</p>');
+                    $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК M</h1>');
                 } else if ($('.device-normal').is(":visible")) {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК L</p>');
+                    $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК L</h1>');
                 } else {
-                    $('#block-sitename div.field--name-body').html('<p>ЛУБРИТЭК XL</p>');
+                    $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК XL</h1>');
                 }
             });
 
@@ -114,19 +114,12 @@ Drupal.behaviors.basic = {
           $('.form-item label[for="edit-field-oil-visc-value-max"]').html("до:");
 
           /*Скролл-линки на главной*/
-          $('.menu.navbar-nav li a').off('click.scrlnk').on('click.scrlnk', function (event) {
-            event.preventDefault();
-            var anchor = $(event.target).attr('href').substr(1);
-            $('html, body').animate({scrollTop: $('#'+anchor).offset().top-100}, 1000);
-          })
+          //$('.menu.navbar-nav li a').off('click.scrlnk').on('click.scrlnk', function (event) {
+            /*event.preventDefault();*/
+          //  var anchor = $(event.target).attr('href').substr(1);
+           // $('html, body').animate({scrollTop: $('#'+anchor).offset().top-100}, 1000);
+          //})
           /**/
-
-            /*Перевод тултипа в поиске на русский*/
-            $('.input-group #edit-keys--2').off('mouseover').on('mouseover', function (event) {
-                //$(event.target).attr('data-original-title', 'Введите поисковый запрос');
-            });
-            $('.input-group #edit-keys--2').attr('placeholder', 'Поиск по сайту');
-
 
         })(jQuery);
     }

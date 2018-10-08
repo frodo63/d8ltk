@@ -37,31 +37,34 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 
 @import 'pages/pages';
 @import 'blocks/blocks';
-@import 'component/header';
 @import 'component/frontpage_paragraphs';
 @import 'component/sidemenu';
 @import 'component/product_filters';
 @import 'component/footer';
 @import 'component/var_pages';
 @import 'component/add_request';
-@import 'component/masla';
+@import 'component/header/header';
+@import 'component/header/header_mobile';
+@import 'component/header/header_tablet';
+@import 'component/header/header_normal';
+@import 'component/header/header_wide';
 
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media #{$mobile}{
-  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-tablet, .device-normal, .device-wide {display: none}
   .device-mobile {display: block}
 }
 @media #{$tablet}{
-  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-mobile, .device-normal, .device-wide {display: none}
   .device-tablet {display: block}
 }
 @media #{$normal}{
-  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-mobile, .device-tablet, .device-wide {display: none}
   .device-normal {display: block}
 }
 @media #{$wide}{
-  .device-mobile, .device-tablet, .device-normal, .device-wide {display: none}
+  .device-mobile, .device-tablet, .device-normal {display: none}
   .device-wide {display: block}
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
@@ -171,9 +174,9 @@ body {
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 
 }
-h1, h2, h3, h4, h5 {
+/*h1, h2, h3, h4, h5 {
   color: $black;
-}
+}*/
 
 /**/
 
@@ -196,9 +199,9 @@ h1, h2, h3, h4, h5 {
 .region-content {
   padding-top: 50px;
   @media #{$mobile}{
-  padding-top: 25vmax;
-  padding-left: 40px;
-}
+    padding-top: 25vmax;
+    padding-left: 40px;
+  }
 }
 
 

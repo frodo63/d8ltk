@@ -34,7 +34,6 @@
         "drupal/devel": "^1.2",
         "drupal/easy_breadcrumb": "^1.8",
         "drupal/entity_reference_revisions": "^1.5",
-        "drupal/hierarchical_taxonomy_menu": "^1.25",
         "drupal/honeypot": "^1.29",
         "drupal/menu_breadcrumb": "^1.6",
         "drupal/metatag": "^1.6",

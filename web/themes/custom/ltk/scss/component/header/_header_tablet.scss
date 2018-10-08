@@ -1,0 +1,152 @@
+.navbar {
+  @media #{$tablet}{//0,6 от wide
+    height: 120px;
+    #block-ltk-main-menu, #block-uppertext, #block-sitename, #block-siteslogan, #block-adres-2, #block-vremaraboty,
+    #block-telephones, #block-elpocta, .logo {
+      position: absolute;
+      font-family: 'Oswald', sans-serif;
+      color: $green;
+    }
+    #block-adres-2, #block-vremaraboty, #block-elpocta {img {height: 9px}}
+    .logo {
+      top: 0;
+      left: 15px;
+      img { height: 78px; }
+    }
+    #block-ltk-main-menu {
+      top: 5px;
+      left: 0;
+      width: 100%;
+      font-size: 15px;
+      line-height: 15px;
+      ul.navbar-nav {
+        text-align: center;
+        float: none !important;
+      }
+      li {
+        float: none !important;
+        display: inline-block !important;
+        a {
+          padding: 0 6px;
+          color: $green;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+    #block-uppertext {
+      bottom: 0;
+      left: 0;
+      font-weight: 200;
+      font-size: 9px;
+      width: 100vw;
+      text-align: center;
+    }
+    #block-sitename {
+      top: 24px;
+      left: 102px;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+    #block-siteslogan {
+      top: 66px;
+      left: 100px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 10px;
+    }
+    #block-vremaraboty, #block-adres-2, #block-elpocta {
+      right: 168px;
+      font-size: 10px;
+      line-height: 10px;
+    }
+    #block-vremaraboty {
+      top: 25px;
+    }
+    #block-adres-2 {
+      top: 40px;
+    }
+    #block-elpocta {
+      top: 55px;
+      a:visited, a:hover, a:active {
+        color: $green;
+      }
+    }
+    #block-telephones {
+      top: 10px;
+      right: 19px;
+      text-align: right;
+      font-size: 15px;
+      line-height: 15px;
+    }
+    #block-ltk-search {
+      position: absolute;
+      width: 159px;
+      top: 90px;
+      right: 6px;
+
+      #search-block-form {
+        bottom: -15px;
+        position: absolute;
+        width: 159px;
+      }
+
+      .form-search {
+        border: 1px solid white;
+      }
+      #edit-keys {
+        height: 20px;
+      }
+
+      .btn-primary {
+        color: #fff;
+        height: 20px;
+        background-color: $yellow;
+        border: 1px solid white;
+        font-size: 6px;
+        padding: 0 6px 0 6px;
+      }
+      .glyphicon-search {
+        line-height: 20px;
+        font-size: 10px;
+      }
+    }
+    &.minimized {
+      height: 50px;
+      #block-telephones {
+        top: 5px;
+        p.h {
+          display: none;
+        }
+      }
+      #block-elpocta {
+        top: 5px;
+        right: 280px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        img {
+          display: none;
+        }
+      }
+      .logo {
+        top: 5px;
+        margin: 0;
+        left: 5px;
+        img {
+          height: 30px;
+        }
+      }
+      #block-uppertext, #block-siteslogan, #block-adres-2, #block-vremaraboty, #block-ltk-search {
+        display: none;
+      }
+      #block-sitename {
+        top: 5px;
+        left: 84px;
+      }
+    }
+  }
+}
