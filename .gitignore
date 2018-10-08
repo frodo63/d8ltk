@@ -6,6 +6,7 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/themes/custom/ltk/.sass-cache/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
@@ -21,4 +22,5 @@
 /.idea/
 
 #Картинки
-#/web/sites/default/files/inline-images
+/web/sites/default/files/inline-images
+/web/themes/custom/ltk/images/
