@@ -1,0 +1,15 @@
+request.form:
+    path: '/add-request'
+    defaults:
+        _form: 'Drupal\request\Form\RequestForm'
+        _title: 'Подать заявку'
+    requirements:
+        _permission: 'access content'
+
+request.list:
+    path: '/admin/request-list'
+    defaults:
+        _controller: '\Drupal\request\Controller\RequestController::showdata'
+        _title: 'Отобразить все заявки'
+    requirements:
+        _role: 'administrator'

@@ -1,0 +1,30 @@
+<?php
+function custhtml_theme($existing, $type, $theme, $path) {
+  return [
+    'custom_front' => [
+      'variables' => ['test_var' => NULL],
+      'preprocess functions' => [ 'template_preprocess_custom_front', ]
+    ],
+    'custom_contacts' => [
+      'variables' => [],
+    ],
+    'custom_requisites' => [
+      'variables' => [],
+    ],
+    'custom_partners' => [
+      'variables' => [],
+    ],
+    'custom_logistics' => [
+      'variables' => [],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess().
+ * Dobavlyaet formu zayavki v shablon custom-front
+ */
+function template_preprocess_custom_front(&$variables){
+  $variables['requestform']=\Drupal::formBuilder()->getForm('Drupal\request\Form\RequestForm');
+  return $variables;
+}

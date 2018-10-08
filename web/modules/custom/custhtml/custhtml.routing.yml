@@ -1,0 +1,23 @@
+custhtml.front:
+    path: '/home'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givefrontcontent'
+        _title: 'Главная'
+    requirements:
+        _permission: 'access content'
+
+custhtml.contacts:
+    path: '/contacts'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givecontacts'
+        _title: 'Контакты'
+    requirements:
+        _permission: 'access content'
+
+custhtml.requisites:
+    path: '/requisites'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::giverequisites'
+        _title: 'Реквизиты'
+    requirements:
+        _permission: 'access content'

@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the request module.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Creates some default entries on this module custom table.
+ *
+ * @see hook_install()
+ *
+ * @ingroup request
+ */
+
+function request_install() {
+  // Add a default entry.
+  $connection = \Drupal::database();
+  $result = $connection->insert('request')
+    ->fields([
+      'name' => 'Сергей',
+      'contact' => '8-8482-957-34-21',
+      'reqtext' => 'Нужно 20 лмтров Масла Мобил Вактра №2',
+    ])
+    ->execute();
+
+
+
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup dbtng_example
+ */
+
+function request_schema() {
+  $schema['request'] = [
+    'description' => 'Stores user-created requests.',
+    'fields' => [
+      'requestid' => [
+        'type' => 'serial',
+        'size' => 'small',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique request ID.',
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 20,
+        'not null' => TRUE,
+        'description' => 'Name of the person.',
+      ],
+      'contact' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Contact.',
+      ],
+      'reqtext' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Request text.',
+      ],
+
+    ],
+    'primary key' => ['requestid'],
+    'indexes' => [
+      'requestid' => ['requestid'],
+      'name' => ['name'],
+      'contact' => ['contact'],
+    ],
+  ];
+
+  return $schema;
+}

@@ -1,0 +1,5 @@
+name: Request
+type: module
+description: Request block and schema config
+package: Custom HTML
+core: 8.x
