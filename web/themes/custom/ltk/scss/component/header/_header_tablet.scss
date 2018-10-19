@@ -46,7 +46,7 @@
     #block-sitename {
       top: 24px;
       left: 102px;
-      font-weight: 400;
+      h1{font-weight: 400}
       font-size: 21px;
       line-height: 21px;
       text-transform: uppercase;
@@ -118,9 +118,8 @@
       height: 50px;
       #block-telephones {
         top: 5px;
-        p.h {
-          display: none;
-        }
+        p:nth-child(1){display: none}
+        p:nth-child(3){display: none}
       }
       #block-elpocta {
         top: 5px;

@@ -8,14 +8,32 @@
     margin: 0 0 2vh 0;
     border-bottom: 2px $yellow solid;
     background-repeat: no-repeat;
+    &, & *{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
 
     /*ЗАДАЕМ РАЗМЕРЫ ШРИФТА ДЛЯ ВСЕГО В ОДНОСМ МЕСТЕ*/
-    p.cfp_title {font-size:50px;}
-    .cfp-topline, span.special {font-size: 35px}
+    p.cfp_title {
+      font-size:50px;
+      @media #{$mobile}{
+        font-size: 12vw;
+      }
+
+    }
+    .cfp-topline, span.special {
+      font-size: 35px;
+      @media #{$mobile}{
+        font-size: 7vw;
+      }
+    }
     p, span, .cfp-2 li, div[class*='cfp2'] li {
       font-size:25px;
       @media #{$tablet}{
         font-size:20px;
+      }
+      @media #{$mobile}{
+        font-size: 6vw;
       }
     }
     #myTab a, #myTabContent p {font-size:20px;}
@@ -24,13 +42,21 @@
       @media #{$tablet}{
         font-size: 17px;
       }
+      @media #{$mobile}{
+        font-size: 5vw;
+      }
     }
     /**/
-
     &:last-child{
       margin-bottom: 0;
       border-bottom: none;
     }
+    @media #{$mobile}{
+      display: none;
+      &:nth-child(1), &:nth-child(4){
+        display: block;
+      }
+    }    
   }
   .fix {
     background: lightpink;
@@ -161,8 +187,8 @@
   }
   //Paragraph 5
   #work_scheme.cfp-5 {
-    height: 70vh;
-    .col-lg-2{
+    /*height: 70vh;
+    .col-lg-2, col-md-2, col-sm-2{
       padding: 0;
       height: inherit;
       .cfp5-wrapper{
@@ -182,6 +208,15 @@
       p.cfp5-title{
         position: absolute;
         top:5%;
+        @media #{$mobile} {
+          writing-mode: vertical-lr;
+          text-orientation: mixed;
+          display: block;
+          height: inherit;
+          width: unset;
+          margin: 0;
+          top: 0;
+        }
       }
       p.cfp5-column{
         span {
@@ -194,7 +229,8 @@
         position: absolute;
         top:30%;
       }
-    }
+    }*/
+
   }
   //Paragraph 6
   //Paragraph 7

@@ -1,11 +1,12 @@
 .navbar {
   @media #{$mobile}{
 /**/
-    height: 42vw;
+    height: 30vw;
     /*На мобильном скрыты:*/
     #block-uppertext,
     #block-vremaraboty,
-    #block-siteslogan {
+    #block-siteslogan,
+    #block-adres-2{
       display: none;
     }
     /*На минимайзде дополнительно скрываются:*/
@@ -56,6 +57,7 @@
       @media (orientation: portrait) {
         top: 6vw;
         left: 23vw;
+        width: 54vw;
         h1{
           margin: 0;
           padding: 0;
@@ -145,8 +147,9 @@
 
     }
     #block-elpocta {
+      p img {display: none}
       @media (orientation: portrait) {
-        top: 28vw;
+        top: 22vw;
         right: 3vw;
         font-size: 5vw;
         line-height: 6vw;
@@ -157,9 +160,9 @@
       &.minimized {}
     }
     #block-telephones {
+      p:nth-child(1){display: none}
+      p:nth-child(3){display: none}
       &.minimized{
-        p:nth-child(3){display: none}
-        p:nth-child(3){display: none}
       }
 
       @media (orientation: portrait) {
@@ -188,6 +191,7 @@
 
     }
     #block-adres-2 {
+      display: none;
 
       @media (orientation: portrait) {}
       @media (orientation: landscape) {}

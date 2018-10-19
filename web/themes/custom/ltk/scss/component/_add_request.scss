@@ -315,7 +315,7 @@
     }
   }
   @media #{$mobile}{
-    $htop: 42vw;
+    $htop: 30vw;
     height: calc(100% - #{$htop} - 50px);
     &.minimized {
       $htop: 23vw;
@@ -359,7 +359,7 @@
       }
     }
     @media #{$mobile}{
-      $htop: 42vw;
+      $htop: 30vw;
       top: $htop;
       &.minimized {
         $htop: 23vw;

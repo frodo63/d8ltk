@@ -20,6 +20,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/backup_migrate": "^4.0",
         "drupal/better_exposed_filters": "3.0.0-alpha4",
         "drupal/bootstrap": "3.12.0",
         "drupal/bootstrap_barrio": "4.15.0",

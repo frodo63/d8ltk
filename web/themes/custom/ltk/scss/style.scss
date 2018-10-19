@@ -199,8 +199,7 @@ body {
 .region-content {
   padding-top: 50px;
   @media #{$mobile}{
-    padding-top: 25vmax;
-    padding-left: 40px;
+    padding-top: 30vw;
   }
 }
 
