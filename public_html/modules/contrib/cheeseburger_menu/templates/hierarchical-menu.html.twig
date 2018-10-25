@@ -1,0 +1,80 @@
+{% macro searchChild(subitems, route_id, page_type, current_url, active) %}
+    {% import _self as macros3 %}
+    {% if subitems|length > 0 %}
+        <ul>
+            {% for item in subitems %}
+                {% if active is not empty %}
+                    {% if (item.id == active.id)  and (item.url == active.url) and (item.type == active.type) %}
+                        {% set activeClass = 'active' %}
+                    {% else %}
+                        {% set activeClass = '' %}
+                    {% endif %}
+                {% else %}
+                    {% set activeClass = '' %}
+                {% endif %}
+                {% if item.subitem|length > 0 %}
+                <li class="cheeseburger-menu__menu-list-item cheeseburger-menu__menu-list-item--child cheeseburger-menu__menu-list-item--expanded {{ activeClass }}">
+                {% else %}
+                    <li class="cheeseburger-menu__menu-list-item cheeseburger-menu__menu-list-item--child {{ activeClass }}">
+                {% endif %}
+
+                {% if item.icon %}
+                    <img src="{{ item.icon }}" class="cheeseburger-menu__menu-list-item-image">
+                {% endif %}
+                <a href="{{ item.url }}"
+                   class="cheeseburger-menu__menu-list-item-link {{ activeClass }}">{{ item.name }}</a>
+                {{ macros3.searchChild(item.subitem, route_id, page_type, current_url, active) }}
+                </li>
+
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+{% macro render(menu_tree, route_id, page_type, current_url, active) %}
+    {% import _self as macros2 %}
+    {% for item in menu_tree %}
+        {% if active is not empty %}
+            {% if (item.id == active.id)  and (item.url == active.url) and (item.type == active.type) %}
+                {% set activeClass = 'active' %}
+            {% else %}
+                {% set activeClass = '' %}
+            {% endif %}
+        {% else %}
+            {% set activeClass = '' %}
+        {% endif %}
+        {% if item.subitem|length > 0 %}
+            <li class="cheeseburger-menu__menu-list-item cheeseburger-menu__menu-list-item--parent cheeseburger-menu__menu-list-item--expanded {{ activeClass }}">
+                {% if item.icon %}
+                    <img src="{{ item.icon }}" class="menu-item-image">
+                {% endif %}
+                <span class="cheeseburger-menu__menu-list-item-link cheeseburger-menu__menu-list-item-link--span {{ activeClass }}">{{ item.name }}</span>
+                {{ macros2.searchChild(item.subitem, route_id, page_type, current_url, active) }}
+            </li>
+        {% else %}
+            <li class="cheeseburger-menu__menu-list-item {{ activeClass }}">
+                {% if item.icon %}
+                    <img src="{{ item.icon }}" class="menu-item-image">
+                {% endif %}
+                <a href="{{ item.url }}"
+                   class="cheeseburger-menu__menu-list-item-link {{ activeClass }}">{{ item.name }}</a>
+                {{ macros2.searchChild(item.subitem, route_id, page_type, current_url, active) }}
+            </li>
+        {% endif %}
+
+
+
+    {% endfor %}
+{% endmacro %}
+
+{% import _self as macros %}
+<div class="cheeseburger-menu__menu cheeseburger-menu__menu--{{ machine_name }}"
+     data-drupal-selector="cheeseburger-menu--{{ machine_name }}">
+    <span class="cheeseburger-menu__menu-list-trigger"></span>
+    {% if title != FALSE %}
+        <div class="cheeseburger-menu__menu-title">{{ title }}</div>
+    {% endif %}
+    <ul class="cheeseburger-menu__menu-list">
+        {{ macros.render(menu_tree, route_id, page_type, current_url, active) }}
+    </ul>
+</div>

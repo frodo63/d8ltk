@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GitSharedSettings">
+    <option name="FORCE_PUSH_PROHIBITED_PATTERNS">
+      <list>
+        <option value="newmaster" />
+      </list>
+    </option>
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/d8ltk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/paragraphs_accordion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/paragraphs_tabs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/security_review" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/modules/contrib/paragraphs_accordion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/modules/contrib/paragraphs_tabs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/modules/contrib/security_review" vcs="Git" />
   </component>
 </project>
