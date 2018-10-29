@@ -10694,6 +10694,218 @@ footer.footer .region.region-footer > section:last-child {
   clear: right;
 }
 
+/* line 2, ../scss/component/_masla.scss */
+article.oil-hydraulic .content, article.motornoe-maslo .content, article.oil-compressor .content, article.oil-reductor .content, article.oil-plain .content, article.oil-transmission .content {
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+}
+/* line 4, ../scss/component/_masla.scss */
+article.oil-hydraulic .content h1, article.motornoe-maslo .content h1, article.oil-compressor .content h1, article.oil-reductor .content h1, article.oil-plain .content h1, article.oil-transmission .content h1 {
+  font-size: 60px;
+  max-width: 78%;
+}
+/* line 9, ../scss/component/_masla.scss */
+article.oil-hydraulic .content > div, article.motornoe-maslo .content > div, article.oil-compressor .content > div, article.oil-reductor .content > div, article.oil-plain .content > div, article.oil-transmission .content > div {
+  margin: 10px 0 10px 0;
+}
+
+/* line 15, ../scss/component/_masla.scss */
+.main-table, .pack-tds-table, .text-description, .chars-table {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 15px;
+  min-height: 31vmax;
+}
+/* line 21, ../scss/component/_masla.scss */
+.main-table > div, .pack-tds-table > div, .text-description > div, .chars-table > div {
+  padding: 15px;
+}
+
+@media screen and (min-width: 1200px), screen and (min-width: 992px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 25, ../scss/component/_masla.scss */
+  .pack-tds-table, .text-description {
+    border-left: none;
+  }
+}
+
+/* line 31, ../scss/component/_masla.scss */
+.main-table {
+  border: 1px solid #17460F;
+}
+/* line 33, ../scss/component/_masla.scss */
+.main-table > div {
+  width: 50%;
+}
+/* line 34, ../scss/component/_masla.scss */
+.main-table > div:nth-child(2) {
+  text-align: center;
+}
+/* line 35, ../scss/component/_masla.scss */
+.main-table > div:nth-child(6) {
+  width: 100%;
+}
+/* line 36, ../scss/component/_masla.scss */
+.main-table .plain_text {
+  width: 100%;
+  text-align: center;
+  background: lightgreen;
+}
+/* line 45, ../scss/component/_masla.scss */
+.main-table .mt-maslo-api span:nth-child(1) {
+  width: 400px;
+}
+/* line 47, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso, .main-table .mt-hydr-maslo-din,
+.main-table .mt-compr-maslo-din, .main-table .mt-compr-maslo-iso,
+.main-table .mt-maslo-acea, .main-table .mt-maslo-api, .main-table .mt-maslo-sae,
+.main-table .mt-red-maslo-iso, .main-table .mt-red-maslo-din,
+.main-table .mt-plain-maslo-standart {
+  margin-top: 15px;
+  line-height: 35px;
+  text-align: center;
+}
+/* line 55, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.specifications, .main-table .mt-hydr-maslo-din span.specifications,
+.main-table .mt-compr-maslo-din span.specifications, .main-table .mt-compr-maslo-iso span.specifications,
+.main-table .mt-maslo-acea span.specifications, .main-table .mt-maslo-api span.specifications, .main-table .mt-maslo-sae span.specifications,
+.main-table .mt-red-maslo-iso span.specifications, .main-table .mt-red-maslo-din span.specifications,
+.main-table .mt-plain-maslo-standart span.specifications {
+  font-size: 35px;
+  font-weight: bold;
+}
+/* line 59, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.glyphicon-info-sign, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign,
+.main-table .mt-compr-maslo-din span.glyphicon-info-sign, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign,
+.main-table .mt-maslo-acea span.glyphicon-info-sign, .main-table .mt-maslo-api span.glyphicon-info-sign, .main-table .mt-maslo-sae span.glyphicon-info-sign,
+.main-table .mt-red-maslo-iso span.glyphicon-info-sign, .main-table .mt-red-maslo-din span.glyphicon-info-sign,
+.main-table .mt-plain-maslo-standart span.glyphicon-info-sign {
+  vertical-align: top;
+}
+/* line 61, ../scss/component/_masla.scss */
+.main-table .mt-hydr-maslo-iso span.glyphicon-info-sign:hover, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign:hover,
+.main-table .mt-compr-maslo-din span.glyphicon-info-sign:hover, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign:hover,
+.main-table .mt-maslo-acea span.glyphicon-info-sign:hover, .main-table .mt-maslo-api span.glyphicon-info-sign:hover, .main-table .mt-maslo-sae span.glyphicon-info-sign:hover,
+.main-table .mt-red-maslo-iso span.glyphicon-info-sign:hover, .main-table .mt-red-maslo-din span.glyphicon-info-sign:hover,
+.main-table .mt-plain-maslo-standart span.glyphicon-info-sign:hover {
+  cursor: pointer;
+}
+
+/* line 68, ../scss/component/_masla.scss */
+.chars-table > div {
+  padding: 5px;
+  width: 100%;
+  display: inherit;
+  vertical-align: middle;
+}
+/* line 69, ../scss/component/_masla.scss */
+.chars-table > div:nth-child(odd) {
+  background: lightgrey;
+}
+/* line 70, ../scss/component/_masla.scss */
+.chars-table > div:nth-child(even) {
+  background: lightgreen;
+}
+/* line 71, ../scss/component/_masla.scss */
+.chars-table > div:first-child {
+  border-bottom: 1px solid #17460F;
+  background: none;
+}
+/* line 73, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(1) {
+  width: 33%;
+  text-align: left;
+}
+/* line 74, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(2) {
+  width: 33%;
+  text-align: center;
+}
+/* line 75, ../scss/component/_masla.scss */
+.chars-table > div > div:nth-child(3) {
+  width: 66%;
+  text-align: right;
+}
+
+/* line 78, ../scss/component/_masla.scss */
+.order-btn {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  width: 20%;
+  background: #FBBA00;
+  color: #17460F;
+  font-family: Oswald;
+  font-size: 40px;
+  line-height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 10px;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  /* line 78, ../scss/component/_masla.scss */
+  .order-btn {
+    top: 24vmax;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 78, ../scss/component/_masla.scss */
+  .order-btn {
+    font-size: 30px;
+  }
+}
+/* line 98, ../scss/component/_masla.scss */
+.order-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #FBBA00;
+  color: #FFFFFF;
+}
+
+/* line 104, ../scss/component/_masla.scss */
+.mt-maslo-tds {
+  /*Убираем базовую рамку вокруг ссылки на файл*/
+  /**/
+}
+/* line 106, ../scss/component/_masla.scss */
+.mt-maslo-tds .file-link, .mt-maslo-tds .file-icon, .mt-maslo-tds .file-size, .mt-maslo-tds .file > span:last-child, .mt-maslo-tds .file > span:first-child {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+/*РАЗМЕТКА ОСНОВНОЙ ТАБЛИЦЫ ИНДУСТРИАЛЬНЫХ МАСЕЛ*/
+/* line 121, ../scss/component/_masla.scss */
+article.oil-plain .main-table {
+  display: flex;
+  flex-direction: row;
+  align-items: inherit;
+  flex-wrap: wrap;
+  border: 1px solid #17460F;
+  /*width:415px;*/
+  padding: 5px;
+}
+/* line 129, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div {
+  padding: 5px;
+  /*width:400px*/
+}
+/* line 130, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div:nth-child(1) {
+  /*width:200px*/
+}
+/* line 131, ../scss/component/_masla.scss */
+article.oil-plain .main-table > div:nth-child(2) {
+  /*width:200px*/
+}
+/* line 133, ../scss/component/_masla.scss */
+article.oil-plain .main-table .plain_text {
+  /*width:400px;*/
+  text-align: center;
+  background: lightgreen;
+}
+
 /* line 1, ../scss/component/_var_pages.scss */
 .main-container {
   min-height: 100vh;
@@ -12255,57 +12467,57 @@ footer.footer .region.region-footer > section:last-child {
 /*BREAKPOINT DETECTION SYSTEM*/
 /*jquery detects the visible element and sees the breakpoint*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 55, ../scss/style.scss */
+  /* line 56, ../scss/style.scss */
   .device-tablet, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 56, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   .device-mobile {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 59, ../scss/style.scss */
+  /* line 60, ../scss/style.scss */
   .device-mobile, .device-normal, .device-wide {
     display: none;
   }
 
-  /* line 60, ../scss/style.scss */
+  /* line 61, ../scss/style.scss */
   .device-tablet {
     display: block;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 63, ../scss/style.scss */
+  /* line 64, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-wide {
     display: none;
   }
 
-  /* line 64, ../scss/style.scss */
+  /* line 65, ../scss/style.scss */
   .device-normal {
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 67, ../scss/style.scss */
+  /* line 68, ../scss/style.scss */
   .device-mobile, .device-tablet, .device-normal {
     display: none;
   }
 
-  /* line 68, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   .device-wide {
     display: block;
   }
 }
 /*BREAKPOINT DETECTION SYSTEM END*/
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .main-container {
   position: relative;
   /*left: 40px;*/
 }
 
-/* line 77, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 body {
   background: #FFFFFF;
   color: #17460F;
@@ -12316,57 +12528,57 @@ body {
   /*ЗАКОНЧИЛИСЬ КРОШКИ*/
   /*ЗАКОНЧИЛАСЬ РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
 }
-/* line 82, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 body a {
   color: #17460F;
 }
-/* line 84, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 body a:hover {
   color: #17460F;
 }
-/* line 88, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 body .row {
   margin: 0;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 92, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body.body-minimized {
     margin-top: 0;
   }
-  /* line 95, ../scss/style.scss */
+  /* line 96, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 92, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body.body-minimized {
     margin-top: 40px;
   }
-  /* line 102, ../scss/style.scss */
+  /* line 103, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 92, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body.body-minimized {
     margin-top: 70px;
   }
-  /* line 109, ../scss/style.scss */
+  /* line 110, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 92, ../scss/style.scss */
+  /* line 93, ../scss/style.scss */
   body.body-minimized {
     margin-top: 100px;
   }
-  /* line 116, ../scss/style.scss */
+  /* line 117, ../scss/style.scss */
   body.body-minimized .region-highlighted {
     top: 50px;
     height: 35px;
@@ -12374,30 +12586,30 @@ body .row {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 77, ../scss/style.scss */
+  /* line 78, ../scss/style.scss */
   body {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 77, ../scss/style.scss */
+  /* line 78, ../scss/style.scss */
   body {
     margin-top: 120px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 77, ../scss/style.scss */
+  /* line 78, ../scss/style.scss */
   body {
     margin-top: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 77, ../scss/style.scss */
+  /* line 78, ../scss/style.scss */
   body {
     margin-top: 189px;
   }
 }
-/* line 130, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 body .region-highlighted {
   z-index: 1;
   position: fixed;
@@ -12405,50 +12617,50 @@ body .region-highlighted {
   width: calc(100% - 40px);
   /*Ширина - расчет от максимума минус 40px*/
 }
-/* line 136, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 body .region-highlighted.active {
   left: 232px;
   width: calc(100% - 232px);
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 130, ../scss/style.scss */
+  /* line 131, ../scss/style.scss */
   body .region-highlighted {
     top: 18vmax;
   }
-  /* line 143, ../scss/style.scss */
+  /* line 144, ../scss/style.scss */
   body .region-highlighted.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 130, ../scss/style.scss */
+  /* line 131, ../scss/style.scss */
   body .region-highlighted {
     height: 30px;
     top: 120px;
   }
-  /* line 150, ../scss/style.scss */
+  /* line 151, ../scss/style.scss */
   body .region-highlighted.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 130, ../scss/style.scss */
+  /* line 131, ../scss/style.scss */
   body .region-highlighted {
     height: 40px;
     top: 150px;
   }
-  /* line 157, ../scss/style.scss */
+  /* line 158, ../scss/style.scss */
   body .region-highlighted.minimized {
     top: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 130, ../scss/style.scss */
+  /* line 131, ../scss/style.scss */
   body .region-highlighted {
     top: 189px;
     height: 50px;
   }
-  /* line 164, ../scss/style.scss */
+  /* line 165, ../scss/style.scss */
   body .region-highlighted.minimized {
     top: 50px;
   }
@@ -12459,7 +12671,7 @@ body .region-highlighted.active {
 }*/
 /**/
 /*Стиль для запрета копирования*/
-/* line 184, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .no-copy {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -12471,35 +12683,35 @@ body .region-highlighted.active {
   /* Likely future */
 }
 
-/* line 191, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .breadcrumb {
   padding: 14px 15px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 191, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
   .breadcrumb {
     height: 40px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 191, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
   .breadcrumb {
     height: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 191, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
   .breadcrumb {
     height: 50px;
   }
 }
 
-/* line 199, ../scss/style.scss */
+/* line 200, ../scss/style.scss */
 .region-content {
   padding-top: 50px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 199, ../scss/style.scss */
+  /* line 200, ../scss/style.scss */
   .region-content {
     padding-top: 30vw;
   }
