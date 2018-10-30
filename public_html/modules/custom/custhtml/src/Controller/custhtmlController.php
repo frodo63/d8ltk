@@ -36,4 +36,18 @@ class custhtmlController extends ControllerBase {
       '#theme' => 'custom_front',
     ];
   }
+  public function givenotallowed() {
+      return [
+          '#theme' => 'custom_403',
+      ];
+  }
+  public function givenotfound() {
+      return [
+          '#theme' => 'custom_404',
+      ];
+  }
+
+
+
+
 }

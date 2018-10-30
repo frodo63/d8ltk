@@ -17,6 +17,12 @@ function custhtml_theme($existing, $type, $theme, $path) {
     'custom_logistics' => [
       'variables' => [],
     ],
+    'custom_403' => [
+        'variables' => [],
+    ],
+    'custom_404' => [
+        'variables' => [],
+    ],
   ];
 }
 

@@ -21,3 +21,19 @@ custhtml.requisites:
         _title: 'Реквизиты'
     requirements:
         _permission: 'access content'
+
+custhtml.403:
+    path: '/notallowed'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givenotallowed'
+        _title: 'Недостаточно доступа'
+    requirements:
+        _permission: 'access content'
+
+custhtml.404:
+    path: '/notfound'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givenotfound'
+        _title: 'Такой страницы нет'
+    requirements:
+        _permission: 'access content'
