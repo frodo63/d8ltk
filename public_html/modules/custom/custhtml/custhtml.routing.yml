@@ -22,18 +22,18 @@ custhtml.requisites:
     requirements:
         _permission: 'access content'
 
-custhtml.403:
+custhtml.notallowed:
     path: '/notallowed'
     defaults:
-        _controller: 'Drupal\custhtml\Controller\custhtmlController::givenotallowed'
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givefourothree'
         _title: 'Недостаточно доступа'
     requirements:
         _permission: 'access content'
 
-custhtml.404:
+custhtml.notfound:
     path: '/notfound'
     defaults:
-        _controller: 'Drupal\custhtml\Controller\custhtmlController::givenotfound'
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givefourofour'
         _title: 'Такой страницы нет'
     requirements:
         _permission: 'access content'

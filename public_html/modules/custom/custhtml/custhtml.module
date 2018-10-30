@@ -11,16 +11,10 @@ function custhtml_theme($existing, $type, $theme, $path) {
     'custom_requisites' => [
       'variables' => [],
     ],
-    'custom_partners' => [
-      'variables' => [],
-    ],
-    'custom_logistics' => [
-      'variables' => [],
-    ],
-    'custom_403' => [
+    'custom_fourothree' => [
         'variables' => [],
     ],
-    'custom_404' => [
+    'custom_fourofour' => [
         'variables' => [],
     ],
   ];
