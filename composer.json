@@ -31,6 +31,7 @@
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "drupal/devel": "^1.2",
         "drupal/entity_reference_revisions": "^1.5",
         "drupal/honeypot": "^1.29",
         "drupal/menu_breadcrumb": "^1.6",
@@ -45,7 +46,9 @@
         "drupal/security_review": "1.x-dev",
         "drupal/seo_checklist": "^4.0",
         "drupal/simple_sitemap": "^2.12",
+        "drupal/taxonomy_breadcrumb": "^1.0@alpha",
         "drupal/taxonomy_menu": "^3.3",
+        "drupal/twig_vardumper": "^1.1",
         "drush/drush": "^9.5",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

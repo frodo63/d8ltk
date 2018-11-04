@@ -731,6 +731,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
   $settings['trusted_host_patterns'] = array(
     '^127\.0\.0\.1$',
+    '^lubritek\.beget\.tech$',
  );
 
 
@@ -772,9 +773,9 @@ $settings['entity_update_batch_size'] = 50;
 #
 
 $config_directories['sync'] = '../config/sync';$databases['default']['default'] = array (
-  'database' => 'd8ltk-test1',
-  'username' => 'root',
-  'password' => 'tr776bBe',
+  'database' => 'lubritek_d8ltk',
+  'username' => 'lubritek_d8ltk',
+  'password' => 'Pr5VYT&t',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
