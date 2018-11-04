@@ -773,9 +773,9 @@ $settings['entity_update_batch_size'] = 50;
 #
 
 $config_directories['sync'] = '../config/sync';$databases['default']['default'] = array (
-  'database' => 'lubritek_d8ltk',
-  'username' => 'lubritek_d8ltk',
-  'password' => 'Pr5VYT&t',
+  'database' => 'd8ltk-test1',
+  'username' => 'root',
+  'password' => 'tr776bBe',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

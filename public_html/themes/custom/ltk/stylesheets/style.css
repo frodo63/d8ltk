@@ -11608,18 +11608,19 @@ article.oil-plain .main-table .plain_text {
   transition: height 0.2s;
   border-radius: 0px;
   margin-bottom: 0;
+  border-bottom: 5px solid #17460F;
 }
-/* line 16, ../scss/component/header/_header.scss */
+/* line 17, ../scss/component/header/_header.scss */
 .navbar .btn-primary {
   background-color: #FBBA00;
   border-color: #FBBA00;
   font-size: 5vh;
 }
-/* line 21, ../scss/component/header/_header.scss */
+/* line 22, ../scss/component/header/_header.scss */
 .navbar .logo, .navbar #block-uppertext {
   z-index: 100;
 }
-/* line 24, ../scss/component/header/_header.scss */
+/* line 25, ../scss/component/header/_header.scss */
 .navbar h1 {
   margin: 0;
   padding: 0;
