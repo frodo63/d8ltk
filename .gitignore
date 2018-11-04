@@ -9,8 +9,9 @@
 /public_html/themes/custom/ltk/.sass-cache/
 
 # Ignore sensitive information
-/public_html/sites/*/settings.php
-/public_html/sites/*/settings.local.php
+/public_html/robots.txt
+/public_html/sites/default/settings.php
+/public_html/sites/default/settings.local.php
 
 # Ignore Drupal's file directory
 /public_html/sites/default/files/
