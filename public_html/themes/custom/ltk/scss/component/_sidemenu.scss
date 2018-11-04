@@ -212,22 +212,23 @@
       overflow-y: overlay;
       li {
         a{
-          padding:2px 0px 5px 10px;
+          padding:5px;
           &:hover{background: $yellow;}
         }
       }
     }
     //А главное меню изначально открыто
-    #block-ltk-main-menu ul.nav{
+    #block-ltk-main-menu ul.nav, #block-tipmasla ul.nav{
       display: block;
     }
     h2, a{
       cursor: pointer;
       color: $green;
+      width: 150px;
     }
     h2 {
       display: inline-block;
-      width: 150px;
+
       font-size: 20px;
       @media #{$mobile}{
         font-size: 5vw;

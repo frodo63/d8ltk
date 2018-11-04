@@ -157,7 +157,6 @@ accordion_active ? 'paragraph--accordion_active--',
   {% endif %}
   <div{{ attributes.addClass(classes).setAttribute('id', paragraph_id) }} role="tablist" aria-multiselectable="true">
     <div class="paragraph__column">
-      {{ title_suffix }}
       <div class="card panel panel-default">
         {% if content.bp_show_indicators['#items'].getString() %}
           {% set indicator_class = 'display' %}

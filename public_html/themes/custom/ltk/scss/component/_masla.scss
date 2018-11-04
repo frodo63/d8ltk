@@ -23,6 +23,9 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
 }
 
 .pack-tds-table,.text-description {
+  background: $lightgrey;
+  border-radius: 10px;
+  padding: 20px;
   @media #{$wide},#{$normal},#{$tablet} {
     border-left: none;
   }
