@@ -1,4 +1,9 @@
-article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.oil-reductor, article.oil-plain, article.oil-transmission {
+article.oil-hydraulic,
+article.motornoe-maslo,
+article.oil-compressor,
+article.oil-reductor,
+article.oil-plain,
+article.oil-transmission {
   .content{
     font-family: Oswald, sans-serif;
     h1{
@@ -6,8 +11,8 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
       max-width: 78%;
     }
     font-size: 20px;
-    &>div {
-      margin: 10px 0 10px 0;
+    &>div.main-table {
+      margin: 40px 0 10px 0;
     }
   }
 }
@@ -91,8 +96,10 @@ article.oil-hydraulic, article.motornoe-maslo, article.oil-compressor, article.o
   vertical-align: middle;
   text-align: center;
   border-radius: 10px;
+  z-index: 100;
   @media #{$mobile}{
-  top: 24vmax;
+  top: calc(30vw + 50px);
+    margin-top: 20px;
   font-size: 30px;
   }
   @media #{$tablet}{

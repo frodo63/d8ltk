@@ -141,9 +141,15 @@ body {
     }
 
     @media #{$mobile}{
-      top: 18vmax;
+      top: 30vw;
       &.minimized{
-        top: 50px;
+        top: 23vw;
+      }
+      left: 0px;
+      width: 100%;
+      &.active{
+        left: 0px;
+        width: 100%;
       }
     }
     @media #{$tablet}{
@@ -201,7 +207,7 @@ body {
 .region-content {
   padding-top: 50px;
   @media #{$mobile}{
-    padding-top: 30vw;
+    padding-top: calc(30vw + 50px);
   }
 }
 

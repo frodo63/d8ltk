@@ -23,6 +23,9 @@
     }
     .cfp-topline, span.special {
       font-size: 35px;
+      @media #{$tablet}{
+        font-size: 22px;
+      }
       @media #{$mobile}{
         font-size: 7vw;
       }
@@ -30,13 +33,19 @@
     p, span, .cfp-2 li, div[class*='cfp2'] li {
       font-size:25px;
       @media #{$tablet}{
-        font-size:20px;
+        font-size:16px;
       }
       @media #{$mobile}{
         font-size: 6vw;
       }
     }
-    #myTab a, #myTabContent p {font-size:20px;}
+    #myTab a, #myTabContent p {
+      font-size:20px;
+      @media #{$tablet}{
+        font-size: 16px;
+      }
+
+    }
     .cfp5-column {
       font-size: 18px;
       @media #{$tablet}{
@@ -132,7 +141,7 @@
     }
   }
   //Paragraph 3
-  .cfp-3 {
+  #branches.cfp-3 {
     height: 70vh;
     .col-lg-2, .col-lg-8 {
       height:inherit;
@@ -187,7 +196,7 @@
   }
   //Paragraph 5
   #work_scheme.cfp-5 {
-    /*height: 70vh;
+    height: 70vh;
     .col-lg-2, col-md-2, col-sm-2{
       padding: 0;
       height: inherit;
@@ -217,19 +226,37 @@
           margin: 0;
           top: 0;
         }
+        @media #{$normal} {
+          font-size: 22px;
+        }
       }
-      p.cfp5-column{
+      p.cfp5-column, ul.cfp5-column{
+        @media #{$tablet} {
+          font-size: 14px;
+          top:25%;
+          span{font-size: 14px}
+          }
+        @media #{$normal} {
+          font-size: 16px;
+          span{font-size: 16px}
+        }
+        @media #{$wide} {
+          font-size: 18px;
+          span{font-size: 18px}
+        }
         span {
           text-decoration: underline;
           cursor: pointer;
-          &:hover{
-            color: $green;
-          }
         }
-        position: absolute;
-        top:30%;
+          position: absolute;
+          top:30%;
+
       }
-    }*/
+      ul.cfp5-column{
+        list-style: none;
+        padding: 0px;
+      }
+    }
 
   }
   //Paragraph 6
@@ -259,26 +286,26 @@
     }
     .brands-otech{
       .col-lg-3{
-        &:nth-child(1){background: url("../images/brands/kzm logo.png") center center no-repeat}
-        &:nth-child(2){background: url("../images/brands/gazpromneft logo.png") center center no-repeat}
-        &:nth-child(3){background: url("../images/brands/lukoil logo.png") center center no-repeat}
-        &:nth-child(4){background: url("../images/brands/rosneft logo.png") center center no-repeat}
-        &:nth-child(5){background: url("../images/brands/delfin logo.png") center center no-repeat}
-        &:nth-child(6){background: url("../images/brands/luxe logo.png") center center no-repeat}
-        &:nth-child(7){background: url("../images/brands/devon logo.png") center center no-repeat}
-        &:nth-child(8){background: url("../images/brands/centeroil logo.png") center center no-repeat}
+        &:nth-child(1){background: url("../images/brands/kzm_logo.png") center center no-repeat}
+        &:nth-child(2){background: url("../images/brands/gazpromneft_logo.png") center center no-repeat}
+        &:nth-child(3){background: url("../images/brands/lukoil_logo.png") center center no-repeat}
+        &:nth-child(4){background: url("../images/brands/rosneft_logo.png") center center no-repeat}
+        &:nth-child(5){background: url("../images/brands/delfin_logo.png") center center no-repeat}
+        &:nth-child(6){background: url("../images/brands/luxe_logo.png") center center no-repeat}
+        &:nth-child(7){background: url("../images/brands/devon_logo.png") center center no-repeat}
+        &:nth-child(8){background: url("../images/brands/centeroil_logo.png") center center no-repeat}
       }
     }
     .brands-import{
       .col-lg-3{
-        &:nth-child(1){background: url("../images/brands/shell logo.png") center center no-repeat}
-        &:nth-child(2){background: url("../images/brands/mobil logo.png") center center no-repeat}
-        &:nth-child(3){background: url("../images/brands/agip logo.png") center center no-repeat}
-        &:nth-child(4){background: url("../images/brands/castrol logo.png") center center no-repeat}
-        &:nth-child(5){background: url("../images/brands/total logo.png") center center no-repeat}
-        &:nth-child(6){background: url("../images/brands/motorex logo.png") center center no-repeat}
-        &:nth-child(7){background: url("../images/brands/kluber logo.png") center center no-repeat}
-        &:nth-child(8){background: url("../images/brands/oks logo.png") center center no-repeat}
+        &:nth-child(1){background: url("../images/brands/shell_logo.png") center center no-repeat}
+        &:nth-child(2){background: url("../images/brands/mobil_logo.png") center center no-repeat}
+        &:nth-child(3){background: url("../images/brands/agip_logo.png") center center no-repeat}
+        &:nth-child(4){background: url("../images/brands/castrol_logo.png") center center no-repeat}
+        &:nth-child(5){background: url("../images/brands/total_logo.png") center center no-repeat}
+        &:nth-child(6){background: url("../images/brands/motorex_logo.png") center center no-repeat}
+        &:nth-child(7){background: url("../images/brands/kluber_logo.png") center center no-repeat}
+        &:nth-child(8){background: url("../images/brands/oks_logo.png") center center no-repeat}
       }
     }
     .dealership {
@@ -309,8 +336,8 @@
     }
   }
   //Paragraph 10
-  .cfp-10 {
-    height: 90vh;
+  #logistics.cfp-10 {
+    height: 70vh;
     .tab-pane{
       text-align: left;
     }
