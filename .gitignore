@@ -12,6 +12,7 @@
 /public_html/robots.txt
 /public_html/sites/default/settings.php
 /public_html/sites/default/settings.local.php
+/public_html/sites/development.services.yml
 
 # Ignore Drupal's file directory
 /public_html/sites/default/files/
