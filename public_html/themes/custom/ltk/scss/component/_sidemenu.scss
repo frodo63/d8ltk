@@ -4,6 +4,7 @@
   left: 0px;
   width: 40px;
   z-index: 500;
+  border-right: 1px solid $green;
   @media #{$mobile}{
     width: 16vw;
     top: 6vw;
@@ -11,8 +12,7 @@
     left: unset;
     padding: 0;
     margin: 0;
-    /*border: 1px solid $green;
-    border-radius: calc(10 * 100vw / 360);*/
+    border-right: none;
     &.minimized{}
   }
 

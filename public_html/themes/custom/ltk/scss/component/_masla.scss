@@ -11,7 +11,7 @@ article.oil-transmission {
       max-width: 78%;
     }
     font-size: 20px;
-    &>div.main-table {
+    &>div.main-table, &>div.text-description {
       margin: 40px 0 10px 0;
     }
   }
@@ -38,6 +38,7 @@ article.oil-transmission {
 
 .main-table {
   border:1px solid $green;
+  border-radius: 10px;
   &>div { width:50%;}
   &>div:nth-child(2) { text-align: center}
   &>div:nth-child(6) { width:100%;}
@@ -87,6 +88,9 @@ article.oil-transmission {
   position: absolute;
   top: 40px;
   right: 15px;
+  @media #{$wide}{right: 15px; top: 50px;}
+  @media #{$normal}{right: 15px; top: 40px;}
+  @media #{$tablet}{right: 15px; top: 40px;}
   width: 20%;
   background: $yellow;
   color: $green;
@@ -96,7 +100,7 @@ article.oil-transmission {
   vertical-align: middle;
   text-align: center;
   border-radius: 10px;
-  z-index: 100;
+  z-index: 99;
   @media #{$mobile}{
   top: calc(30vw + 50px);
     margin-top: 20px;

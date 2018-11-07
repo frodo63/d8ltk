@@ -7,11 +7,12 @@ footer.footer {
   font-weight: 400;
   width: calc(100% - 40px);
   margin-left: 40px;
+  margin-top: 50px;
   background: $yellow;
   color: $green;
   @media #{$mobile}{
     left: 0;
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
     margin-bottom: 50px;
     font-size: 4vw;

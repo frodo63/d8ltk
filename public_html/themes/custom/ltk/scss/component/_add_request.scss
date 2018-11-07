@@ -3,6 +3,13 @@
   background: $yellow;
   color: $green;
   font-family: 'Oswald', sans-serif;
+
+  border: 1px solid $yellow;
+  border-top: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  @media #{$mobile} {border-radius: 0px;}
+
   @media #{$wide}{
     font-size: 20px;
     padding:10px;
@@ -27,11 +34,17 @@
   right:0;
 }
 .request-button{
+  &.button-down{
+    border-bottom: 1px solid $green;
+    border-top: none;
+    border-radius: 0px;
+  }
   @media #{$mobile} {
     background: $blue;
     color: $white;
   }
 }
+
 /*Общая косметика кончилась*/
 
 
@@ -83,24 +96,28 @@
     @media #{$tablet}{top: 15px;}
     @media #{$mobile}{top: 25px;}
     &:nth-child(1){
-      @media #{$wide}{left:0px;}
-      @media #{$normal}{left:4px;}
-      @media #{$tablet}{left:8px;}
-      @media #{$mobile}{left:4px;}
+      @media #{$wide}{left:10px;}
+      @media #{$normal}{left:10px;}
+      @media #{$tablet}{left:10px;}
+      @media #{$mobile}{left:10px;}
     }
     &:nth-child(2){
-      left:16px;
-      @media #{$mobile}{left:19px;}
+      @media #{$wide}{left:26px;}
+      @media #{$normal}{left:22px;}
+      @media #{$tablet}{left:18px;}
+      @media #{$mobile}{left:26px;}
     }
     &:nth-child(4){
-      right:16px;
-      @media #{$mobile}{right:23px;}
+      @media #{$wide}{right:26px;}
+      @media #{$normal}{right:22px;}
+      @media #{$tablet}{right:18px;}
+      @media #{$mobile}{right:26px;}
     }
     &:nth-child(5){
-      @media #{$wide}{right:1px;}
-      @media #{$normal}{right:4px;}
-      @media #{$tablet}{right:8px;}
-      @media #{$mobile}{right:8px;}
+      @media #{$wide}{right:10px;}
+      @media #{$normal}{right:10px;}
+      @media #{$tablet}{right:10px;}
+      @media #{$mobile}{right:10px;}
     }
 
     &.arr-up {
@@ -278,7 +295,7 @@
     }
   }
   @media #{$mobile}{
-    width: 100vw;
+    width: 100%;
     bottom: 0px;
     height: 50px;
     right: 0px;
@@ -325,10 +342,10 @@
 }
 /*ЗАКОНЧИЛСЯ Расчет высоты бокового меню*/
 .region-add-request {
-  z-index: 110;
+  z-index: 99;
   top:-2000px;
   @media #{$mobile}{
-    width: 100vw;
+    width: 100%;
   }
   &.down{
     /*Первоначальное значение переменной*/

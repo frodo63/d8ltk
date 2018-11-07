@@ -60,21 +60,25 @@ Drupal.behaviors.basic = {
           /*Анимация спускающейся формы заявки*/
           $('.request-button').off('click.request').on('click.request', function(){
             $('.request-button span').toggleClass('arr-up arr-down');
+            $('.request-button').toggleClass('button-down');
+            $('.order-btn').toggle();
             $('.region-add-request').toggleClass('down');
             if($('.region-add-request').hasClass('down')){
               $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
             }else{
-              $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
+              $('.request-button p').text('ЗАКАЗАТЬ');
             };
           });
 
             $('.order-btn').off('click.orderbtn').on('click.orderbtn', function(){
                 $('.request-button span').toggleClass('arr-up arr-down');
+                $('.request-button').toggleClass('button-down');
+                $('.order-btn').toggle();
                 $('.region-add-request').toggleClass('down');
                 if($('.region-add-request').hasClass('down')){
                     $('.request-button p').text('СКРЫТЬ ЗАЯВКУ');
                 }else{
-                    $('.request-button p').text('ЗАПОЛНИТЬ ЗАЯВКУ');
+                    $('.request-button p').text('ЗАКАЗАТЬ');
                 };
             });
           /*Анимация стрелочек на кнопке вызова формы выше*/
