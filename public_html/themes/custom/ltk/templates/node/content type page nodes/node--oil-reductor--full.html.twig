@@ -96,14 +96,13 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content') }}>
-   <h1>{{ label }}</h1>
-    <div class="main-table">
+    <h1>{{ label }}</h1>
+      <div class="main-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div>
             {% if content.field_oil_brand|render is not empty %}
                 <div class="mt-maslo-logo">{{ content.field_oil_brand }}</div>
             {% endif %}
         </div>
-
         <div class="mt-maslo-type"><b>Назначение : </b>Масло редукторное</div>
         <div class="plain_text">Спецификации</div>
 
@@ -120,12 +119,22 @@
         {% if content.field_oil_apply_node|render is not empty %}
             <div class="mt-red-type">{{ content.field_oil_apply_node }}</div>
         {% endif %}
+      </div>
 
-    </div>
+      <div class="text-description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          {% if content.field_oil_description|render is not empty %}
+              <span> {{ content.field_oil_description }} </span>
+          {% endif %}
+          {% if content.field_oil_spec|render is not empty %}
+              <p>Особенности масла : {{ content.field_oil_spec }}</p>
+          {% endif %}
+          {% if content.field_oil_food|render is not empty %}
+              <tr><td>Пищевой допуск : </td><td>{{ content.field_oil_food }}</td></tr>
+          {% endif %}
+       </div>
 
-      <br>
 
-    <div class="chars-table">
+      <div class="chars-table col-lg-7 col-md-7 col-sm-7 col-xs-12">
         <div>
             <div>Показатель</div>
             <div>Метод</div>
@@ -164,7 +173,7 @@
 
       <br>
 
-      <div class="pack-tds-table">
+      <div class="pack-tds-table col-lg-5 col-md-5 col-sm-5 col-xs-12">
           {% if content.field_oil_packing|render is not empty %}
               <div class="mt-maslo-packing"><b>Варианты фасовки : </b> {{ content.field_oil_packing }}</div>
           {% endif %}
