@@ -1,6 +1,11 @@
 //@media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
   div[class*='cfp-'] {
-    height: 100%;
+
+    /*Высота cfp - строгая в пикселях , в зависипости  от брекета*/
+    @media #{$wide}{min-height: 720px}
+    @media #{$normal}{min-height: 540px}
+    @media #{$tablet}{min-height: 420px}
+    @media #{$mobile}{min-height: 70%}
     /*Высота внутренних дивов в cfp-шках прописывается в самих cfp-шках*/
     font-family: 'Oswald', sans-serif;
     color: #000000;
@@ -76,11 +81,11 @@
     text-align: center;
   }
 //}
-
+//TODO: ПЕРЕДЕЛАТЬ ВЫСОТУ ПАРАГРАФОВ
   //Paragraph 1
   .cfp-1 {
     &>div{
-      height: 70vh;
+      //height: 70vh;
     }
     p.cfp_title {
       top: 10vh;
@@ -95,7 +100,7 @@
   }
   //Paragraph 2
   #product_groups.cfp-2 {
-    height: 70vh;
+    //height: 70vh;
     p {
       color: $black;
       text-align: center;
@@ -130,19 +135,30 @@
         height: 40px;
         width: 100px;
       }
-      display: none;
+      display: block;
       position: absolute;
-      top:30%;
-      left:0;
       height: 70%;
-      width: 100%;
+      width: 33%;
       background-repeat: no-repeat;
       background-position: right top;
     }
+    .cfp2-masla{
+      top:30%;
+      left:0;
+    }
+    .cfp2-smazki{
+      top:30%;
+      left:33%;
+    }
+    .cfp2-tzhid{
+      top:30%;
+      left:66%;
+    }
+
   }
   //Paragraph 3
   #branches.cfp-3 {
-    height: 70vh;
+    //height: 70vh;
     .col-lg-2, .col-lg-8 {
       height:inherit;
     }
@@ -183,7 +199,7 @@
   }
   //Paragraph 4
   .cfp-4 {
-    height: 70vh;
+    //height: 70vh;
     .cfp4-column {
       height:inherit;
       p {
@@ -208,6 +224,9 @@
           width: calc(100% - 1vh);
         }
 
+      }
+      a, a:hover, a:visited{
+        color: $green;
       }
       .cf5-arrow{
         position: absolute;
@@ -262,7 +281,7 @@
   //Paragraph 6
   //Paragraph 7
   #q-a.cfp-7{
-    height: 70vh;
+    //height: 70vh;
     #accordion{
       top: 20%;
       position: absolute;
@@ -270,7 +289,7 @@
   }
   //Paragraph 8
   #brands.cfp-8 {
-    height: 120vh;
+    height: 120%;
     .brands-otech, .brands-import {
       .col-lg-3{
         height: 100px;
@@ -332,12 +351,12 @@
   //Paragraph 9
   .cfp-9 {
     #myCarousel {
-      height:55vh;
+      //height:55vh;
     }
   }
   //Paragraph 10
   #logistics.cfp-10 {
-    height: 70vh;
+    //height: 70vh;
     .tab-pane{
       text-align: left;
     }

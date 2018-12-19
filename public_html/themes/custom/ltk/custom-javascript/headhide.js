@@ -97,22 +97,22 @@ Drupal.behaviors.basic = {
           });
 
           /*Анимация cfp-2 категория и содержимое отрасли*/
-          $('.special').off('mouseover.cpf2').on('mouseover.cfp2', function (event) {
+          /*$('.special').off('mouseover.cpf2').on('mouseover.cfp2', function (event) {
               $('div[class^="cfp2-"]').hide();
               var tag = $(event.target).attr('data-tag');
               var target = $('.cfp2-'+tag);
               if (target.css('display') == 'none') {target.show()}
               else {target.hide()};
               target = null;
-          });
+          });*/
 
           /*Анимация cfp2-divы ховеры для всех картинок*/
-          $('div[class^="cfp2-"] li').off('mouseover.cfp2li').on('mouseover.cfp2li' , function () {
+          /*$('div[class^="cfp2-"] li').off('mouseover.cfp2li').on('mouseover.cfp2li' , function () {
             var count = $(this).attr('data-count');
             var path ="sites/default/files/theme-images/spes/"+count+".png";
             var target = $(this).parents('div[class^="cfp2-"]');
             target.css('background-image','url('+path+')');
-          })
+          });*/
 
           /*Меняем value с And на "До" во втором инпуте Выбора Вязкости масла*/
           $('.form-item label[for="edit-field-oil-visc-value-max"]').html("до:");

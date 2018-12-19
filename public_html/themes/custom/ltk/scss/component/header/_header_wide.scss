@@ -5,7 +5,6 @@
     #block-telephones, #block-elpocta, .logo {
       position: absolute;
       font-family: 'Oswald', sans-serif;
-      color: $green;
     }
     #block-adres-2, #block-vremaraboty, #block-elpocta {img {height: 15px}}
     .logo {
@@ -30,7 +29,7 @@
           padding: 0 8px;
           color: $green;
           &:hover{
-            color: $white;
+            color: $green;
           }
         }
       }
@@ -72,7 +71,7 @@
     #block-elpocta {
       top: 92px;
       a:visited, a:hover, a:active {
-        color: $green;
+        color: $yellow;
       }
     }
     #block-telephones {

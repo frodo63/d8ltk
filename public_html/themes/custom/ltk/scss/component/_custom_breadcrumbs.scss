@@ -1,0 +1,17 @@
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #dbdbdb;
+  border-radius: 4px;
+  a{
+    color: $green;
+    &:visited,&:hover{
+      color: $green;
+    }
+  }
+  & > li + li::before{
+    color: $green;
+  }
+
+}

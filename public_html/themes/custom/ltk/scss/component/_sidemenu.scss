@@ -1,10 +1,11 @@
 .side-menu--wrap {
   background: $yellow;
+  color: $green;
   position: fixed;
   left: 0px;
   width: 40px;
   z-index: 500;
-  border-right: 1px solid $green;
+  border-top: 1px solid $yellow;
   @media #{$mobile}{
     width: 16vw;
     top: 6vw;

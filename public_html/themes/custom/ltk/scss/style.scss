@@ -42,6 +42,7 @@ $wide: "screen and (min-width: 1200px)";                              /*1200  - 
 @import 'component/sidemenu';
 @import 'component/product_filters';
 @import 'component/footer';
+@import 'component/custom_breadcrumbs';
 @import 'component/masla';
 @import 'component/var_pages';
 @import 'component/add_request';
@@ -82,8 +83,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   a{
-    color: $green;
-    &:hover {color: $green;}
+    color: $yellow;
+    &:hover {color: $yellow;}
   }
 
   /*РАЗМЕТКА ГЛАВНЫХ ЭЛЕМЕНТОВ*/
