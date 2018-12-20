@@ -9768,22 +9768,22 @@ p.cfp-topline {
   width: 100%;
 }
 
-/* line 104, ../scss/component/_frontpage_paragraphs.scss */
+/* line 105, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 p {
   color: #000000;
   text-align: center;
   position: absolute;
 }
-/* line 109, ../scss/component/_frontpage_paragraphs.scss */
+/* line 110, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .special {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 112, ../scss/component/_frontpage_paragraphs.scss */
+/* line 113, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .special:hover {
   color: #17460F;
 }
-/* line 116, ../scss/component/_frontpage_paragraphs.scss */
+/* line 117, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-masla,
 #product_groups.cfp-2 .cfp2-smazki,
 #product_groups.cfp-2 .cfp2-tzhid {
@@ -9795,7 +9795,7 @@ p.cfp-topline {
   background-repeat: no-repeat;
   background-position: right top;
 }
-/* line 120, ../scss/component/_frontpage_paragraphs.scss */
+/* line 121, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-masla ul,
 #product_groups.cfp-2 .cfp2-smazki ul,
 #product_groups.cfp-2 .cfp2-tzhid ul {
@@ -9805,7 +9805,7 @@ p.cfp-topline {
   top: 0;
   text-align: left;
 }
-/* line 127, ../scss/component/_frontpage_paragraphs.scss */
+/* line 128, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-masla ul li:hover,
 #product_groups.cfp-2 .cfp2-smazki ul li:hover,
 #product_groups.cfp-2 .cfp2-tzhid ul li:hover {
@@ -9813,53 +9813,53 @@ p.cfp-topline {
   color: #000000;
   cursor: pointer;
 }
-/* line 134, ../scss/component/_frontpage_paragraphs.scss */
+/* line 135, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-masla img,
 #product_groups.cfp-2 .cfp2-smazki img,
 #product_groups.cfp-2 .cfp2-tzhid img {
   height: 40px;
   width: 100px;
 }
-/* line 145, ../scss/component/_frontpage_paragraphs.scss */
+/* line 146, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-masla {
   top: 30%;
   left: 0;
 }
-/* line 149, ../scss/component/_frontpage_paragraphs.scss */
+/* line 150, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-smazki {
   top: 30%;
   left: 33%;
 }
-/* line 153, ../scss/component/_frontpage_paragraphs.scss */
+/* line 154, ../scss/component/_frontpage_paragraphs.scss */
 #product_groups.cfp-2 .cfp2-tzhid {
   top: 30%;
   left: 66%;
 }
 
-/* line 162, ../scss/component/_frontpage_paragraphs.scss */
+/* line 163, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .col-lg-2, #branches.cfp-3 .col-lg-8 {
   height: inherit;
 }
-/* line 165, ../scss/component/_frontpage_paragraphs.scss */
+/* line 166, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .col-lg-2 {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
 }
-/* line 170, ../scss/component/_frontpage_paragraphs.scss */
+/* line 171, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-title {
   cursor: pointer;
 }
-/* line 172, ../scss/component/_frontpage_paragraphs.scss */
+/* line 173, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-title p {
   text-align: right;
 }
-/* line 175, ../scss/component/_frontpage_paragraphs.scss */
+/* line 176, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-title:hover {
   background: #FBBA00;
   color: #000000;
 }
-/* line 180, ../scss/component/_frontpage_paragraphs.scss */
+/* line 181, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-popup {
   background: #FFFFFF;
   color: #000000;
@@ -9869,11 +9869,11 @@ p.cfp-topline {
   top: 0;
   height: 100%;
 }
-/* line 188, ../scss/component/_frontpage_paragraphs.scss */
+/* line 189, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-popup p {
   text-align: right;
 }
-/* line 192, ../scss/component/_frontpage_paragraphs.scss */
+/* line 193, ../scss/component/_frontpage_paragraphs.scss */
 #branches.cfp-3 .cfp3-wrapper {
   height: inherit;
   width: 100%;
@@ -9882,11 +9882,11 @@ p.cfp-topline {
   text-align: left;
 }
 
-/* line 203, ../scss/component/_frontpage_paragraphs.scss */
+/* line 204, ../scss/component/_frontpage_paragraphs.scss */
 .cfp-4 .cfp4-column {
   height: inherit;
 }
-/* line 205, ../scss/component/_frontpage_paragraphs.scss */
+/* line 206, ../scss/component/_frontpage_paragraphs.scss */
 .cfp-4 .cfp4-column p {
   background: #FBBA00;
   position: absolute;
@@ -9894,42 +9894,42 @@ p.cfp-topline {
   transform: translate(0, -50%);
 }
 
-/* line 214, ../scss/component/_frontpage_paragraphs.scss */
+/* line 215, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 {
   height: 70vh;
 }
-/* line 216, ../scss/component/_frontpage_paragraphs.scss */
+/* line 217, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2, #work_scheme.cfp-5 col-md-2, #work_scheme.cfp-5 col-sm-2 {
   padding: 0;
   height: inherit;
 }
-/* line 219, ../scss/component/_frontpage_paragraphs.scss */
+/* line 220, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 .cfp5-wrapper, #work_scheme.cfp-5 col-md-2 .cfp5-wrapper, #work_scheme.cfp-5 col-sm-2 .cfp5-wrapper {
   height: 85%;
   background: #FBBA00;
   margin: 0 .5vh;
 }
-/* line 223, ../scss/component/_frontpage_paragraphs.scss */
+/* line 224, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 .cfp5-wrapper p, #work_scheme.cfp-5 col-md-2 .cfp5-wrapper p, #work_scheme.cfp-5 col-sm-2 .cfp5-wrapper p {
   width: calc(100% - 1vh);
 }
-/* line 228, ../scss/component/_frontpage_paragraphs.scss */
+/* line 229, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 a, #work_scheme.cfp-5 .col-lg-2 a:hover, #work_scheme.cfp-5 .col-lg-2 a:visited, #work_scheme.cfp-5 col-md-2 a, #work_scheme.cfp-5 col-md-2 a:hover, #work_scheme.cfp-5 col-md-2 a:visited, #work_scheme.cfp-5 col-sm-2 a, #work_scheme.cfp-5 col-sm-2 a:hover, #work_scheme.cfp-5 col-sm-2 a:visited {
   color: #17460F;
 }
-/* line 231, ../scss/component/_frontpage_paragraphs.scss */
+/* line 232, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 .cf5-arrow, #work_scheme.cfp-5 col-md-2 .cf5-arrow, #work_scheme.cfp-5 col-sm-2 .cf5-arrow {
   position: absolute;
   top: 40%;
   right: -4px;
 }
-/* line 236, ../scss/component/_frontpage_paragraphs.scss */
+/* line 237, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 p.cfp5-title, #work_scheme.cfp-5 col-md-2 p.cfp5-title, #work_scheme.cfp-5 col-sm-2 p.cfp5-title {
   position: absolute;
   top: 5%;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 236, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 237, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-title, #work_scheme.cfp-5 col-md-2 p.cfp5-title, #work_scheme.cfp-5 col-sm-2 p.cfp5-title {
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -9941,69 +9941,69 @@ p.cfp-topline {
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 236, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 237, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-title, #work_scheme.cfp-5 col-md-2 p.cfp5-title, #work_scheme.cfp-5 col-sm-2 p.cfp5-title {
     font-size: 22px;
   }
 }
-/* line 252, ../scss/component/_frontpage_paragraphs.scss */
+/* line 253, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 p.cfp5-column, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column, #work_scheme.cfp-5 col-md-2 p.cfp5-column, #work_scheme.cfp-5 col-md-2 ul.cfp5-column, #work_scheme.cfp-5 col-sm-2 p.cfp5-column, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column {
   position: absolute;
   top: 30%;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 252, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 253, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column, #work_scheme.cfp-5 col-md-2 p.cfp5-column, #work_scheme.cfp-5 col-md-2 ul.cfp5-column, #work_scheme.cfp-5 col-sm-2 p.cfp5-column, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column {
     font-size: 14px;
     top: 25%;
   }
-  /* line 256, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 257, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column span, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column span, #work_scheme.cfp-5 col-md-2 p.cfp5-column span, #work_scheme.cfp-5 col-md-2 ul.cfp5-column span, #work_scheme.cfp-5 col-sm-2 p.cfp5-column span, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column span {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 252, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 253, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column, #work_scheme.cfp-5 col-md-2 p.cfp5-column, #work_scheme.cfp-5 col-md-2 ul.cfp5-column, #work_scheme.cfp-5 col-sm-2 p.cfp5-column, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column {
     font-size: 16px;
   }
-  /* line 260, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 261, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column span, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column span, #work_scheme.cfp-5 col-md-2 p.cfp5-column span, #work_scheme.cfp-5 col-md-2 ul.cfp5-column span, #work_scheme.cfp-5 col-sm-2 p.cfp5-column span, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column span {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 252, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 253, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column, #work_scheme.cfp-5 col-md-2 p.cfp5-column, #work_scheme.cfp-5 col-md-2 ul.cfp5-column, #work_scheme.cfp-5 col-sm-2 p.cfp5-column, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column {
     font-size: 18px;
   }
-  /* line 264, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 265, ../scss/component/_frontpage_paragraphs.scss */
   #work_scheme.cfp-5 .col-lg-2 p.cfp5-column span, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column span, #work_scheme.cfp-5 col-md-2 p.cfp5-column span, #work_scheme.cfp-5 col-md-2 ul.cfp5-column span, #work_scheme.cfp-5 col-sm-2 p.cfp5-column span, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column span {
     font-size: 18px;
   }
 }
-/* line 266, ../scss/component/_frontpage_paragraphs.scss */
+/* line 267, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 p.cfp5-column span, #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column span, #work_scheme.cfp-5 col-md-2 p.cfp5-column span, #work_scheme.cfp-5 col-md-2 ul.cfp5-column span, #work_scheme.cfp-5 col-sm-2 p.cfp5-column span, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column span {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 274, ../scss/component/_frontpage_paragraphs.scss */
+/* line 275, ../scss/component/_frontpage_paragraphs.scss */
 #work_scheme.cfp-5 .col-lg-2 ul.cfp5-column, #work_scheme.cfp-5 col-md-2 ul.cfp5-column, #work_scheme.cfp-5 col-sm-2 ul.cfp5-column {
   list-style: none;
   padding: 0px;
 }
 
-/* line 285, ../scss/component/_frontpage_paragraphs.scss */
+/* line 286, ../scss/component/_frontpage_paragraphs.scss */
 #q-a.cfp-7 #accordion {
   top: 20%;
   position: absolute;
 }
 
-/* line 291, ../scss/component/_frontpage_paragraphs.scss */
+/* line 292, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 {
   height: 120%;
 }
-/* line 294, ../scss/component/_frontpage_paragraphs.scss */
+/* line 295, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3, #brands.cfp-8 .brands-import .col-lg-3 {
   height: 100px;
   -webkit-filter: grayscale(100%);
@@ -10011,87 +10011,87 @@ p.cfp-topline {
   filter: grayscale(100%);
   opacity: 0.2;
 }
-/* line 299, ../scss/component/_frontpage_paragraphs.scss */
+/* line 300, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:hover, #brands.cfp-8 .brands-import .col-lg-3:hover {
   -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0);
   opacity: 1;
 }
-/* line 308, ../scss/component/_frontpage_paragraphs.scss */
+/* line 309, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(1) {
   background: url("../images/brands/kzm_logo.png") center center no-repeat;
 }
-/* line 309, ../scss/component/_frontpage_paragraphs.scss */
+/* line 310, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(2) {
   background: url("../images/brands/gazpromneft_logo.png") center center no-repeat;
 }
-/* line 310, ../scss/component/_frontpage_paragraphs.scss */
+/* line 311, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(3) {
   background: url("../images/brands/lukoil_logo.png") center center no-repeat;
 }
-/* line 311, ../scss/component/_frontpage_paragraphs.scss */
+/* line 312, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(4) {
   background: url("../images/brands/rosneft_logo.png") center center no-repeat;
 }
-/* line 312, ../scss/component/_frontpage_paragraphs.scss */
+/* line 313, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(5) {
   background: url("../images/brands/delfin_logo.png") center center no-repeat;
 }
-/* line 313, ../scss/component/_frontpage_paragraphs.scss */
+/* line 314, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(6) {
   background: url("../images/brands/luxe_logo.png") center center no-repeat;
 }
-/* line 314, ../scss/component/_frontpage_paragraphs.scss */
+/* line 315, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(7) {
   background: url("../images/brands/devon_logo.png") center center no-repeat;
 }
-/* line 315, ../scss/component/_frontpage_paragraphs.scss */
+/* line 316, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-otech .col-lg-3:nth-child(8) {
   background: url("../images/brands/centeroil_logo.png") center center no-repeat;
 }
-/* line 320, ../scss/component/_frontpage_paragraphs.scss */
+/* line 321, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(1) {
   background: url("../images/brands/shell_logo.png") center center no-repeat;
 }
-/* line 321, ../scss/component/_frontpage_paragraphs.scss */
+/* line 322, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(2) {
   background: url("../images/brands/mobil_logo.png") center center no-repeat;
 }
-/* line 322, ../scss/component/_frontpage_paragraphs.scss */
+/* line 323, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(3) {
   background: url("../images/brands/agip_logo.png") center center no-repeat;
 }
-/* line 323, ../scss/component/_frontpage_paragraphs.scss */
+/* line 324, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(4) {
   background: url("../images/brands/castrol_logo.png") center center no-repeat;
 }
-/* line 324, ../scss/component/_frontpage_paragraphs.scss */
+/* line 325, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(5) {
   background: url("../images/brands/total_logo.png") center center no-repeat;
 }
-/* line 325, ../scss/component/_frontpage_paragraphs.scss */
+/* line 326, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(6) {
   background: url("../images/brands/motorex_logo.png") center center no-repeat;
 }
-/* line 326, ../scss/component/_frontpage_paragraphs.scss */
+/* line 327, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(7) {
   background: url("../images/brands/kluber_logo.png") center center no-repeat;
 }
-/* line 327, ../scss/component/_frontpage_paragraphs.scss */
+/* line 328, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .brands-import .col-lg-3:nth-child(8) {
   background: url("../images/brands/oks_logo.png") center center no-repeat;
 }
-/* line 330, ../scss/component/_frontpage_paragraphs.scss */
+/* line 331, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .dealership {
   position: relative;
   margin: 20px 0;
 }
-/* line 333, ../scss/component/_frontpage_paragraphs.scss */
+/* line 334, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .dealership img:last-child {
   margin-top: 20px;
 }
-/* line 336, ../scss/component/_frontpage_paragraphs.scss */
+/* line 337, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .dealership .text {
   position: absolute;
   top: 30%;
@@ -10099,56 +10099,56 @@ p.cfp-topline {
   width: 60%;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 336, ../scss/component/_frontpage_paragraphs.scss */
+  /* line 337, ../scss/component/_frontpage_paragraphs.scss */
   #brands.cfp-8 .dealership .text {
     left: 50%;
     width: 50%;
   }
 }
-/* line 345, ../scss/component/_frontpage_paragraphs.scss */
+/* line 346, ../scss/component/_frontpage_paragraphs.scss */
 #brands.cfp-8 .dealership .text p {
   text-align: justify;
 }
 
-/* line 360, ../scss/component/_frontpage_paragraphs.scss */
+/* line 361, ../scss/component/_frontpage_paragraphs.scss */
 #logistics.cfp-10 .tab-pane {
   text-align: left;
 }
-/* line 363, ../scss/component/_frontpage_paragraphs.scss */
+/* line 364, ../scss/component/_frontpage_paragraphs.scss */
 #logistics.cfp-10 img.ico {
   height: 40px;
   width: 40px;
   color: grey;
 }
-/* line 368, ../scss/component/_frontpage_paragraphs.scss */
+/* line 369, ../scss/component/_frontpage_paragraphs.scss */
 #logistics.cfp-10 img.ico-big {
   height: 60px;
   width: 60px;
   color: #000000;
 }
-/* line 373, ../scss/component/_frontpage_paragraphs.scss */
+/* line 374, ../scss/component/_frontpage_paragraphs.scss */
 #logistics.cfp-10 img.ico-small {
   height: 20px;
   width: 20px;
   color: #17460F;
 }
-/* line 378, ../scss/component/_frontpage_paragraphs.scss */
+/* line 379, ../scss/component/_frontpage_paragraphs.scss */
 #logistics.cfp-10 #clock {
   height: 15px;
   width: 15px;
 }
 
-/* line 383, ../scss/component/_frontpage_paragraphs.scss */
+/* line 384, ../scss/component/_frontpage_paragraphs.scss */
 #about-company.cfp-12 {
   max-height: 100vh;
 }
 
-/* line 386, ../scss/component/_frontpage_paragraphs.scss */
+/* line 387, ../scss/component/_frontpage_paragraphs.scss */
 #complexity.cfp-13 {
   max-height: 100vh;
 }
 
-/* line 389, ../scss/component/_frontpage_paragraphs.scss */
+/* line 390, ../scss/component/_frontpage_paragraphs.scss */
 #competenivity.cfp-14 {
   max-height: 100vh;
 }
@@ -10431,61 +10431,62 @@ p.cfp-topline {
 /* line 217, ../scss/component/_sidemenu.scss */
 .region-sidemenu nav ul.nav li a:hover {
   background: #FBBA00;
-}
-/* line 222, ../scss/component/_sidemenu.scss */
-.region-sidemenu #block-ltk-main-menu ul.nav, .region-sidemenu #block-tipmasla ul.nav {
-  display: block;
+  color: #17460F;
 }
 /* line 225, ../scss/component/_sidemenu.scss */
+.region-sidemenu #block-tipmasla ul.nav, .region-sidemenu #block-tipsmazki ul.nav, .region-sidemenu #block-speczidkosti ul.nav {
+  display: block;
+}
+/* line 228, ../scss/component/_sidemenu.scss */
 .region-sidemenu h2, .region-sidemenu a {
   cursor: pointer;
   color: #17460F;
   width: 150px;
 }
-/* line 230, ../scss/component/_sidemenu.scss */
+/* line 233, ../scss/component/_sidemenu.scss */
 .region-sidemenu h2 {
   display: inline-block;
   font-size: 20px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 230, ../scss/component/_sidemenu.scss */
+  /* line 233, ../scss/component/_sidemenu.scss */
   .region-sidemenu h2 {
     font-size: 5vw;
     line-height: 6vw;
     width: 100%;
   }
 }
-/* line 240, ../scss/component/_sidemenu.scss */
+/* line 243, ../scss/component/_sidemenu.scss */
 .region-sidemenu h2 span {
   pointer-events: none;
   color: #FBBA00;
 }
-/* line 244, ../scss/component/_sidemenu.scss */
+/* line 247, ../scss/component/_sidemenu.scss */
 .region-sidemenu a {
   font-size: 15px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 244, ../scss/component/_sidemenu.scss */
+  /* line 247, ../scss/component/_sidemenu.scss */
   .region-sidemenu a {
     font-size: 4vw;
     line-height: 5vw;
   }
 }
-/* line 251, ../scss/component/_sidemenu.scss */
+/* line 254, ../scss/component/_sidemenu.scss */
 .region-sidemenu .glyphicon-menu-right {
   font-size: 20px;
 }
-/* line 254, ../scss/component/_sidemenu.scss */
+/* line 257, ../scss/component/_sidemenu.scss */
 .region-sidemenu a:hover {
   background: #FBBA00;
   text-decoration: underline;
 }
-/* line 258, ../scss/component/_sidemenu.scss */
+/* line 261, ../scss/component/_sidemenu.scss */
 .region-sidemenu.active {
   left: 40px;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 258, ../scss/component/_sidemenu.scss */
+  /* line 261, ../scss/component/_sidemenu.scss */
   .region-sidemenu.active {
     left: 0px;
   }
@@ -12562,7 +12563,7 @@ article.oil-plain .main-table .plain_text {
   }
   /* line 73, ../scss/component/header/_header_wide.scss */
   .navbar #block-elpocta a:visited, .navbar #block-elpocta a:hover, .navbar #block-elpocta a:active {
-    color: #FBBA00;
+    color: #17460F;
   }
   /* line 77, ../scss/component/header/_header_wide.scss */
   .navbar #block-telephones {
@@ -12722,11 +12723,11 @@ body {
 }
 /* line 85, ../scss/style.scss */
 body a {
-  color: #FBBA00;
+  color: #17460F;
 }
 /* line 87, ../scss/style.scss */
 body a:hover {
-  color: #FBBA00;
+  color: #17460F;
 }
 /* line 91, ../scss/style.scss */
 body .row {

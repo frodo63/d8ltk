@@ -214,12 +214,15 @@
       li {
         a{
           padding:5px;
-          &:hover{background: $yellow;}
+          &:hover{
+            background: $yellow;
+            color: $green;
+          }
         }
       }
     }
     //А главное меню изначально открыто
-    #block-ltk-main-menu ul.nav, #block-tipmasla ul.nav{
+    #block-tipmasla ul.nav, #block-tipsmazki ul.nav, #block-speczidkosti ul.nav{
       display: block;
     }
     h2, a{

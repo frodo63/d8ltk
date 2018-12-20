@@ -54,7 +54,7 @@ Drupal.behaviors.basic = {
             $('.region-sidemenu h2').off('click.tm').on('click.tm', function(event){
                 //$('.region-sidemenu ul.menu:visible').hide('slow');//Закрыть все менюшки
                 $(event.target).siblings('ul.menu').toggle('slow');//ОТкрыть эту одну
-                $(event.target).children('span.glyphicon').toggleClass('glyphicon-triangle-bottom glyphicon-triangle-top');
+                $(event.target).children('span.glyphicon').toggleClass('glyphicon-triangle-bottom glyphicon-triangle-top');//Повернуть стрелочку
             });
 
           /*Анимация спускающейся формы заявки*/
