@@ -12,7 +12,7 @@ article.oil-transmission {
       max-width: 78%;
     }
     font-size: 20px;
-    &>div.main-table, &>div.text-description {
+    &>div.main-table, &>div.chars-table {
       margin: 40px 0 10px 0;
     }
   }
@@ -30,16 +30,21 @@ article.oil-transmission {
 
 .pack-tds-table,.text-description {
   background: $lightgrey;
-  border-radius: 10px;
   padding: 20px;
   @media #{$wide},#{$normal},#{$tablet} {
     border-left: none;
   }
 }
 
-.main-table {
+.main-table, .chars-table {
   border:1px solid $green;
-  border-radius: 10px;
+}
+
+.main-table {
+  @media #{$wide},#{$normal},#{$tablet}{
+    border-right: none;
+}
+
   &>div { width:50%;}
   &>div:nth-child(2) { text-align: center}
   &>div:nth-child(6) { width:100%;}
@@ -75,6 +80,7 @@ article.oil-transmission {
   }
 }
 .chars-table {
+  padding: 0;
   &>div {padding:5px; width:100%; display: inherit; vertical-align: middle}
   &>div:nth-child(odd) { background: lightgrey}
   &>div:nth-child(even) { background: lightgreen}
