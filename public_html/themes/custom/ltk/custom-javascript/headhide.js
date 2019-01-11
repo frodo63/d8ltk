@@ -93,7 +93,7 @@ Drupal.behaviors.basic = {
             if (target.css('display') == 'none') {
               target.show();
             }
-            else {target.hide()};
+            else {target.hide()}
           });
 
           /*Анимация cfp-2 категория и содержимое отрасли*/
