@@ -67,10 +67,8 @@
     }
     @media #{$mobile}{
       display: none;
-      &:nth-child(1), &:nth-child(4){
-        display: block;
-      }
-    }    
+      //Временно отключил все параграфы чтобы не мешали, по одному буду править
+    }
   }
   .fix {
     background: lightpink;
