@@ -10854,40 +10854,35 @@ article.oil-transmission .content > div.chars-table {
   }
 }
 
-/* line 39, ../scss/component/_masla.scss */
-.main-table, .chars-table {
-  border: 1px solid #17460F;
-}
-
 @media screen and (min-width: 1200px), screen and (min-width: 992px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 43, ../scss/component/_masla.scss */
+  /* line 39, ../scss/component/_masla.scss */
   .main-table {
     border-right: none;
   }
 }
-/* line 48, ../scss/component/_masla.scss */
+/* line 44, ../scss/component/_masla.scss */
 .main-table > div {
   width: 50%;
 }
-/* line 49, ../scss/component/_masla.scss */
+/* line 45, ../scss/component/_masla.scss */
 .main-table > div:nth-child(2) {
   text-align: center;
 }
-/* line 50, ../scss/component/_masla.scss */
+/* line 46, ../scss/component/_masla.scss */
 .main-table > div:nth-child(6) {
   width: 100%;
 }
-/* line 51, ../scss/component/_masla.scss */
+/* line 47, ../scss/component/_masla.scss */
 .main-table .plain_text {
   width: 100%;
   text-align: center;
   background: lightgreen;
 }
-/* line 60, ../scss/component/_masla.scss */
+/* line 56, ../scss/component/_masla.scss */
 .main-table .mt-maslo-api span:nth-child(1) {
   width: 400px;
 }
-/* line 62, ../scss/component/_masla.scss */
+/* line 58, ../scss/component/_masla.scss */
 .main-table .mt-hydr-maslo-iso, .main-table .mt-hydr-maslo-din,
 .main-table .mt-compr-maslo-din, .main-table .mt-compr-maslo-iso,
 .main-table .mt-maslo-acea, .main-table .mt-maslo-api, .main-table .mt-maslo-sae,
@@ -10897,7 +10892,7 @@ article.oil-transmission .content > div.chars-table {
   line-height: 35px;
   text-align: center;
 }
-/* line 70, ../scss/component/_masla.scss */
+/* line 66, ../scss/component/_masla.scss */
 .main-table .mt-hydr-maslo-iso span.specifications, .main-table .mt-hydr-maslo-din span.specifications,
 .main-table .mt-compr-maslo-din span.specifications, .main-table .mt-compr-maslo-iso span.specifications,
 .main-table .mt-maslo-acea span.specifications, .main-table .mt-maslo-api span.specifications, .main-table .mt-maslo-sae span.specifications,
@@ -10906,7 +10901,7 @@ article.oil-transmission .content > div.chars-table {
   font-size: 35px;
   font-weight: bold;
 }
-/* line 74, ../scss/component/_masla.scss */
+/* line 70, ../scss/component/_masla.scss */
 .main-table .mt-hydr-maslo-iso span.glyphicon-info-sign, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign,
 .main-table .mt-compr-maslo-din span.glyphicon-info-sign, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign,
 .main-table .mt-maslo-acea span.glyphicon-info-sign, .main-table .mt-maslo-api span.glyphicon-info-sign, .main-table .mt-maslo-sae span.glyphicon-info-sign,
@@ -10914,7 +10909,7 @@ article.oil-transmission .content > div.chars-table {
 .main-table .mt-plain-maslo-standart span.glyphicon-info-sign {
   vertical-align: top;
 }
-/* line 76, ../scss/component/_masla.scss */
+/* line 72, ../scss/component/_masla.scss */
 .main-table .mt-hydr-maslo-iso span.glyphicon-info-sign:hover, .main-table .mt-hydr-maslo-din span.glyphicon-info-sign:hover,
 .main-table .mt-compr-maslo-din span.glyphicon-info-sign:hover, .main-table .mt-compr-maslo-iso span.glyphicon-info-sign:hover,
 .main-table .mt-maslo-acea span.glyphicon-info-sign:hover, .main-table .mt-maslo-api span.glyphicon-info-sign:hover, .main-table .mt-maslo-sae span.glyphicon-info-sign:hover,
@@ -10923,47 +10918,47 @@ article.oil-transmission .content > div.chars-table {
   cursor: pointer;
 }
 
-/* line 82, ../scss/component/_masla.scss */
+/* line 78, ../scss/component/_masla.scss */
 .chars-table {
   padding: 0;
 }
-/* line 84, ../scss/component/_masla.scss */
+/* line 80, ../scss/component/_masla.scss */
 .chars-table > div {
   padding: 5px;
   width: 100%;
   display: inherit;
   vertical-align: middle;
 }
-/* line 85, ../scss/component/_masla.scss */
+/* line 81, ../scss/component/_masla.scss */
 .chars-table > div:nth-child(odd) {
   background: lightgrey;
 }
-/* line 86, ../scss/component/_masla.scss */
+/* line 82, ../scss/component/_masla.scss */
 .chars-table > div:nth-child(even) {
   background: lightgreen;
 }
-/* line 87, ../scss/component/_masla.scss */
+/* line 83, ../scss/component/_masla.scss */
 .chars-table > div:first-child {
   border-bottom: 1px solid #17460F;
   background: none;
 }
-/* line 89, ../scss/component/_masla.scss */
+/* line 85, ../scss/component/_masla.scss */
 .chars-table > div > div:nth-child(1) {
   width: 33%;
   text-align: left;
 }
-/* line 90, ../scss/component/_masla.scss */
+/* line 86, ../scss/component/_masla.scss */
 .chars-table > div > div:nth-child(2) {
   width: 33%;
   text-align: center;
 }
-/* line 91, ../scss/component/_masla.scss */
+/* line 87, ../scss/component/_masla.scss */
 .chars-table > div > div:nth-child(3) {
   width: 66%;
   text-align: right;
 }
 
-/* line 94, ../scss/component/_masla.scss */
+/* line 90, ../scss/component/_masla.scss */
 .order-btn {
   position: absolute;
   top: 40px;
@@ -10980,28 +10975,28 @@ article.oil-transmission .content > div.chars-table {
   z-index: 99;
 }
 @media screen and (min-width: 1200px) {
-  /* line 94, ../scss/component/_masla.scss */
+  /* line 90, ../scss/component/_masla.scss */
   .order-btn {
     right: 15px;
     top: 50px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 94, ../scss/component/_masla.scss */
+  /* line 90, ../scss/component/_masla.scss */
   .order-btn {
     right: 15px;
     top: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 94, ../scss/component/_masla.scss */
+  /* line 90, ../scss/component/_masla.scss */
   .order-btn {
     right: 15px;
     top: 40px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  /* line 94, ../scss/component/_masla.scss */
+  /* line 90, ../scss/component/_masla.scss */
   .order-btn {
     top: calc(30vw + 50px);
     margin-top: 20px;
@@ -11009,29 +11004,34 @@ article.oil-transmission .content > div.chars-table {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 94, ../scss/component/_masla.scss */
+  /* line 90, ../scss/component/_masla.scss */
   .order-btn {
     font-size: 30px;
   }
 }
-/* line 119, ../scss/component/_masla.scss */
+/* line 115, ../scss/component/_masla.scss */
 .order-btn:hover {
   cursor: pointer;
   box-shadow: 0 0 20px #FBBA00;
   color: #FFFFFF;
 }
 
-/* line 125, ../scss/component/_masla.scss */
+/* line 121, ../scss/component/_masla.scss */
 .mt-maslo-tds {
   /*Убираем базовую рамку вокруг ссылки на файл*/
   /**/
 }
-/* line 127, ../scss/component/_masla.scss */
+/* line 123, ../scss/component/_masla.scss */
 .mt-maslo-tds .file-link, .mt-maslo-tds .file-icon, .mt-maslo-tds .file-size, .mt-maslo-tds .file > span:last-child, .mt-maslo-tds .file > span:first-child {
   border-top: none;
   border-bottom: none;
   border-left: none;
   border-right: none;
+}
+
+/* line 134, ../scss/component/_masla.scss */
+.prev_name {
+  font-size: 70%;
 }
 
 /*РАЗМЕТКА ОСНОВНОЙ ТАБЛИЦЫ ИНДУСТРИАЛЬНЫХ МАСЕЛ*/

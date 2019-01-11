@@ -97,8 +97,13 @@
 
   <div{{ content_attributes.addClass('content') }}>
    <h1>{{ label }}</h1>
+
+   {% if content.field_sub_title|render is not empty %}
+       <span> {{ content.field_sub_title }} </span>
+   {% endif %}
+
    {% if content.field_name_previous|render is not empty %}
-       <span>Прежнее название : </span> {{ content.field_name_previous }}
+       <span class="prev_name">Прежнее название : {{ content.field_name_previous }} </span>
    {% endif %}
       <div class="main-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div>
@@ -185,7 +190,7 @@
 
       <br>
 
-      <div class="text-description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="text-description col-lg-7 col-md-7 col-sm-7 col-xs-12">
           {% if content.field_oil_description|render is not empty %}
               <span> {{ content.field_oil_description }} </span>
           {% endif %}
@@ -199,7 +204,7 @@
 
       <br>
 
-      <div class="pack-tds-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="pack-tds-table col-lg-5 col-md-5 col-sm-5 col-xs-12">
           {% if content.field_oil_packing|render is not empty %}
               <div class="mt-maslo-packing"><b>Варианты фасовки : </b> {{ content.field_oil_packing }}</div>
           {% endif %}

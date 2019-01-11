@@ -97,6 +97,7 @@
 
   <div{{ content_attributes.addClass('content') }}>
     <h1>{{ label }}</h1>
+
       <div class="main-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div>
             {% if content.field_oil_brand|render is not empty %}
@@ -121,7 +122,44 @@
         {% endif %}
       </div>
 
-      <div class="text-description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="chars-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div>
+              <div>Показатель</div>
+              <div>Метод</div>
+              <div>{{ label }}</div>
+          </div>
+
+          {% if content.field_oil_base_oil|render is not empty %}
+              <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_visc|render is not empty or content.field_oil_visc_method|render is not empty  %}
+              <div><div>Вязкость</div><div>{{ content.field_oil_visc_method }}</div><div>{{ content.field_oil_visc }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_density|render is not empty or content.field_oil_density_method|render is not empty  %}
+              <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_visc_index|render is not empty or content.field_oil_visc_index_method|render is not empty  %}
+              <div><div>Индекс вязкости</div><div>{{ content.field_oil_visc_index_method }}</div><div>{{ content.field_oil_visc_index }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__flash|render is not empty or content.field_oil_temp__flash_method|render is not empty %}
+              <div><div>Температура вспышки</div><div>{{ content.field_oil_temp__flash_method }}</div><div>{{ content.field_oil_temp__flash }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__pour|render is not empty or content.field_oil_temp__pour_method|render is not empty %}
+              <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__high|render is not empty or content.field_oil_temp__low|render is not empty %}
+              <div><div>Рабочий диапазон</div><div>{{ content.field_oil_temp__low }} - {{ content.field_oil_temp__high }}</div></div>
+          {% endif %}
+
+      </div>
+
+      <div class="text-description col-lg-7 col-md-7 col-sm-7 col-xs-12">
           {% if content.field_oil_description|render is not empty %}
               <span> {{ content.field_oil_description }} </span>
           {% endif %}
@@ -132,46 +170,6 @@
               <tr><td>Пищевой допуск : </td><td>{{ content.field_oil_food }}</td></tr>
           {% endif %}
        </div>
-
-
-      <div class="chars-table col-lg-7 col-md-7 col-sm-7 col-xs-12">
-        <div>
-            <div>Показатель</div>
-            <div>Метод</div>
-            <div>{{ label }}</div>
-        </div>
-
-        {% if content.field_oil_base_oil|render is not empty %}
-            <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_visc|render is not empty or content.field_oil_visc_method|render is not empty  %}
-            <div><div>Вязкость</div><div>{{ content.field_oil_visc_method }}</div><div>{{ content.field_oil_visc }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_density|render is not empty or content.field_oil_density_method|render is not empty  %}
-            <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_visc_index|render is not empty or content.field_oil_visc_index_method|render is not empty  %}
-            <div><div>Индекс вязкости</div><div>{{ content.field_oil_visc_index_method }}</div><div>{{ content.field_oil_visc_index }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__flash|render is not empty or content.field_oil_temp__flash_method|render is not empty %}
-            <div><div>Температура вспышки</div><div>{{ content.field_oil_temp__flash_method }}</div><div>{{ content.field_oil_temp__flash }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__pour|render is not empty or content.field_oil_temp__pour_method|render is not empty %}
-            <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__high|render is not empty or content.field_oil_temp__low|render is not empty %}
-            <div><div>Рабочий диапазон</div><div>{{ content.field_oil_temp__low }} - {{ content.field_oil_temp__high }}</div></div>
-        {% endif %}
-
-    </div>
-
-      <br>
 
       <div class="pack-tds-table col-lg-5 col-md-5 col-sm-5 col-xs-12">
           {% if content.field_oil_packing|render is not empty %}

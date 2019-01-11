@@ -97,6 +97,11 @@
 
   <div{{ content_attributes.addClass('content') }}>
    <h1>{{ label }}</h1>
+
+   {% if content.field_sub_title|render is not empty %}
+       <span> {{ content.field_sub_title }} </span>
+   {% endif %}
+
    {% if content.field_name_previous|render is not empty %}
        <div><span>Предыдущее название : </span> {{ content.field_name_previous }}</div>
    {% endif %}
@@ -131,78 +136,79 @@
 
     </div>
 
-      <div class="text-description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="chars-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <!--<div>
+              <div>Показатель</div>
+              <div>Метод</div>
+              <div>{#{{ label }}#}</div>
+          </div>-->
+
+          {% if content.field_oil_base_oil|render is not empty %}
+              <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_thickener|render is not empty %}
+              <div><div>Загуститель</div><div></div><div>{{ content.field_grease_thickener }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__low|render is not empty and content.field_oil_temp__high|render is not empty %}
+              <div><div>Температурный диапазон : </div><div>{{ content.field_oil_temp__low }}</div><div>{{ content.field_oil_temp__high }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__low|render is not empty and content.field_oil_temp__high|render is empty %}
+              <div><div>Нижний температурный предел</div><div></div><div>{{ content.field_oil_temp__low }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__high|render is not empty and content.field_oil_temp__low|render is empty %}
+              <div><div>Верхний температурный предел</div><div></div><div>{{ content.field_oil_temp__high }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_base_oil_visc_40|render is not empty and content.field_base_oil_visc_method|render is not empty  %}
+              <div><div>Вязкость базового масла при 40°C</div><div>{{ content.field_base_oil_visc_method }}</div><div>{{ content.field_grease_base_oil_visc_40 }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_base_oil_visc_100|render is not empty and content.field_base_oil_visc_method|render is not empty  %}
+              <div><div>Вязкость базового масла при 100°C</div><div>{{ content.field_base_oil_visc_method }}</div><div>{{ content.field_grease_base_oil_visc_100 }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_density|render is not empty or content.field_oil_density_method|render is not empty  %}
+              <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_penetration|render is not empty %}
+              <div><div>Пенетрация</div><div></div><div>{{ content.field_grease_penetration }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_speed_factor|render is not empty %}
+              <div><div>Скоростной фактор</div><div></div><div>{{ content.field_grease_speed_factor }}</div></div>
+          {% endif %}
+
+          {% if content.field_grease_temp__drop|render is not empty or content.field_grease_temp__drop_method|render is not empty %}
+              <div><div>Температура каплепадения</div><div>{{ content.field_grease_temp__drop_method }}</div><div>{{ content.field_grease_temp__drop }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_temp__pour|render is not empty or content.field_oil_temp__pour_method|render is not empty %}
+              <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_acid_number|render is not empty or content.field_oil_acid_number_method|render is not empty %}
+              <div><div>Кислотное число</div><div>{{ content.field_oil_acid_number_method }}</div><div>{{ content.field_oil_acid_number }}</div></div>
+          {% endif %}
+
+          {% if content.field_oil_ash|render is not empty or content.field_oil_ash_method|render is not empty %}
+              <div><div>Зольность</div><div>{{ content.field_oil_ash_method }}</div><div>{{ content.field_oil_ash }}</div></div>
+          {% endif %}
+
+      </div>
+
+      <div class="text-description col-lg-7 col-md-7 col-sm-7 col-xs-12">
           {% if content.field_oil_description|render is not empty %}
               <div> {{ content.field_oil_description }} </div>
           {% endif %}
           {% if content.field_oil_spec|render is not empty %}
-              <div>Особенности масла : {{ content.field_oil_spec }}</div>
-          {% endif %}
-          {% if content.field_oil_food|render is not empty %}
-              <div>Пищевой допуск : {{ content.field_oil_food }}</div>
+              <div><b>Особенности смазки :</b> {{ content.field_oil_spec }}</div>
           {% endif %}
       </div>
-
-      <div class="chars-table col-lg-7 col-md-7 col-sm-7 col-xs-12">
-        <div>
-            <div>Показатель</div>
-            <div>Метод</div>
-            <div>{{ label }}</div>
-        </div>
-
-        {% if content.field_oil_base_oil|render is not empty %}
-            <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_thickener|render is not empty %}
-            <div><div>Загуститель</div><div></div><div>{{ content.field_grease_thickener }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_base_oil_visc_40|render is not empty or content.field_base_oil_visc_method|render is not empty  %}
-            <div><div>Вязкость базового масла при 40°C</div><div>{{ content.field_base_oil_visc_method }}</div><div>{{ content.field_grease_base_oil_visc_40 }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_base_oil_visc_100|render is not empty or content.field_base_oil_visc_method|render is not empty  %}
-            <div><div>Вязкость базового масла при 100°C</div><div>{{ content.field_base_oil_visc_method }}</div><div>{{ content.field_grease_base_oil_visc_100 }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_density|render is not empty or content.field_oil_density_method|render is not empty  %}
-            <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_penetration|render is not empty %}
-            <div><div>Пенетрация</div><div></div><div>{{ content.field_grease_penetration }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_speed_factor|render is not empty %}
-            <div><div>Скоростной фактор</div><div></div><div>{{ content.field_grease_speed_factor }}</div></div>
-        {% endif %}
-
-        {% if content.field_grease_temp__drop|render is not empty or content.field_grease_temp__drop_method|render is not empty %}
-            <div><div>Температура каплепадения</div><div>{{ content.field_grease_temp__drop_method }}</div><div>{{ content.field_grease_temp__drop }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__pour|render is not empty or content.field_oil_temp__pour_method|render is not empty %}
-            <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__high|render is not empty %}
-            <div><div>Верхний температурный предел</div><div></div><div>{{ content.field_oil_temp__high }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__low|render is not empty %}
-            <div><div>Нижний температурный предел</div><div></div><div>{{ content.field_oil_temp__low }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_acid_number|render is not empty or content.field_oil_acid_number_method|render is not empty %}
-            <div><div>Кислотное число</div><div>{{ content.field_oil_acid_number_method }}</div><div>{{ content.field_oil_acid_number }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_ash|render is not empty or content.field_oil_ash_method|render is not empty %}
-            <div><div>Зольность</div><div>{{ content.field_oil_ash_method }}</div><div>{{ content.field_oil_ash }}</div></div>
-        {% endif %}
-
-    </div>
 
       <div class="pack-tds-table col-lg-5 col-md-5 col-sm-5 col-xs-12">
           {% if content.field_oil_packing|render is not empty %}
@@ -210,7 +216,7 @@
           {% endif %}
 
           {% if content.field_oil_dopuski|render is not empty %}
-              <div class="mt-maslo-dopuski"><b>Допуски : </b>{{ content.field_oil_dopuski }}
+              <div class="mt-maslo-dopuski"><b>Применение : </b>{{ content.field_oil_dopuski }}
 
                   {% if content.field_oil_food|render is not empty %}
                       <br><b>Пищевой допуск : </b>{{ content.field_oil_food }}
@@ -219,15 +225,13 @@
               </div>
           {% endif %}
 
-          {% if content.field_oil_spec|render is not empty %}
-              <div class="mt-maslo-specs"><b>Особенности масла :</b> {{ content.field_oil_spec }}</div>
-          {% endif %}
-
           {% if content.field_oil_tds|render is not empty %}
               <div class="mt-maslo-tds">{{ content.field_oil_tds }}</div>
           {% endif %}
-
       </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>Приведенные данные соответствуют состоянию техники на момент разработки. Возможны изменения. Данные не являются спецификацией на продукт и не освобождают
+              пользователя от проведения собственных испытаний. Более подробная информация предоставляется по запросу.</span></div>
 
       <!--<div class="order-btn"><span>ЗАКАЗАТЬ</span></div>-->
   </div>

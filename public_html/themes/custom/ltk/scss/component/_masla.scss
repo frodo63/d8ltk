@@ -36,10 +36,6 @@ article.oil-transmission {
   }
 }
 
-.main-table, .chars-table {
-  border:1px solid $green;
-}
-
 .main-table {
   @media #{$wide},#{$normal},#{$tablet}{
     border-right: none;
@@ -133,6 +129,10 @@ article.oil-transmission {
   /**/
 
 
+}
+
+.prev_name{
+font-size: 70%;
 }
 
 /*РАЗМЕТКА ОСНОВНОЙ ТАБЛИЦЫ ИНДУСТРИАЛЬНЫХ МАСЕЛ*/
