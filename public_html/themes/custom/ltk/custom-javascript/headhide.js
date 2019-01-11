@@ -14,7 +14,7 @@ Drupal.behaviors.basic = {
             });
 
             /*Первоначальное положение, до ресайза*/
-            if ($('.device-mobile').is(":visible")) {
+            /*if ($('.device-mobile').is(":visible")) {
                 $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК</h1>');
             } else if ($('.device-tablet').is(":visible")) {
                 $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК M</h1>');
@@ -22,10 +22,10 @@ Drupal.behaviors.basic = {
                 $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК L</h1>');
             } else {
                 $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК XL</h1>');
-            }
+            }*/
 
             /*Событие на рейсайз*/
-            $(window).off('resize').on('resize', function () {
+            /*$(window).off('resize').on('resize', function () {
                 if ($('.device-mobile').is(":visible")) {
                     $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК</h1>');
                 } else if ($('.device-tablet').is(":visible")) {
@@ -35,7 +35,7 @@ Drupal.behaviors.basic = {
                 } else {
                     $('#block-sitename div.field--name-body').html('<h1>ЛУБРИТЭК XL</h1>');
                 }
-            });
+            });*/
 
             /*MOBILE landscape height FIX*/
           $( window ).on( "orientationchange", function( event ) {
