@@ -10430,7 +10430,7 @@ p.cfp-topline {
   color: #17460F;
 }
 /* line 225, ../scss/component/_sidemenu.scss */
-.region-sidemenu #block-ltk-main-menu ul.nav, .region-sidemenu #block-tipmasla ul.nav, .region-sidemenu #block-tipsmazki ul.nav, .region-sidemenu #block-speczidkosti ul.nav {
+.region-sidemenu #block-ltk-main-menu ul.nav, .region-sidemenu #block-maslasidemenu ul.nav, .region-sidemenu #block-smazkisidemenu ul.nav, .region-sidemenu #block-tekhzhidkostisidemenu ul.nav {
   display: block;
 }
 /* line 228, ../scss/component/_sidemenu.scss */
