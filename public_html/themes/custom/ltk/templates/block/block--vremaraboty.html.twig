@@ -57,7 +57,7 @@
     'no-copy',
   ]
 %}
-<section{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
@@ -67,5 +67,5 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-</section>
+</div>
 
