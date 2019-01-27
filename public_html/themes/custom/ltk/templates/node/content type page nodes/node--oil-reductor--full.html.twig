@@ -97,6 +97,10 @@
 
   <div{{ content_attributes.addClass('content') }}>
     <h1>{{ label }}</h1>
+    
+   {% if content.field_sub_title|render is not empty %}
+       {{ content.field_sub_title }}
+   {% endif %}
 
       <div class="main-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div>
@@ -164,7 +168,7 @@
               <span> {{ content.field_oil_description }} </span>
           {% endif %}
           {% if content.field_oil_spec|render is not empty %}
-              <p>Особенности масла : {{ content.field_oil_spec }}</p>
+              <span>Особенности масла :</span> {{ content.field_oil_spec }}
           {% endif %}
           {% if content.field_oil_food|render is not empty %}
               <tr><td>Пищевой допуск : </td><td>{{ content.field_oil_food }}</td></tr>

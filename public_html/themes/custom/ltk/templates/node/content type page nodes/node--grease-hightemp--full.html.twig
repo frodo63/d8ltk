@@ -99,7 +99,7 @@
    <h1>{{ label }}</h1>
 
    {% if content.field_sub_title|render is not empty %}
-       <span> {{ content.field_sub_title }} </span>
+       {{ content.field_sub_title }}
    {% endif %}
 
    {% if content.field_name_previous|render is not empty %}
