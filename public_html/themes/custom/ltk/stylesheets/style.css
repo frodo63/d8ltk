@@ -10706,7 +10706,7 @@ footer.footer #block-shortfaq .panel-body, footer.footer #block-shortfaq .panel-
   color: #17460F;
 }
 /* line 40, ../scss/component/_footer.scss */
-footer.footer .region.region-footer > nav, footer.footer .region.region-footer > section {
+footer.footer .region.region-footer > nav, footer.footer .region.region-footer > div.block-block-content {
   float: left;
   text-align: center;
 }
@@ -10761,7 +10761,7 @@ footer.footer .region.region-footer > nav {
   text-transform: uppercase;
 }
 /* line 79, ../scss/component/_footer.scss */
-footer.footer .region.region-footer > section:last-child {
+footer.footer .region.region-footer > div.block-block-content:last-child {
   clear: right;
 }
 

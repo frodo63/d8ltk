@@ -37,7 +37,7 @@ footer.footer {
     color: $green;
   }
 
-  .region.region-footer>nav, .region.region-footer>section{
+  .region.region-footer>nav, .region.region-footer>div.block-block-content{
     float: left;
     text-align: center;
   }
@@ -76,7 +76,7 @@ footer.footer {
   .region.region-footer>nav{
     text-transform: uppercase;
   }
-  .region.region-footer>section:last-child{
+  .region.region-footer>div.block-block-content:last-child{
     clear: right;
   }
 }
