@@ -2,6 +2,50 @@
 /**
  * @file
  * Theme override to display a node.
+
+TDS (Описание)
+ 	field_oil_tds 	File
+Марка
+ 	field_oil_brand 	Entity reference
+Металл применения СОЖ
+ 	field_sog_metal_type 	Entity reference
+Обработка резанием алюминия
+ 	field_sog_adv_cons_cut_alum 	Text (plain)
+Обработка резанием стали
+ 	field_sog_adv_cons_cut_steel 	Text (plain)
+Общая обработка резанием
+ 	field_sog_adv_cons_cut_general 	Text (plain)
+Одобрения
+ 	field_oil_dopuski 	Text (formatted, long, with summary)
+Операция металлообработки
+ 	field_sog_operation 	Entity reference
+Описание
+ 	field_oil_description 	Text (formatted, long, with summary)
+Особенность
+ 	field_oil_spec 	Entity reference
+Плотность при 20 °C
+ 	field_sog_density_20 	Text (plain)
+Плотность при 20 °C
+ - Метод 	field_sog_dencity_20_method 	Entity reference
+Подзаголовок
+ 	field_sub_title 	Text (plain)
+Показатель pH при 5%
+ 	field_sog_ph5 	Text (plain)
+Показатель pH при 5% - Метод
+ 	field_sog_ph5_method 	Entity reference
+Поправочный коэффициент рефрактометра
+ 	field_sog_refractometer 	Text (plain)
+Сложная обработка резанием
+ 	field_sog_adv_cons_compl 	Text (plain)
+Содержание минерального масла
+ 	field_sog_mineral_percent 	Number (integer)
+Старое название
+ 	field_name_previous 	Text (plain)
+Текст - Применение
+ 	field_oil_application 	Text (formatted, long, with summary)
+Тип консистенции СОЖ
+ 	field_sog_cons_type 	Entity reference
+
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -105,6 +149,7 @@
    {% if content.field_name_previous|render is not empty %}
        <div class="prev_name">Прежнее название : {{ content.field_name_previous }} </div>
    {% endif %}
+
     <div class="main-table col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div>
             {% if content.field_oil_brand|render is not empty %}
@@ -112,18 +157,19 @@
             {% endif %}
         </div>
 
-        <div class="mt-maslo-type"><b>Назначение : </b>Масло гидравлическое</div>
-        <div class="plain_text">Спецификации</div>
+        <div class="mt-maslo-type"><b>Назначение : </b>Смазочно-охлаждающая жидкость</div>
 
 
-        {% if content.field_oil_iso|render is not empty and content.field_oil_visc|render is not empty %}
-            <div class="mt-hydr-maslo-iso"><span><b>По ISO : </b></span> {{ content.field_oil_iso }}</div>
+
+        <div class="plain_text">Применение</div>
+
+
+        {% if content.field_sog_metal_type|render is not empty %}
+            <div class="mt-red-maslo-din"><span><b>Металлы : </b></span> {{ content.field_sog_metal_type }}</div>
         {% endif %}
-        {% if content.field_oil_hydr_type|render is not empty %}
-            <div class="mt-hydr-maslo-din"><span><b>По DIN : </b></span> {{ content.field_oil_hydr_type }}</div>
-        {% endif %}
-        {% if content.field_oil_red_type|render is not empty %}
-            <div class="mt-red-maslo-din"><span>Допускается использование в редукторах, допуск: <b>По DIN : </b></span> {{ content.field_oil_red_type }}</div>
+
+        {% if content.field_sog_operation|render is not empty %}
+            <div class="mt-red-maslo-din"><span><b>Операции : </b></span> {{ content.field_sog_operation }}</div>
         {% endif %}
 
     </div>
@@ -135,48 +181,80 @@
             <div>{{ label }}</div>
         </div>
 
-        {% if content.field_oil_base_oil|render is not empty %}
-            <div><div>Базовое масло</div><div></div><div>{{ content.field_oil_base_oil }}</div></div>
+        {% if content.field_sog_mineral_percent|render is not empty %}
+            <div>
+                <div>Минерального масла, %</div>
+                <div></div>
+                <div>{{ content.field_sog_mineral_percent }}</div>
+            </div>
         {% endif %}
 
-        {% if content.field_oil_visc|render is not empty and content.field_oil_visc_method|render is not empty  %}
-            <div><div>Вязкость</div><div>{{ content.field_oil_visc_method }}</div><div>{{ content.field_oil_visc }}</div></div>
+        {% if content.field_sog_density_20|render is not empty %}
+            <div>
+                <div>Плотность</div>
+                <div>{% if content.field_sog_density_20_method|render is not empty  %}{{ content.field_sog_density_20_method }}{% endif %}</div>
+                <div>{{ content.field_sog_density_20 }}</div>
+            </div>
         {% endif %}
 
-        {% if content.field_oil_density|render is not empty and content.field_oil_density_method|render is not empty  %}
-            <div><div>Плотность</div><div>{{ content.field_oil_density_method }}</div><div>{{ content.field_oil_density }}</div></div>
+        {% if content.field_sog_ph5|render is not empty %}
+            <div>
+                <div>pH при 5%</div>
+                <div>{% if content.field_sog_ph5_method|render is not empty  %}{{ content.field_sog_ph5_method }}{% endif %}</div>
+                    <div>{{ content.field_sog_ph5 }}</div>
+            </div>
         {% endif %}
 
-        {% if content.field_oil_visc_index|render is not empty and content.field_oil_visc_index_method|render is not empty  %}
-            <div><div>Индекс вязкости</div><div>{{ content.field_oil_visc_index_method }}</div><div>{{ content.field_oil_visc_index }}</div></div>
+        {% if content.field_sog_refractometer|render is not empty %}
+            <div>
+                <div>Поправочный коэффициент рефрактометра</div>
+                <div></div>
+                    <div>{{ content.field_sog_refractometer }}</div>
+            </div>
         {% endif %}
 
-        {% if content.field_oil_temp__flash|render is not empty and content.field_oil_temp__flash_method|render is not empty %}
-            <div><div>Температура вспышки</div><div>{{ content.field_oil_temp__flash_method }}</div><div>{{ content.field_oil_temp__flash }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__pour|render is not empty and content.field_oil_temp__pour_method|render is not empty %}
-            <div><div>Температура застывания</div><div>{{ content.field_oil_temp__pour_method }}</div><div>{{ content.field_oil_temp__pour }}</div></div>
-        {% endif %}
-
-        {% if content.field_oil_temp__high|render is not empty and content.field_oil_temp__low|render is not empty %}
-            <div><div>Рабочий диапазон</div><div>{{ content.field_oil_temp__low }} - {{ content.field_oil_temp__high }}</div></div>
-        {% endif %}
     </div>
 
-      <div class="text-description col-lg-7 col-md-7 col-sm-7 col-xs-12">
+    <div class="text-description col-lg-7 col-md-7 col-sm-7 col-xs-12">
           {% if content.field_oil_description|render is not empty %}
               {{ content.field_oil_description }}
           {% endif %}
           {% if content.field_oil_spec|render is not empty %}
-              <span>Особенности масла :</span> {{ content.field_oil_spec }}
+              <span>Особенности СОЖ :</span> {{ content.field_oil_spec }}
           {% endif %}
           {% if content.field_oil_food|render is not empty %}
               <tr><td>Пищевой допуск : </td><td>{{ content.field_oil_food }}</td></tr>
           {% endif %}
+
       </div>
 
     <div class="pack-tds-table col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+        <div>
+            {% if content.field_oil_application|render is not empty %}
+                {{ content.field_oil_application }}
+            {% endif %}
+        </div>
+
+        <div class="plain_text"><b>Рекомендуемая концентрация продукта:</b></div>
+
+        {% if content.field_sog_adv_cons_cut_general|render is not empty %}
+            <div><span>Общее резание</span> {{ content.field_sog_adv_cons_cut_general }}</div>
+        {% endif %}
+
+        {% if content.field_sog_adv_cons_compl|render is not empty %}
+            <div><span>Сложное резание</span> {{ content.field_sog_adv_cons_compl }}</div>
+        {% endif %}
+
+        {% if content.field_sog_adv_cons_cut_alum|render is not empty %}
+            <div><span>Резание алюминия</span> {{ content.field_sog_adv_cons_cut_alum }}</div>
+        {% endif %}
+
+        {% if content.field_sog_adv_cons_cut_steel|render is not empty %}
+            <div><span>Резание стали</span> {{ content.field_sog_adv_cons_cut_steel }}</div>
+        {% endif %}
+
+
           {% if content.field_oil_packing|render is not empty %}
               <div class="mt-maslo-packing"><b>Варианты фасовки : </b> {{ content.field_oil_packing }}</div>
           {% endif %}
