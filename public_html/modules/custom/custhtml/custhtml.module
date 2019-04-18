@@ -17,6 +17,9 @@ function custhtml_theme($existing, $type, $theme, $path) {
     'custom_fourofour' => [
         'variables' => [],
     ],
+        'custom_sog' => [
+        'variables' => [],
+    ],
   ];
 }
 

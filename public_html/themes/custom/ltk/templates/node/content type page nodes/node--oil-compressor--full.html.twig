@@ -118,6 +118,10 @@
         {% if content.field_oil_hydr_type|render is not empty %}
             <div class="mt-hydr-maslo-din"><span><b>Класс гидравлики : </b></span> {{ content.field_oil_hydr_type }}</div>
         {% endif %}
+        
+        {% if content.field_oil_iso|render is not empty %}
+            <div class="mt-hydr-maslo-din"><span><b>Класс гидравлики : </b></span> {{ content.field_oil_iso }}</div>
+        {% endif %}
 
         {% if content.field_oil_compr_din_type|render is not empty %}
             <div class="mt-compr-maslo-din"><span><b>По DIN : </b></span> {{ content.field_oil_compr_din_type }}</div>
@@ -196,9 +200,6 @@
           {% endif %}
           {% if content.field_oil_spec|render is not empty %}
               <span>Особенности масла :</span> {{ content.field_oil_spec }}
-          {% endif %}
-          {% if content.field_oil_food|render is not empty %}
-              <tr><td>Пищевой допуск : </td><td>{{ content.field_oil_food }}</td></tr>
           {% endif %}
       </div>
 

@@ -31,6 +31,7 @@
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "drupal/custom_search": "^1.0@beta",
         "drupal/devel": "^1.2",
         "drupal/entity_reference_revisions": "^1.5",
         "drupal/google_tag": "^1.1",

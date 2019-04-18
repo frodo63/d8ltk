@@ -37,3 +37,11 @@ custhtml.notfound:
         _title: 'Такой страницы нет'
     requirements:
         _permission: 'access content'
+        
+custhtml.sog:
+    path: '/soges'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givesog'
+        _title: 'Смазочно-охлаждающие жидкости'
+    requirements:
+        _permission: 'access content'        

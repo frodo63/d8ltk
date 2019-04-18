@@ -40,5 +40,11 @@ class custhtmlController extends ControllerBase {
           '#theme' => 'custom_fourofour',
       ];
   }
+  
+    public function givesog() {
+    return [
+      '#theme' => 'custom_sog',
+    ];
+  }
 
 }
