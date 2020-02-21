@@ -98,7 +98,10 @@
   }
   //Paragraph 2
   #product_groups.cfp-2 {
-    //height: 70vh;
+    @media #{$mobile}{
+      height: 70vh;
+      max-height: 80vh;
+    }
 
     p {
       color: $black;
@@ -288,6 +291,25 @@
   }
   //Paragraph 8
   #brands.cfp-8 {
+    &.cert_showing{
+      @media #{$wide}{height:800px}
+      @media #{$normal}{height:700px}
+      @media #{$tablet}{height:500px}
+      @media #{$mobile}{height:90vh}
+      .dealership {
+        .pics{display:none}
+      }
+      .dealership .text{
+        @media #{$wide}{left:calc(50% - 250px)}
+        @media #{$normal}{left:calc(50% - 188px)}
+        @media #{$tablet}{left:calc(50% - 146px)}
+        @media #{$mobile}{left:calc(50% - 195px)}
+        img{display: block}
+        p{display: none}
+      }
+      .brands-otech, .brands-import {display:none}
+    }
+    @media #{$mobile}{min-height: 120vh;}
     height: 120%;
     .brands-otech, .brands-import {
       .col-lg-3{
@@ -328,7 +350,11 @@
     }
     .dealership {
       position: relative;
-      margin: 20px 0;
+      //margin: 20px 0;
+      @media #{$wide}{margin: 0;}
+      @media #{$normal}{margin: 0;}
+      @media #{$tablet}{margin: 0;}
+      @media #{$mobile}{margin: 0;}
       img:last-child{
         margin-top:20px;
       }
@@ -341,8 +367,21 @@
           left: 50%;
           width: 50%;
         }
+        @media #{$mobile}{
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
         p{
           text-align: justify;
+        }
+        img{
+          display: none;
+          @media #{$wide}{height:700px;}
+          @media #{$normal}{height:520px;}
+          @media #{$tablet}{height:400px;}
+          @media #{$mobile}{height:540px;}
         }
       }
     }
@@ -387,4 +426,14 @@
   }
   #competenivity.cfp-14{
     max-height: 100vh;
+  }
+  #page-contacts.cfp-15{
+    p{
+      @media #{$mobile}{
+        font-size: 5vw;
+      }
+    }
+    @media #{$mobile}{
+      min-height: 100vh;
+    }
   }

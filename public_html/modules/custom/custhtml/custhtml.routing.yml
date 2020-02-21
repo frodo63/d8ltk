@@ -45,3 +45,11 @@ custhtml.sog:
         _title: 'Смазочно-охлаждающие жидкости'
     requirements:
         _permission: 'access content'        
+
+custhtml.masla:
+    path: '/masla'
+    defaults:
+        _controller: 'Drupal\custhtml\Controller\custhtmlController::givemasla'
+        _title: 'Смазочные масла'
+    requirements:
+        _permission: 'access content'  

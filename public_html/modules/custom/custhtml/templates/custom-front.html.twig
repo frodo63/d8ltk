@@ -57,13 +57,13 @@
  */
 #}
 
-<div class="cfp-2 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="product_groups">
+<div class="cfp-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md visible-sm visible-xs" id="product_groups">
     <p class="cfp-topline">Мы поставляем продукцию на предприятия всех отраслей промышленности:<br>
         <span class="special" data-tag="masla"><a href="/masla" data-drupal-link-system-path="masla" >масла</a></span>,
         <span class="special" data-tag="smazki"><a href="/smazki" data-drupal-link-system-path="smazki" >смазки</a></span> и
         <span class="special" data-tag="tzhid"><a href="/specliq/sozh" data-drupal-link-system-path="specliq/sozh" >СОЖ для металлообработки</a></span>
     </p>
-    <div class="cfp2-masla">
+    <div class="cfp2-masla hidden-xs">
         <ul>
             <li><a href="/masla/motor" data-drupal-link-system-path="masla/motor" >Моторные</a></li>
             <li><a href="/masla/transmission" data-drupal-link-system-path="masla/transmission">Трансмиссионные</a></li>
@@ -73,7 +73,7 @@
             <li><a href="/masla/reductor" data-drupal-link-system-path="masla/reductor">Редукторные</a></li>
         </ul>
     </div>
-    <div class="cfp2-smazki">
+    <div class="cfp2-smazki hidden-xs">
         <ul>
             <li><a href="/smazki/general" data-drupal-link-system-path="smazki/general">Универсальные</a></li>
             <li><a href="/smazki/hightemp" data-drupal-link-system-path="smazki/hightemp">Высокотемпературные</a></li>
@@ -85,56 +85,48 @@
             <li><a href="/smazki/contact" data-drupal-link-system-path="smazki/contact">Смазки для электроконтактов</a></li>
         </ul>
     </div>
-    <!--<div class="cfp2-tzhid">
-        <ul>
-            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/soj">СОЖ (металлообработка)</a></li>
-            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/antifreeze">Антифризы</a></li>
-            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/tosol">Тосолы</a></li>
-        </ul>
-    </div>-->
 </div>
 
-<div class="cfp-8 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="brands">
+<div class="cfp-8 col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md visible-sm visible-xs" id="brands">
     <p class="cfp-topline">Брэнды</p>
-    <div class="brands-otech col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+    <div class="brands-otech col-lg-12 col-md-12 col-sm-12 hidden-xs">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
     </div>
     <div class="dealership col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
         <div class="pics col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <img src="{{ base_path ~ directory }}/images/brands/bechem_logo.png" width="200" alt="Bechem">
-            <img src="{{ base_path ~ directory }}/images/certificate/bechem_cert_200.png" alt="Сертификат Bechem">
+            <img id="cert_small" src="{{ base_path ~ directory }}/images/certificate/bechem_cert_200.png" alt="Сертификат Bechem">
         </div>
-
         <div class="text col-lg-8 col-md-8 col-sm-6 col-xs-12">
             <p>ООО "Лубритэк" многие годы является официальным дилером марки Bechem в Приволжском федеральном округе. BECHEM разрабатывает,
                 производит и продает по всему миру высококачественные специальные
                 смазочные материалы и средства для металлообработки для всех отраслей промышленности.</p>
+          <img id="cert_large" src="{{ base_path ~ directory }}/images/certificate/Bechem cert.png" alt="Сертификат Bechem ">
         </div>
     </div>
-    <div class="brands-import col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+    <div class="brands-import col-lg-12 col-md-12 col-sm-12 hidden-xs">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3"></div>
     </div>
 </div>
 
-<div class="cfp-3 col-lg-12 col-md-12 col-sm-12 hidden-sx" id='branches'>
+<div class="cfp-3 col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm hidden-xs " id='branches'>
     <p class="cfp-topline">Отрасли</p>
     <div class="cfp3-wrapper">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-sx-5">
             <span class="cfp3-title" data-count="1">Пищевое производство</span><br>
             <span class="cfp3-title" data-count="2">Металлообработка и Металлургия</span><br>
             <span class="cfp3-title" data-count="3">Химическая промышленность</span><br>
@@ -146,7 +138,7 @@
             <span class="cfp3-title" data-count="9">Транспорт</span><br>
             <span class="cfp3-title" data-count="10">Строительство</span><br>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-sx-7">
             <p class="cfp3-popup" data-count="1">Алкогольные и безалкогольные напитки кондитерские и хлебобулочные изделия мороженое, замороженные продукты и полуфабрикаты мясо-молочная продукция</p>
             <p class="cfp3-popup" data-count="2">Литьё Обработка металлов давлением Механическая обработка Сварка металлов</p>
             <p class="cfp3-popup" data-count="3">Неорганическая химия, Органическая химия Керамика, Нефтехимия, Агрохимия Полимеры,Эластомеры Фармацевтическая химия, Парфюмерия и косметика</p>
@@ -161,7 +153,7 @@
     </div>
 </div>
 
-<!--<div class="cfp-1 col-lg-12 col-md-12 col-sm-12 hidden-sx">
+<!--<div class="cfp-1 col-lg-12 col-md-12 col-sm-12 hidden-xs">
     <div class="2column col-lg-6 col-md-6 col-sm-12 hidden-xs">
         <p class="cfp_title">Комплексность</p>
         <p class="cfp_text">Это тект про комплексность комплексность такая комплеексная, поставляется все в комплекссе, не отдельно ,а вместе.</p>
@@ -173,7 +165,7 @@
     </div>
 </div>--><!--Комплексность и Компетентность кратко-->
 
-<div class="cfp-5 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="work_scheme">
+<div class="cfp-5 col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm hidden-xs" id="work_scheme">
     <p class="cfp-topline hidden-xs">Схема работы</p>
     <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
         <div class="cfp5-wrapper">
@@ -247,7 +239,7 @@
     </div>
 </div>
 
-<!--<div class="cfp-7 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="q-a">
+<!--<div class="cfp-7 col-lg-12 col-md-12 col-sm-12 hidden-xs" id="q-a">
     <p class="cfp-topline">Вопрос-ответ</p>
     <div id="accordion" class="panel-group">
         <div class="panel panel-default">
@@ -331,7 +323,7 @@
     </div>
 </div>--><!--Вопрос-Ответ-->
 
-<!--<div class="cfp-9 col-lg-12 col-md-12 col-sm-12 hidden-sx">
+<!--<div class="cfp-9 col-lg-12 col-md-12 col-sm-12 hidden-xs">
     <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
@@ -361,7 +353,7 @@
     </div>
 </div>--><!--Слайдер-->
 
-<div class="cfp-15 col-lg-12 col-md-12 col-sm-12 hidden-sx page-contacts">
+<div class="cfp-15 col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md visible-sm visible-xs" id="page-contacts">
     <p>Контакты</p>
     <br>
     <p><b>Адрес:</b>&nbsp;&nbsp;443109, РФ, Самарская область, город Самара, улица Товарная, 24А.</p>
@@ -379,7 +371,7 @@
     </div>
 </div>
 
-<div class="cfp-10 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="logistics">
+<div class="cfp-10 col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm hidden-xs" id="logistics">
     <p class="cfp-topline">Логистика</p>
     <ul id="myTab" class="nav nav-tabs">
         <li class="active"><a href="#sklad" data-toggle="tab">Склад в Самаре</a></li>
@@ -430,7 +422,7 @@
     </div>
 </div>
 
-<div class="cfp-12 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="about-company">
+<div class="cfp-12 col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm hidden-xs" id="about-company">
     <!--<p class="cfp-topline">О компании</p>-->
 
     <p class="text-left">Мы - клиентоориентированная компания, основанная в 2010 г. Наша деятельность <b>в первую очередь</b> направлена на обеспечение бесперебойной работы потребителей.<br><br>Наша задача:</p>
@@ -461,7 +453,7 @@
     {#{{ requestform }}#}
 </div>--><!--Форма добавления заявки-->
 
-<!--<div class="cfp-13 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="complexity">
+<!--<div class="cfp-13 col-lg-12 col-md-12 col-sm-12 hidden-xs" id="complexity">
     <p class="cfp-topline">Комплексность</p>
     В ООО «Лубритэк» вы можете получить практически любой вид смазочных материалов и техжидкостей, доступных на территории РФ.
     Вы можете быть гарантированно уверенными в исполнении многопозиционных заявок.
@@ -478,7 +470,7 @@
     делают работу с нами комфортной.
 </div>--><!--Комплексность-->
 
-<!--<div class="cfp-14 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="competenivity">
+<!--<div class="cfp-14 col-lg-12 col-md-12 col-sm-12 hidden-xs" id="competenivity">
     <p class="cfp-topline">Компетентность</p>
     Одно из безусловных преимуществ ООО «Лубритэк» - профессиональный, сплочённый, грамотный и разносторонне образованный коллектив, который является достоянием далеко не каждой компании.
     Второе – это колоссальный опыт работы каждого работника в сфере смазочных материалов, СОЖ, растворителей, энергетических масел и спецпродуктов.

@@ -1,0 +1,240 @@
+.navbar {
+  @media #{$mobile}{
+/**/
+    height: 30vw;
+    /*На мобильном скрыты:*/
+    #block-uppertext,
+    #block-vremaraboty,
+    #block-siteslogan,
+    #block-adres-2{
+      display: none;
+    }
+    /*На минимайзде дополнительно скрываются:*/
+    &.minimized {
+      height: 23vw;
+      margin-bottom: 0;
+      #block-uppertext, #block-adres-2, #block-vremaraboty,
+      #block-elpocta, #block-telephones {
+        display: none;
+      }
+    }
+    /*Общее позиционирование блоков, шрифт, цвет текста*/
+    #block-ltk-main-menu,
+    #block-sitename,
+    #block-adres-2,
+    #block-telephones,
+    #block-elpocta,
+    .logo {
+      position: absolute;
+      font-family: 'Oswald', sans-serif;
+      color: $green;
+    }
+
+    .logo {
+      top: 3vw;
+      left: 3vw;
+      padding: 0;
+      margin: 0;
+      @media (orientation: portrait){
+        &.minimized {}
+      }
+      @media (orientation: landscape){
+        &.minimized {}
+      }
+
+      img {
+        height: 18vw;
+        width: 18vw;
+        @media (orientation: portrait) {
+          &.minimized {}
+        }
+        @media (orientation: landscape) {
+          &.minimized {}
+        }
+      }
+    }
+    #block-sitename {
+      @media (orientation: portrait) {
+        top: 6vw;
+        left: 23vw;
+        width: 54vw;
+        h1{
+          margin: 0;
+          padding: 0;
+          font-weight: 400;
+          font-size: 12vw;
+          line-height: 12vw;
+          text-align: center;
+          width: 54vw;
+        }
+      }
+      @media (orientation: landscape) {
+        top: 1vmax;
+        left: 11vw;
+        font-weight: 400;
+        font-size: 8vmax;
+        line-height: 8vmax;
+        text-align: center;
+        width: 70vw;
+      }
+      &.minimized {
+        @media (orientation: portrait) {
+          width: 100%;
+          top: 5vw;
+          font-size: 40vw;
+          line-height: 40vw;}
+        @media (orientation: landscape) {
+          width: 100%;
+          top: 5vw;
+          font-size: 40vw;
+          line-height: 40vw;
+        }
+      }
+
+
+    }
+    #block-ltk-search {
+      @media (orientation: portrait) {}
+      @media (orientation: landscape) {}
+
+      font-family: "Oswald", sans-serif;
+      height: 6vmax;
+      position: absolute;
+      top: 12vmax;
+      height: 10vmax;
+      #search-block-form {.form-item {margin-bottom: 0}}
+      input.form-search {
+        -webkit-border-top-right-radius: 0vw;
+        -moz-border-top-right-radius: 0vw;
+        border-top-right-radius: 0vw;
+        -webkit-border-bottom-right-radius: 0vw;
+        -moz-border-bottom-right-radius: 0vw;
+        border-bottom-right-radius: 0vw;
+        -webkit-border-bottom-left-radius: 0vw;
+        -moz-border-bottom-left-radius: 0vw;
+        border-bottom-left-radius: 0vw;
+        height: 10vmax;
+        border: none;
+      }
+      .input-group {
+
+        @media (orientation: portrait) {}
+        @media (orientation: landscape) {}
+
+        height: 6vmax;
+        width: calc(89vw - 30vw);
+        #edit-keys--2{
+          font-size: 4vh;
+        }
+        position: absolute;
+        display: block;
+        .btn-primary {
+          @media (orientation: portrait) {}
+          @media (orientation: landscape) {}
+
+          font-size: 3vh;
+          border: 1vw white solid;
+          position: absolute;
+          width: 11vw;
+          height: 11vw;
+          z-index: 100;
+          background: $blue;
+        }
+      }
+      @media (orientation: landscape) {
+        top: 17vh;
+      }
+
+    }
+    #block-elpocta {
+      p img {display: none}
+      @media (orientation: portrait) {
+        top: 22vw;
+        right: 3vw;
+        font-size: 5vw;
+        line-height: 6vw;
+        text-align: right;
+      }
+      @media (orientation: landscape) {}
+      a:visited, a:hover, a:active {  color: $green}
+      &.minimized {}
+    }
+    #block-telephones {
+      p:nth-child(1){display: none}
+      p:nth-child(3){display: none}
+      &.minimized{
+      }
+
+      @media (orientation: portrait) {
+        top: 22vw;
+        left: 3vw;
+        p {
+          font-size: 5vw;
+          line-height: 6vw;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+        &.minimized {}
+      }
+      @media (orientation: landscape) {
+        top: 2vmax;
+        right: 1vmax;
+        text-align: center;
+        font-size: 3vmax;
+        line-height: 3vmax;
+        .h {
+          width: 30vw;
+        }
+        &.minimized {}
+      }
+
+
+    }
+    #block-adres-2 {
+      display: none;
+
+      @media (orientation: portrait) {}
+      @media (orientation: landscape) {}
+      &.minimized {}
+
+      top: 34vw;
+      right: 3vw;
+      font-size: 5vw;
+      line-height: 6vw;
+      text-align: right;
+
+      @media (orientation: landscape) {
+        top: 11vmax;
+      }
+    }
+    #block-ltk-main-menu {
+
+      @media (orientation: portrait) {}
+      @media (orientation: landscape) {}
+      &.minimized {}
+
+      top: 18vh;
+      position: absolute;
+      ul.navbar-nav {
+        margin: 0vw;
+        li {
+          background: $white;
+          width: calc(100vw - 30vw);
+          a {
+            height: 6vmax;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 1vw solid $white;
+            &:hover {
+              background: $yellow;
+              color: $green;
+            }
+            font-size: 30vw;
+            line-height: 40vw;
+          }
+        }
+      }
+    }
+  }
+}

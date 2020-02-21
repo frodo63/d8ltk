@@ -125,6 +125,17 @@ Drupal.behaviors.basic = {
           //})
           /**/
 
+          /*Открывание сертификата по клику*/
+          $('#cert_small, #cert_large').off('click.open_cert').on('click.open_cert', function(){
+            if($('.dealership .text p').is(":hidden")){
+              $('#brands.cfp-8').toggleClass('cert_showing');
+              console.log(1);
+            }else{
+              $('#brands.cfp-8').toggleClass('cert_showing');
+              console.log(2);
+            }
+          });
+
         })(jQuery);
     }
 };

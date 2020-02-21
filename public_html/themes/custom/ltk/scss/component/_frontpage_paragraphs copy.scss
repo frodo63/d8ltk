@@ -1,0 +1,390 @@
+//@media #{$wide}, #{$normal}, #{$tablet}, #{$mobile}{
+  div[class*='cfp-'] {
+
+    /*Высота cfp - строгая в пикселях , в зависипости  от брекета*/
+    @media #{$wide}{min-height: 720px}
+    @media #{$normal}{min-height: 540px}
+    @media #{$tablet}{min-height: 420px}
+    @media #{$mobile}{min-height: 70%}
+    /*Высота внутренних дивов в cfp-шках прописывается в самих cfp-шках*/
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 2vh 0;
+    border-bottom: 2px $yellow solid;
+    background-repeat: no-repeat;
+    &, & *{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    /*ЗАДАЕМ РАЗМЕРЫ ШРИФТА ДЛЯ ВСЕГО В ОДНОСМ МЕСТЕ*/
+    p.cfp_title {
+      font-size:50px;
+      @media #{$mobile}{
+        font-size: 12vw;
+      }
+
+    }
+    .cfp-topline, span.special {
+      font-size: 35px;
+      @media #{$tablet}{
+        font-size: 22px;
+      }
+      @media #{$mobile}{
+        font-size: 7vw;
+      }
+    }
+    p, span, .cfp-2 li, div[class*='cfp2'] li {
+      font-size:25px;
+      @media #{$tablet}{
+        font-size:16px;
+      }
+      @media #{$mobile}{
+        font-size: 6vw;
+      }
+    }
+    #myTab a, #myTabContent p {
+      font-size:20px;
+      @media #{$tablet}{
+        font-size: 16px;
+      }
+
+    }
+    .cfp5-column {
+      font-size: 18px;
+      @media #{$tablet}{
+        font-size: 17px;
+      }
+      @media #{$mobile}{
+        font-size: 5vw;
+      }
+    }
+    /**/
+    &:last-child{
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    @media #{$mobile}{
+      display: none;
+      //Временно отключил все параграфы чтобы не мешали, по одному буду править
+    }
+  }
+  .fix {
+    background: lightpink;
+  }
+  p.cfp-topline{
+    height: 60px;
+    color: #000000;
+    text-align: center;
+  }
+//}
+//TODO: ПЕРЕДЕЛАТЬ ВЫСОТУ ПАРАГРАФОВ
+  //Paragraph 1
+  .cfp-1 {
+    &>div{
+      //height: 70vh;
+    }
+    p.cfp_title {
+      top: 10vh;
+      position: absolute;
+      width: 100%;
+    }
+    p.cfp_text {
+      top: 30vh;
+      position: absolute;
+      width: 100%;
+    }
+  }
+  //Paragraph 2
+  #product_groups.cfp-2 {
+    //height: 70vh;
+
+    p {
+      color: $black;
+      text-align: center;
+      position: absolute;
+    }
+    .special{
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover{
+        color: $green;
+      }
+    }
+    .cfp2-masla,
+    .cfp2-smazki,
+    .cfp2-tzhid{
+      background-size: 40%;
+      ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: left;
+        li{
+          &:hover{
+            background: $yellow;
+            color: $black;
+            cursor: pointer;
+          }
+        }
+      }
+      img{
+        height: 40px;
+        width: 100px;
+      }
+      display: block;
+      position: absolute;
+      height: 70%;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+    .cfp2-masla{
+      top:30%;
+      left:0;
+    }
+    .cfp2-smazki{
+      top:30%;
+      left:33%;
+    }
+    .cfp2-tzhid{
+      top:30%;
+      left:66%;
+    }
+
+  }
+  //Paragraph 3
+  #branches.cfp-3 {
+    //height: 70vh;
+    .col-lg-2, .col-lg-8 {
+      height:inherit;
+    }
+    .col-lg-2 {
+      position: absolute;
+      top:50%;
+      transform: translate(0, -50%);
+    }
+    .cfp3-title {
+      cursor: pointer;
+      p {
+        text-align: right;
+      }
+      &:hover{
+        background: $yellow;
+        color: $black;
+      }
+    }
+    .cfp3-popup {
+      background: $white;
+      color: $black;
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      p {
+        text-align: right;
+      }
+    }
+    .cfp3-wrapper {
+      height: inherit;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: left;
+    }
+  }
+  //Paragraph 4
+  .cfp-4 {
+    //height: 70vh;
+    .cfp4-column {
+      height:inherit;
+      p {
+        background: $yellow;
+        position: absolute;
+        top:50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+  //Paragraph 5
+  #work_scheme.cfp-5 {
+    height: 70vh;
+    .col-lg-2, col-md-2, col-sm-2{
+      padding: 0;
+      height: inherit;
+      .cfp5-wrapper{
+        height: 85%;
+        background: $yellow;
+        margin: 0 .5vh;
+        p{
+          width: calc(100% - 1vh);
+        }
+
+      }
+      a, a:hover, a:visited{
+        color: $green;
+      }
+      .cf5-arrow{
+        position: absolute;
+        top: 40%;
+        right: -4px;
+      }
+      p.cfp5-title{
+        position: absolute;
+        top:5%;
+        @media #{$mobile} {
+          writing-mode: vertical-lr;
+          text-orientation: mixed;
+          display: block;
+          height: inherit;
+          width: unset;
+          margin: 0;
+          top: 0;
+        }
+        @media #{$normal} {
+          font-size: 22px;
+        }
+      }
+      p.cfp5-column, ul.cfp5-column{
+        @media #{$tablet} {
+          font-size: 14px;
+          top:25%;
+          span{font-size: 14px}
+          }
+        @media #{$normal} {
+          font-size: 16px;
+          span{font-size: 16px}
+        }
+        @media #{$wide} {
+          font-size: 18px;
+          span{font-size: 18px}
+        }
+        span {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+          position: absolute;
+          top:30%;
+
+      }
+      ul.cfp5-column{
+        list-style: none;
+        padding: 0px;
+      }
+    }
+
+  }
+  //Paragraph 6
+  //Paragraph 7
+  #q-a.cfp-7{
+    //height: 70vh;
+    #accordion{
+      top: 20%;
+      position: absolute;
+    }
+  }
+  //Paragraph 8
+  #brands.cfp-8 {
+    height: 120%;
+    .brands-otech, .brands-import {
+      .col-lg-3{
+        height: 100px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        opacity:0.2;
+        &:hover{
+          -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0);
+          opacity:1;
+        }
+      }
+    }
+    .brands-otech{
+      .col-lg-3{
+        &:nth-child(1){background: url("../images/brands/kzm_logo.png") center center no-repeat}
+        &:nth-child(2){background: url("../images/brands/gazpromneft_logo.png") center center no-repeat}
+        &:nth-child(3){background: url("../images/brands/lukoil_logo.png") center center no-repeat}
+        &:nth-child(4){background: url("../images/brands/rosneft_logo.png") center center no-repeat}
+        &:nth-child(5){background: url("../images/brands/delfin_logo.png") center center no-repeat}
+        &:nth-child(6){background: url("../images/brands/luxe_logo.png") center center no-repeat}
+        &:nth-child(7){background: url("../images/brands/devon_logo.png") center center no-repeat}
+        &:nth-child(8){background: url("../images/brands/centeroil_logo.png") center center no-repeat}
+      }
+    }
+    .brands-import{
+      .col-lg-3{
+        &:nth-child(1){background: url("../images/brands/shell_logo.png") center center no-repeat}
+        &:nth-child(2){background: url("../images/brands/mobil_logo.png") center center no-repeat}
+        &:nth-child(3){background: url("../images/brands/agip_logo.png") center center no-repeat}
+        &:nth-child(4){background: url("../images/brands/castrol_logo.png") center center no-repeat}
+        &:nth-child(5){background: url("../images/brands/total_logo.png") center center no-repeat}
+        &:nth-child(6){background: url("../images/brands/motorex_logo.png") center center no-repeat}
+        &:nth-child(7){background: url("../images/brands/kluber_logo.png") center center no-repeat}
+        &:nth-child(8){background: url("../images/brands/oks_logo.png") center center no-repeat}
+      }
+    }
+    .dealership {
+      position: relative;
+      margin: 20px 0;
+      img:last-child{
+        margin-top:20px;
+      }
+      .text{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 60%;
+        @media #{$tablet}{
+          left: 50%;
+          width: 50%;
+        }
+        p{
+          text-align: justify;
+        }
+      }
+    }
+  }
+  //Paragraph 9
+  .cfp-9 {
+    #myCarousel {
+      //height:55vh;
+    }
+  }
+  //Paragraph 10
+  #logistics.cfp-10 {
+    //height: 70vh;
+    .tab-pane{
+      text-align: left;
+    }
+    img.ico {
+      height:40px;
+      width:40px;
+      color: grey;
+    }
+    img.ico-big {
+      height:60px;
+      width:60px;
+      color: $black;
+    }
+    img.ico-small {
+      height:20px;
+      width:20px;
+      color: $green;
+    }
+    #clock{
+      height: 15px;
+      width: 15px;
+    }
+  }
+  #about-company.cfp-12{
+    max-height: 100vh;
+  }
+  #complexity.cfp-13{
+    max-height: 100vh;
+  }
+  #competenivity.cfp-14{
+    max-height: 100vh;
+  }

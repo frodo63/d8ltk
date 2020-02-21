@@ -46,5 +46,11 @@ class custhtmlController extends ControllerBase {
       '#theme' => 'custom_sog',
     ];
   }
+  
+      public function givemasla() {
+    return [
+      '#theme' => 'custom_masla',
+    ];
+  }
 
 }

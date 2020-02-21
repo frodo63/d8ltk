@@ -29,7 +29,6 @@
       font-family: 'Oswald', sans-serif;
       color: $green;
     }
-
     .logo {
       top: 3vw;
       left: 3vw;
@@ -55,7 +54,9 @@
     }
     #block-sitename {
       @media (orientation: portrait) {
-        top: 6vw;
+        font-size: 6vmax;
+        text-align: center;
+        top: 4vmax;
         left: 23vw;
         width: 54vw;
         h1{
@@ -69,8 +70,8 @@
         }
       }
       @media (orientation: landscape) {
-        top: 1vmax;
-        left: 11vw;
+        top: 10vmax;
+        left: 24vw;
         font-weight: 400;
         font-size: 8vmax;
         line-height: 8vmax;
@@ -79,10 +80,17 @@
       }
       &.minimized {
         @media (orientation: portrait) {
-          width: 100%;
-          top: 5vw;
-          font-size: 40vw;
-          line-height: 40vw;}
+          font-size: 5vmax;
+          h1{
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+            font-size: 12vw;
+            line-height: 12vw;
+            text-align: center;
+            width: 54vw;
+          }
+        }
         @media (orientation: landscape) {
           width: 100%;
           top: 5vw;
@@ -151,19 +159,21 @@
       @media (orientation: portrait) {
         top: 22vw;
         right: 3vw;
-        font-size: 5vw;
-        line-height: 6vw;
+        font-size: 3vmax;
+        line-height: 3vmax;
         text-align: right;
       }
-      @media (orientation: landscape) {}
-      a:visited, a:hover, a:active {  color: $green}
+      @media (orientation: landscape) {
+        top: 23vmax;
+        font-size: 4vmax;
+        line-height: 4vmax;
+      }
+      a:visited, a:hover, a:active {color: $green}
       &.minimized {}
     }
     #block-telephones {
       p:nth-child(1){display: none}
       p:nth-child(3){display: none}
-      &.minimized{
-      }
 
       @media (orientation: portrait) {
         top: 22vw;
@@ -174,21 +184,18 @@
           font-weight: 400;
           margin-bottom: 0;
         }
-        &.minimized {}
       }
       @media (orientation: landscape) {
-        top: 2vmax;
+        text-align: center;
+        top: 24vmax;
         right: 1vmax;
         text-align: center;
-        font-size: 3vmax;
-        line-height: 3vmax;
+        font-size: 4vmax;
+        line-height: 4vmax;
         .h {
-          width: 30vw;
+          width: 30vmax;
         }
-        &.minimized {}
       }
-
-
     }
     #block-adres-2 {
       display: none;

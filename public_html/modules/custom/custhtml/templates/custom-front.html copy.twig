@@ -1,0 +1,493 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Navigation:
+ * - breadcrumb: The breadcrumb trail for the current page.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - tabs: Tabs linking to any sub-pages beneath the current page (e.g., the
+ *   view and edit tabs when displaying a node).
+ * - action_links: Actions local to the page, such as "Add menu" on the menu
+ *   administration interface.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.navigation: Items for the navigation region.
+ * - page.navigation_collapsible: Items for the navigation (collapsible) region.
+ * - page.highlighted: Items for the highlighted content region.
+ * - page.help: Dynamic help text, mostly for admin pages.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.footer: Items for the footer region.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+<div class="cfp-2 col-lg-12 col-md-12 col-sm-12 col-sx-12" id="product_groups">
+    <p class="cfp-topline">Мы поставляем продукцию на предприятия всех отраслей промышленности:<br>
+        <span class="special" data-tag="masla"><a href="/masla" data-drupal-link-system-path="masla" >масла</a></span>,
+        <span class="special" data-tag="smazki"><a href="/smazki" data-drupal-link-system-path="smazki" >смазки</a></span> и
+        <span class="special" data-tag="tzhid"><a href="/specliq/sozh" data-drupal-link-system-path="specliq/sozh" >СОЖ для металлообработки</a></span>
+    </p>
+    <div class="cfp2-masla">
+        <ul>
+            <li><a href="/masla/motor" data-drupal-link-system-path="masla/motor" >Моторные</a></li>
+            <li><a href="/masla/transmission" data-drupal-link-system-path="masla/transmission">Трансмиссионные</a></li>
+            <li><a href="/masla/hydraulic" data-drupal-link-system-path="masla/hydraulic">Гидравлические</a></li>
+            <li><a href="/masla/plain" data-drupal-link-system-path="masla/plain">Индустриальные</a></li>
+            <li><a href="/masla/compressor" data-drupal-link-system-path="masla/compressor">Компрессорные</a></li>
+            <li><a href="/masla/reductor" data-drupal-link-system-path="masla/reductor">Редукторные</a></li>
+        </ul>
+    </div>
+    <div class="cfp2-smazki">
+        <ul>
+            <li><a href="/smazki/general" data-drupal-link-system-path="smazki/general">Универсальные</a></li>
+            <li><a href="/smazki/hightemp" data-drupal-link-system-path="smazki/hightemp">Высокотемпературные</a></li>
+            <li><a href="/smazki/lowtemp" data-drupal-link-system-path="smazki/lowtemp">Низкотемпературные</a></li>
+            <li><a href="/smazki/food" data-drupal-link-system-path="smazki/food">Пищевые</a></li>
+            <li><a href="/smazki/pastes" data-drupal-link-system-path="smazki/pastes">Пасты</a></li>
+            <li><a href="/smazki/semiliq" data-drupal-link-system-path="smazki/semiliq">Полужидкие смазки</a></li>
+            <li><a href="/smazki/polymer" data-drupal-link-system-path="smazki/polymer">Смазки для полимерных материалов</a></li>
+            <li><a href="/smazki/contact" data-drupal-link-system-path="smazki/contact">Смазки для электроконтактов</a></li>
+        </ul>
+    </div>
+    <!--<div class="cfp2-tzhid">
+        <ul>
+            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/soj">СОЖ (металлообработка)</a></li>
+            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/antifreeze">Антифризы</a></li>
+            <li><a href="/techzhidkosti/plain" data-drupal-link-system-path="techzhidkosti/tosol">Тосолы</a></li>
+        </ul>
+    </div>-->
+</div>
+
+<div class="cfp-8 col-lg-12 col-md-12 col-sm-12 col-sx-12" id="brands">
+    <p class="cfp-topline">Брэнды</p>
+    <div class="brands-otech col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+    </div>
+    <div class="dealership col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div class="pics col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <img src="{{ base_path ~ directory }}/images/brands/bechem_logo.png" width="200" alt="Bechem">
+            <img src="{{ base_path ~ directory }}/images/certificate/bechem_cert_200.png" alt="Сертификат Bechem">
+        </div>
+
+        <div class="text col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>ООО "Лубритэк" многие годы является официальным дилером марки Bechem в Приволжском федеральном округе. BECHEM разрабатывает,
+                производит и продает по всему миру высококачественные специальные
+                смазочные материалы и средства для металлообработки для всех отраслей промышленности.</p>
+        </div>
+    </div>
+    <div class="brands-import col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+    </div>
+</div>
+
+<div class="cfp-3 col-lg-12 col-md-12 col-sm-12 hidden-sx" id='branches'>
+    <p class="cfp-topline">Отрасли</p>
+    <div class="cfp3-wrapper">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <span class="cfp3-title" data-count="1">Пищевое производство</span><br>
+            <span class="cfp3-title" data-count="2">Металлообработка и Металлургия</span><br>
+            <span class="cfp3-title" data-count="3">Химическая промышленность</span><br>
+            <span class="cfp3-title" data-count="4">Энергетика</span><br>
+            <span class="cfp3-title" data-count="5">Нефтедобыча и нефтепереработка</span><br>
+            <span class="cfp3-title" data-count="6">Сельское хозяйство</span><br>
+            <span class="cfp3-title" data-count="7">Фармацевтика</span><br>
+            <span class="cfp3-title" data-count="8">Горно-добывающая промышленность</span><br>
+            <span class="cfp3-title" data-count="9">Транспорт</span><br>
+            <span class="cfp3-title" data-count="10">Строительство</span><br>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <p class="cfp3-popup" data-count="1">Алкогольные и безалкогольные напитки кондитерские и хлебобулочные изделия мороженое, замороженные продукты и полуфабрикаты мясо-молочная продукция</p>
+            <p class="cfp3-popup" data-count="2">Литьё Обработка металлов давлением Механическая обработка Сварка металлов</p>
+            <p class="cfp3-popup" data-count="3">Неорганическая химия, Органическая химия Керамика, Нефтехимия, Агрохимия Полимеры,Эластомеры Фармацевтическая химия, Парфюмерия и косметика</p>
+            <p class="cfp3-popup" data-count="4">Атомная , гидро , электро</p>
+            <p class="cfp3-popup" data-count="5">Подробности и расшифровки. Текст еще очень интересный. </p>
+            <p class="cfp3-popup" data-count="6">Текст еще очень интересный. Подробности и расшифровки</p>
+            <p class="cfp3-popup" data-count="7">Растениеводство, животноводство</p>
+            <p class="cfp3-popup" data-count="8">Горно-обрабатывающие комбинаты, шахты, карьеры</p>
+            <p class="cfp3-popup" data-count="9">Ж/Д, грузовой, водный</p>
+            <p class="cfp3-popup" data-count="10">Гражданское и дорожное, производство</p>
+        </div>
+    </div>
+</div>
+
+<!--<div class="cfp-1 col-lg-12 col-md-12 col-sm-12 hidden-sx">
+    <div class="2column col-lg-6 col-md-6 col-sm-12 hidden-xs">
+        <p class="cfp_title">Комплексность</p>
+        <p class="cfp_text">Это тект про комплексность комплексность такая комплеексная, поставляется все в комплекссе, не отдельно ,а вместе.</p>
+    </div>
+
+    <div class="2column col-lg-6 col-md-6 col-sm-12 hidden-xs">
+        <p class="cfp_title">Компетентность</p>
+        <p class="cfp_text">Это текст про компетеность. ЧТобы что-либо поставлять, нужно обладать компетенцией, то есть знать , о чем говоришь  и что предлагаешь. Компетеность приходит с опытом, коего у нас навалом.</p>
+    </div>
+</div>--><!--Комплексность и Компетентность кратко-->
+
+<div class="cfp-5 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="work_scheme">
+    <p class="cfp-topline hidden-xs">Схема работы</p>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Cпособы связи</p>
+            <ul class="cfp5-column hidden-xs">
+                <li><span data-toggle="tooltip" data-original-title="8(846)931-03-57" data-placement="top">Телефонный звонок</span></li>
+                <li>.</li>
+                <li><span data-toggle="tooltip" data-original-title="lubritek@yandex.ru" data-placement="top"><a href="mailto:lubritek@yandex.ru">Направить заявку</a></span></li>
+                <li>.</li>
+                <li><!--<span data-toggle="tooltip" data-original-title="lubritek.skype" data-placement="top">Skype</span>--></li>
+                <li>.</li>
+                <li><!--<span data-toggle="tooltip" data-original-title="8(927)6872451" data-placement="top">Viber</span>--></li>
+                <li>.</li>
+                <li><!--<span data-toggle="tooltip" data-original-title="to come" data-placement="top">Telegram</span>--></li>
+            </ul>
+        </div>
+        <!--<span class="cf5-arrow"></span>-->
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Согласование потребности и консультация</p>
+            <ul class="cfp5-column hidden-xs">
+                <li>Вы обозначаете необходмый продукт</li>
+                <li>.</li>
+                <li>Вы указываете требуемое свойство продукта</li>
+                <li>.</li>
+                <li>Вы описываете задачу для смазочноего материла</li>
+            </ul>
+        </div>
+        <!--<span class="cf5-arrow">></span>-->
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Подбор оптимального материала</p>
+            <p class="cfp5-column hidden-xs">
+                Мы обозначаем его доступность и цену или предлагаем аналог<br><br>
+                Мы подбираем перечень подходящих продуктов и согласовываем с техническими службами
+            </p>
+        </div>
+        <!--<span class="cf5-arrow">></span>-->
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Договор</p>
+            <p class="cfp5-column hidden-xs">
+                Окончательное согласование количества, <br>цены, логистики, <br>обмен реквизитами, <br>заключение договора.
+            </p>
+        </div>
+        <!--<span class="cf5-arrow">></span>-->
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Оплата</p>
+            <p class="cfp5-column hidden-xs">
+                Согласно условиям договора
+            </p>
+        </div>
+        <!--<span class="cf5-arrow">></span>-->
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+        <div class="cfp5-wrapper">
+            <p class="cfp5-title">Поставка, Отгрузка</p>
+            <ul class="cfp5-column hidden-xs">
+                <li>Самовывоз с нашего склада в г. Самара, ул. Товарная, 24а</li>
+                <li>.</li>
+                <li>Доставка по договоренности в пределах г. Самары.</li>
+                <li>.</li>
+                <li>Отправка транспотрной компанией.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--<div class="cfp-7 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="q-a">
+    <p class="cfp-topline">Вопрос-ответ</p>
+    <div id="accordion" class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa1">1. Как я могу быстро найти редкое масло / смазку для своего оборудования?</a>
+                </h4>
+            </div>
+            <div id="qa1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa2">2. Как быть, если прописанная в моем оборудовании смазка больше не поставляется в Россию?</a>
+                </h4>
+            </div>
+            <div id="qa2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa3">3. Возможно ли оптимизировать затраты, подобрав подходящий по характеристикам смазочный материал по более выгодной цене?</a>
+                </h4>
+            </div>
+            <div id="qa3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa4">4. Могу ли я оптимизировать свой технологический процесс, подобрав смазочный материал под конкретные нужды с нужными мне тех. характеристиками?</a>
+                </h4>
+            </div>
+            <div id="qa4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa5">5. Вязкость масла и индекс вязкости масла - значение, различие понятий.</a>
+                </h4>
+            </div>
+            <div id="qa5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#qa6">6. Насколько быстро можно получить заказанный товар, на данный момент в России отвутствующий?</a>
+                </h4>
+            </div>
+            <div id="qa6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>БЫстрее ветра.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>--><!--Вопрос-Ответ-->
+
+<!--<div class="cfp-9 col-lg-12 col-md-12 col-sm-12 hidden-sx">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{#{{ base_path ~ directory }}#}/images/fp_slider pics/barrels 1.jpg" alt="1">
+                <div class="carousel-caption">
+                    <h4>Первая миниатюра</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{#{{ base_path ~ directory }}#}/images/fp_slider pics/barrels 2.jpg" alt="2">
+                <div class="carousel-caption">
+                    <h4>Вторая миниатюра</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{#{{ base_path ~ directory }}#}/images/fp_slider pics/barrels 3.jpg" alt="3">
+                <div class="carousel-caption">
+                    <h4>Третья миниатюра</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+            </div>
+        </div>
+        <p><a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a><br>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a></p>
+    </div>
+</div>--><!--Слайдер-->
+
+<div class="cfp-15 col-lg-12 col-md-12 col-sm-12 col-sx-12 page-contacts">
+    <p>Контакты</p>
+    <br>
+    <p><b>Адрес:</b>&nbsp;&nbsp;443109, РФ, Самарская область, город Самара, улица Товарная, 24А.</p>
+    <p><b>Почтовый адрес:</b>&nbsp;&nbsp;443109, РФ, Самарская область, город Самара, улица Товарная, 24А.</p>
+    <p><b>Как проехать:</b>&nbsp;&nbsp;На пересечении улиц Товарная и Мателлургическая (ориентир на перекрестке - Красный шар из автомобильных дисков), поворачиваем на Металлургическую.</p>
+    <p>Заезжаем в ТРЕТЬИ ворота с ЛЕВОЙ стороны и:</p>
+    <p><b>Склад:</b>&nbsp;&nbsp;СПРАВА первый бокс (№10).</p>
+    <p><b>Офис:</b>&nbsp;&nbsp;ПРЯМО до конца, двухэтажное кирпичное здание, зеленая лестница на 2й этаж, домофон.</p>
+    <p><b>Телефоны:</b>&nbsp;&nbsp;8(846)931-12-26, 8(846)931-42-60, 8(846)931-03-57</p>
+    <p><b>Факс:</b>&nbsp;&nbsp;8(846)931-03-57</p>
+    <p><b>Электронная почта:</b>&nbsp;&nbsp;<a href="mailto:lubritek@yandex.ru">lubritek@yandex.ru</a></p>
+    <br>
+    <div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abf8375d02bf4a995b2f48ceee34948b6b963ba808c4276c9d3af406fa737f81b&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+</div>
+
+<div class="cfp-10 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="logistics">
+    <p class="cfp-topline">Логистика</p>
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#sklad" data-toggle="tab">Склад в Самаре</a></li>
+        <li><a href="#incity" data-toggle="tab">Доставка по Самаре</a></li>
+        <li><a href="#region" data-toggle="tab">Доставка в другой регион</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div id="sklad" class="tab-pane fade in active">
+            <h2><img class="ico-big" src="/sites/default/files/inline-images/sklad.png" alt="Доставка до склада покупателя">&nbsp;Склад в Самаре:</h2>
+            <p>Получить продукцию можно по адресу:</p>
+            <p>г.Самара, ул.Товарная 24, склад № 10</p>
+            <p>Режим работы склада: c 9-30 до 17-00</p>
+            <p><img class="ico" src="/sites/default/files/inline-images/map.png" alt="Показать на карте"><a>Распечатать схему проезда</a></p>
+                    <p><img class="ico" src="/sites/default/files/inline-images/doverennost.png" alt="Доверенность">Необходимо иметь при получении товара печать или доверенность по форме М-2 (оригинал)</p>
+        </div>
+        <div id="incity" class="tab-pane fade">
+            <h2><img class="ico-big" src="/sites/default/files/inline-images/delivery.png" alt="Доставка по Самаре">&nbsp;Доставка по Самаре:</h2>
+            <p>
+                Доставка осуществляется транспортом нашей логистической службы или  курьерской службой доставки в рабочие дни с 10-00 до 16-00.
+                Логист предварительно согласовывает с Вами дату и время прибытия груза.
+            </p>
+            <p>
+                <img class="ico" src="/sites/default/files/inline-images/rouble.jpg" alt="Стоимость доставки">	Стоимость доставки : <br> При сумме заказа от 3 000р. до 10 000 р. - 1000 рублей<br>При сумме заказа от 10 001р. до 20 000 р. - 500
+            рублей <br> При сумме заказа свыше 20 000р. - бесплатно
+            </p>
+            <p>
+                <img class="ico" id="clock" src="/sites/default/files/inline-images/ic_schedule_black_24px.png" alt="Время разгрузки товара">	Время рагрузки товара		Ожидание разгрузки товара 15 минут, дальше по тарифам курьерской службы.
+            </p>
+            <p>
+                <img class="ico" src="/sites/default/files/inline-images/prr.png" alt="Погрузка"> Погрузка:		Товар выгружается силами Покупателя. Просим заранее согасовать работу грузчиков.
+            </p>
+        </div>
+        <div id="region" class="tab-pane fade">
+            <h2><img class="ico-big" src="/sites/default/files/inline-images/delivery.png" alt="Доставка транспортной компанией">&nbsp;Доставка в другой регион:</h2>
+            <p>Доставка осуществляется любой транспортной компанией по выбору Покупателя  после 100 % предоплаты продукции в течение 2-х рабочих дней. <br> До терминала ТК в г.Самара груз доставляется БЕСПЛАТНО транспортом нашей логистической службы.</p>
+            <p>
+                <img class="ico" src="/sites/default/files/inline-images/calculator.jpg" alt="Расчет стоимости доставки">	Расчет стоимости доставки :	Сотрудник нашей логистической службы предоставляет аналитическую справку "СРОК/СТОИМОСТЬ доставки"
+                минимум у трех транспортных компаний после чего Вы выбираете исполнителя.Также с Вами согласовывется выбор упаковки товара, что может значительно уменьшить стоимость доставки.
+            </p>
+            <p>
+                <img class="ico" src="/sites/default/files/inline-images/wallet.png" alt="Стоимость доставки">	Стоимость доставки :	Оплачивается Покупателем.
+            </p>
+            <p>
+                <img class="ico" src="/sites/default/files/inline-images/sklad.png" alt="Доставка до склада покупателя">	Доставка до дверей:	При заказе этой опции Вы выбираете доставку по Вашему городу до дверей Получателя или оставляете забор
+                самовывозом на терминале компании, стоимость этой опции наши логисты уточняют заранее для Вас.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cfp-12 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="about-company">
+    <!--<p class="cfp-topline">О компании</p>-->
+
+    <p class="text-left">Мы - клиентоориентированная компания, основанная в 2010 г. Наша деятельность <b>в первую очередь</b> направлена на обеспечение бесперебойной работы потребителей.<br><br>Наша задача:</p>
+    <p class="text-right">
+        <i>Компетентная помощь предприятиям в обеспечении всеми видами смазочных материалов.</i>
+    </p> <br>
+    <p class="text-left">Наша специализация:</p><br>
+
+    <p class="text-right">
+        <i>Внедрение в производство инновационных материалов, сбалансированное импортозамещение и оптимизация расходов наших партнёров. Техническая поддержка, консультации  по смазкам и маслам, СОЖам, техжидкостям.
+        </i>
+    </p>
+
+    <br>
+    <p class="text-left">Все вопросы решаемы</p>
+    <p class="text-right">Это принцип нашей работы.</p>
+    <p class="text-left">Сделать как для себя</p>
+    <p class="text-right">Это стиль нашей работы.</p>
+    <br>
+    <p>
+        <b>Компания "Лубритэк"</b> предлагает взаимовыгодное сотрудничество на договорной основе для <b>достижения наилучших результатов вашей работы.</b>
+    </p>
+
+</div>
+
+<!--<div class="cfp-11 col-lg-12 col-md-12 col-sm-12" id="add-request-slide">
+    <p class="cfp-topline">Отправить заявку</p>
+    {#{{ requestform }}#}
+</div>--><!--Форма добавления заявки-->
+
+<!--<div class="cfp-13 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="complexity">
+    <p class="cfp-topline">Комплексность</p>
+    В ООО «Лубритэк» вы можете получить практически любой вид смазочных материалов и техжидкостей, доступных на территории РФ.
+    Вы можете быть гарантированно уверенными в исполнении многопозиционных заявок.
+    Так же вы можете приобрести сопутствующие комплектующие и смазочное оборудование.
+    Вы получите развернутые и обоснованные предложения по оптимизации номенклатурного перечня используемых вами смазочных материалов, по применению аналогов, а также по возможному импортозамещению.
+    При необходимости подбора смазочного материала или техжидкости для применения в «проблемном» узле, вы можете быть уверены в профессиональном подходе наших специалистов в решении данного вопроса, вплоть до предоставления опытных образцов.
+    Обращаясь в ООО «Лубритэк» вы сможете рассчитывать на снижение своих финансовых затрат за счёт предложения материалов с аналогичными характеристиками, но более доступных по цене или логистике.
+    Став постоянным клиентом нашей компании вы можете рассчитывать на лояльное отношение в виде получения скидок, доставки продукции нашим или привлечённым транспортом и оплаты в рассрочку.
+    Формирование остатков по вашим заявкам на нашем складе при стабильном потреблении создаст гарантированный запас для вашего производства.
+    Умеренная ценовая политика,
+    беспрекословное выполнение договорных обязательств,
+    наличие пополняемого тёплого склада и транспорта,
+    стабильные сроки поставки
+    делают работу с нами комфортной.
+</div>--><!--Комплексность-->
+
+<!--<div class="cfp-14 col-lg-12 col-md-12 col-sm-12 hidden-sx" id="competenivity">
+    <p class="cfp-topline">Компетентность</p>
+    Одно из безусловных преимуществ ООО «Лубритэк» - профессиональный, сплочённый, грамотный и разносторонне образованный коллектив, который является достоянием далеко не каждой компании.
+    Второе – это колоссальный опыт работы каждого работника в сфере смазочных материалов, СОЖ, растворителей, энергетических масел и спецпродуктов.
+    Немаловажным является немалый стаж работы некоторых специалистов в производстве и прошедшим обучение в дистрибьюторских центрах производителей.
+    Каждый работник нашей компании имеет высшее образование и постоянно совершенствует свой уровень, изучая новые направления в теории лубрикантов, знакомится с новыми брендами производителей, изучает новшества производств различной направленности.
+    Благодаря своим знаниям и внимательному отношению к каждому клиенту, мы имеем возможность быстро подобрать необходимый вам смазочный или охлаждающий продукт, растворитель, фиксатор или клей, сравнить продукцию различных производителей и предложить наилучшее соотношение цена-качество, подобрать аналог к уже использующемуся продукту если он вас чем-то не устраивает или имеется лучший.
+    Мы всегда готовы не только провести поставку, консультацию и подбор дистанционно или при вашем посещении нашей фирмы, но и выехать на ваше предприятие для лучшего ознакомления с возникшим запросом.
+    Вы можете быть уверены в получении нужного и качественного материала в возможно короткие сроки.
+    Мы действительно знаем как, где, на каких производствах и в каких условиях работают предлагаемые нами смазочные материалы.
+    Мы действительно знаем как работает оборудование и различные машины в той или иной отрасли.
+    И мы действительно заинтересованы в стабильной работе вашего предприятия и готовы к предметному, результативному диалогу с вами.
+</div>--><!--Компетентность-->
